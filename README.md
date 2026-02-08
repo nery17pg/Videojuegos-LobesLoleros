@@ -21,6 +21,6 @@ Aquí estará la chamba de cada uno, todos se harán responsables de sí mismos.
 - **Pérez González Nereyda Celestina**
   𐙚 [Carpeta personal](PérezNereyda)
 - **Quintero Silva Jatziri Montserrat**
-  𐙚 [Carpeta personal](Quintero Jatziri)
-- **Sainz Urzua Jatziri Quintero**
+  𐙚 [Carpeta personal](QuinteroJatziri)
+- **Sainz Urzua Keiry Yamilet**
   𐙚 [Carpeta personal](nombrecarpeta)
