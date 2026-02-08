@@ -21,6 +21,7 @@ Siendo honesta, entré por mis amistades, sin embargo, me gusta mucho pensar que
 
 
 ##### **Mi foto**
+![Foto de Nereyda](miFoto.jpg)
 
 
 
