@@ -24,4 +24,4 @@ Aquí estará la chamba de cada uno, todos se harán responsables de sí mismos.
 - **Quintero Silva Jatziri Montserrat**
   𐙚 [Carpeta personal](QuinteroJatziri)
 - **Sainz Urzua Keiry Yamilet**
-  𐙚 [Carpeta personal](nombrecarpeta)
+  𐙚 [Carpeta personal](SainzKeiry)
