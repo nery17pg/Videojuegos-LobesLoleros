@@ -15,4 +15,4 @@ Quiero participar en el proceso creativo, proponer ideas y al mismo tiempo apren
 
 **Foto de mí**
 
-<img src="MiFoto.jpeg" width="200">
+<img src="MiFoto.jpeg" width="500">
