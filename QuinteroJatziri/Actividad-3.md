@@ -2,7 +2,7 @@
 
 ## Videojuego seleccionado
 
-El videojuego elegido es **Minecraft**.
+**Minecraft**.
 Elegí este juego porque permite jugar de muchas formas diferentes y no obliga al jugador a seguir un solo camino, lo que facilita analizarlo desde distintos puntos de vista.
 
 ---
@@ -45,6 +45,4 @@ Cada jugador puede tener una experiencia diferente, ya que el juego se adapta a 
 
 ## Conclusión
 
-Minecraft muestra que el género de un videojuego no es uno solo.  
-Dependiendo de cómo se juegue, puede sentirse como un juego de supervivencia, de construcción o simplemente de exploración.
-Esto ayuda a entender que los videojuegos no se definen solo por su género, sino por la experiencia que generan en el jugador.
+Minecraft muestra que el género de un videojuego no es uno solo. Dependiendo de cómo se juegue, puede sentirse como un juego de supervivencia, de construcción o simplemente de exploración. Esto ayuda a entender que los videojuegos no se definen solo por su género, sino por la experiencia que generan en el jugador.
