@@ -7,6 +7,7 @@ En cuanto al desarrollo, mi experiencia en videojuegos todavía es básica, pero
 
 **¿Qué significa para ti “diseñar un videojuego” en este momento?**
 
+Es convertir una simple idea en algo visualmente atractivo y divertido para los usuarios.
 Significa aprender a transformar una idea en algo jugable, significa experimentar, equivocarme y mejorar, entendiendo que el proceso es tan importante como el resultado final.
 
 **¿Cómo te imaginas tu rol como diseñador durante el curso.**
