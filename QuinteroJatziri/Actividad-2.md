@@ -3,8 +3,7 @@
 ## Intereses y experiencias previas
 
 Me interesa la programación y el desarrollo de aplicaciones.
-El semestre pasado trabajé en equipo en un juego sencillo de laberinto, donde un capibara tenía que salir usando comandos de voz como arriba, abajo, izquierda y derecha. El juego contaba con una interfaz auditiva, lo que me ayudó a entender la importancia de pensar en usuarios con diferentes necesidades.
-Aunque no he desarrollado videojuegos como tal, he trabajado en desarrollo de aplicaciones, lo cual me ha ayudado a mejorar mi forma de pensar al programar.
+El semestre pasado trabajé en equipo en un juego sencillo de laberinto, donde un capibara tenía que salir usando comandos de voz como arriba, abajo, izquierda y derecha. El juego contaba con una interfaz auditiva, lo que me ayudó a entender la importancia de pensar en usuarios con diferentes necesidades. Aunque no he desarrollado videojuegos como tal, he trabajado en desarrollo de aplicaciones, lo cual me ha ayudado a mejorar mi forma de pensar al programar.
 
 ---
 
