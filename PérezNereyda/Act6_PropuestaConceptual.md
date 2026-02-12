@@ -2,7 +2,7 @@
 
 
 
-1. ### Definición de una idea de videojuego original
+### 1\. Definición de una idea de videojuego original
 
 Una astronauta es olvidada en el espacio en una masa desconocida, donde mayormente hay oscuridad y tiene que ir descubriendo el lugar donde está mientras trata de crear objetos con lo que se encuentra ahí. Todo será por niveles, ya que tendrá desafíos a completar y cuando cubra todos, será rescatada por el equipo que la olvidó.
 
@@ -45,4 +45,5 @@ La dinámica que planteo al inicio logra producir estas dinámicas porque la exp
 ### Reflexión final
 
 Probablemente cambiaría la parte de la historia. La verdad es que me cuesta generar ideas entretenidas, ya que suelo jugador Sudoku o algo relacionado con números en tiempos muertos en el transporte. También, los objetivos, ya que me gustaría que fuera más interesante.
+
 
