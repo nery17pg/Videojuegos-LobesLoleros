@@ -1,13 +1,21 @@
 ***Actividad 6. Propuesta conceptual de videojuego***
 
+--------------------------------------------------------------------------------------------------------------------------------
+
 **Define una idea de videojuego original.**
-Videojuego de terror, el cual trata sobre un personaje que trabaja de velador en un cementario, para poder su cubrir correctamente su horario laboral completo, hay ciertas reglas que este mismo debe cumplir, ya que, sino se cumple puede no salir vivo del cementario. Durante el horario de trabajo le empizan a suceder distintas cosas extrañas y para evitar el riesgo hacía su persona, debe recodar las reglas y cumplirlas.
+Juego de terror en primera persona donde el jugador asume el rol de un velador nocturno en distintos cementerios. Para completar su jornada laboral de 8 horas deberá seguir un conjunto de reglas que cambian según el lugar, las cuales indicarán lo que se debe hacer para sobrevivir correctamente a la noche. Durante el turno ocurren eventos paranormales que pondrán a prubea la memoria, la atención y la toma de decisiones del jugador. Si logra sobrevivir, desbloqueará nuevos escenarios con mayor dificultad.
 
 **Describe brevemente.**
 
 *Mecánica principal:*
 
-*Objetivo del jugador:* Lograr salir vivo de sus 8 horas laborales como velador durante la noche en un cementerio.
+La mecánica principal es observar, memorizar y obedecer reglas mientras se vigila el cementerio y se responde a sucesos extraños.
+El jugador recorre el entorno, detecta anomalías, decide actuar o evitar interactuar y consulta o recuerda reglas para mantenerse a salvo.
+La tensión nace del conflicto entre la curiosidad y la supervivencia.
+
+*Objetivo del jugador:* 
+
+Sobrevivir al turno completo de vigilancia (8 horas) sin romper las reglas impuestas por el cementario.
 
 *Reglas básicas:*
 
@@ -18,7 +26,6 @@ Videojuego de terror, el cual trata sobre un personaje que trabaja de velador en
 5. Si el jugador no logra sobrevivir a las 8 horas, el nivel se repetirá hasta que este se pase correctamente y así pasar al siguiente.
 6. El velador tiene 30 minutos para salir y comprar cena en la tienda más cercana, no debe exceder más de este tiempo fuera del cementerio.
 7. El velador debe ingresar puntual a su turno que es a las 12am y salir a las 8am.
-8.
 
 **Explica la experiencia buscada.**
 
