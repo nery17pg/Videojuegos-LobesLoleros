@@ -1,4 +1,4 @@
-**Actividad 6. Propuesta conceptual de videojuego**
+***Actividad 6. Propuesta conceptual de videojuego***
 
 **Define una idea de videojuego original.**
 Videojuego de terror, el cual trata sobre un personaje que trabaja de velador en un cementario, para poder su cubrir correctamente su horario laboral completo, hay ciertas reglas que este mismo debe cumplir, ya que, sino se cumple puede no salir vivo del cementario. Durante el horario de trabajo le empizan a suceder distintas cosas extrañas y para evitar el riesgo hacía su persona, debe recodar las reglas y cumplirlas.
