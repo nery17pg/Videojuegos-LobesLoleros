@@ -48,8 +48,9 @@ Sobrevivir al turno completo de vigilancia (8 horas) sin romper las reglas impue
 
 *¿Qué debe sentir el jugador y por qué esa mecánica lo genera?*
 
-Sumergir al usuario al terror completamente, que se sienta como si de verdad estuviera en el cementerio gracias a los sonidos y efectos visuales. El usuario deberá sentir pánico, miedo, nervios y misterio en cada nivel, para que así, se sienta más interesado en seguirlo jugando.
+El jugador experimentará miedo psicológico más que sustos directos. La mecánica de reglas provoca esto porque: Obliga a dudar de cada situación, genera presión por no equivocarse y hace que lo cotidiano (caminar, voltear, escuchar) se vuelva amenazante.
 
+--------------------------------------------------------------------------------------------------------------------------------
 **Justifica la coherencia del diseño.**
 
 *Explica cómo los elementos formales se relacionan entre sí (MDA).*
