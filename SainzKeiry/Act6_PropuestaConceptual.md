@@ -4,11 +4,13 @@
 Videojuego de terror, el cual trata sobre un personaje que trabaja de velador en un cementario, para poder su cubrir correctamente su horario laboral completo, hay ciertas reglas que este mismo debe cumplir, ya que, sino se cumple puede no salir vivo del cementario. Durante el horario de trabajo le empizan a suceder distintas cosas extrañas y para evitar el riesgo hacía su persona, debe recodar las reglas y cumplirlas.
 
 **Describe brevemente.**
+
 *Mecánica principal:*
 
 *Objetivo del jugador:* Lograr salir vivo de sus 8 horas laborales como velador durante la noche en un cementerio.
 
 *Reglas básicas:*
+
 1. No olvidar las reglas de supervivencia.
 2. Cumplir con las 8 horas labolares.
 3. Revisar cada área del cementerio cada hora.
