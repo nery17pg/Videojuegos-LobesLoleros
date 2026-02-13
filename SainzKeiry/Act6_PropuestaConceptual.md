@@ -1,4 +1,4 @@
-***Actividad 6. Propuesta conceptual de videojuego***
+#Actividad 6. Propuesta conceptual de videojuego#
 
 --------------------------------------------------------------------------------------------------------------------------------
 
