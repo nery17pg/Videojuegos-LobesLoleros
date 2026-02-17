@@ -32,10 +32,6 @@ Considero que estos modelos pueden aplicarse directamente al momento de diseñar
 
 También sirven como herramienta de análisis para detectar fallas en juegos existentes.
 
----
-
 En conclusión, los modelos GAP y PLAY me ayudaron a entender que el diseño de videojuegos implica planear tanto el aprendizaje como la experiencia. Creo que aplicar estos enfoques en futuros proyectos permitiría diseñar juegos más claros, mejor estructurados y con mayor impacto en el jugador.
 
 Antes pensaba que un juego funcionaba simplemente porque era divertido. Ahora entiendo que detrás de esa diversión hay decisiones de diseño específicas relacionadas con cómo se enseña a jugar y cómo se construye la experiencia.
-
-Considero que aplicar estos modelos en futuros proyectos puede ayudarme a diseñar juegos más claros, equilibrados y mejor estructurados.
