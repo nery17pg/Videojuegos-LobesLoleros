@@ -4,7 +4,7 @@
 
 El modelo GAP me ayudó a entender que un videojuego también funciona como un sistema que enseña. No basta con tener buenas mecánicas; el juego debe guiar al jugador para que las comprenda y las domine.
 
-Aprendí que la forma en que se introducen las reglas, los objetivos y las herramientas influye directamente en la permanencia del jugador. Si el juego no enseña bien, puede generar frustración o abandono.
+Aprendi que la forma en que se introducen las reglas, los objetivos y las herramientas influye directamente en la permanencia del jugador. Si el juego no enseña bien, puede generar frustración o abandono.
 
 Esto complementa mi idea previa porque ahora entiendo que la enseñanza dentro del juego es parte fundamental del diseño.
 
