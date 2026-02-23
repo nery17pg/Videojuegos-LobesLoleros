@@ -1,5 +1,4 @@
 # Propuesta narrativa
-
 ## Tema
 
 El tema principal de mi juego es el miedo a lo desconocido y la necesidad de sobrevivir. No se trata solo de fantasmas, sino de la sensación de estar atrapado en un lugar donde no sabes qué pasó ni cómo salir. Quiero que el jugador sienta tensión todo el tiempo, que dude de cada paso que da y que sienta que cualquier error puede costarle la partida.
