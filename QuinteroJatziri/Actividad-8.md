@@ -20,7 +20,7 @@ La meta es escapar del hospital. Para lograrlo, debe resolver varios acertijos q
 
 El principal obstáculo son los fantasmas, porque no se pueden eliminar y reaccionan al ruido. Además, la batería limitada de la linterna complica todo, ya que obliga al jugador a decidir cuándo usarla y cuándo arriesgarse a caminar en la oscuridad.
 
--
+---
 
 # Traducción a espacio
 
@@ -52,7 +52,7 @@ Todo está conectado. Si exploras mucho con la linterna, gastas batería. Si hac
 
 Al inicio, los acertijos son más sencillos y los fantasmas no aparecen con tanta frecuencia. Conforme avanza el juego, los acertijos se vuelven más complejos, la batería se vuelve más limitada y los fantasmas son más agresivos e impredecibles. La dificultad aumenta poco a poco, no de forma brusca.
 
--
+---
 
 # Coherencia
 
