@@ -1,3 +1,5 @@
+**Actividad 8. Propuesta narrativa y traducción espacial**
+
 **PROPUESTA NARRATIVA**
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ***Tema***
@@ -72,13 +74,16 @@ No es mundo abierto. Es espacio controlado para tensión constante.
 
 ***3 Verbos principales***
 
-Patrullar
+Patrullar:
+
 Recorrer zonas asignadas.
 
-Observar
+Observar:
+
 Detectar anomalías o cambios.
 
-Decidir
+Decidir:
+
 Actuar según las reglas o ignorar el evento.
 
 Estos verbos sostienen toda la experiencia.
@@ -122,7 +127,9 @@ Cambios espaciales (niebla, menos luz).
 Menor margen de error.
 
 Nivel 1: 4 reglas claras, eventos lentos.
+
 Nivel 3: 7 reglas, eventos combinados.
+
 Nivel avanzado: reglas dinámicas que cambian durante el turno.
 
 **COHERENCIA**
@@ -162,9 +169,12 @@ El ritmo alterna tensión y pausa, evitando saturación constante.
 **Progresión estructurada:**
 
 Nivel 1 → Aprender sistema.
+
 Nivel 2 → Aumentar reglas.
+
 Nivel 3 → Introducir variabilidad.
-Nivel 4+ → Reglas dinámicas y presión espacial.
+
+Nivel 4 → Reglas dinámicas y presión espacial.
 
 La dificultad no aumenta por más enemigos, sino por:
 
