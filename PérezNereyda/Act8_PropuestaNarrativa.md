@@ -63,7 +63,7 @@ No es mundo abierto total. Son espacios delimitados con rutas alternativas.
 * Alta presión
 * Escasez real
 * Enemigos que reaccionan a la luz
-* 
+  
 **La dificultad escala por:**
 
 * Menor margen de error
@@ -94,6 +94,7 @@ El ritmo cambia:
 * Cada nivel introduce una variación mecánica
 * Se reutilizan los mismos 3 verbos
 * La complejidad aumenta sin cambiar la esencia del juego.
+
 
 
 
