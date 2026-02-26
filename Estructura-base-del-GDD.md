@@ -17,6 +17,7 @@ El miedo no proviene de persecuciones constantes, sino de la responsabilidad. El
 ---
 ## 3. Perfil de jugador
 Jugador intermedio orientado a desafío cognitivo y tensión psicológica.
+
 **Motivaciones principales:**
 - Curiosidad (descubrir patrones y reglas)  
 - Supervivencia bajo presión  
