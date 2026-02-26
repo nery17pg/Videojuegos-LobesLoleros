@@ -3,6 +3,12 @@
 ## 2. Experiencia central
 ## 3. Perfil de jugador
 ## 4. Core Loop
+1. Patrullar
+2. Detectar anomalías
+3. Recordar reglas
+4. Tomar decisión
+5. Sobrevivir o fallar
+---   
 ## 5. Mecánicas principales
 ## 6. Dinámicas esperadas
 ## 7. Mundo y conflicto
