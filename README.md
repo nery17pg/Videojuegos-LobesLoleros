@@ -18,7 +18,7 @@ Aquí estará la chamba de cada uno, todos se harán responsables de sí mismos.
 - **Johnston Navarro Karol Daniela**
   𐙚 [Carpeta personal](JohnstonKarol)
 - **Muñoz Rosales Mayte**
-  𐙚 [Carpeta personal](MuñozMayte)
+  𐙚 [Carpeta personal](MunozMayte)
 - **Pérez González Nereyda Celestina**
   𐙚 [Carpeta personal](PérezNereyda)
 - **Quintero Silva Jatziri Montserrat**
