@@ -54,6 +54,14 @@ Cada nivel es un cementerio cerrado con:
 ---
 ## 8. Interfaz conceptual
 ## 9. MVP
+La versión mínima funcional tiene como objetivo validar si la mecánica principal genera tensión y aprendizaje sin desarrollar el juego completo.
+Incluye:
+- Un nivel jugable básico
+- Sitema de reglas
+- Número de anomalías reducido
+- Opciones limitadas de intervención acordes al pequeño número de anomalías disponibles
+- Consecuencias inmediatas al romper una regla
+
 ## 10. Riesgos y trade-offs
 ### Riesgos
 **Repetitividad:**  
