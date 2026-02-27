@@ -37,7 +37,7 @@ Jugador intermedio orientado a desafío cognitivo y tensión psicológica.
 
 
 ### Consecuencia inmediata
-- Romper regla -> evento fatal o reinicio  
+- Si rompes una regla ocurre un evento fatal
 
 ---
 ## 6. Dinámicas esperadas
