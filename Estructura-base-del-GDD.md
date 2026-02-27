@@ -5,8 +5,6 @@ Es una experiencia centrada en tensión cognitiva y obediencia bajo amenaza invi
 
 ---
 ## 2. Experiencia central
-La experiencia busca generar:
-
 - Ansiedad sostenida  
 - Paranoia ambiental  
 - Duda constante entre actuar o contenerse  
@@ -36,12 +34,10 @@ Jugador intermedio orientado a desafío cognitivo y tensión psicológica.
 
 ### Sistema de anomalías
 - Visuales (tumbas abiertas, estatuas movidas)  
-- Auditivas (voces, golpes, pasos invisibles)  
-- Espaciales (niebla, cambios de luz)  
+
 
 ### Consecuencia inmediata
 - Romper regla -> evento fatal o reinicio  
-- Ignorar evento crítico -> escalada de amenaza
 
 ---
 ## 6. Dinámicas esperadas
