@@ -20,7 +20,7 @@ Aquí estará la chamba de cada uno, todos se harán responsables de sí mismos.
 - **Muñoz Rosales Mayte**
   𐙚 [Carpeta personal](MunozMayte)
 - **Pérez González Nereyda Celestina**
-  𐙚 [Carpeta personal](PérezNereyda)
+  𐙚 [Carpeta personal](PerezNereyda)
 - **Quintero Silva Jatziri Montserrat**
   𐙚 [Carpeta personal](QuinteroJatziri)
 - **Sainz Urzua Keiry Yamilet**
