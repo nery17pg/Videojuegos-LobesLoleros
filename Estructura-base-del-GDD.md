@@ -86,6 +86,9 @@ Cada nivel es un cementerio cerrado con:
 - Rejas perimetrales  
 - Capillas  
 - Zonas oscuras  
+### Conflicto mecánico central
+Se basa en la tensión entre actuar e inhibirse. Ante cada situación rara que se presente en la partida, el jugador debe decidir entre intervenir siguiendo su intuición o seguir las reglas que ya se establecieron. 
+El videojuego no castiga la falta de habilidad, sino la mala interpretación del sistema, lo que genera consecuencias inmediatas.
 
 ---
 ## 8. Interfaz conceptual
