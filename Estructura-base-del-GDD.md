@@ -43,17 +43,26 @@ Jugador intermedio orientado a desafío cognitivo y tensión psicológica.
 ## 6. Dinámicas esperadas
 Las dinámicas emergen de la combinación entre patrullaje constante, reglas estrictas y consecuencias inmediatas ante el error. No agregan nuevas mecánicas, sino que describen los comportamientos y tensiones que aparecen durante la partida.
 
-### 1. Vigilancia activa permanente
-El jugador no recorre el espacio de manera pasiva. Cada desplazamiento implica observar detalles, comparar con la memoria y verificar que nada haya cambiado. El simple acto de caminar se transforma en un proceso de inspección constante.
+- **Vigilancia activa permanente**  
+  El jugador no recorre el espacio de manera pasiva. Cada desplazamiento implica observar detalles, comparar con la memoria y verificar que nada haya cambiado. El simple acto de caminar se transforma en un proceso de inspección constante.
 
-### 2. Pausa cognitiva antes de decidir
-Ante cualquier anomalía, el jugador detiene su impulso inicial y evalúa mentalmente: ¿esta situación tiene una regla asociada?, ¿intervenir o ignorar? Esta micro-pausa se repite durante toda la noche y genera un ritmo interno de tensión sostenida.
+- **Pausa cognitiva antes de decidir**  
+  Ante cualquier anomalía, el jugador detiene su impulso inicial y evalúa mentalmente: ¿esta situación tiene una regla asociada?, ¿intervenir o ignorar? Esta micro-pausa se repite durante toda la noche y genera un ritmo interno de tensión sostenida.
 
-### 3. Autocontrol frente a la curiosidad
-Muchos eventos están diseñados para provocar interés (figuras a lo lejos, sonidos, cambios sutiles). La dinámica dominante no es investigar, sino resistir el impulso de hacerlo cuando la regla lo prohíbe.
+- **Autocontrol frente a la curiosidad**  
+  Muchos eventos están diseñados para provocar interés (figuras a lo lejos, sonidos, cambios sutiles). La dinámica dominante no es investigar, sino resistir el impulso de hacerlo cuando la regla lo prohíbe.
 
-### 4. Aprendizaje progresivo del sistema
-Mediante repetición y error, el jugador comienza a reconocer patrones, anticipar riesgos y optimizar sus recorridos. La experiencia evoluciona de incertidumbre total a control parcial del entorno.
+- **Aprendizaje progresivo del sistema**  
+  Mediante repetición y error, el jugador comienza a reconocer patrones, anticipar riesgos y optimizar sus recorridos. La experiencia evoluciona de incertidumbre total a control parcial del entorno.
+
+- **Incremento de carga mental**  
+  Con más reglas activas y eventos simultáneos, el jugador debe dividir su atención entre memoria, espacio y tiempo. La dificultad aumenta por complejidad cognitiva, no por velocidad de reflejos.
+
+- **Sensación de falsa seguridad**  
+  Los momentos de calma reducen temporalmente la tensión, pero también bajan la guardia del jugador. Esto amplifica el impacto de anomalías posteriores.
+
+- **Interiorización del espacio**  
+  Al no contar con ayudas externas como minimapa, el jugador desarrolla memoria espacial del cementerio, optimizando rutas y reconociendo más rápido cambios sutiles.
 
 ## 7. Mundo y conflicto
 ### Mundo
