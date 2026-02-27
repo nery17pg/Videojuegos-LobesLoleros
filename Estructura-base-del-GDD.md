@@ -92,6 +92,14 @@ El videojuego no castiga la falta de habilidad, sino la mala interpretación del
 
 ---
 ## 8. Interfaz conceptual
+Una interfaz bien diseñada es aquella que no se siente como una capa externa sobrepuesta al juego, sino que forma parte de la experiencia.
+
+- **Indicador de vida**: El jugador cuenta con vidas finitas, tras cometer cierta cantidad de errores se terminará la partida automaticamente. Para indicar el estado de salud del jugador, se aplicará un efecto de blur en los bordes de la pantalla. A mayor intensidad de desenfoque en los bordes, menor el estado de salud del jugador. Este efecto solo durará un aproximado de 5 segundos antes de eliminarse el filtro para no interferir en el campo de visión del jugador, sin embargo deberá estar atento a este efecto para determinar cuántas oportunidades más tiene de fallar.
+- **Cuaderno**: El cuaderno contiene las reglas para evitar cometer errores, podrá ser consultado solamente en la caseta de vigilancia.
+- **Error**: Cuando el jugador cometa un error, será notificado mediante un susto
+- **Tiempo**: El tiempo es fundamental en el juego, pues sobrevivir 8 horas se traduce en ganar la partida. El jugador podrá consultar el tiempo desde un reloj de pared en la caseta de seguridad, al igual que después de superar cierta cantidad de tiempo sonará una campana antigua
+- **Reportes**: Funciona como el principal medio de intervención del jugador para atender anomalías. Cuando se detecta una anomalia el jugador puede generar un reporte desde un punto específico del entorno, reistrando lo observado sin interactuar fisicamente con el fenómeno. Si el reporte es correcto la anomalía se dispersa, sino se activa una consecuencia negativa y reduce los puntos de vida del jugador
+
 ## 9. MVP
 La versión mínima funcional tiene como objetivo validar si la mecánica principal genera tensión y aprendizaje sin desarrollar el juego completo.
 Incluye:
