@@ -32,13 +32,26 @@ Jugador intermedio orientado a desafío cognitivo y tensión psicológica.
 ---   
 ## 5. Mecánicas principales
 
+### Exploración del entorno
+- El jugador debe recorrer el cementerio durante su turno nocturno para inspeccionar distintas áreas asignadas.
+
+### Toma de decisiones bajo presión
+- Ante cada evento, el jugador decide cómo reaccionar: ignorar, escapar, permanecer inmóvil y reportar la anomalía.
+
+### Gestión del tiempo
+- El turno dura 8 horas dentro del juego.
+
+### Uso de herramientas del velador.
+- El jugador cuenta con recursos limitados
+
+### Progresión por niveles
+- Al completar una noche se desbloquean nuevos cementarios.
+
 ### Sistema de anomalías
 - Visuales (tumbas abiertas, estatuas movidas)  
 
-
 ### Consecuencia inmediata
 - Si rompes una regla ocurre un evento fatal
-
 ---
 ## 6. Dinámicas esperadas
 Las dinámicas emergen de la combinación entre patrullaje constante, reglas estrictas y consecuencias inmediatas ante el error. No agregan nuevas mecánicas, sino que describen los comportamientos y tensiones que aparecen durante la partida.
