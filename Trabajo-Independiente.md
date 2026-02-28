@@ -69,12 +69,12 @@ El diseño sigue la siguiente cadena causal:
 Mecánicas.
 (Reglas estrictas + anomalías + tiempo limitado)
 
-⬇ generan
+generan:
 
 Dinámicas.
 (Precaución, paranoia, observación constante)
 
-⬇ producen
+producen:
 
 Estéticas.
 (Miedo psicológico, tensión e inmersión)
