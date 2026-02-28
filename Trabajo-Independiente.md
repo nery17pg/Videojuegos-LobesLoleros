@@ -127,6 +127,11 @@ No busca acción constante, sino interpretar patrones y dominar reglas ocultas.
 ---
 
 ## Justificación de decisiones
+Las decisiones de diseño se fundamentan en el conflicto mecánico central: la tensión entre intervenir ante una anomalía y obedecer un sistema de reglas bajo incertidumbre.
+
+Se optó por una interfaz minimalista sin ayudas externas (minimapa, indicadores de peligro o barra de vida) para asegurar que la dificultad provenga de la interpretación del sistema y la memoria activa del jugador, no de señales visuales correctivas.
+
+El núcleo del gameplay se centra en el cumplimiento de reglas estrictas con consecuencias inmediatas ante el error. Esto refuerza la responsabilidad del jugador y sostiene la tensión psicológica constante, alineándose con la estética de terror basada en anticipación y error humano.
 
 ---
 
