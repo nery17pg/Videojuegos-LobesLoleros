@@ -131,6 +131,35 @@ No busca acción constante, sino interpretar patrones y dominar reglas ocultas.
 ---
 
 ## UI conceptual
+La interfaz está pensada para ser clara y sencilla. No busca llenar la pantalla de información ni facilitar demasiado las decisiones del jugador. La idea es mantener la tensión y hacer que cada acción tenga peso.
+
+No hay elementos visibles todo el tiempo como barras o mapas. La información debe buscarse dentro del propio entorno del juego. La dificultad no viene de reflejos rápidos, sino de recordar las reglas y aplicarlas correctamente.
+
+
+### Estado del jugador
+
+No existe una barra de vida permanente en pantalla.
+
+Cuando el jugador comete un error, se muestran señales claras pero breves:
+
+- Desenfoque en los bordes de la pantalla.
+- Sonido alterado por unos segundos.
+- Oscurecimiento ligero de la imagen.
+
+Estos efectos duran poco tiempo y luego desaparecen para no afectar la visibilidad. El jugador debe prestar atención a estos cambios para saber cuántas oportunidades le quedan.
+
+
+### Cuaderno de reglas
+
+Las reglas están guardadas en un cuaderno dentro de la caseta de vigilancia.
+
+- Solo puede consultarse desde ahí.
+- El juego no se detiene completamente al leerlo.
+- El jugador debe decidir cuándo es seguro regresar a revisar las reglas.
+
+Esto refuerza la importancia de la memoria y la planificación.
+
+
 
 ---
 
