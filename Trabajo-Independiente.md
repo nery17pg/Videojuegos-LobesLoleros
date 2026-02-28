@@ -133,6 +133,10 @@ Se optó por una interfaz minimalista sin ayudas externas (minimapa, indicadores
 
 El núcleo del gameplay se centra en el cumplimiento de reglas estrictas con consecuencias inmediatas ante el error. Esto refuerza la responsabilidad del jugador y sostiene la tensión psicológica constante, alineándose con la estética de terror basada en anticipación y error humano.
 
+La progresión se construye mediante el incremento de complejidad cognitiva (más reglas, mayor ambigüedad y superposición de anomalías), en lugar de aumentar la velocidad o la acción. Esta decisión responde al perfil de jugador orientado a desafío sistémico y dominio progresivo.
+
+En conjunto, todas las decisiones buscan coherencia entre mecánicas, dinámicas y estéticas, asegurando que el miedo emerja del sistema y no de estímulos externos directos.
+
 ---
 
 ## UI conceptual
