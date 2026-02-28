@@ -95,6 +95,34 @@ De esta manera, todos los elementos del diseño trabajan para reforzar la fantas
 ---
 
 ## Perfil detallado
+- **Nivel de experiencia:** Intermedio. Ya domina controles estándar en primera persona y comprende sistemas de reglas en videojuegos.  
+- **Edad estimada:** 18–30 años.  
+- **Preferencia de género:** Terror psicológico, thriller narrativo, experiencias inmersivas de baja acción y alta tensión mental.  
+
+### Tipo de jugador 
+Se alinea con el arquetipo de jugador orientado a desafío cognitivo y control sistémico.
+No busca acción constante, sino interpretar patrones y dominar reglas ocultas.
+
+### Motivaciones
+- **Curiosidad:** Desea comprender el sistema interno del juego, descubrir patrones y anticipar consecuencias.  
+- **Supervivencia bajo presión:** Disfruta la tensión derivada del riesgo latente.  
+- **Dominio progresivo:** Encuentra satisfacción en pasar de la confusión inicial al control parcial del entorno.  
+- **Automejora:** Tolera el error si percibe aprendizaje claro.
+
+ ### Conducta durante la partido  
+- Observa con detenimiento el entorno.  
+- Memoriza rutas y reglas activas.  
+- Se detiene antes de actuar; no responde impulsivamente.  
+- Analiza consecuencias después de cada fallo.  
+- Optimiza recorridos tras cada noche completada.
+
+### Perfil cognitivo  
+- **Alta tolerancia a la ambigüedad controlada.**  
+- **Buena memoria de trabajo:** necesaria para recordar múltiples reglas activas.  
+- **Capacidad de inhibición conductual:** Puede resistir el impulso de investigar cuando la regla lo prohíbe.  
+- **Procesamiento analítico:** Interpreta anomalías como variables dentro de un sistema, no solo como estímulos de miedo.  
+
+---
 
 ---
 
