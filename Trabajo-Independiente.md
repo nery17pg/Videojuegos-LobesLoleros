@@ -100,7 +100,7 @@ De esta manera, todos los elementos del diseño trabajan para reforzar la fantas
 - **Preferencia de género:** Terror psicológico, thriller narrativo, experiencias inmersivas de baja acción y alta tensión mental.  
 
 ### Tipo de jugador 
-Se alinea con el arquetipo de jugador orientado a desafío cognitivo y control sistémico.
+Prefiere juegos donde el reto principal es mental y estratégico.
 No busca acción constante, sino interpretar patrones y dominar reglas ocultas.
 
 ### Motivaciones
@@ -122,7 +122,23 @@ No busca acción constante, sino interpretar patrones y dominar reglas ocultas.
 - **Capacidad de inhibición conductual:** Puede resistir el impulso de investigar cuando la regla lo prohíbe.  
 - **Procesamiento analítico:** Interpreta anomalías como variables dentro de un sistema, no solo como estímulos de miedo.  
 
----
+### Perfil emocional  
+- Busca ansiedad sostenida, no sobresaltos constantes.  
+- Disfruta la paranoia ambiental.  
+- Valora la sensación de falsa seguridad seguida de ruptura de expectativa.  
+- Acepta el castigo si percibe coherencia sistémica.
+  
+### Necesidades 
+- Reglas claras pero no sobreexplicadas.  
+- Consistencia entre causa y consecuencia.  
+- Curva de complejidad progresiva.  
+- Retroalimentación inmediata que indique que el error fue suyo y no del sistema.  
+
+### Factores de abandono  
+- Falta de claridad en reglas.  
+- Eventos que parezcan injustificados.  
+- Sobrecarga cognitiva.  
+- Repetición sin nuevas variables.
 
 ---
 
