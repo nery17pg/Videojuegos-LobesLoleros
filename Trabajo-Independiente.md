@@ -111,5 +111,11 @@ De esta manera, todos los elementos del diseño trabajan para reforzar la fantas
 ---
 
 ## Influencias
+Nuestra idea toma influencias de múltiples juegos con el mismo mecanismo principal de detección de anomalías; los juegos más destacados que tomamos como referentes fueron:
 
+- ***The Exit 8:*** Videojuego cuyo objetivo es atravesar un mismo pasadizo subterráneo detectando anomalías hasta alcanzar la “salida 8”. Las reglas son simples, si no encuentras anomalías, avanzas, y si encuentras una anomalía te das media vuelta y regresas. Si no se cumplen estas reglas, automáticamente se reinicia todo progreso y hay que empezar de nuevo. El juego no le da un margen de error al jugador y lo castiga reiniciando su progreso al cometer cualquier error. Otros juegos destacables con mecánicas iguales, pero diferentes escenarios, son: *The Last Stop* y *Shinkansen 0*.
+
+- ***I'm on Observation Duty:*** Se basa en la detección de anomalías; sin embargo, no se permite que el jugador se mueva libremente en un espacio tridimensional como en los títulos mencionados anteriormente. En cambio, se tiene una vista fija a cierto número de escenarios, con un par de efectos especiales que simulan ser un video en tiempo real de cámaras de seguridad. El objetivo del jugador es controlar dichas cámaras y encontrar (reportar) anomalías en las diferentes zonas a vigilar. Dichas anomalías consisten en simples movimientos de objetos hasta la presencia de intrusos escalofriantes y seres sobrenaturales. Otros juegos destacables con mecánicas iguales o parecidas son: *Caught on Camera* y *Alternate Watch*.
+
+- ***That's Not My Neighbor:*** El jugador toma el papel de portero de un edificio; tiene que comparar la información que tiene de los vecinos con la apariencia y palabras de la persona que intenta acceder al edificio. El jugador debe detectar anomalías y decidir si deja o no pasar a la persona (la cual podría ser un doppelganger). El usuario puede cometer errores y no se dará cuenta hasta el final de la partida; si hizo algo mal, su personaje no sobrevivirá al final del turno. Otros juegos destacables similares a este título son: *No, I'm Not a Human* y *Quarantine Zone: The Last Check*.
 ---
