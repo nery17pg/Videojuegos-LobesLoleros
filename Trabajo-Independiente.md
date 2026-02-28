@@ -168,7 +168,32 @@ Las reglas están guardadas en un cuaderno dentro de la caseta de vigilancia.
 
 Esto refuerza la importancia de la memoria y la planificación.
 
+### Sistema de reportes
 
+El reporte es la principal forma de actuar frente a una anomalía.
+
+- Solo puede hacerse desde ciertos puntos del entorno.
+- El jugador registra lo que observa sin tocar directamente el fenómeno.
+- Si el reporte es correcto, la anomalía desaparece.
+- Si es incorrecto, ocurre una consecuencia negativa inmediata.
+
+No hay ayudas que indiquen la respuesta correcta; todo depende de la atención del jugador.
+
+
+### Tiempo
+
+El turno va de 12 a.m. a 8 a.m. dentro del juego.
+
+El jugador puede consultar la hora en un reloj de pared dentro de la caseta. No hay cronómetro visible en pantalla todo el tiempo. En ciertos momentos puede escucharse una campana que marca el paso de las horas.
+
+
+### Sin ayudas externas
+
+- No hay minimapa.
+- No hay marcadores de objetivos.
+- No hay explicaciones en pantalla cuando ocurre algo extraño.
+
+El jugador debe observar, recordar y decidir por sí mismo.
 
 ---
 
