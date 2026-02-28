@@ -214,6 +214,41 @@ El jugador debe observar, recordar y decidir por sí mismo.
 ---
 
 ## Progresión
+El sistema de progresión se basa en **aprendizaje, memoria y dominio progresivo de las reglas**.
+
+### Progresión lineal (por noches)
+Al sobrevivir un turno completo de 8 horas, el jugador demuestra dominio en las reglas activas durante esa noche; completar una noche desbloquea:
+
+* Nuevas reglas
+* Nuevas anomalías
+* Cambios ligeros en el entorno que alteran los patrones ya aprendidos
+
+El progreso no se mide por puntaje, sino por supervivencia constante.
+
+### Escalado de dificultad
+La dificultad aumenta de manera cognitiva y **sistemática**:
+
+* Aumento del número de reglas activas simultáneamente
+* Anomalías menos evidentes
+* Menor margen de tiempo para reaccionar a eventos específicos
+
+### Progresión por aprendizaje
+
+* El jugador recuerda las reglas sin necesidad del cuaderno
+* Reconoce comportamientos normales
+* Detecta anomalías sutiles
+
+### Curva de progresión
+La progresión mantiene al jugador tenso sin romper el ritmo:
+
+* Noches iniciales: Aprendizaje, **reglas** claras, anomalías **fácilmente** detectables
+* Noches intermedias: Combinación de **anomalías** simples y complejas, mayor presión
+* Noches avanzadas: Ambigüedad, aparición de eventos poco frecuentes, anomalías **difíciles** de detectar
+
+### Sensación de avance
+El jugador sabe que progresa cuando comete menos errores, duda menos, reconoce más fácilmente y sobrevive noches que antes le costaban.
+
+
 
 ---
 
