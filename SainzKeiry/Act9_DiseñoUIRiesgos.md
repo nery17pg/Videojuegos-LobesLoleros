@@ -37,9 +37,13 @@ Parpadeo de luces, niebla densa, distorsión visual.
 La UI no “explica”, sino que sugiere. El jugador interpreta.
 
 ***Feedback***
+
 •	Error leve → distorsión visual momentánea.
+
 •	Error grave → aparición hostil.
+
 •	Correcta aplicación de regla → estabilización del entorno.
+
 •	Fin de hora → campanada lejana.
 
 La retroalimentación es indirecta para reforzar incertidumbre.
@@ -49,11 +53,17 @@ La retroalimentación es indirecta para reforzar incertidumbre.
 El ciclo base del jugador es:
 
 1.	Recibir estado actual (hora + entorno).
+   
 2.	Patrullar zona asignada.
+   
 3.	Detectar anomalía.
+   
 4.	Recordar regla asociada.
+   
 5.	Tomar decisión.
+   
 6.	Recibir consecuencia.
+   
 7.	Avanzar el tiempo.
    
 Este loop se repite durante las 8 horas del turno.
@@ -61,18 +71,22 @@ Este loop se repite durante las 8 horas del turno.
 ***Dinámicas asociadas y cómo la UI las regula***
 
 Dinámica: Paranoia
+
 •	No saber exactamente cuál es la anomalía que le saldrá. 
 •	No saber si alguna regla se le está pasando.
 
 Dinámica: Vigilancia constante
+
 •	Sonidos direccionales obligan a usar audífonos.
 •	No hay minimapa permanente → obliga a memorizar el espacio.
 
 Dinámica: Duda antes de actuar
+
 •	La UI no confirma inmediatamente si la decisión fue correcta.
 •	El feedback es retardado.
 
 Dinámica: Aprendizaje por error
+
 •	El cuaderno de reglas está siempre accesible.
 •	Algunas reglas cambian por nivel.
 
