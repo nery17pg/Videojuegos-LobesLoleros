@@ -82,11 +82,12 @@ Genera tensión y aprendizaje sin desarrollar el juego completo.
   - Interactuar físicamente con una anomalía prohibida
   - Tomar una decisión que contradiga explícitamente una regla activa y agote las oportunidades restantes
 ## 9. Riesgos y trade-offs
-###Riesgos
+### Riesgos
 - **Repetitividad:** El loop puede volverse predecible si no hay suficiente variabilidad.
 - **Frustración excesiva:** El castigo inmediato puede provocar abandono si el aprendizaje no es claro.
 - **Sobrecarga cognitiva:** Demasiadas reglas simultáneas pueden saturar al jugador.
 - **Percepción de injusticia:** Si las reglas no son claras, la experiencia se percibe arbitraria.
+- 
 **Mayor riesgo:** 
 Que el sistema se perciba injusto o arbitrario. El mayor peligro no es la dificultad, sino que el jugador sienta que perdió sin entender por qué.
 
@@ -96,7 +97,7 @@ Este juego depende completamente de:
 - Claridad en la relación causa–efecto.
 - Si el jugador rompe una regla y no puede identificar exactamente qué hizo mal, la experiencia deja de ser tensión cognitiva y se convierte en frustración.
 
-###Trade-offs:
+### Trade-offs:
 Simplicidad mecánica vs. variedad de gameplay
 Decisión: Core loop simple.
 Ganancia:
