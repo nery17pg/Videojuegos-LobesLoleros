@@ -105,6 +105,7 @@ Ganancia:
 - Permite enfocarse en la tensión psicológica.
 Costo:
 - Puede volverse repetitivo si las anomalías no cambian lo suficiente.
+
 **2. Información limitada vs. claridad del sistema**
 Decisión: Interfaz mínima y sin ayudas extras.
 Ganancia:
@@ -113,6 +114,7 @@ Ganancia:
 Costo:
 - Los jugadores pueden sentirse perdidos.
 - Mayor riesgo de percibir el sistema como injusto.
+
 **3. Castigo inmediato vs. accesibilidad**
 Decisión: Romper alguna de las reglas desencadena consecuencias inmediatas.
 Ganancia: 
@@ -121,6 +123,7 @@ Ganancia:
 Costo:
 - Frustración en los jugadores primerizos.
 - Abandono del videojuego.
+
 **4. Aprendizaje por error vs. sensación de justicia**
 Decisión: El jugador aprende rompiendo las reglas.
 Ganancia: 
