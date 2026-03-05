@@ -6,9 +6,9 @@ Jugador intermedio orientado a desafío cognitivo y tensión psicológica.
 
 Motivaciones principales:
 
-Curiosidad (descubrir patrones y reglas)
-Supervivencia bajo presión
-Dominio progresivo del sistema
+- Curiosidad (descubrir patrones y reglas)
+- Supervivencia bajo presión
+- Dominio progresivo del sistema
 ## 4. Core Loop
 ## 5. Mecánicas principales
 ## 6. Dinámicas esperadas
