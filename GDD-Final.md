@@ -70,6 +70,7 @@ Genera tensión y aprendizaje sin desarrollar el juego completo.
   - Sistema de habilidades
   - Anomalías auditivas complejas
   - Multijugador
+  - Múltiples escenarios (cementerios)
   - Finales múltiples
 
 **Condición de victoria:**
