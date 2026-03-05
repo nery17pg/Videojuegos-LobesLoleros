@@ -10,9 +10,9 @@ Motivaciones principales:
 - Supervivencia bajo presión
 - Dominio progresivo del sistema
 ## 4. Core Loop
-## 5. Mecánicas principales
-## 6. Dinámicas esperadas
-## 7. Mundo y conflicto
-## 8. Interfaz conceptual
-## 9. MVP
-## 10. Riesgos y trade-offs
+## 5. Dinámicas esperadas
+## 6. Mundo y conflicto
+## 7. Interfaz conceptual
+## 8. MVP
+## 9. Riesgos y trade-offs
+## 10. Lo que eliminamos
