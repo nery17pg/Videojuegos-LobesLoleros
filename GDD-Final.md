@@ -130,24 +130,24 @@ Genera tensión y aprendizaje sin desarrollar el juego completo.
   - Múltiples escenarios (cementerios)
   - Finales múltiples
 
-# Sistema de reglas
+## Sistema de reglas
 
-## Ignorar anomalías
+**Ignorar anomalías**
 Cuando ocurran las siguientes anomalías, simplemente **ignóralas**:
 
 - Si el visitante no deseado es un ente humanoide.
 - Si parece ser que una lápida está duplicada.
 
-## Parpadear la linterna
+**Parpadear la linterna**
 Cuando ocurran las siguientes anomalías, **apaga y enciende (parpadea) tu linterna**:
 
 - Cuando las estatuas empiezan a murmurar.
 - Cuando alguna estatua esté llorando.
 
-## Visitantes no deseados
+**Visitantes no deseados**
 - Si el visitante no deseado es un **humano**, mándalo a casa.
 
-## Reportar como tipo “otro”
+**Reportar como tipo “otro”**
 Reporta las siguientes anomalías como tipo **“otro”**:
 
 - Cuando un visitante diga ser tu reemplazo.
@@ -155,7 +155,7 @@ Reporta las siguientes anomalías como tipo **“otro”**:
 - Cuando veas una tumba con tu nombre.
 - Si la puerta de la capilla cambia de estado (abrir o cerrarse) después de las **3 AM**.
 
-## Dirigirse a la caseta de seguridad
+**Dirigirse a la caseta de seguridad**
 Cuando ocurran las siguientes anomalías, **mantén apagada tu linterna y dirígete a la caseta de seguridad**:
 
 - Cuando hay sombras extrañas en el fondo.
@@ -163,14 +163,13 @@ Cuando ocurran las siguientes anomalías, **mantén apagada tu linterna y diríg
 - Cuando hay una neblina extraña.
 - Si el entorno se vuelve silencioso.
 
-## Encuentro con tu doble
+**Encuentro con tu doble**
 Si te ves a ti mismo en el fondo:
-
 - Tienes **15 segundos** para reportar las anomalías que hayas visto.
 - Debes retirarte inmediatamente.
 - Si se sobrepasa el tiempo, **tu doble te atacará y se perderá una vida**.
 
-## Penalización
+**Penalización**
 - Si una anomalía que debe reportarse (**anomalías de bajo nivel**) no se registra por el usuario, **se pierde una vida**.
 
 **Condición de victoria:**
