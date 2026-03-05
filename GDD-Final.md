@@ -87,7 +87,7 @@ Genera tensión y aprendizaje sin desarrollar el juego completo.
 - **Frustración excesiva:** El castigo inmediato puede provocar abandono si el aprendizaje no es claro.
 - **Sobrecarga cognitiva:** Demasiadas reglas simultáneas pueden saturar al jugador.
 - **Percepción de injusticia:** Si las reglas no son claras, la experiencia se percibe arbitraria.
-- 
+ 
 **Mayor riesgo:** 
 Que el sistema se perciba injusto o arbitrario. El mayor peligro no es la dificultad, sino que el jugador sienta que perdió sin entender por qué.
 
@@ -98,36 +98,36 @@ Este juego depende completamente de:
 - Si el jugador rompe una regla y no puede identificar exactamente qué hizo mal, la experiencia deja de ser tensión cognitiva y se convierte en frustración.
 
 ### Trade-offs:
-Simplicidad mecánica vs. variedad de gameplay
+**1. Simplicidad mecánica vs. variedad de gameplay**
 Decisión: Core loop simple.
 Ganancia:
-Fácil de entender.
-Permite enfocarse en la tensión psicológica.
+- Fácil de entender.
+- Permite enfocarse en la tensión psicológica.
 Costo:
-Puede volverse repetitivo si las anomalías no cambian lo suficiente.
-Información limitada vs. claridad del sistema
+- Puede volverse repetitivo si las anomalías no cambian lo suficiente.
+**2. Información limitada vs. claridad del sistema**
 Decisión: Interfaz mínima y sin ayudas extras.
 Ganancia:
-Mayor inmersión.
-Incrementa la paranoia ambiental.
+- Mayor inmersión.
+- Incrementa la paranoia ambiental.
 Costo:
-Los jugadores pueden sentirse perdidos.
-Mayor riesgo de percibir el sistema como injusto.
-Castigo inmediato vs. accesibilidad
+- Los jugadores pueden sentirse perdidos.
+- Mayor riesgo de percibir el sistema como injusto.
+**3. Castigo inmediato vs. accesibilidad**
 Decisión: Romper alguna de las reglas desencadena consecuencias inmediatas.
 Ganancia: 
-Incrementa la tensión y el miedo psicológico.
-Refuerza la importancia de las reglas y recordarlas.
+- Incrementa la tensión y el miedo psicológico.
+- Refuerza la importancia de las reglas y recordarlas.
 Costo:
-Frustración en los jugadores primerizos.
-Abandono del videojuego.
-Aprendizaje por error vs. sensación de justicia
+- Frustración en los jugadores primerizos.
+- Abandono del videojuego.
+**4. Aprendizaje por error vs. sensación de justicia**
 Decisión: El jugador aprende rompiendo las reglas.
 Ganancia: 
-Genera dominio progresivo del sistema.
-Hace que cada decisión tenga peso.
+- Genera dominio progresivo del sistema.
+- Hace que cada decisión tenga peso.
 Costo:
-Si la relación causa-efecto no es clara, se percibe como arbitrario.
+- Si la relación causa-efecto no es clara, se percibe como arbitrario.
 ## 10. Lo que eliminamos
 **Múltiples escenarios (cementerios).** El equipo tomó esta decisión debido a la falta de tiempo para poder diseñar e implementar escenarios radicalmente diferentes unos entre otros.
 
