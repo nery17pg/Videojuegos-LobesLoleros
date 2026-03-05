@@ -186,6 +186,29 @@ Si te ves a ti mismo en el fondo:
 **Penalización**
 - Si una anomalía que debe reportarse (**anomalías de bajo nivel**) no se registra por el usuario, **se pierde una vida**.
 
+# Sistema de anomalías
+
+**Anomalías de alto nivel**
+
+- **Visitante no deseado:** aparición de algún ente.
+- **Sombras en el fondo.**
+- **El jugador se ve a sí mismo en el fondo.**
+
+**Anomalías de medio nivel**
+
+- **Nombre en la tumba:** aparece en la tumba el nombre del vigilante.
+- **Cambio de estado de puertas:** la puerta de la capilla o alguna del entorno cambia de estado (se abre o se cierra).
+- **Luz extraña:** además de la luz de la caseta de seguridad y la linterna del jugador, no deberían existir más luces.
+- **Neblina extraña:** espesa neblina que obstruye significativamente la ya limitada visión del jugador.
+- **Ruidos extraños:** se escuchan risas, llantos o murmullos.
+
+**Anomalías de bajo nivel**
+
+- **Cambio de lugar:** cambia la ubicación de un objeto, ya sea de manera sutil o evidente.
+- **Desaparición / objeto extra:** elimina o agrega un objeto del entorno.
+- **Cambio de color:** cambia el color de los objetos.
+- **Levitación de objetos:** los objetos desafían las leyes de la física y flotan cuando no deberían.
+
 **Condición de victoria:**
   - Sobrevivir las 8 horas del turno sin perder todas las vidas
   - Aplicar correctamente las reglas hasta que el tiempo llegue al final del turno
