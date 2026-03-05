@@ -83,10 +83,10 @@ Genera tensión y aprendizaje sin desarrollar el juego completo.
   - Tomar una decisión que contradiga explícitamente una regla activa y agote las oportunidades restantes
 ## 9. Riesgos y trade-offs
 ###Riesgos
-**- Repetitividad:** El loop puede volverse predecible si no hay suficiente variabilidad.
-**- Frustración excesiva:** El castigo inmediato puede provocar abandono si el aprendizaje no es claro.
-**- Sobrecarga cognitiva:** Demasiadas reglas simultáneas pueden saturar al jugador.
-**- Percepción de injusticia:** Si las reglas no son claras, la experiencia se percibe arbitraria.
+- **Repetitividad:** El loop puede volverse predecible si no hay suficiente variabilidad.
+- **Frustración excesiva:** El castigo inmediato puede provocar abandono si el aprendizaje no es claro.
+- **Sobrecarga cognitiva:** Demasiadas reglas simultáneas pueden saturar al jugador.
+- **Percepción de injusticia:** Si las reglas no son claras, la experiencia se percibe arbitraria.
 **Mayor riesgo:** 
 Que el sistema se perciba injusto o arbitrario. El mayor peligro no es la dificultad, sino que el jugador sienta que perdió sin entender por qué.
 
