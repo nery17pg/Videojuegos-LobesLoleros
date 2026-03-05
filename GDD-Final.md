@@ -100,35 +100,46 @@ Este juego depende completamente de:
 ### Trade-offs:
 **1. Simplicidad mecánica vs. variedad de gameplay**
 Decisión: Core loop simple.
+
 Ganancia:
 - Fácil de entender.
 - Permite enfocarse en la tensión psicológica.
+
 Costo:
 - Puede volverse repetitivo si las anomalías no cambian lo suficiente.
 
 **2. Información limitada vs. claridad del sistema**
+
 Decisión: Interfaz mínima y sin ayudas extras.
+
 Ganancia:
 - Mayor inmersión.
 - Incrementa la paranoia ambiental.
+
 Costo:
 - Los jugadores pueden sentirse perdidos.
 - Mayor riesgo de percibir el sistema como injusto.
 
 **3. Castigo inmediato vs. accesibilidad**
+
 Decisión: Romper alguna de las reglas desencadena consecuencias inmediatas.
+
 Ganancia: 
 - Incrementa la tensión y el miedo psicológico.
 - Refuerza la importancia de las reglas y recordarlas.
+
 Costo:
 - Frustración en los jugadores primerizos.
 - Abandono del videojuego.
 
 **4. Aprendizaje por error vs. sensación de justicia**
+
 Decisión: El jugador aprende rompiendo las reglas.
+
 Ganancia: 
 - Genera dominio progresivo del sistema.
 - Hace que cada decisión tenga peso.
+
 Costo:
 - Si la relación causa-efecto no es clara, se percibe como arbitrario.
 ## 10. Lo que eliminamos
