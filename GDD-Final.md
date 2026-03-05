@@ -23,6 +23,24 @@ El juego está pensado para las juventudes con pasión en el descubrimiento/expl
 
 ## 5. Dinámicas esperadas
 ## 6. Mundo y conflicto
+**Mundo**
+
+El juego se desarrolla en un cementerio durante el turno nocturno del protagonista (10:00pm - 6:00pm), por lo tanto el entorno estará completamente oscuro la mayoría del tiempo a menos que el jugador utilice la linterna para aluzar un área limitada.
+
+El cementerio idealmente contará con las siguientes zonas:
+- Caseta de vigilancia (zona segura limitada)
+- Sendero (se extenderá por todo el mapa para que el jugador pueda moverse)
+- Capilla
+- Lápidas antiguas
+- Mausoleos
+- Jardín de estatuas
+- Campo de cruces de madera
+- Árbol de las muñecas (con muñecas colgadas de sus ramas)
+
+**Conflicto mecánico central**
+
+Se basa en la tensión entre actuar e inhibirse. Ante cada situación rara que se presente en la partida, el jugador debe decidir entre intervenir siguiendo su intuición o seguir las reglas que ya se establecieron. El videojuego no castiga la falta de habilidad, sino la mala interpretación del sistema, lo que genera consecuencias inmediatas.
+
 ## 7. Interfaz conceptual
 La interfaz se planea que no esté saturada de elementos, ya que se busca reducir la tensión cognitiva y de no ofrecer ayudas externas que simplifiquen la toma de decisiones. La información disponible para el jugador será limitada y contextual. Las reglas estarán accesibles mediante un cuaderno o el celular dentro del juego, reforzando la necesidad de memoria activa. Las anomalías no tendrán explicaciones en pantalla. Se busca que la dificultad venga de la interpretación y aplicación correcta de las reglas, no de indicadores visuales.
 
