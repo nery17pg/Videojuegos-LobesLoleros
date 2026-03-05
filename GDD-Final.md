@@ -144,7 +144,7 @@ Genera tensión y aprendizaje sin desarrollar el juego completo.
   - Múltiples escenarios (cementerios)
   - Finales múltiples
 
-## Sistema de reglas
+**Sistema de reglas**
 
 **Ignorar anomalías**
 Cuando ocurran las siguientes anomalías, simplemente **ignóralas**:
@@ -186,7 +186,7 @@ Si te ves a ti mismo en el fondo:
 **Penalización**
 - Si una anomalía que debe reportarse (**anomalías de bajo nivel**) no se registra por el usuario, **se pierde una vida**.
 
-# Sistema de anomalías
+**Sistema de anomalías**
 
 **Anomalías de alto nivel**
 
