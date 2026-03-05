@@ -8,6 +8,13 @@ Un thriller psicológico en primera persona donde el jugador trabaja como vigila
 * Anomalía se refiere a fenómenos tan insignificantes como el cambio de color o ubicación de un objeto, a más notorios como un visitante no esperado.
 
 ## 2. Experiencia central
+
+- Ansiedad sostenida
+- Paranoia ambiental
+- Duda constante entre actuar o contenerse
+- Satisfacción por dominio progresivo del sistema
+- El miedo no proviene de persecuciones constantes, sino de la responsabilidad. El error siempre es del jugador.
+
 ## 3. Perfil de jugador
 El juego está pensado para las juventudes con pasión en el descubrimiento/exploración, que sean impulsados por la curiosidad y les interese las experiencias de supervivencia bajo presión. Según la taxonomía de Bartle, podríamos categorizar a nuestro jugador objetivo como del tipo “explorador”, siendo su mayor placer el explorar y aprender, lo cual encaja con el enfoque de nuestro juego basado en el dominio progresivo del sistema.
 
