@@ -82,13 +82,8 @@ Genera tensión y aprendizaje sin desarrollar el juego completo.
   - Tomar una decisión que contradiga explícitamente una regla activa y agote las oportunidades restantes
 ## 9. Riesgos y trade-offs
 ## 10. Lo que eliminamos
-- Combate directo contra entidades
-- Sistema de armas
-- Enemigos persiguiendo activamente
-- Historia narrativa compleja en MVP
-- Sistema de mejora de habilidades
-- Multijugador
-- Sistema de diálogo
-- Finales múltiples
-- Música dinámica invasiva
-- HUD con indicadores constantes
+**Múltiples escenarios (cementerios).** El equipo tomó esta decisión debido a la falta de tiempo para poder diseñar e implementar escenarios radicalmente diferentes unos entre otros.
+
+**Entorno 3D.** La concepción inicial del juego contemplaba una exploración de un entorno tridimensional, sin embargo, modelar todos los escenarios y anomalías tomaría demasiado tiempo, lo cual lo hizo inviable y preferimos un entorno 2D; si bien se sacrifica inmersión ya que algunas mecánicas descartadas estaban relacionadas al movimiento libre del personaje, esto ahorra tiempos y permitirá al equipo lograr un producto mínimo viable en el tiempo limitado que tenemos.
+
+**Mecánicas de reglas específicas.** Se descartaron ciertos tipos de reglas (por ejemplo dar la vuelta o voltear hacia el lado contrario) al encontrarse con una anomalía de alto nível
