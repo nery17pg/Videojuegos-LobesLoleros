@@ -82,3 +82,13 @@ Genera tensión y aprendizaje sin desarrollar el juego completo.
   - Tomar una decisión que contradiga explícitamente una regla activa y agote las oportunidades restantes
 ## 9. Riesgos y trade-offs
 ## 10. Lo que eliminamos
+- Combate directo contra entidades
+- Sistema de armas
+- Enemigos persiguiendo activamente
+- Historia narrativa compleja en MVP
+- Sistema de mejora de habilidades
+- Multijugador
+- Sistema de diálogo
+- Finales múltiples
+- Música dinámica invasiva
+- HUD con indicadores constantes
