@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://n8hed81b1eah"]
+
+[ext_resource type="Texture2D" uid="uid://ct8xmadiv73iu" path="res://art/art_testing/Capibara_del8.png" id="1_1b0rl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hd3t7"]
+radius = 82.0
+height = 234.0
+
+[node name="Capibara" type="CharacterBody2D" unique_id=1196197006]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1725294691]
+position = Vector2(520, 296)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_1b0rl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=303469874]
+position = Vector2(517, 298)
+shape = SubResource("CapsuleShape2D_hd3t7")

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bce25quswbb2q"]
+
+[ext_resource type="Script" uid="uid://d2k3gd6hle5wc" path="res://capibara_rigido.gd" id="1_2qyfh"]
+[ext_resource type="Texture2D" uid="uid://ct8xmadiv73iu" path="res://art/art_testing/Capibara_del8.png" id="2_ib427"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3n66x"]
+size = Vector2(135.5, 200.5)
+
+[node name="CapibaraRigido" type="RigidBody2D" unique_id=1613097158]
+gravity_scale = 0.0
+script = ExtResource("1_2qyfh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1640290376]
+position = Vector2(522, 284)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_ib427")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2043649463]
+position = Vector2(522.25, 286.75)
+shape = SubResource("RectangleShape2D_3n66x")
