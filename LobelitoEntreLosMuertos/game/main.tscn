@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://2wlp846mva0l" path="res://anomalies/capibara.gd" id="3_emt18"]
 [ext_resource type="Texture2D" uid="uid://c6dvbura3cr2t" path="res://art/background/camino.png" id="3_wjctj"]
 [ext_resource type="PackedScene" uid="uid://bce25quswbb2q" path="res://anomalies/capibara_rigido.tscn" id="4_vop5m"]
+[ext_resource type="PackedScene" uid="uid://cwg4rfr8rxdfm" path="res://player/lobelito.tscn" id="6_wjctj"]
 
 [node name="Main" type="Node2D" unique_id=294167655]
 script = ExtResource("1_xtpaf")
@@ -26,5 +27,7 @@ script = ExtResource("3_emt18")
 
 [node name="CapibaraRigido" parent="." unique_id=1613097158 instance=ExtResource("4_vop5m")]
 position = Vector2(278, 24)
+
+[node name="lobelito" parent="." unique_id=1034264886 instance=ExtResource("6_wjctj")]
 
 [connection signal="input_event" from="Capibara" to="." method="dialogo_capibara"]

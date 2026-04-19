@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cwg4rfr8rxdfm"]
+
+[ext_resource type="Script" uid="uid://c7dfyyb1eh0k" path="res://lobelito.gd" id="1_q552c"]
+[ext_resource type="Texture2D" uid="uid://rakxbm01n7hh" path="res://art/Lobelito_derecha.png" id="2_cnaus"]
+[ext_resource type="Texture2D" uid="uid://hqpxx34bjp85" path="res://art/Lobelito.png" id="2_wru57"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wru57"]
+radius = 42.0
+height = 210.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_km2y4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_cnaus")
+}],
+"loop": true,
+"name": &"lobo_derecha",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wru57")
+}],
+"loop": true,
+"name": &"lobo_izquierda",
+"speed": 5.0
+}]
+
+[node name="lobelito" type="CharacterBody2D" unique_id=1034264886]
+script = ExtResource("1_q552c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1691535369]
+position = Vector2(-7, 544)
+shape = SubResource("CapsuleShape2D_wru57")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=152939335]
+position = Vector2(-4, 536)
+sprite_frames = SubResource("SpriteFrames_km2y4")
+animation = &"lobo_derecha"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=503969149]
+position = Vector2(-44, 325)
+process_callback = 0
+position_smoothing_enabled = true
