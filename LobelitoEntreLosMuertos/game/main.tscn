@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bce25quswbb2q" path="res://anomalies/capibara_rigido.tscn" id="4_vop5m"]
 [ext_resource type="PackedScene" uid="uid://cwg4rfr8rxdfm" path="res://player/lobelito.tscn" id="6_wjctj"]
 [ext_resource type="Texture2D" uid="uid://ciworhjvhhqtb" path="res://art/Light.png" id="8_xkbyp"]
+[ext_resource type="Script" uid="uid://cj5sst77pjiu5" path="res://game/luz.gd" id="9_lx3aj"]
 
 [node name="Main" type="Node2D" unique_id=294167655]
 script = ExtResource("1_xtpaf")
@@ -30,14 +31,15 @@ script = ExtResource("3_emt18")
 position = Vector2(278, 24)
 
 [node name="lobelito" parent="." unique_id=1034264886 instance=ExtResource("6_wjctj")]
-position = Vector2(620, 0)
-
-[node name="Fog" type="Sprite2D" parent="." unique_id=918878272]
+position = Vector2(621, 0)
 
 [node name="Luz" type="PointLight2D" parent="." unique_id=1986624861]
-position = Vector2(624, 341)
+position = Vector2(621, 370)
 blend_mode = 2
 texture = ExtResource("8_xkbyp")
+script = ExtResource("9_lx3aj")
+
+[node name="Fog" type="Sprite2D" parent="." unique_id=918878272]
 
 [node name="Oscuridad" type="CanvasModulate" parent="." unique_id=930947093]
 color = Color(0.03250689, 0.09005656, 0.08164092, 1)
