@@ -3,7 +3,7 @@ extends Node2D
 const LightTexture = preload("res://art/Light.png")
 const GRID_SIZE = 350
 
-@onready var fog = $Fog
+# @onready var fog = $Fog
 
 var display_width = ProjectSettings.get("display/window/size/viewport_width")
 var display_height = ProjectSettings.get("display/window/size/viewport_height")
