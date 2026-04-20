@@ -2,11 +2,9 @@
 
 [ext_resource type="Script" uid="uid://g2oleiuxq7sj" path="res://game/main.gd" id="1_xtpaf"]
 [ext_resource type="Texture2D" uid="uid://xb8pqcxv1usf" path="res://art/background/placeholderMap.png" id="2_dgpao"]
-[ext_resource type="PackedScene" uid="uid://n8hed81b1eah" path="res://anomalies/capibara.tscn" id="2_emt18"]
-[ext_resource type="Script" uid="uid://2wlp846mva0l" path="res://anomalies/capibara.gd" id="3_emt18"]
 [ext_resource type="Texture2D" uid="uid://c6dvbura3cr2t" path="res://art/background/camino.png" id="3_wjctj"]
-[ext_resource type="PackedScene" uid="uid://bce25quswbb2q" path="res://anomalies/capibara_rigido.tscn" id="4_vop5m"]
 [ext_resource type="PackedScene" uid="uid://cwg4rfr8rxdfm" path="res://player/lobelito.tscn" id="6_wjctj"]
+[ext_resource type="PackedScene" uid="uid://cg5qx0p3p6vgd" path="res://objects/caseta.tscn" id="7_wjctj"]
 [ext_resource type="Texture2D" uid="uid://ciworhjvhhqtb" path="res://art/Light.png" id="8_xkbyp"]
 [ext_resource type="Script" uid="uid://cj5sst77pjiu5" path="res://game/luz.gd" id="9_lx3aj"]
 
@@ -40,12 +38,8 @@ texture = ExtResource("2_dgpao")
 position = Vector2(576.5, 324)
 texture = ExtResource("3_wjctj")
 
-[node name="Capibara" parent="." unique_id=1196197006 instance=ExtResource("2_emt18")]
-disable_mode = 1
-script = ExtResource("3_emt18")
-
-[node name="CapibaraRigido" parent="." unique_id=1613097158 instance=ExtResource("4_vop5m")]
-position = Vector2(278, 24)
+[node name="caseta" parent="." unique_id=1519634108 instance=ExtResource("7_wjctj")]
+position = Vector2(913, 452)
 
 [node name="lobelito" parent="." unique_id=1034264886 instance=ExtResource("6_wjctj")]
 position = Vector2(621, 0)
@@ -57,6 +51,5 @@ texture = ExtResource("8_xkbyp")
 script = ExtResource("9_lx3aj")
 
 [node name="Oscuridad" type="CanvasModulate" parent="." unique_id=930947093]
+visible = false
 color = Color(0.03250689, 0.09005656, 0.08164092, 1)
-
-[connection signal="input_event" from="Capibara" to="." method="dialogo_capibara"]

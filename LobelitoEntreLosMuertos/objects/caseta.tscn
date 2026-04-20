@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cg5qx0p3p6vgd"]
+
+[ext_resource type="Script" uid="uid://8k4qj0sp7uyb" path="res://objects/caseta.gd" id="1_jerl7"]
+[ext_resource type="Texture2D" uid="uid://dje8aahfp3spi" path="res://art/background_elements/Caseta.png" id="2_15bvj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5hslf"]
+size = Vector2(241, 303)
+
+[node name="caseta" type="Area2D" unique_id=1519634108]
+script = ExtResource("1_jerl7")
+next_scene_path = "res://game/inside.tscn"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=370727779]
+texture = ExtResource("2_15bvj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=511652909]
+position = Vector2(-0.5, 1.5)
+shape = SubResource("RectangleShape2D_5hslf")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ng1bggqsky4u"]
+
+[ext_resource type="Texture2D" uid="uid://bdqpr4jdof8r6" path="res://art/background/placeholderInsidepng.png" id="1_67xbl"]
+
+[node name="inside" type="Node2D" unique_id=465977253]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=897210778]
+position = Vector2(576, 324)
+texture = ExtResource("1_67xbl")
+
+[node name="Label" type="Label" parent="Sprite2D" unique_id=1375391066]
+offset_left = -88.0
+offset_top = -23.0
+offset_right = 66.0
+text = "*Interior de caseta*"
