@@ -51,4 +51,71 @@ texture = ExtResource("8_xkbyp")
 script = ExtResource("9_lx3aj")
 
 [node name="Oscuridad" type="CanvasModulate" parent="." unique_id=930947093]
+visible = false
 color = Color(0.03250689, 0.09005656, 0.08164092, 1)
+
+[node name="NombresZonas" type="Label" parent="." unique_id=1874981034]
+offset_left = -2973.0
+offset_top = 83.0
+offset_right = -2933.0
+offset_bottom = 106.0
+text = "*Capilla*"
+
+[node name="Label2" type="Label" parent="NombresZonas" unique_id=676727357]
+layout_mode = 0
+offset_left = 1208.0
+offset_top = 22.0
+offset_right = 1292.0
+offset_bottom = 56.0
+text = "*Estatuas*"
+
+[node name="Label" type="Label" parent="NombresZonas" unique_id=1170523797]
+layout_mode = 0
+offset_left = 2347.0
+offset_top = 36.0
+offset_right = 2431.0
+offset_bottom = 59.0
+text = "Mausoleos"
+
+[node name="Label3" type="Label" parent="NombresZonas" unique_id=195616524]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 3570.0
+offset_top = 9.0
+offset_right = 3656.0
+offset_bottom = 20.5
+text = "Caseta de viigilancia"
+
+[node name="Label4" type="Label" parent="NombresZonas" unique_id=787990032]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.2080001
+anchor_bottom = 2.342
+offset_left = 4678.0
+offset_top = -2.0
+offset_right = 4733.44
+offset_bottom = -32.866
+text = "Cruces de madera"
+
+[node name="Label5" type="Label" parent="NombresZonas" unique_id=732348905]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 8.576
+offset_left = 5856.0
+offset_top = -2.0
+offset_right = 5385.68
+offset_bottom = 39.0
+text = "Lápidas antiguas"
+
+[node name="Label6" type="Label" parent="NombresZonas" unique_id=956600098]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 3.9150002
+anchor_bottom = 1.0
+offset_left = 7011.0
+offset_top = -4.0
+offset_right = 6901.95
+offset_bottom = -4.0
+text = "Arbol de las muñecas"
