@@ -1,58 +1,15 @@
-[gd_scene format=3 uid="uid://bkmgff817mawo"]
+[gd_scene format=3 uid="uid://btr4e4lgpw0kx"]
 
-[ext_resource type="Script" uid="uid://c67vavvcnia48" path="res://game/menu.gd" id="1_abghd"]
+[ext_resource type="Texture2D" uid="uid://bdqpr4jdof8r6" path="res://art/background/placeholderInsidepng.png" id="1_abghd"]
 
-[node name="Menu" type="Control" unique_id=329741928]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_abghd")
+[node name="inside" type="Node2D" unique_id=465977253]
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=2008647457]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=897210778]
+position = Vector2(576, 324)
+texture = ExtResource("1_abghd")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=731997411]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -29.5
-offset_right = 20.0
-offset_bottom = 29.5
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="Label" type="Label" parent="VBoxContainer" unique_id=1651015007]
-layout_mode = 2
-theme_override_font_sizes/font_size = 60
-text = "LOBELITO"
-
-[node name="Button" type="Button" parent="VBoxContainer" unique_id=10176022]
-layout_mode = 2
-text = "Nueva partida"
-
-[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1454674077]
-layout_mode = 2
-text = "Cargar partida"
-
-[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1932598038]
-layout_mode = 2
-text = "Salir"
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1806319901]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_nueva_partida_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_cargar_partida_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[node name="Label" type="Label" parent="Sprite2D" unique_id=1375391066]
+offset_left = -88.0
+offset_top = -23.0
+offset_right = 66.0
+text = "*Interior de caseta*"

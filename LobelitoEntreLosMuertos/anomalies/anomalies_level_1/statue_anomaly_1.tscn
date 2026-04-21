@@ -7,6 +7,7 @@
 script = ExtResource("1_wsgeg")
 level = 1
 type = "Cambio de objeto"
+damage = 1
 should_be_reported = true
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 

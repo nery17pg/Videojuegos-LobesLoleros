@@ -7,6 +7,8 @@
 script = ExtResource("1_qy0b6")
 level = 1
 type = "Cambio de objeto"
+damage = 1
+should_be_reported = true
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=521121590]

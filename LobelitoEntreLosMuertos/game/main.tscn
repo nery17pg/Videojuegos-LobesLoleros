@@ -5,8 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://c6dvbura3cr2t" path="res://art/background/camino.png" id="3_wjctj"]
 [ext_resource type="PackedScene" uid="uid://cwg4rfr8rxdfm" path="res://player/lobelito.tscn" id="6_wjctj"]
 [ext_resource type="PackedScene" uid="uid://cg5qx0p3p6vgd" path="res://objects/caseta.tscn" id="7_wjctj"]
-[ext_resource type="Script" uid="uid://8pansm42anlh" path="res://game/control.gd" id="8_lx3aj"]
+[ext_resource type="Script" path="res://game/control.gd" id="8_lx3aj"]
 [ext_resource type="Texture2D" uid="uid://ciworhjvhhqtb" path="res://art/Light.png" id="8_xkbyp"]
+[ext_resource type="Texture2D" uid="uid://c56a1nybsajxb" path="res://art/background_elements/estatua_1.png" id="9_itumj"]
 [ext_resource type="Script" uid="uid://cj5sst77pjiu5" path="res://game/luz.gd" id="9_lx3aj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
@@ -52,6 +53,7 @@ texture = ExtResource("8_xkbyp")
 script = ExtResource("9_lx3aj")
 
 [node name="Oscuridad" type="CanvasModulate" parent="." unique_id=930947093]
+visible = false
 color = Color(0.03250689, 0.09005656, 0.08164092, 1)
 
 [node name="NombresZonas" type="Label" parent="." unique_id=1874981034]
@@ -193,8 +195,18 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "Cancelar"
 
+[node name="Timer" type="Timer" parent="." unique_id=456648845]
+wait_time = 10.0
+autostart = true
+
+[node name="Estatua" type="Sprite2D" parent="." unique_id=205102565]
+visible = false
+position = Vector2(-1792, 299)
+texture = ExtResource("9_itumj")
+
 [connection signal="pressed" from="CanvasLayer/Control/BtnReporte" to="CanvasLayer/Control" method="_on_btn_reporte_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/PanelReporte/VBoxContainer/FilaBotones/BtnObjeto" to="CanvasLayer/Control" method="_on_btn_objeto_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/PanelReporte/VBoxContainer/FilaBotones/BtnEntorno" to="CanvasLayer/Control" method="_on_btn_entorno_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/PanelReporte/VBoxContainer/FilaBotones/BtnOtro" to="CanvasLayer/Control" method="_on_btn_otro_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/PanelReporte/VBoxContainer/BtnCancelar" to="CanvasLayer/Control" method="_on_btn_cancelar_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
