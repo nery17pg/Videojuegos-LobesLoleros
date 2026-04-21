@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bkmgff817mawo"]
+
+[ext_resource type="Script" uid="uid://c67vavvcnia48" path="res://game/menu.gd" id="1_abghd"]
+
+[node name="Menu" type="Control" unique_id=329741928]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_abghd")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2008647457]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=731997411]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -29.5
+offset_right = 20.0
+offset_bottom = 29.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1651015007]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "LOBELITO"
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=10176022]
+layout_mode = 2
+text = "Nueva partida"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1454674077]
+layout_mode = 2
+text = "Cargar partida"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1932598038]
+layout_mode = 2
+text = "Salir"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1806319901]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_nueva_partida_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_cargar_partida_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
