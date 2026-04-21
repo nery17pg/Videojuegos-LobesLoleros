@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cwg4rfr8rxdfm"]
 
-[ext_resource type="Script" uid="uid://c7dfyyb1eh0k" path="res://lobelito.gd" id="1_q552c"]
+[ext_resource type="Script" uid="uid://c7dfyyb1eh0k" path="res://player/lobelito.gd" id="1_q552c"]
 [ext_resource type="Texture2D" uid="uid://rakxbm01n7hh" path="res://art/Lobelito_derecha.png" id="2_cnaus"]
 [ext_resource type="Texture2D" uid="uid://hqpxx34bjp85" path="res://art/Lobelito.png" id="2_wru57"]
 

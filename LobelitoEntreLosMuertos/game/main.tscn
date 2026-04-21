@@ -5,7 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://c6dvbura3cr2t" path="res://art/background/camino.png" id="3_wjctj"]
 [ext_resource type="PackedScene" uid="uid://cwg4rfr8rxdfm" path="res://player/lobelito.tscn" id="6_wjctj"]
 [ext_resource type="PackedScene" uid="uid://cg5qx0p3p6vgd" path="res://objects/caseta.tscn" id="7_wjctj"]
+[ext_resource type="Texture2D" uid="uid://c56a1nybsajxb" path="res://art/background_elements/estatua_1.png" id="8_lx3aj"]
 [ext_resource type="Texture2D" uid="uid://ciworhjvhhqtb" path="res://art/Light.png" id="8_xkbyp"]
+[ext_resource type="Texture2D" uid="uid://derqgo22cgvju" path="res://art/background_elements/tumba_cruz1.png" id="9_itumj"]
 [ext_resource type="Script" uid="uid://cj5sst77pjiu5" path="res://game/luz.gd" id="9_lx3aj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
@@ -29,14 +31,25 @@ position = Vector2(4621, 331.5)
 shape = SubResource("RectangleShape2D_lx3aj")
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=874359133]
+scroll_offset = Vector2(100, 43)
 
 [node name="PlaceholderMap" type="Sprite2D" parent="Parallax2D" unique_id=180913269]
-position = Vector2(576.5, 324)
+position = Vector2(477.5, 281)
 texture = ExtResource("2_dgpao")
 
 [node name="Camino" type="Sprite2D" parent="Parallax2D" unique_id=541352801]
-position = Vector2(576.5, 324)
+position = Vector2(477.5, 281)
 texture = ExtResource("3_wjctj")
+
+[node name="Estatua" type="Sprite2D" parent="." unique_id=140821304]
+visible = false
+position = Vector2(-1792, 299)
+texture = ExtResource("8_lx3aj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1239366253]
+position = Vector2(2880, 423.00003)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("9_itumj")
 
 [node name="caseta" parent="." unique_id=1519634108 instance=ExtResource("7_wjctj")]
 position = Vector2(913, 452)
@@ -51,7 +64,6 @@ texture = ExtResource("8_xkbyp")
 script = ExtResource("9_lx3aj")
 
 [node name="Oscuridad" type="CanvasModulate" parent="." unique_id=930947093]
-visible = false
 color = Color(0.03250689, 0.09005656, 0.08164092, 1)
 
 [node name="NombresZonas" type="Label" parent="." unique_id=1874981034]
@@ -63,10 +75,10 @@ text = "*Capilla*"
 
 [node name="Label2" type="Label" parent="NombresZonas" unique_id=676727357]
 layout_mode = 0
-offset_left = 1208.0
-offset_top = 22.0
-offset_right = 1292.0
-offset_bottom = 56.0
+offset_left = 1352.0
+offset_top = -17.0
+offset_right = 1436.0
+offset_bottom = 17.0
 text = "*Estatuas*"
 
 [node name="Label" type="Label" parent="NombresZonas" unique_id=1170523797]
@@ -119,3 +131,9 @@ offset_top = -4.0
 offset_right = 6901.95
 offset_bottom = -4.0
 text = "Arbol de las muñecas"
+
+[node name="Timer" type="Timer" parent="." unique_id=722490908]
+wait_time = 10.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
