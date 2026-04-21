@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://j4hhbkg7hwr6"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_px22j"]
+[ext_resource type="Texture2D" uid="uid://c8qdd4oj8p3vn" path="res://art/anomalies/AnomaliesLevel1/sombra.png" id="2_wlgti"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nstpu"]
+radius = 85.0
+height = 516.0
+
+[node name="anomalies" type="Node2D" unique_id=62844120]
+script = ExtResource("1_px22j")
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=325554289]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_wlgti")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2024049287]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1415161684]
+shape = SubResource("CapsuleShape2D_nstpu")
