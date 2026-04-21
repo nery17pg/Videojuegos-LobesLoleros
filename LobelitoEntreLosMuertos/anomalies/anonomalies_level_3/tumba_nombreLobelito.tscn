@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bv236eu6snqay"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_tqkdp"]
+[ext_resource type="Texture2D" uid="uid://d3cdesjved57r" path="res://art/anomalies/AnomaliesLevel3/tumba_cruz_1_nombre.png" id="2_tqkdp"]
+
+[node name="anomalies" type="Node2D" unique_id=435109919]
+script = ExtResource("1_tqkdp")
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1567089678]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_tqkdp")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1405394209]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1306985044]
+polygon = PackedVector2Array(23, -5, 91, -6, 90, 100, 91, 124, 102, 127, 144, 181, -125, 180, -112, 123, -87, 122, -87, -9, -16, -8, -17, -82, -45, -81, -70, -74, -71, -123, -67, -131, -45, -122, -18, -123, -20, -142, -31, -175, 40, -176, 27, -143, 28, -123, 55, -123, 81, -130, 80, -72, 49, -83, 23, -83)

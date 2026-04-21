@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Lobelito"
-run/main_scene="res://game/main.tscn"
+run/main_scene="uid://btr4e4lgpw0kx"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 

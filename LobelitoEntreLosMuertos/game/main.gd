@@ -14,11 +14,12 @@ func _ready():
 	$Timer.start() # Se inicializa el timer de la escena main (me gustaría cambiarlo más adelante a que cada anomalía tenga su timer o algo así
 	var anomalie_statue1 = preload("res://anomalies/anomalies_level_1/statue_anomaly_1.tscn").instantiate()
 	var anomalie_statue2 = preload("res://anomalies/anomalies_level_1/statue_anomaly_2.tscn").instantiate()
+	var anomalie_tumba1 = preload("res://anomalies/anonomalies_level_3/tumba_nombreLobelito.tscn").instantiate()
 	# Se instancian las anomalías, que por ahora son solo dos
 	# Y se añaden al array de anomalías, la idea es que haya varios arrays de anomalías por escenario (los descritos en main)
 	# Para aumentar las probabilidades de que ocurra una anomalía se puede agregar varias veces al array
 	# En la clase de anomalías se puede consultar las propiedades que contienen cada una de ellas
-	anomalies_statue = [anomalie_statue1, anomalie_statue2]
+	anomalies_statue = [anomalie_statue1, anomalie_statue2, anomalie_tumba1]
 
 	
 
