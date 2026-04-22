@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dkse6wkxvw4mg"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_e7ck5"]
+[ext_resource type="Texture2D" uid="uid://hqpxx34bjp85" path="res://art/Lobelito.png" id="2_i6rao"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jlhcx"]
+radius = 43.0
+height = 222.0
+
+[node name="anomalies" type="Node2D" unique_id=1633507428]
+script = ExtResource("1_e7ck5")
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1047962685]
+texture = ExtResource("2_i6rao")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1244318960]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1190172583]
+shape = SubResource("CapsuleShape2D_jlhcx")
