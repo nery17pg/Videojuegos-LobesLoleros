@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://3sqotblr3d2r"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_yvjnj"]
+[ext_resource type="Texture2D" uid="uid://cl1ruh1ls46db" path="res://art/anomalies/AnomaliesLevel2/puerta.png" id="2_7swl6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yvjnj"]
+size = Vector2(450, 502)
+
+[node name="anomalies" type="Node2D" unique_id=1119001943]
+script = ExtResource("1_yvjnj")
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=645318543]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_7swl6")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2124129559]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1625067262]
+position = Vector2(-1, -2)
+shape = SubResource("RectangleShape2D_yvjnj")
