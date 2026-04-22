@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_eaedo"]
 [ext_resource type="Texture2D" uid="uid://bnc22gkf6pwry" path="res://art/anomalies/AnomaliesLevel2/Ajin.webp" id="2_ahjlm"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_ahjlm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4jeco"]
 radius = 131.0
@@ -10,7 +11,7 @@ height = 476.0
 [node name="anomalies" type="Node2D" unique_id=938380893]
 script = ExtResource("1_eaedo")
 level = 2
-type = "visitante no deseado"
+type = "visitante"
 damage = 2
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
@@ -22,3 +23,9 @@ texture = ExtResource("2_ahjlm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=419679700]
 shape = SubResource("CapsuleShape2D_4jeco")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=1849347045]
+script = ExtResource("3_ahjlm")
+min_wait_time = 10.0
+max_wait_time = 15.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

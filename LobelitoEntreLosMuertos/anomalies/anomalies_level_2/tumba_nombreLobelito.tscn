@@ -2,9 +2,13 @@
 
 [ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_tqkdp"]
 [ext_resource type="Texture2D" uid="uid://d3cdesjved57r" path="res://art/anomalies/AnomaliesLevel2/tumba_cruz_1_nombre.png" id="2_tqkdp"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_tay6e"]
 
 [node name="anomalies" type="Node2D" unique_id=435109919]
 script = ExtResource("1_tqkdp")
+level = 2
+type = "lobelito"
+damage = 2
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1567089678]
@@ -15,3 +19,9 @@ texture = ExtResource("2_tqkdp")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1306985044]
 polygon = PackedVector2Array(23, -5, 91, -6, 90, 100, 91, 124, 102, 127, 144, 181, -125, 180, -112, 123, -87, 122, -87, -9, -16, -8, -17, -82, -45, -81, -70, -74, -71, -123, -67, -131, -45, -122, -18, -123, -20, -142, -31, -175, 40, -176, 27, -143, 28, -123, 55, -123, 81, -130, 80, -72, 49, -83, 23, -83)
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=643719755]
+script = ExtResource("3_tay6e")
+min_wait_time = 5.0
+max_wait_time = 10.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

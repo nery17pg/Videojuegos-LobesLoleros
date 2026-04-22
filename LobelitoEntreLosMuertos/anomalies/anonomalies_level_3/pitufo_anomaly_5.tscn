@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_ec0p6"]
 [ext_resource type="Texture2D" uid="uid://b8jcwtv1w0f48" path="res://art/anomalies/AnomaliesLevel3/Pitufo.png" id="2_mgsn0"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_mgsn0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j7smy"]
 radius = 85.0
@@ -9,6 +10,9 @@ height = 218.0
 
 [node name="anomalies" type="Node2D" unique_id=1071287796]
 script = ExtResource("1_ec0p6")
+level = 3
+type = "ente"
+damage = 3
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2100744322]
@@ -19,3 +23,9 @@ texture = ExtResource("2_mgsn0")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=164371932]
 position = Vector2(-5, -10)
 shape = SubResource("CapsuleShape2D_j7smy")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=1391485331]
+script = ExtResource("3_mgsn0")
+min_wait_time = 10.0
+max_wait_time = 30.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

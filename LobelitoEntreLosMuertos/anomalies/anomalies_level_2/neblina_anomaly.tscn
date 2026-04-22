@@ -2,12 +2,17 @@
 
 [ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_e84br"]
 [ext_resource type="Texture2D" uid="uid://chy2wjn87xxjx" path="res://art/anomalies/AnomaliesLevel2/neblina.webp" id="2_6xdni"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_6xdni"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p55cg"]
 size = Vector2(1144, 316)
 
 [node name="anomalies" type="Node2D" unique_id=1109891821]
 script = ExtResource("1_e84br")
+level = 2
+type = "neblina"
+damage = 2
+should_be_reported = true
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=124109568]
@@ -19,3 +24,9 @@ texture = ExtResource("2_6xdni")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1838331673]
 position = Vector2(0, -28)
 shape = SubResource("RectangleShape2D_p55cg")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=1845273969]
+script = ExtResource("3_6xdni")
+min_wait_time = 10.0
+max_wait_time = 15.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

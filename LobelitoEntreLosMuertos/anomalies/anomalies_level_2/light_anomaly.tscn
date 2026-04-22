@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_1fnko"]
 [ext_resource type="Texture2D" uid="uid://clpaabtgbsbuu" path="res://art/anomalies/AnomaliesLevel2/luz.webp" id="2_qrfyr"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_qrfyr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x4stx"]
 radius = 132.0
@@ -10,7 +11,7 @@ height = 338.0
 [node name="anomalies" type="Node2D" unique_id=1621702828]
 script = ExtResource("1_1fnko")
 level = 2
-type = "luz extraña"
+type = "luz"
 damage = 2
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
@@ -21,3 +22,9 @@ texture = ExtResource("2_qrfyr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=299201030]
 shape = SubResource("CapsuleShape2D_x4stx")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=1067323267]
+script = ExtResource("3_qrfyr")
+min_wait_time = 10.0
+max_wait_time = 15.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

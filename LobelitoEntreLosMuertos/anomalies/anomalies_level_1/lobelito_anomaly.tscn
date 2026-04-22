@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_e7ck5"]
 [ext_resource type="Texture2D" uid="uid://hqpxx34bjp85" path="res://art/Lobelito.png" id="2_i6rao"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_i6rao"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jlhcx"]
 radius = 43.0
@@ -10,7 +11,7 @@ height = 222.0
 [node name="anomalies" type="Node2D" unique_id=1633507428]
 script = ExtResource("1_e7ck5")
 level = 1
-type = "sombras raras"
+type = "lobelito"
 damage = 1
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
@@ -21,3 +22,9 @@ texture = ExtResource("2_i6rao")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1190172583]
 shape = SubResource("CapsuleShape2D_jlhcx")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=27677540]
+script = ExtResource("3_i6rao")
+min_wait_time = 10.0
+max_wait_time = 20.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

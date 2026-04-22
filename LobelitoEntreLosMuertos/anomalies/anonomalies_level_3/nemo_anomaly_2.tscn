@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_yhiit"]
 [ext_resource type="Texture2D" uid="uid://cidfg1mjytrgi" path="res://art/anomalies/AnomaliesLevel3/Nemo.png" id="2_wrple"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_wrple"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hbdj1"]
 radius = 159.0
@@ -9,6 +10,9 @@ height = 338.0
 
 [node name="anomalies" type="Node2D" unique_id=528125956]
 script = ExtResource("1_yhiit")
+level = 3
+type = "ente"
+damage = 3
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1802317405]
@@ -18,3 +22,9 @@ texture = ExtResource("2_wrple")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=729888849]
 shape = SubResource("CapsuleShape2D_hbdj1")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=511831851]
+script = ExtResource("3_wrple")
+min_wait_time = 10.0
+max_wait_time = 20.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"
