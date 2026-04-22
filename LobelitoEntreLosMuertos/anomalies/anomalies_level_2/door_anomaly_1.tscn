@@ -8,6 +8,9 @@ size = Vector2(450, 502)
 
 [node name="anomalies" type="Node2D" unique_id=1119001943]
 script = ExtResource("1_yvjnj")
+level = 1
+type = "otro"
+damage = 1
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=645318543]

@@ -9,6 +9,9 @@ height = 516.0
 
 [node name="anomalies" type="Node2D" unique_id=62844120]
 script = ExtResource("1_px22j")
+level = 1
+type = "sombras raras"
+damage = 1
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=325554289]
