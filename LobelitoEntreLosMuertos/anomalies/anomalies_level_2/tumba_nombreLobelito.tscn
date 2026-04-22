@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bv236eu6snqay"]
 
 [ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_tqkdp"]
-[ext_resource type="Texture2D" uid="uid://d3cdesjved57r" path="res://art/anomalies/AnomaliesLevel3/tumba_cruz_1_nombre.png" id="2_tqkdp"]
+[ext_resource type="Texture2D" uid="uid://d3cdesjved57r" path="res://art/anomalies/AnomaliesLevel2/tumba_cruz_1_nombre.png" id="2_tqkdp"]
 
 [node name="anomalies" type="Node2D" unique_id=435109919]
 script = ExtResource("1_tqkdp")

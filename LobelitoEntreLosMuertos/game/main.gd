@@ -19,9 +19,7 @@ func _ready():
 	var anomalie_shadow2 = preload("res://anomalies/anomalies_level_1/shadow_anomaly_2.tscn").instantiate()
 	var anomalie_lobelito = preload("res://anomalies/anomalies_level_1/lobelito_anomaly.tscn").instantiate()
 	# Anomalías de segundo nivel
-	
-	# Anomalías de tercer nivel
-	var anomalie_tumba1 = preload("res://anomalies/anonomalies_level_3/tumba_nombreLobelito.tscn").instantiate()
+	var anomalie_tumba1 = preload("res://anomalies/anomalies_level_2/tumba_nombreLobelito.tscn").instantiate()
 	# Se instancian las anomalías, que por ahora son solo dos
 	# Y se añaden al array de anomalías, la idea es que haya varios arrays de anomalías por escenario (los descritos en main)
 	# Para aumentar las probabilidades de que ocurra una anomalía se puede agregar varias veces al array

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3cdesjved57r"
-path="res://.godot/imported/tumba_cruz_1_nombre.png-65435b99f8032e92710a0ae31c3a0a1d.ctex"
+uid="uid://cl1ruh1ls46db"
+path="res://.godot/imported/puerta.png-832354ed0419440bcaccdf67e7fc9a49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/anomalies/AnomaliesLevel3/tumba_cruz_1_nombre.png"
-dest_files=["res://.godot/imported/tumba_cruz_1_nombre.png-65435b99f8032e92710a0ae31c3a0a1d.ctex"]
+source_file="res://art/anomalies/AnomaliesLevel2/puerta.png"
+dest_files=["res://.godot/imported/puerta.png-832354ed0419440bcaccdf67e7fc9a49.ctex"]
 
 [params]
 
