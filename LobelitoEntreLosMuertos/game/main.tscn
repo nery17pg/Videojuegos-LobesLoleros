@@ -39,6 +39,90 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.2901961, 0.22745098, 0.09411765, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4uwjs"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.039215688, 0.043137256, 0.0627451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16470589, 0.1254902, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtjhp"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.039215688, 0.043137256, 0.0627451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16470589, 0.1254902, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ibube"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.039215688, 0.043137256, 0.0627451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16470589, 0.1254902, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_77ae2"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.039215688, 0.043137256, 0.0627451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16470589, 0.1254902, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0etgu"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.039215688, 0.043137256, 0.0627451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16470589, 0.1254902, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fsjy5"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.039215688, 0.043137256, 0.0627451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16470589, 0.1254902, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l78i6"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.039215688, 0.043137256, 0.0627451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16470589, 0.1254902, 0.0627451, 1)
+
 [node name="Main" type="Node2D" unique_id=294167655]
 script = ExtResource("1_xtpaf")
 
@@ -195,6 +279,7 @@ theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
 theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
 theme_override_fonts/font = ExtResource("12_px363")
 theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_4uwjs")
 text = "Objeto"
 
 [node name="visitante" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1332798560]
@@ -207,6 +292,7 @@ theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
 theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
 theme_override_fonts/font = ExtResource("12_px363")
 theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_rtjhp")
 text = "visitante"
 
 [node name="otro" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1888659433]
@@ -219,6 +305,7 @@ theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
 theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
 theme_override_fonts/font = ExtResource("12_px363")
 theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_ibube")
 text = "otro
 "
 
@@ -232,6 +319,7 @@ theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
 theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
 theme_override_fonts/font = ExtResource("12_px363")
 theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_77ae2")
 text = "sombras"
 
 [node name="luz" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=2147000430]
@@ -244,6 +332,7 @@ theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
 theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
 theme_override_fonts/font = ExtResource("12_px363")
 theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_0etgu")
 text = "luz"
 
 [node name="lobelito" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1789301259]
@@ -256,6 +345,7 @@ theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
 theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
 theme_override_fonts/font = ExtResource("12_px363")
 theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_fsjy5")
 text = "lobelito
 "
 
@@ -269,6 +359,7 @@ theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
 theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
 theme_override_fonts/font = ExtResource("12_px363")
 theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_l78i6")
 text = "ente"
 
 [node name="FeedbackLabel" type="Label" parent="CanvasLayer" unique_id=273035789]
