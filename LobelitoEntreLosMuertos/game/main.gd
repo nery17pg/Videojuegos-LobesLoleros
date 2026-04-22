@@ -28,13 +28,16 @@ func _ready():
 	# Anomalías de tercer nivel
 	var anomalie_angelique = preload("res://anomalies/anonomalies_level_3/angelique_anomaly_1.tscn").instantiate()
 	var anomalie_nemo = preload("res://anomalies/anonomalies_level_3/nemo_anomaly_2.tscn").instantiate()
+	var anomalie_peppa = preload("res://anomalies/anonomalies_level_3/peppa_anomaly_3.tscn").instantiate()
+	
+	
 	# Se instancian las anomalías, que por ahora son solo dos
 	# Y se añaden al array de anomalías, la idea es que haya varios arrays de anomalías por escenario (los descritos en main)
 	# Para aumentar las probabilidades de que ocurra una anomalía se puede agregar varias veces al array
 	# En la clase de anomalías se puede consultar las propiedades que contienen cada una de ellas
 	anomalies_statue = [anomalie_statue1, anomalie_statue2, anomalie_shadow1, anomalie_shadow2, anomalie_lobelito,
 	anomalie_tumba1, anomalie_door1, anomalie_door2, anomalie_light, anomalie_neblina, anomalie_ajin_extra,
-	anomalie_angelique, anomalie_nemo]
+	anomalie_angelique, anomalie_nemo, anomalie_peppa]
 
 	
 
