@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://j4hhbkg7hwr6" path="res://anomalies/anomalies_level_1/shadow_anomaly_1.tscn" id="10_c08u8"]
 [ext_resource type="PackedScene" uid="uid://cnccl8m54f12n" path="res://anomalies/anomalies_level_1/statue_anomaly_1.tscn" id="11_a5bbb"]
 [ext_resource type="PackedScene" uid="uid://bbva61l8m1cw6" path="res://anomalies/anomalies_level_1/shadow_anomaly_2.tscn" id="12_4uwjs"]
+[ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="12_px363"]
 [ext_resource type="PackedScene" uid="uid://dkse6wkxvw4mg" path="res://anomalies/anomalies_level_1/lobelito_anomaly.tscn" id="13_px363"]
 [ext_resource type="PackedScene" uid="uid://dvhew81vy32gn" path="res://anomalies/anomalies_level_2/light_anomaly.tscn" id="14_rtjhp"]
 [ext_resource type="PackedScene" uid="uid://3sqotblr3d2r" path="res://anomalies/anomalies_level_2/door_anomaly_1.tscn" id="15_ibube"]
@@ -29,6 +30,14 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
 size = Vector2(38, 749)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_px363"]
+bg_color = Color(0.03137255, 0.03529412, 0.05490196, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.2901961, 0.22745098, 0.09411765, 1)
 
 [node name="Main" type="Node2D" unique_id=294167655]
 script = ExtResource("1_xtpaf")
@@ -160,6 +169,7 @@ offset_right = 185.0
 offset_bottom = 77.25
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_px363")
 script = ExtResource("10_a5bbb")
 
 [node name="Label" type="Label" parent="CanvasLayer/MenuAnomalias" unique_id=412287981]
@@ -168,8 +178,11 @@ offset_left = 27.5
 offset_top = 8.5
 offset_right = 333.0
 offset_bottom = 57.5
+theme_override_colors/font_color = Color(0.78431374, 0.72156864, 0.47843137, 1)
+theme_override_fonts/font = ExtResource("12_px363")
+theme_override_font_sizes/font_size = 17
 text = "Selecciona el tipo de 
-anomalia"
+anomalía"
 horizontal_alignment = 1
 
 [node name="objeto" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1834928527]
@@ -178,6 +191,10 @@ offset_left = 226.0
 offset_top = 72.5
 offset_right = 287.0
 offset_bottom = 103.5
+theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
+theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
+theme_override_fonts/font = ExtResource("12_px363")
+theme_override_font_sizes/font_size = 15
 text = "Objeto"
 
 [node name="visitante" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1332798560]
@@ -186,6 +203,10 @@ offset_left = 110.0
 offset_top = 70.5
 offset_right = 210.0
 offset_bottom = 101.5
+theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
+theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
+theme_override_fonts/font = ExtResource("12_px363")
+theme_override_font_sizes/font_size = 15
 text = "visitante"
 
 [node name="otro" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1888659433]
@@ -194,6 +215,10 @@ offset_left = 305.0
 offset_top = 75.5
 offset_right = 349.0
 offset_bottom = 106.5
+theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
+theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
+theme_override_fonts/font = ExtResource("12_px363")
+theme_override_font_sizes/font_size = 15
 text = "otro
 "
 
@@ -203,6 +228,10 @@ offset_left = 14.0
 offset_top = 68.5
 offset_right = 90.0
 offset_bottom = 99.5
+theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
+theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
+theme_override_fonts/font = ExtResource("12_px363")
+theme_override_font_sizes/font_size = 15
 text = "sombras"
 
 [node name="luz" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=2147000430]
@@ -211,6 +240,10 @@ offset_left = 19.0
 offset_top = 112.5
 offset_right = 119.0
 offset_bottom = 143.5
+theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
+theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
+theme_override_fonts/font = ExtResource("12_px363")
+theme_override_font_sizes/font_size = 15
 text = "luz"
 
 [node name="lobelito" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1789301259]
@@ -219,6 +252,10 @@ offset_left = 140.0
 offset_top = 114.5
 offset_right = 268.0
 offset_bottom = 145.5
+theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
+theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
+theme_override_fonts/font = ExtResource("12_px363")
+theme_override_font_sizes/font_size = 15
 text = "lobelito
 "
 
@@ -228,6 +265,10 @@ offset_left = 289.0
 offset_top = 115.5
 offset_right = 332.0
 offset_bottom = 146.5
+theme_override_colors/font_color = Color(0.6039216, 0.5411765, 0.3764706, 1)
+theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
+theme_override_fonts/font = ExtResource("12_px363")
+theme_override_font_sizes/font_size = 15
 text = "ente"
 
 [node name="FeedbackLabel" type="Label" parent="CanvasLayer" unique_id=273035789]
