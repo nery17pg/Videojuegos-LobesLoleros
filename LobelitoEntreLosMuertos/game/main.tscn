@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cwg4rfr8rxdfm" path="res://player/lobelito.tscn" id="6_wjctj"]
 [ext_resource type="PackedScene" uid="uid://cg5qx0p3p6vgd" path="res://objects/caseta.tscn" id="7_wjctj"]
 [ext_resource type="Texture2D" uid="uid://ciworhjvhhqtb" path="res://art/Light.png" id="8_xkbyp"]
+[ext_resource type="Script" uid="uid://ba280oy7g6bo5" path="res://game/canvas_layer.gd" id="9_dp3pf"]
 [ext_resource type="Texture2D" uid="uid://c56a1nybsajxb" path="res://art/background_elements/estatua_1.png" id="9_itumj"]
 [ext_resource type="Script" uid="uid://cj5sst77pjiu5" path="res://game/luz.gd" id="9_lx3aj"]
 
@@ -129,5 +130,38 @@ autostart = true
 visible = false
 position = Vector2(-1792, 299)
 texture = ExtResource("9_itumj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=101426990]
+script = ExtResource("9_dp3pf")
+
+[node name="MenuAnomalias" type="Panel" parent="CanvasLayer" unique_id=361730844]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -74.0
+offset_top = -53.5
+offset_right = 74.0
+offset_bottom = 53.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1834928527]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 9.0
+offset_right = 106.0
+offset_bottom = 40.0
+text = "Objeto"
+
+[node name="Button2" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1332798560]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 49.0
+offset_right = 106.0
+offset_bottom = 80.0
+text = "Fondo"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

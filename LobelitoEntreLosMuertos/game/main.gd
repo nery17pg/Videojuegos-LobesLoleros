@@ -5,6 +5,16 @@ const LightTexture = preload("res://art/Light.png")
 const GRID_SIZE = 350
 var anomalies_statue = []
 
+#Prueba menuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+
+
+@onready var menu = $CanvasLayer/MenuAnomalias
+
+func _input(event):
+	if event is InputEventMouseButton and event.pressed:
+		if event.button_index == MOUSE_BUTTON_RIGHT:
+			menu.visible = not menu.visible
+
 
 
 var display_width = ProjectSettings.get("display/window/size/viewport_width")
