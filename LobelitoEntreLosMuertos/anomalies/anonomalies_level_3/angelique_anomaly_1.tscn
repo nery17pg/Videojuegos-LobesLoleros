@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b3765wggf8fmh"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_3yjmk"]
+[ext_resource type="Texture2D" uid="uid://b8uwgigiskj5c" path="res://art/anomalies/AnomaliesLevel3/Angelique.png" id="2_lhab5"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_np2r8"]
+radius = 67.0
+height = 454.0
+
+[node name="anomalies" type="Node2D" unique_id=1695508029]
+script = ExtResource("1_3yjmk")
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1076806398]
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_lhab5")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1284964838]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=732656947]
+shape = SubResource("CapsuleShape2D_np2r8")
