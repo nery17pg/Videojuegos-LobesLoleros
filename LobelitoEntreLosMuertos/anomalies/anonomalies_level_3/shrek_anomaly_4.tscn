@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dh36i1dll013n"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_01yml"]
+[ext_resource type="Texture2D" uid="uid://bba2diq4tlu3y" path="res://art/anomalies/AnomaliesLevel3/Shrek.png" id="2_d6yad"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2f4t"]
+size = Vector2(369, 157)
+
+[node name="anomalies" type="Node2D" unique_id=252213214]
+script = ExtResource("1_01yml")
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1277361043]
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("2_d6yad")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1908207444]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=10869841]
+position = Vector2(-2.5, 73.5)
+shape = SubResource("RectangleShape2D_t2f4t")
