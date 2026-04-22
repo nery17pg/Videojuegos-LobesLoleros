@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dj4ncufm08gta"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_e84br"]
+[ext_resource type="Texture2D" uid="uid://chy2wjn87xxjx" path="res://art/anomalies/AnomaliesLevel2/neblina.webp" id="2_6xdni"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p55cg"]
+size = Vector2(1144, 316)
+
+[node name="anomalies" type="Node2D" unique_id=1109891821]
+script = ExtResource("1_e84br")
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=124109568]
+scale = Vector2(1.8456591, 1.4142858)
+texture = ExtResource("2_6xdni")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=576268089]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1838331673]
+position = Vector2(0, -28)
+shape = SubResource("RectangleShape2D_p55cg")
