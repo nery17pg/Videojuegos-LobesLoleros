@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cwg4rfr8rxdfm" path="res://player/lobelito.tscn" id="6_wjctj"]
 [ext_resource type="PackedScene" uid="uid://cg5qx0p3p6vgd" path="res://objects/caseta.tscn" id="7_wjctj"]
 [ext_resource type="Texture2D" uid="uid://ciworhjvhhqtb" path="res://art/Light.png" id="8_xkbyp"]
-[ext_resource type="Script" path="res://game/canvas_layer.gd" id="9_dp3pf"]
+[ext_resource type="Script" uid="uid://ba280oy7g6bo5" path="res://game/canvas_layer.gd" id="9_dp3pf"]
 [ext_resource type="Texture2D" uid="uid://c56a1nybsajxb" path="res://art/background_elements/estatua_1.png" id="9_itumj"]
 [ext_resource type="Script" uid="uid://cj5sst77pjiu5" path="res://game/luz.gd" id="9_lx3aj"]
 [ext_resource type="PackedScene" uid="uid://j4hhbkg7hwr6" path="res://anomalies/anomalies_level_1/shadow_anomaly_1.tscn" id="10_c08u8"]
@@ -153,10 +153,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -110.5
-offset_top = -53.5
-offset_right = 110.5
-offset_bottom = 53.5
+offset_left = -185.0
+offset_top = -77.25
+offset_right = 185.0
+offset_bottom = 77.25
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -164,7 +164,7 @@ grow_vertical = 2
 layout_mode = 0
 offset_left = 27.5
 offset_top = 8.5
-offset_right = 189.5
+offset_right = 333.0
 offset_bottom = 57.5
 text = "Selecciona el tipo de 
 anomalia"
@@ -172,28 +172,61 @@ horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1834928527]
 layout_mode = 0
-offset_left = 83.0
-offset_top = 71.0
-offset_right = 144.0
-offset_bottom = 102.0
+offset_left = 226.0
+offset_top = 72.5
+offset_right = 287.0
+offset_bottom = 103.5
 text = "Objeto"
 
 [node name="Button2" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1332798560]
 layout_mode = 0
-offset_left = 15.0
-offset_top = 71.0
-offset_right = 72.0
-offset_bottom = 102.0
-text = "Fondo"
+offset_left = 110.0
+offset_top = 70.5
+offset_right = 210.0
+offset_bottom = 101.5
+text = "No deseado"
 
 [node name="Button3" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1888659433]
 layout_mode = 0
-offset_left = 159.0
-offset_top = 69.0
-offset_right = 203.0
-offset_bottom = 100.0
+offset_left = 305.0
+offset_top = 75.5
+offset_right = 349.0
+offset_bottom = 106.5
 text = "Otro
 "
+
+[node name="Button4" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=2124902044]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 68.5
+offset_right = 90.0
+offset_bottom = 99.5
+text = "Extrañas"
+
+[node name="Button5" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=2147000430]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 112.5
+offset_right = 119.0
+offset_bottom = 143.5
+text = "Iluminacion"
+
+[node name="Button6" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1789301259]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 114.5
+offset_right = 268.0
+offset_bottom = 145.5
+text = "Sombra/Tumba
+"
+
+[node name="Button7" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1190775320]
+layout_mode = 0
+offset_left = 289.0
+offset_top = 115.5
+offset_right = 332.0
+offset_bottom = 146.5
+text = "Ente"
 
 [node name="Anomalies" type="Node2D" parent="." unique_id=1294360125]
 
