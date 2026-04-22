@@ -1,5 +1,7 @@
 extends Control
 
+@onready var main = $"../../"
+
 func _ready() -> void:
 	pass
 
@@ -12,7 +14,3 @@ func _on_cargar_partida_pressed() -> void:
 
 func _on_salir_pressed() -> void:
 	get_tree().quit()
-
-
-func _on_button_3_pressed() -> void:
-	pass # Replace with function body.

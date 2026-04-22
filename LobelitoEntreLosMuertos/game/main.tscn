@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://ba280oy7g6bo5" path="res://game/canvas_layer.gd" id="9_dp3pf"]
 [ext_resource type="Texture2D" uid="uid://c56a1nybsajxb" path="res://art/background_elements/estatua_1.png" id="9_itumj"]
 [ext_resource type="Script" uid="uid://cj5sst77pjiu5" path="res://game/luz.gd" id="9_lx3aj"]
+[ext_resource type="Script" uid="uid://d17y404c66fmq" path="res://game/menu_anomalias.gd" id="10_a5bbb"]
 [ext_resource type="PackedScene" uid="uid://j4hhbkg7hwr6" path="res://anomalies/anomalies_level_1/shadow_anomaly_1.tscn" id="10_c08u8"]
 [ext_resource type="PackedScene" uid="uid://cnccl8m54f12n" path="res://anomalies/anomalies_level_1/statue_anomaly_1.tscn" id="11_a5bbb"]
 [ext_resource type="PackedScene" uid="uid://bbva61l8m1cw6" path="res://anomalies/anomalies_level_1/shadow_anomaly_2.tscn" id="12_4uwjs"]
@@ -159,6 +160,7 @@ offset_right = 185.0
 offset_bottom = 77.25
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("10_a5bbb")
 
 [node name="Label" type="Label" parent="CanvasLayer/MenuAnomalias" unique_id=412287981]
 layout_mode = 0
@@ -170,7 +172,7 @@ text = "Selecciona el tipo de
 anomalia"
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1834928527]
+[node name="objeto" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1834928527]
 layout_mode = 0
 offset_left = 226.0
 offset_top = 72.5
@@ -178,55 +180,67 @@ offset_right = 287.0
 offset_bottom = 103.5
 text = "Objeto"
 
-[node name="Button2" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1332798560]
+[node name="visitante" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1332798560]
 layout_mode = 0
 offset_left = 110.0
 offset_top = 70.5
 offset_right = 210.0
 offset_bottom = 101.5
-text = "No deseado"
+text = "visitante"
 
-[node name="Button3" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1888659433]
+[node name="otro" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1888659433]
 layout_mode = 0
 offset_left = 305.0
 offset_top = 75.5
 offset_right = 349.0
 offset_bottom = 106.5
-text = "Otro
+text = "otro
 "
 
-[node name="Button4" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=2124902044]
+[node name="sombras" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=2124902044]
 layout_mode = 0
 offset_left = 14.0
 offset_top = 68.5
 offset_right = 90.0
 offset_bottom = 99.5
-text = "Extrañas"
+text = "sombras"
 
-[node name="Button5" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=2147000430]
+[node name="luz" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=2147000430]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 112.5
 offset_right = 119.0
 offset_bottom = 143.5
-text = "Iluminacion"
+text = "luz"
 
-[node name="Button6" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1789301259]
+[node name="lobelito" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1789301259]
 layout_mode = 0
 offset_left = 140.0
 offset_top = 114.5
 offset_right = 268.0
 offset_bottom = 145.5
-text = "Sombra/Tumba
+text = "lobelito
 "
 
-[node name="Button7" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1190775320]
+[node name="Ente" type="Button" parent="CanvasLayer/MenuAnomalias" unique_id=1190775320]
 layout_mode = 0
 offset_left = 289.0
 offset_top = 115.5
 offset_right = 332.0
 offset_bottom = 146.5
-text = "Ente"
+text = "ente"
+
+[node name="FeedbackLabel" type="Label" parent="CanvasLayer" unique_id=273035789]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -91.0
+offset_top = -56.0
+offset_right = 91.0
+grow_horizontal = 2
+grow_vertical = 0
 
 [node name="Anomalies" type="Node2D" parent="." unique_id=1294360125]
 
@@ -317,3 +331,11 @@ metadata/_custom_type_script = "uid://c0pltjvfyqpqt"
 position = Vector2(-1079, 400)
 script = ExtResource("25_4gc7v")
 metadata/_custom_type_script = "uid://c0pltjvfyqpqt"
+
+[connection signal="pressed" from="CanvasLayer/MenuAnomalias/objeto" to="CanvasLayer/MenuAnomalias" method="_on_objeto_pressed"]
+[connection signal="pressed" from="CanvasLayer/MenuAnomalias/visitante" to="CanvasLayer/MenuAnomalias" method="_on_visitante_pressed"]
+[connection signal="pressed" from="CanvasLayer/MenuAnomalias/otro" to="CanvasLayer/MenuAnomalias" method="_on_otro_pressed"]
+[connection signal="pressed" from="CanvasLayer/MenuAnomalias/sombras" to="CanvasLayer/MenuAnomalias" method="_on_sombras_pressed"]
+[connection signal="pressed" from="CanvasLayer/MenuAnomalias/luz" to="CanvasLayer/MenuAnomalias" method="_on_luz_pressed"]
+[connection signal="pressed" from="CanvasLayer/MenuAnomalias/lobelito" to="CanvasLayer/MenuAnomalias" method="_on_lobelito_pressed"]
+[connection signal="pressed" from="CanvasLayer/MenuAnomalias/Ente" to="CanvasLayer/MenuAnomalias" method="_on_ente_pressed"]

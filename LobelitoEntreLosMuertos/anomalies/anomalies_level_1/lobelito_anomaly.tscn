@@ -11,7 +11,7 @@ height = 222.0
 [node name="anomalies" type="Node2D" unique_id=1633507428]
 script = ExtResource("1_e7ck5")
 level = 1
-type = "lobelito"
+type = "Objeto"
 damage = 1
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 

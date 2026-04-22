@@ -4,7 +4,8 @@ extends Node2D
 #El nodo estatua está oculto para que puedan ver la aparición de la anomalía
 const LightTexture = preload("res://art/Light.png")
 const GRID_SIZE = 350
-
+var anomalie_actual = null #prueba menu
+@onready var label_feedback = $CanvasLayer/FeedbackLabel#prueba menu
 
 #Prueba menuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
 
@@ -52,3 +53,30 @@ func _on_anomaly_wanna_spawn(anomaly):
 		anomaly.visible = true
 		spawnPoint.ocupado = true
 		spawnPoint.anomaly_actual = anomaly
+		
+		anomalie_actual = anomaly #prueba
+		
+		
+#prueba
+func validar_reporte(tipo_reportado):
+	print("SE PRESIONÓ BOTÓN:", tipo_reportado)
+	if anomalie_actual == null:
+		print("No hay anomalía activa")
+		return
+	
+	print("Reporte:", tipo_reportado)
+	print("Real:", anomalie_actual.type)
+
+	if anomalie_actual.type == tipo_reportado:
+		mostrar_mensaje("Correcto", Color.GREEN)
+	else:
+		mostrar_mensaje("Incorrecto", Color.RED)
+		
+func mostrar_mensaje(texto, color):
+	label_feedback.text = texto
+	label_feedback.modulate = color
+	label_feedback.visible = true
+
+	await get_tree().create_timer(1.0).timeout
+
+	label_feedback.visible = false

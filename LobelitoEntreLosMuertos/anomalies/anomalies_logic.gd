@@ -24,4 +24,5 @@ func _process(_delta: float) -> void:
 
 func _on_random_timer_timeout() -> void:
 	print("TIMER DISPARÓ:", self)
+	print(type)
 	signal_wanna_spawn.emit(self)
