@@ -6,15 +6,15 @@
 [ext_resource type="PackedScene" uid="uid://cwg4rfr8rxdfm" path="res://player/lobelito.tscn" id="6_wjctj"]
 [ext_resource type="PackedScene" uid="uid://cg5qx0p3p6vgd" path="res://objects/caseta.tscn" id="7_wjctj"]
 [ext_resource type="Texture2D" uid="uid://ciworhjvhhqtb" path="res://art/Light.png" id="8_xkbyp"]
-[ext_resource type="Script" path="res://game/canvas_layer.gd" id="9_dp3pf"]
+[ext_resource type="Script" uid="uid://ba280oy7g6bo5" path="res://game/canvas_layer.gd" id="9_dp3pf"]
 [ext_resource type="Texture2D" uid="uid://c56a1nybsajxb" path="res://art/background_elements/estatua_1.png" id="9_itumj"]
 [ext_resource type="Script" uid="uid://cj5sst77pjiu5" path="res://game/luz.gd" id="9_lx3aj"]
-[ext_resource type="Script" path="res://game/menu_anomalias.gd" id="10_a5bbb"]
-[ext_resource type="PackedScene" path="res://anomalies/anomalies_level_1/shadow_anomaly_1.tscn" id="10_c08u8"]
+[ext_resource type="Script" uid="uid://d17y404c66fmq" path="res://game/menu_anomalias.gd" id="10_a5bbb"]
+[ext_resource type="PackedScene" uid="uid://j4hhbkg7hwr6" path="res://anomalies/anomalies_level_1/shadow_anomaly_1.tscn" id="10_c08u8"]
 [ext_resource type="PackedScene" uid="uid://cnccl8m54f12n" path="res://anomalies/anomalies_level_1/statue_anomaly_1.tscn" id="11_a5bbb"]
-[ext_resource type="PackedScene" path="res://anomalies/anomalies_level_1/shadow_anomaly_2.tscn" id="12_4uwjs"]
+[ext_resource type="PackedScene" uid="uid://bbva61l8m1cw6" path="res://anomalies/anomalies_level_1/shadow_anomaly_2.tscn" id="12_4uwjs"]
 [ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="12_px363"]
-[ext_resource type="PackedScene" path="res://anomalies/anomalies_level_1/lobelito_anomaly.tscn" id="13_px363"]
+[ext_resource type="PackedScene" uid="uid://dkse6wkxvw4mg" path="res://anomalies/anomalies_level_1/lobelito_anomaly.tscn" id="13_px363"]
 [ext_resource type="PackedScene" uid="uid://dvhew81vy32gn" path="res://anomalies/anomalies_level_2/light_anomaly.tscn" id="14_rtjhp"]
 [ext_resource type="PackedScene" uid="uid://3sqotblr3d2r" path="res://anomalies/anomalies_level_2/door_anomaly_1.tscn" id="15_ibube"]
 [ext_resource type="PackedScene" uid="uid://ddh26fcimgilb" path="res://anomalies/anomalies_level_2/door_anomaly_2.tscn" id="16_77ae2"]
@@ -26,7 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://dh36i1dll013n" path="res://anomalies/anonomalies_level_3/shrek_anomaly_4.tscn" id="22_uvurp"]
 [ext_resource type="PackedScene" uid="uid://yjjejix4qbla" path="res://anomalies/anonomalies_level_3/peppa_anomaly_3.tscn" id="23_vcdjx"]
 [ext_resource type="PackedScene" uid="uid://b14q37yy2m0xm" path="res://anomalies/anonomalies_level_3/nemo_anomaly_2.tscn" id="24_f85yp"]
-[ext_resource type="Script" path="res://spawer.gd" id="25_4gc7v"]
+[ext_resource type="Script" uid="uid://c0pltjvfyqpqt" path="res://spawer.gd" id="25_4gc7v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
 size = Vector2(38, 749)
@@ -377,6 +377,12 @@ theme_override_colors/font_color = Color(0.3529412, 0.6039216, 0.3529412, 1)
 theme_override_fonts/font = ExtResource("12_px363")
 horizontal_alignment = 1
 
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="CanvasLayer" unique_id=267786405]
+oversampling_override = 1.0
+title = "¿Seguro que quieres entrar a la caseta?"
+size = Vector2i(400, 100)
+visible = true
+
 [node name="Anomalies" type="Node2D" parent="." unique_id=1294360125]
 
 [node name="Level1" type="Node2D" parent="Anomalies" unique_id=653965826]
@@ -470,3 +476,4 @@ script = ExtResource("25_4gc7v")
 [connection signal="pressed" from="CanvasLayer/MenuAnomalias/luz" to="CanvasLayer/MenuAnomalias" method="_on_luz_pressed"]
 [connection signal="pressed" from="CanvasLayer/MenuAnomalias/lobelito" to="CanvasLayer/MenuAnomalias" method="_on_lobelito_pressed"]
 [connection signal="pressed" from="CanvasLayer/MenuAnomalias/Ente" to="CanvasLayer/MenuAnomalias" method="_on_ente_pressed"]
+[connection signal="confirmed" from="CanvasLayer/ConfirmationDialog" to="." method="_on_confirmation_dialog_confirmed"]

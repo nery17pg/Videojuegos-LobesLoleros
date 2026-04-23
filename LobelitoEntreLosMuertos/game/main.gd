@@ -25,6 +25,7 @@ var display_height = ProjectSettings.get("display/window/size/viewport_height")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
+	$CanvasLayer/ConfirmationDialog.visible = false
 	# $RandomTimer.start_random() # Se inicializa el timer de la escena main (me gustaría cambiarlo más adelante a que cada anomalía tenga su timer o algo así
 	# Anomalías de primer nivel
 	var grupoAnomalias = get_tree().get_nodes_in_group("anomalias")
@@ -80,3 +81,7 @@ func mostrar_mensaje(texto, color):
 	await get_tree().create_timer(1.0).timeout
 
 	label_feedback.visible = false
+
+
+func _on_confirmation_dialog_confirmed() -> void:
+	get_tree().change_scene_to_file("res://game/inside.tscn")

@@ -1,6 +1,7 @@
 extends Area2D
 
 @export var next_scene_path: String
+@onready var dialog = $"../CanvasLayer/ConfirmationDialog"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -15,7 +16,7 @@ func _process(delta: float) -> void:
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.is_pressed():
 		if event.button_index == MOUSE_BUTTON_LEFT:
-			change_scene()
+			dialog.popup_centered()
 			
 func change_scene():
 	get_tree().change_scene_to_file("res://game/inside.tscn")
