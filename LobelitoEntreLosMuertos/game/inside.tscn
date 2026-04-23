@@ -1,8 +1,23 @@
 [gd_scene format=3 uid="uid://ng1bggqsky4u"]
 
 [ext_resource type="Texture2D" uid="uid://bdqpr4jdof8r6" path="res://art/background/placeholderInsidepng.png" id="1_67xbl"]
+[ext_resource type="Script" uid="uid://bl48imh3ynpdj" path="res://game/inside.gd" id="1_jde34"]
+[ext_resource type="Texture2D" uid="uid://b4qwguhn7mchg" path="res://art/ui/libreta_abierta.webp" id="3_6iwqh"]
+[ext_resource type="Texture2D" uid="uid://6jmc30gg74uo" path="res://art/ui/reloj.webp" id="3_jde34"]
+[ext_resource type="Texture2D" uid="uid://cjot485rerryn" path="res://art/ui/puerta_3.webp" id="4_6iwqh"]
+[ext_resource type="Texture2D" uid="uid://bnfyr7giknkgv" path="res://art/ui/libreta_abierta.png" id="6_r5i4s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r5i4s"]
+size = Vector2(376, 213.5)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u5na0"]
+radius = 117.01709
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0onei"]
+size = Vector2(228.5, 348)
 
 [node name="inside" type="Node2D" unique_id=465977253]
+script = ExtResource("1_jde34")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=897210778]
 position = Vector2(576, 324)
@@ -13,3 +28,101 @@ offset_left = -88.0
 offset_top = -23.0
 offset_right = 66.0
 text = "*Interior de caseta*"
+
+[node name="Libreta" type="Area2D" parent="." unique_id=343550184]
+
+[node name="Sprite2D" type="Sprite2D" parent="Libreta" unique_id=1641184097]
+position = Vector2(558, 308.76758)
+scale = Vector2(0.72597873, 0.7213281)
+texture = ExtResource("3_6iwqh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Libreta" unique_id=613836274]
+position = Vector2(557, 311.25)
+shape = SubResource("RectangleShape2D_r5i4s")
+
+[node name="Reloj" type="Area2D" parent="." unique_id=1220173267]
+
+[node name="Sprite2D" type="Sprite2D" parent="Reloj" unique_id=471156082]
+position = Vector2(960.99994, 156.99998)
+scale = Vector2(0.7114286, 0.6857143)
+texture = ExtResource("3_jde34")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Reloj" unique_id=1235945355]
+position = Vector2(962, 159)
+shape = SubResource("CircleShape2D_u5na0")
+
+[node name="Puerta" type="Area2D" parent="." unique_id=184654660]
+
+[node name="Sprite2D" type="Sprite2D" parent="Puerta" unique_id=741064719]
+position = Vector2(199, 476.00003)
+scale = Vector2(1.6306818, 1.3671428)
+texture = ExtResource("4_6iwqh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta" unique_id=1363609124]
+position = Vector2(194.75, 474)
+shape = SubResource("RectangleShape2D_0onei")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1796473966]
+
+[node name="LibretaUI" type="Panel" parent="CanvasLayer" unique_id=1253953198]
+process_mode = 2
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 1155.0
+offset_bottom = 649.0
+
+[node name="ImagenLibreta" type="TextureRect" parent="CanvasLayer/LibretaUI" unique_id=1995777197]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 103.0
+offset_right = 794.0
+offset_bottom = 531.0
+texture = ExtResource("6_r5i4s")
+
+[node name="Label" type="Label" parent="CanvasLayer/LibretaUI" unique_id=1881081596]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 204.0
+offset_right = 705.0
+offset_bottom = 357.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "REGLAS:
+
+1. Reporta cualquier anomalía.
+2. No ignores cambios en el entorno.
+3. Observa el reloj.
+4. Sobrevive hasta las 6 AM."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/LibretaUI" unique_id=2074743394]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 376.0
+offset_right = 594.0
+offset_bottom = 407.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Cerrar"
+
+[node name="RelojZoom" type="Panel" parent="CanvasLayer" unique_id=1488102550]
+offset_right = 1152.0
+offset_bottom = 651.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/RelojZoom" unique_id=1891805249]
+layout_mode = 0
+offset_left = 267.0
+offset_top = 34.0
+offset_right = 855.0
+offset_bottom = 595.0
+texture = ExtResource("3_jde34")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/RelojZoom" unique_id=1120112881]
+layout_mode = 0
+offset_left = 494.0
+offset_top = 583.0
+offset_right = 607.0
+offset_bottom = 628.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Cerrar
+"
