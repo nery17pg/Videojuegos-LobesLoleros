@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://btr4e4lgpw0kx"]
 
 [ext_resource type="Script" uid="uid://c67vavvcnia48" path="res://game/menu.gd" id="1_abghd"]
+[ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="2_1g5p4"]
 
 [node name="Menu" type="Control" unique_id=329741928]
 layout_mode = 3
@@ -33,19 +34,28 @@ alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=1651015007]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.60100996, 0.6156943, 0.32200518, 1)
+theme_override_constants/line_spacing = 3
+theme_override_fonts/font = ExtResource("2_1g5p4")
 theme_override_font_sizes/font_size = 60
 text = "LOBELITO"
 
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=10176022]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8913798, 0.9059833, 0.5056478, 1)
+theme_override_fonts/font = ExtResource("2_1g5p4")
 text = "Nueva partida"
 
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=1454674077]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8913798, 0.9059833, 0.5056478, 1)
+theme_override_fonts/font = ExtResource("2_1g5p4")
 text = "Cargar partida"
 
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=1932598038]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.789714, 0.59879667, 0.5768969, 1)
+theme_override_fonts/font = ExtResource("2_1g5p4")
 text = "Salir"
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1806319901]
