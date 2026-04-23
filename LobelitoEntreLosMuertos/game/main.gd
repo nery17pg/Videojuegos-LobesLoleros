@@ -66,6 +66,7 @@ func _on_anomaly_wanna_spawn(anomaly):
 	else:
 		var spawnPoint = freesSpawns.pick_random()	
 		anomaly.position = spawnPoint.position
+		anomaly.current_spawn = spawnPoint
 		anomaly.visible = true
 		spawnPoint.ocupado = true
 		spawnPoint.anomaly_actual = anomaly
@@ -83,6 +84,14 @@ func validar_reporte(tipo_reportado):
 	print("Real:", anomalie_actual.type)
 
 	if anomalie_actual.type == tipo_reportado:
+		anomalie_actual.visible = false
+		var spawn = anomalie_actual.current_spawn
+		spawn.ocupado = false
+		spawn.anomaly_actual = null
+		spawn.on_waiting_time = true 
+		spawn.get_node("RandomTimer").start_random()
+		
+		
 		mostrar_mensaje("Correcto", Color.GREEN)
 	else:
 		mostrar_mensaje("Incorrecto", Color.RED)
@@ -91,6 +100,9 @@ func validar_reporte(tipo_reportado):
 func mostrar_mensaje(texto, color):
 	label_feedback.text = texto
 	label_feedback.modulate = color
+	
+	
+	
 	label_feedback.visible = true
 
 	await get_tree().create_timer(1.0).timeout

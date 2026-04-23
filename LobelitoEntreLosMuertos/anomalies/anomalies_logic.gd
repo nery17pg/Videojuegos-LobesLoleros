@@ -7,6 +7,7 @@ class_name anomalies
 @export var type : String #El tipo de anomalía (Cambio de posicion, ente, etc)
 @export var damage : int 
 @export var spawns : Array[spawner]
+@export var current_spawn : spawner
 @export var should_be_reported : bool #Esto tiene que ver con el sistema de reglas
 
 @onready var timer = $RandomTimer
