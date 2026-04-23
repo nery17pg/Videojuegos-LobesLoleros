@@ -42,7 +42,7 @@ func _on_anomaly_wanna_spawn(anomaly):
 	var allowedSpawns = anomaly.spawns
 	var freesSpawns = []
 	for sp in allowedSpawns:
-		if sp.ocupado == false:
+		if sp.ocupado == false && sp.on_waiting_time == false:
 			freesSpawns.append(sp)
 			
 	if freesSpawns.size() == 0 || anomaly.visible:
