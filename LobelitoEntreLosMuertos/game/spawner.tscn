@@ -1,6 +1,16 @@
 [gd_scene format=3 uid="uid://coawea8diwifv"]
 
 [ext_resource type="Script" uid="uid://c0pltjvfyqpqt" path="res://spawer.gd" id="1_lx0qd"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="2_ystyc"]
 
 [node name="Spawner" type="Marker2D" unique_id=796524399]
 script = ExtResource("1_lx0qd")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=1645020772]
+autostart = true
+script = ExtResource("2_ystyc")
+min_wait_time = 10.0
+max_wait_time = 60.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"
+
+[connection signal="timeout" from="RandomTimer" to="." method="_on_random_timer_timeout"]
