@@ -10,8 +10,9 @@ class_name anomalies
 @export var should_be_reported : bool #Esto tiene que ver con el sistema de reglas
 
 @onready var timer = $RandomTimer
-
+signal anomalia_clickeada(anomaly)
 signal signal_wanna_spawn(anomaly)
+
 
 func _ready() -> void:
 	timer.timeout.connect(_on_random_timer_timeout)
