@@ -4,21 +4,24 @@
 [ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="2_1g5p4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1g5p4"]
+bg_color = Color(0.64115655, 0.64115655, 0.64115655, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wslbq"]
-border_color = Color(0.56, 0.55141336, 0.3024, 1)
+bg_color = Color(0.5393689, 0.35457844, 0.14512733, 1)
 expand_margin_left = 4.0
 expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h6fu4"]
+bg_color = Color(0.5411765, 0.3529412, 0.14509805, 1)
 expand_margin_left = 4.0
 expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i5lmt"]
+bg_color = Color(0.4531651, 0.3927424, 0.26832265, 1)
 expand_margin_left = 4.0
 expand_margin_top = 4.0
 expand_margin_right = 4.0
@@ -80,7 +83,7 @@ text = "Cargar partida"
 
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=1932598038]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.81737655, 0.57981586, 0.6008297, 1)
+theme_override_colors/font_color = Color(0.82, 0.82, 0.82, 1)
 theme_override_fonts/font = ExtResource("2_1g5p4")
 theme_override_styles/normal = SubResource("StyleBoxFlat_i5lmt")
 text = "Salir"
