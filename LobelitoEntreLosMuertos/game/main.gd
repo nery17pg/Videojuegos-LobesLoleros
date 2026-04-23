@@ -4,7 +4,7 @@ const LightTexture = preload("res://art/Light.png")
 const GRID_SIZE = 350
 
 var anomalie_actual = null
-var anomalie_hover = null   # 👈 NUEVO
+var anomalie_hover = null  
 
 @onready var label_feedback = $CanvasLayer/FeedbackLabel
 @onready var menu = $CanvasLayer/MenuAnomalias
@@ -14,7 +14,7 @@ func _input(event):
 	if event is InputEventMouseButton and event.pressed:
 		if event.button_index == MOUSE_BUTTON_RIGHT:
 
-			# 👇 SOLO abre menú si estás sobre una anomalía
+			#  abre menú si estás sobre una anomalía
 			if anomalie_hover != null:
 				print("CLICK EN:", anomalie_hover)
 
@@ -38,7 +38,7 @@ func _ready():
 	for a in grupoAnomalias:
 		a.signal_wanna_spawn.connect(_on_anomaly_wanna_spawn)
 
-		# 👇 NUEVO: detectar hover
+		#  detectar hover
 		var area = a.get_node("Area2D")
 
 		area.mouse_entered.connect(func():
@@ -70,8 +70,6 @@ func _on_anomaly_wanna_spawn(anomaly):
 		spawnPoint.ocupado = true
 		spawnPoint.anomaly_actual = anomaly
 		
-		# 👇 IMPORTANTE: ya NO auto-seleccionamos
-		# anomalie_actual = anomaly   ❌ ELIMINADO
 
 
 func validar_reporte(tipo_reportado):
