@@ -26,7 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://dh36i1dll013n" path="res://anomalies/anonomalies_level_3/shrek_anomaly_4.tscn" id="22_uvurp"]
 [ext_resource type="PackedScene" uid="uid://yjjejix4qbla" path="res://anomalies/anonomalies_level_3/peppa_anomaly_3.tscn" id="23_vcdjx"]
 [ext_resource type="PackedScene" uid="uid://b14q37yy2m0xm" path="res://anomalies/anonomalies_level_3/nemo_anomaly_2.tscn" id="24_f85yp"]
-[ext_resource type="Script" uid="uid://c0pltjvfyqpqt" path="res://spawer.gd" id="25_4gc7v"]
+[ext_resource type="PackedScene" uid="uid://coawea8diwifv" path="res://game/spawner.tscn" id="28_px363"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
 size = Vector2(38, 749)
@@ -380,6 +380,7 @@ horizontal_alignment = 1
 [node name="ConfirmationDialog" type="ConfirmationDialog" parent="CanvasLayer" unique_id=267786405]
 oversampling_override = 1.0
 title = "¿Seguro que quieres entrar a la caseta?"
+position = Vector2i(0, 36)
 size = Vector2i(400, 100)
 visible = true
 
@@ -389,85 +390,81 @@ visible = true
 
 [node name="anomaly1_1" parent="Anomalies/Level1" unique_id=62844120 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("10_c08u8")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn3"), NodePath("../../../Spawns/spawn4")]
+spawns = [NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spawnPoint3")]
 
 [node name="anomaly1_2" parent="Anomalies/Level1" unique_id=376088578 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("11_a5bbb")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn1")]
+spawns = [NodePath("../../../Spawns/spawnPoint1")]
 
 [node name="anomaly1_3" parent="Anomalies/Level1" unique_id=1017840837 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("12_4uwjs")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn4"), NodePath("../../../Spawns/spawn2")]
+spawns = [NodePath("../../../Spawns/spawnPoint3"), NodePath("../../../Spawns/spawnPoint4")]
 
 [node name="anomaly1_4" parent="Anomalies/Level1" unique_id=1633507428 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("13_px363")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn3"), NodePath("../../../Spawns/spawn4")]
+spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spawnPoint3")]
 
 [node name="Level2" type="Node2D" parent="Anomalies" unique_id=989332924]
 
 [node name="anomaly2_1" parent="Anomalies/Level2" unique_id=1621702828 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("14_rtjhp")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn2"), NodePath("../../../Spawns/spawn1"), NodePath("../../../Spawns/spawn3"), NodePath("../../../Spawns/spawn4")]
+spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spawnPoint3"), NodePath("../../../Spawns/spawnPoint4")]
 
 [node name="anomaly2_2" parent="Anomalies/Level2" unique_id=1119001943 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("15_ibube")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn3")]
+spawns = [NodePath("../../../Spawns/spawnPoint1")]
 
 [node name="anomaly2_3" parent="Anomalies/Level2" unique_id=2007177177 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("16_77ae2")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn3")]
+spawns = [NodePath("../../../Spawns/spawnPoint2")]
 
 [node name="anomaly2_4" parent="Anomalies/Level2" unique_id=1109891821 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("17_0etgu")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn1"), NodePath("../../../Spawns/spawn2"), NodePath("../../../Spawns/spawn3"), NodePath("../../../Spawns/spawn4")]
+spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spawnPoint3"), NodePath("../../../Spawns/spawnPoint4")]
 
 [node name="anomaly2_5" parent="Anomalies/Level2" unique_id=938380893 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("18_fsjy5")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn1"), NodePath("../../../Spawns/spawn4")]
+spawns = [NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spawnPoint3")]
 
 [node name="anomaly2_6" parent="Anomalies/Level2" unique_id=435109919 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("19_l78i6")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn4")]
+spawns = [NodePath("../../../Spawns/spawnPoint4")]
 
 [node name="Level3" type="Node2D" parent="Anomalies" unique_id=1766864124]
 
 [node name="anomaly3_1" parent="Anomalies/Level3" unique_id=1695508029 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("20_wubem")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn1"), NodePath("../../../Spawns/spawn2"), NodePath("../../../Spawns/spawn4")]
+spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spawnPoint3"), NodePath("../../../Spawns/spawnPoint4")]
 
 [node name="anomaly3_2" parent="Anomalies/Level3" unique_id=1071287796 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("21_gob4j")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn2"), NodePath("../../../Spawns/spawn4")]
+spawns = [NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spawnPoint4")]
 
 [node name="anomaly3_3" parent="Anomalies/Level3" unique_id=252213214 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("22_uvurp")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn2"), NodePath("../../../Spawns/spawn3")]
+spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spawnPoint3")]
 
 [node name="anomaly3_4" parent="Anomalies/Level3" unique_id=340648526 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("23_vcdjx")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn4")]
+spawns = [NodePath("../../../Spawns/spawnPoint3")]
 
 [node name="anomaly3_5" parent="Anomalies/Level3" unique_id=528125956 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("24_f85yp")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawn2")]
+spawns = [NodePath("../../../Spawns/spawnPoint3")]
 
 [node name="Spawns" type="Node2D" parent="." unique_id=468649698]
 
-[node name="spawn1" type="Marker2D" parent="Spawns" unique_id=1373869069]
+[node name="spawnPoint1" parent="Spawns" unique_id=796524399 instance=ExtResource("28_px363")]
 position = Vector2(-1792, 299)
-script = ExtResource("25_4gc7v")
 
-[node name="spawn2" type="Marker2D" parent="Spawns" unique_id=575577485]
+[node name="spawnPoint2" parent="Spawns" unique_id=1524403577 instance=ExtResource("28_px363")]
 position = Vector2(1965, 412)
-script = ExtResource("25_4gc7v")
 
-[node name="spawn3" type="Marker2D" parent="Spawns" unique_id=683474416]
+[node name="spawnPoint3" parent="Spawns" unique_id=974905750 instance=ExtResource("28_px363")]
 position = Vector2(1419, 392)
-script = ExtResource("25_4gc7v")
 
-[node name="spawn4" type="Marker2D" parent="Spawns" unique_id=1199031547]
+[node name="spawnPoint4" parent="Spawns" unique_id=559669428 instance=ExtResource("28_px363")]
 position = Vector2(-1079, 400)
-script = ExtResource("25_4gc7v")
 
 [connection signal="pressed" from="CanvasLayer/MenuAnomalias/objeto" to="CanvasLayer/MenuAnomalias" method="_on_objeto_pressed"]
 [connection signal="pressed" from="CanvasLayer/MenuAnomalias/visitante" to="CanvasLayer/MenuAnomalias" method="_on_visitante_pressed"]
