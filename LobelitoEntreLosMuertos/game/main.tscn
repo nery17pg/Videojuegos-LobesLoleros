@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://yjjejix4qbla" path="res://anomalies/anonomalies_level_3/peppa_anomaly_3.tscn" id="23_vcdjx"]
 [ext_resource type="PackedScene" uid="uid://b14q37yy2m0xm" path="res://anomalies/anonomalies_level_3/nemo_anomaly_2.tscn" id="24_f85yp"]
 [ext_resource type="PackedScene" uid="uid://coawea8diwifv" path="res://game/spawner.tscn" id="28_px363"]
+[ext_resource type="PackedScene" uid="uid://cq7mnen3qvld1" path="res://anomalies/anonomalies_level_3/ibm1_anomaly.tscn" id="28_rtjhp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
 size = Vector2(38, 749)
@@ -164,7 +165,6 @@ texture = ExtResource("8_xkbyp")
 script = ExtResource("9_lx3aj")
 
 [node name="Oscuridad" type="CanvasModulate" parent="." unique_id=930947093]
-visible = false
 color = Color(0.03250689, 0.09005656, 0.08164092, 1)
 
 [node name="NombresZonas" type="Label" parent="." unique_id=1874981034]
@@ -403,9 +403,11 @@ spawns = [NodePath("../../../Spawns/spawnPoint3"), NodePath("../../../Spawns/spa
 
 [node name="anomaly1_4" parent="Anomalies/Level1" unique_id=1633507428 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("13_px363")]
 visible = false
+type = "lobelito"
 spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spawnPoint3")]
 
 [node name="anomaly1_5" parent="Anomalies/Level1" unique_id=1485426382 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("16_px363")]
+visible = false
 level = 1
 type = "visitante"
 damage = 1
@@ -427,6 +429,7 @@ spawns = [NodePath("../../../Spawns/spawnPoint2")]
 
 [node name="anomaly2_4" parent="Anomalies/Level2" unique_id=1109891821 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("17_0etgu")]
 visible = false
+type = "sombras"
 spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spawnPoint3"), NodePath("../../../Spawns/spawnPoint4")]
 
 [node name="anomaly2_5" parent="Anomalies/Level2" unique_id=938380893 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("18_fsjy5")]
@@ -458,6 +461,13 @@ spawns = [NodePath("../../../Spawns/spawnPoint3")]
 [node name="anomaly3_5" parent="Anomalies/Level3" unique_id=528125956 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("24_f85yp")]
 visible = false
 spawns = [NodePath("../../../Spawns/spawnPoint3")]
+
+[node name="anomaly3_6" parent="Anomalies/Level3" unique_id=921885895 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("28_rtjhp")]
+visible = false
+level = 3
+type = "ente"
+damage = 3
+spawns = [NodePath("../../../Spawns/spawnPoint2")]
 
 [node name="Spawns" type="Node2D" parent="." unique_id=468649698]
 
