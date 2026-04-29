@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://domxih6grhfnh"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_ygkg4"]
+[ext_resource type="Texture2D" uid="uid://dpyaftrlnu4g7" path="res://art/anomalies/AnomaliesLevel1/perdidas.webp" id="2_h4ytx"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_h4ytx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uxcui"]
+size = Vector2(600, 452)
+
+[node name="anomalies" type="Node2D" unique_id=1485426382]
+script = ExtResource("1_ygkg4")
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=819585994]
+position = Vector2(568, 320)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_h4ytx")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=773347065]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2093511367]
+position = Vector2(568, 319)
+shape = SubResource("RectangleShape2D_uxcui")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=606554382]
+script = ExtResource("3_h4ytx")
+min_wait_time = 10.0
+max_wait_time = 15.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"
