@@ -8,6 +8,15 @@ bg_color = Color(0.64115655, 0.64115655, 0.64115655, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wslbq"]
 bg_color = Color(0.5393689, 0.35457844, 0.14512733, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.53723973, 0.24903876, 0.11855788, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 expand_margin_left = 4.0
 expand_margin_top = 4.0
 expand_margin_right = 4.0
@@ -15,6 +24,15 @@ expand_margin_bottom = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h6fu4"]
 bg_color = Color(0.5411765, 0.3529412, 0.14509805, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.55714893, 0.26268852, 0.12492036, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 expand_margin_left = 4.0
 expand_margin_top = 4.0
 expand_margin_right = 4.0
@@ -22,6 +40,15 @@ expand_margin_bottom = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i5lmt"]
 bg_color = Color(0.4531651, 0.3927424, 0.26832265, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.48802894, 0.28077096, 0.082984395, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 expand_margin_left = 4.0
 expand_margin_top = 4.0
 expand_margin_right = 4.0
@@ -56,6 +83,7 @@ offset_right = 20.0
 offset_bottom = 29.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 14
 alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=1651015007]
@@ -70,6 +98,7 @@ text = "LOBELITO"
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=10176022]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.78431374, 0.72156864, 0.47843137, 1)
+theme_override_colors/font_hover_color = Color(0.9411765, 0.8784314, 0.627451, 1)
 theme_override_fonts/font = ExtResource("2_1g5p4")
 theme_override_styles/normal = SubResource("StyleBoxFlat_wslbq")
 text = "Nueva partida"
