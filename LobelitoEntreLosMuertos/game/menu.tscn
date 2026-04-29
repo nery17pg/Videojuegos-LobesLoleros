@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c67vavvcnia48" path="res://game/menu.gd" id="1_abghd"]
 [ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="2_1g5p4"]
+[ext_resource type="FontFile" uid="uid://bgp3p3h5cs32l" path="res://art/fonts/Cinzel-Bold.ttf" id="3_wslbq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1g5p4"]
 bg_color = Color(0.64115655, 0.64115655, 0.64115655, 0)
@@ -65,6 +66,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_abghd")
 
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=143702419]
+layout_mode = 0
+offset_top = 6.0
+offset_right = 1154.0
+offset_bottom = 652.0
+color = Color(0, 0, 0, 1)
+
 [node name="TextureRect" type="TextureRect" parent="." unique_id=2008647457]
 layout_mode = 0
 offset_right = 40.0
@@ -94,6 +102,13 @@ theme_override_fonts/font = ExtResource("2_1g5p4")
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_1g5p4")
 text = "LOBELITO"
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=1710704393]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0.80784315, 0.31764707)
+theme_override_fonts/font = ExtResource("3_wslbq")
+text = "GUARDIAN DEL CEMENTERIO"
+horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=10176022]
 layout_mode = 2
