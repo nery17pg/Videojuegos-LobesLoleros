@@ -55,7 +55,7 @@ func _on_puerta_click(viewport, event, shape_idx):
 			get_tree().paused = false
 			get_tree().change_scene_to_file("res://game/main.tscn")
 
-@onready var label_tiempo = $CanvasLayer/LabelTiempo
+@onready var label_tiempo = $CanvasLayer/ColorRect/LabelTiempo
 
 func _process(delta):
 	var tiempo = GameManager.tiempo_restante
