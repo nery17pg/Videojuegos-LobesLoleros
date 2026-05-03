@@ -16,4 +16,4 @@ func _process(delta):
 	tiempo_restante = timer.time_left
 
 func _on_timeout():
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://game/finjuego.tscn")
