@@ -46,7 +46,7 @@ func _ready():
 	var grupoAnomalias = get_tree().get_nodes_in_group("anomalias")
 	print(grupoAnomalias)
 	
-	game_timer.start(60)
+	
 	game_timer.timeout.connect(_on_game_timer_timeout)
 
 	# Recorre cada anomalía del grupo
@@ -155,7 +155,8 @@ func _on_confirmation_dialog_confirmed() -> void:
 	
 @onready var game_timer = $GameTimer
 
-
+func _process(delta):
+	GameManager.tiempo_restante = $GameTimer.time_left
 	
 
 func _on_game_timer_timeout():

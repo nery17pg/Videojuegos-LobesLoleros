@@ -1,3 +1,4 @@
+
 extends Node2D
 
 @onready var libreta = $Libreta
@@ -53,3 +54,13 @@ func _on_puerta_click(viewport, event, shape_idx):
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			get_tree().paused = false
 			get_tree().change_scene_to_file("res://game/main.tscn")
+
+@onready var label_tiempo = $CanvasLayer/LabelTiempo
+
+func _process(delta):
+	var tiempo = GameManager.tiempo_restante
+	
+	var minutos = int(tiempo) / 60
+	var segundos = int(tiempo) % 60
+	
+	label_tiempo.text = str(minutos).pad_zeros(2) + ":" + str(segundos).pad_zeros(2)
