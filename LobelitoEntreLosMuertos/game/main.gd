@@ -45,6 +45,9 @@ func _ready():
 	# Obtiene todos los nodos del grupo "anomalias"
 	var grupoAnomalias = get_tree().get_nodes_in_group("anomalias")
 	print(grupoAnomalias)
+	
+	game_timer.start(60)
+	game_timer.timeout.connect(_on_game_timer_timeout)
 
 	# Recorre cada anomalía del grupo
 	for a in grupoAnomalias:
@@ -149,3 +152,11 @@ func mostrar_mensaje(texto, color):
 func _on_confirmation_dialog_confirmed() -> void:
 	# Cambia a la escena principal del juego
 	get_tree().change_scene_to_file("res://game/inside.tscn")
+	
+@onready var game_timer = $GameTimer
+
+
+	
+
+func _on_game_timer_timeout():
+	get_tree().change_scene_to_file("res://game/finjuego.tscn")

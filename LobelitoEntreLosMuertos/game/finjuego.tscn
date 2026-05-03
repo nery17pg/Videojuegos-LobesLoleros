@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cus58d2uf4v4n"]
+
+[ext_resource type="Texture2D" uid="uid://3r4ylrk06dtl" path="res://Finjuego.png" id="1_1qcs2"]
+
+[node name="Finjuego" type="Node2D" unique_id=1662476271]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1532368240]
+position = Vector2(604, 415)
+texture = ExtResource("1_1qcs2")

@@ -483,6 +483,8 @@ position = Vector2(1419, 392)
 [node name="spawnPoint4" parent="Spawns" unique_id=559669428 instance=ExtResource("28_px363")]
 position = Vector2(-1079, 400)
 
+[node name="GameTimer" type="Timer" parent="." unique_id=560415717]
+
 [connection signal="pressed" from="CanvasLayer/MenuAnomalias/objeto" to="CanvasLayer/MenuAnomalias" method="_on_objeto_pressed"]
 [connection signal="pressed" from="CanvasLayer/MenuAnomalias/visitante" to="CanvasLayer/MenuAnomalias" method="_on_visitante_pressed"]
 [connection signal="pressed" from="CanvasLayer/MenuAnomalias/otro" to="CanvasLayer/MenuAnomalias" method="_on_otro_pressed"]
