@@ -10,11 +10,12 @@ extends Node2D
 @onready var puerta = $Puerta
 
 func _ready() -> void:
+
 	# Ocultamos la libreta al iniciar
 	libreta_ui.hide()
 	# Reloj
 	reloj_zoom.hide()
-	reloj_zoom.process_mode = Node.PROCESS_MODE_WHEN_PAUSED
+	#reloj_zoom.process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 	# Puerta
 	puerta.input_event.connect(_on_puerta_click)
 	
@@ -42,11 +43,15 @@ func _on_reloj_click(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			reloj_zoom.show()
-			get_tree().paused = true
+			#get_tree().paused = true
+			var tiempo = GameManager.tiempo_restante
+			var minutos = int(tiempo) / 60
+			var segundos = int(tiempo) % 60
+			label_tiempo_1.text = str(minutos).pad_zeros(2) + ":" + str(segundos).pad_zeros(2)
 
 func _cerrar_reloj_zoom():
 	reloj_zoom.hide()
-	get_tree().paused = false
+	#get_tree().paused = false
 	
 # Funciones puerta
 func _on_puerta_click(viewport, event, shape_idx):
@@ -56,6 +61,7 @@ func _on_puerta_click(viewport, event, shape_idx):
 			get_tree().change_scene_to_file("res://game/main.tscn")
 
 @onready var label_tiempo = $CanvasLayer/ColorRect/LabelTiempo
+@onready var label_tiempo_1 = $CanvasLayer/RelojZoom/TextureRect/ColorRect/Label
 
 func _process(delta):
 	var tiempo = GameManager.tiempo_restante
@@ -63,4 +69,8 @@ func _process(delta):
 	var minutos = int(tiempo) / 60
 	var segundos = int(tiempo) % 60
 	
-	label_tiempo.text = str(minutos).pad_zeros(2) + ":" + str(segundos).pad_zeros(2)
+	var texto = str(minutos).pad_zeros(2) + ":" + str(segundos).pad_zeros(2)
+	
+	label_tiempo.text = texto
+	label_tiempo_1.text = texto
+	
