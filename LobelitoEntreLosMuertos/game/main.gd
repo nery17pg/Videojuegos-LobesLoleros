@@ -47,7 +47,7 @@ func _ready():
 	print(grupoAnomalias)
 	
 	
-	game_timer.timeout.connect(_on_game_timer_timeout)
+	# game_timer.timeout.connect(_on_game_timer_timeout)
 
 	# Recorre cada anomalía del grupo
 	for a in grupoAnomalias:
@@ -133,6 +133,7 @@ func validar_reporte(tipo_reportado):
 	else:
 		# Muestra mensaje de error
 		mostrar_mensaje("Incorrecto", Color.RED)
+		GameManager.perder_vida() # Nery agregó esto
 
 func mostrar_mensaje(texto, color):
 	# Asigna el texto al label
@@ -153,11 +154,11 @@ func _on_confirmation_dialog_confirmed() -> void:
 	# Cambia a la escena principal del juego
 	get_tree().change_scene_to_file("res://game/inside.tscn")
 	
-@onready var game_timer = $GameTimer
+#@onready var game_timer = $GameTimer
 
-func _process(delta):
-	GameManager.tiempo_restante = $GameTimer.time_left
+#func _process(delta):
+#	GameManager.tiempo_restante = $GameTimer.time_left
 	
 
-func _on_game_timer_timeout():
-	get_tree().change_scene_to_file("res://game/finjuego.tscn")
+#func _on_game_timer_timeout():
+#	get_tree().change_scene_to_file("res://game/finjuego.tscn")

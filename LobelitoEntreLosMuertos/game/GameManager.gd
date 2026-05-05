@@ -3,6 +3,8 @@ extends Node
 var tiempo_total = 60
 var tiempo_restante = 60
 
+var vidas = 3
+
 var timer := Timer.new()
 
 func _ready():
@@ -15,5 +17,24 @@ func _ready():
 func _process(delta):
 	tiempo_restante = timer.time_left
 
+func perder_vida():
+	vidas -= 1
+	print("Vidas: ", vidas)
+	
+	if vidas <= 0:
+		_derrota()
+		
 func _on_timeout():
-	get_tree().change_scene_to_file("res://game/finjuego.tscn")
+	if vidas > 0:
+		_victoria()
+	else:
+		_derrota()
+		
+func _victoria():
+	get_tree().change_scene_to_file("res://game/Ganaste.tscn")
+
+func _derrota():
+	get_tree().change_scene_to_file("res://game/Derrota.tscn")
+
+#func _on_timeout():
+#	get_tree().change_scene_to_file("res://game/finjuego.tscn")
