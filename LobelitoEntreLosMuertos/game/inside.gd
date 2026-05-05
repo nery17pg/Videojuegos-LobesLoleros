@@ -66,10 +66,19 @@ func _on_puerta_click(viewport, event, shape_idx):
 func _process(delta):
 	var tiempo = GameManager.tiempo_restante
 	
-	var minutos = int(tiempo) / 60
-	var segundos = int(tiempo) % 60
+	# ---- CONVERSIÓN A RELOJ 22:00 → 06:00 ----
+	var tiempo_usado = 960 - tiempo
+	var minutos_juego = (tiempo_usado / 960.0) * 480.0
+	var hora_base = 22 * 60
 	
-	var texto = str(minutos).pad_zeros(2) + ":" + str(segundos).pad_zeros(2)
+	var total_minutos = hora_base + minutos_juego
+	total_minutos = int(total_minutos) % (24 * 60)
+	
+	var horas = total_minutos / 60
+	var minutos = total_minutos % 60
+	
+	
+	var texto = str(horas).pad_zeros(2) + ":" + str(minutos).pad_zeros(2)
 	
 	label_tiempo.text = texto
 	label_tiempo_1.text = texto

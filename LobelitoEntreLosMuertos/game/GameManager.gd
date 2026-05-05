@@ -1,7 +1,7 @@
 extends Node
 
-var tiempo_total = 60
-var tiempo_restante = 60
+var tiempo_total = 960
+var tiempo_restante = 960
 
 var vidas = 3
 
