@@ -1,16 +1,20 @@
 [gd_scene format=3 uid="uid://j2ed0p0k8vmc"]
 
-[ext_resource type="Script" uid="uid://dmqs23slhft6q" path="res://game/finjuego.gd" id="1_of6s1"]
+[ext_resource type="Script" path="res://game/finjuego.gd" id="1_of6s1"]
 [ext_resource type="FontFile" uid="uid://bgp3p3h5cs32l" path="res://art/fonts/Cinzel-Bold.ttf" id="2_e8xs7"]
 [ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="3_ei48o"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ljn3"]
-bg_color = Color(0.07081931, 0.030567227, 0.0052381447, 1)
+bg_color = Color(0.5411765, 0.3529412, 0.14509805, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.5682542, 0.48003465, 0.21229452, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 corner_detail = 20
 
 [node name="Finjuego" type="Control" unique_id=406465912]
@@ -41,9 +45,18 @@ text = "PERDISTE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=644173365]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8980392, 0.83137256, 0.6392157, 1)
+theme_override_fonts/font = ExtResource("2_e8xs7")
+theme_override_font_sizes/font_size = 21
+text = "¡Eres un perdedor JAJAJA, inténtalo otra vez!"
+horizontal_alignment = 1
+
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=299142758]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.83336765, 0.55880713, 0.39511356, 1)
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.78431374, 0.72156864, 0.47843137, 1)
 theme_override_fonts/font = ExtResource("3_ei48o")
 theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_1ljn3")
