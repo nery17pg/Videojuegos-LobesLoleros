@@ -1,8 +1,16 @@
 [gd_scene format=3 uid="uid://j2ed0p0k8vmc"]
 
-[ext_resource type="Script" path="res://game/finjuego.gd" id="1_of6s1"]
+[ext_resource type="Script" uid="uid://dmqs23slhft6q" path="res://game/finjuego.gd" id="1_of6s1"]
 [ext_resource type="FontFile" uid="uid://bgp3p3h5cs32l" path="res://art/fonts/Cinzel-Bold.ttf" id="2_e8xs7"]
 [ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="3_ei48o"]
+[ext_resource type="AudioStream" uid="uid://diglm1onv3wne" path="res://sound/consequences/orchestral-horror.wav" id="4_t2ith"]
+[ext_resource type="AudioStream" uid="uid://2dtc86qe74hf" path="res://sound/consequences/i-will-kill-you.wav" id="5_rtris"]
+[ext_resource type="AudioStream" uid="uid://cfgyehx07o61h" path="res://sound/consequences/wolf-howling.wav" id="6_tw3g5"]
+[ext_resource type="AudioStream" uid="uid://cr2f40lj6s2fl" path="res://sound/consequences/scary effect.wav" id="7_e5sva"]
+[ext_resource type="AudioStream" uid="uid://clv27yyrxnxbq" path="res://sound/consequences/wolfcrying.wav" id="8_gsf4g"]
+[ext_resource type="AudioStream" uid="uid://srxbeqivkmw4" path="res://sound/consequences/wolf-howl.wav" id="9_iurcf"]
+[ext_resource type="AudioStream" uid="uid://dl8fhndeyy8kh" path="res://sound/consequences/monstruo.wav" id="10_u7bi0"]
+[ext_resource type="AudioStream" uid="uid://cq7kumqcqwhak" path="res://sound/consequences/screams.wav" id="11_5cloi"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ljn3"]
 bg_color = Color(0.5411765, 0.3529412, 0.14509805, 1)
@@ -16,6 +24,17 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 corner_detail = 20
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_53p2f"]
+streams_count = 8
+stream_0/stream = ExtResource("4_t2ith")
+stream_1/stream = ExtResource("5_rtris")
+stream_2/stream = ExtResource("6_tw3g5")
+stream_3/stream = ExtResource("7_e5sva")
+stream_4/stream = ExtResource("8_gsf4g")
+stream_5/stream = ExtResource("9_iurcf")
+stream_6/stream = ExtResource("10_u7bi0")
+stream_7/stream = ExtResource("11_5cloi")
 
 [node name="Finjuego" type="Control" unique_id=406465912]
 layout_mode = 3
@@ -61,5 +80,9 @@ theme_override_fonts/font = ExtResource("3_ei48o")
 theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_1ljn3")
 text = "Regresar al menú principal"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1764328869]
+stream = SubResource("AudioStreamRandomizer_53p2f")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
