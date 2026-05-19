@@ -162,3 +162,6 @@ func _on_confirmation_dialog_confirmed() -> void:
 
 #func _on_game_timer_timeout():
 #	get_tree().change_scene_to_file("res://game/finjuego.tscn")
+
+# Estructura de anomalías por partes
+# Enlaces de anomalías a acciones
