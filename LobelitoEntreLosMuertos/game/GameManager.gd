@@ -17,8 +17,8 @@ func _ready():
 func _process(delta):
 	tiempo_restante = timer.time_left
 
-func perder_vida():
-	vidas -= 1
+func perder_vida(damage):
+	vidas -= damage
 	print("Vidas: ", vidas)
 	
 	if vidas <= 0:

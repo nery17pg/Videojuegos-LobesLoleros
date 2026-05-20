@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cbkvepqpv6obc"]
 
 [ext_resource type="Script" uid="uid://g2oleiuxq7sj" path="res://game/main.gd" id="1_xtpaf"]
-[ext_resource type="Texture2D" uid="uid://xb8pqcxv1usf" path="res://art/background/placeholderMap.png" id="2_dgpao"]
 [ext_resource type="Texture2D" uid="uid://b2enti5re8is0" path="res://art/background/skyBaseColor.png" id="3_fsjy5"]
 [ext_resource type="Texture2D" uid="uid://c6dvbura3cr2t" path="res://art/background/camino.png" id="3_wjctj"]
 [ext_resource type="Texture2D" uid="uid://dfo06jqw0j1lx" path="res://art/background/skyLayer3.png" id="4_l78i6"]
@@ -32,10 +31,10 @@
 [ext_resource type="PackedScene" uid="uid://b3765wggf8fmh" path="res://anomalies/anonomalies_level_3/angelique_anomaly_1.tscn" id="20_wubem"]
 [ext_resource type="PackedScene" uid="uid://qpqo52685rsx" path="res://anomalies/anonomalies_level_3/pitufo_anomaly_5.tscn" id="21_gob4j"]
 [ext_resource type="PackedScene" uid="uid://dh36i1dll013n" path="res://anomalies/anonomalies_level_3/shrek_anomaly_4.tscn" id="22_uvurp"]
-[ext_resource type="PackedScene" uid="uid://yjjejix4qbla" path="res://anomalies/anonomalies_level_3/peppa_anomaly_3.tscn" id="23_vcdjx"]
 [ext_resource type="PackedScene" uid="uid://b14q37yy2m0xm" path="res://anomalies/anonomalies_level_3/nemo_anomaly_2.tscn" id="24_f85yp"]
 [ext_resource type="PackedScene" uid="uid://coawea8diwifv" path="res://game/spawner.tscn" id="28_px363"]
 [ext_resource type="PackedScene" uid="uid://cq7mnen3qvld1" path="res://anomalies/anonomalies_level_3/ibm1_anomaly.tscn" id="28_rtjhp"]
+[ext_resource type="PackedScene" uid="uid://btt37bpegx2g6" path="res://anomalies/anonomalies_level_3/little_girl_ente.tscn" id="33_gob4j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
 size = Vector2(38, 749)
@@ -135,6 +134,22 @@ border_color = Color(0.16470589, 0.1254902, 0.0627451, 1)
 [node name="Main" type="Node2D" unique_id=294167655]
 script = ExtResource("1_xtpaf")
 
+[node name="mapLimits" type="Node2D" parent="." unique_id=1315977799]
+
+[node name="InvisibleWall1" type="StaticBody2D" parent="mapLimits" unique_id=860425635]
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mapLimits/InvisibleWall1" unique_id=1926460987]
+position = Vector2(-3466, 324)
+shape = SubResource("RectangleShape2D_lx3aj")
+
+[node name="InvisibleWall2" type="StaticBody2D" parent="mapLimits" unique_id=797471467]
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mapLimits/InvisibleWall2" unique_id=336992623]
+position = Vector2(4621, 331.5)
+shape = SubResource("RectangleShape2D_lx3aj")
+
 [node name="background" type="Node2D" parent="." unique_id=957547009]
 position = Vector2(576.5, 324)
 
@@ -198,27 +213,6 @@ texture = ExtResource("3_wjctj")
 [node name="degradado" type="Sprite2D" parent="." unique_id=1368408763]
 position = Vector2(576.5, 324)
 texture = ExtResource("6_gob4j")
-
-[node name="InvisibleWall1" type="StaticBody2D" parent="." unique_id=860425635]
-disable_mode = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleWall1" unique_id=1926460987]
-position = Vector2(-3466, 324)
-shape = SubResource("RectangleShape2D_lx3aj")
-
-[node name="InvisibleWall2" type="StaticBody2D" parent="." unique_id=797471467]
-disable_mode = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleWall2" unique_id=336992623]
-position = Vector2(4621, 331.5)
-shape = SubResource("RectangleShape2D_lx3aj")
-
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=874359133]
-
-[node name="PlaceholderMap" type="Sprite2D" parent="Parallax2D" unique_id=180913269]
-visible = false
-position = Vector2(576.5, 324)
-texture = ExtResource("2_dgpao")
 
 [node name="caseta" parent="." unique_id=1519634108 instance=ExtResource("7_wjctj")]
 position = Vector2(913, 452)
@@ -464,6 +458,7 @@ spawns = [NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spa
 
 [node name="anomaly1_2" parent="Anomalies/Level1" unique_id=376088578 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("11_a5bbb")]
 visible = false
+type = "objeto"
 spawns = [NodePath("../../../Spawns/spawnPoint1")]
 
 [node name="anomaly1_3" parent="Anomalies/Level1" unique_id=1017840837 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("12_4uwjs")]
@@ -503,6 +498,7 @@ spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spa
 
 [node name="anomaly2_5" parent="Anomalies/Level2" unique_id=938380893 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("18_fsjy5")]
 visible = false
+identity = "sato"
 spawns = [NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spawnPoint3")]
 
 [node name="anomaly2_6" parent="Anomalies/Level2" unique_id=435109919 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("19_l78i6")]
@@ -523,9 +519,9 @@ spawns = [NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spa
 visible = false
 spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spawnPoint3")]
 
-[node name="anomaly3_4" parent="Anomalies/Level3" unique_id=340648526 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("23_vcdjx")]
+[node name="anomaly3_4" parent="Anomalies/Level3" unique_id=2089974412 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("33_gob4j")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawnPoint3")]
+spawns = [NodePath("../../../Spawns/spawnPoint5")]
 
 [node name="anomaly3_5" parent="Anomalies/Level3" unique_id=528125956 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("24_f85yp")]
 visible = false
@@ -551,6 +547,9 @@ position = Vector2(1419, 392)
 
 [node name="spawnPoint4" parent="Spawns" unique_id=559669428 instance=ExtResource("28_px363")]
 position = Vector2(-1079, 400)
+
+[node name="spawnPoint5" parent="Spawns" unique_id=250244604 instance=ExtResource("28_px363")]
+position = Vector2(-774, 481)
 
 [node name="GameTimer" type="Timer" parent="." unique_id=560415717]
 

@@ -67,6 +67,19 @@ func _ready():
 			if anomalie_hover == a:
 				anomalie_hover = null
 		)
+		
+#Obtiene los dialogos de las anomalías
+var dialogos_ente1 = [ #Estos son los dialogos del ente "Niña", se obtienen y se guardan en un array para seleccionar uno de forma aleatoria posteeriormente
+	preload("res://dialogue/entes/ente1_little_girl/ente1_dialogue1.dialogue"),
+	preload("res://dialogue/entes/ente1_little_girl/ente1_dialogue2.dialogue"),
+	preload("res://dialogue/entes/ente1_little_girl/ente1_dialogue3.dialogue")
+]
+
+var dialogos_vis1 = [
+	preload("res://dialogue/visitantes/visitante1_/visit1_dialogue1.dialogue"),
+	preload("res://dialogue/visitantes/visitante1_/visit1_dialogue2.dialogue"),
+	preload("res://dialogue/visitantes/visitante1_/visit1_dialogue3.dialogue")
+]
 
 func _on_anomaly_wanna_spawn(anomaly):
 	# Indica que se recibió la señal de aparición
@@ -116,6 +129,36 @@ func validar_reporte(tipo_reportado):
 
 	# Verifica si el tipo reportado coincide con el real
 	if anomalie_actual.type == tipo_reportado:
+		menu.visible = false
+		if anomalie_actual.type == "ente" || anomalie_actual.type == "visitante":
+			
+			#Se obtiene la cámara, que es un nodo hijo de "lobelito"
+			var camara = get_viewport().get_camera_2d()
+				
+			#Se cambia la posicion de la anomalía por el centro de la camara
+			anomalie_actual.global_position = camara.get_screen_center_position()
+				#Se agranda el sprite para que parezca que el jugador está hablando frente a frente
+			anomalie_actual.scale = Vector2(3, 3)
+			var dialogo	
+			match anomalie_actual.identity:
+				"little_girl": 
+					#Se selecciona un dialogo aleatorio
+					dialogo = dialogos_ente1.pick_random()
+				"sato":
+					dialogo = dialogos_vis1.pick_random()
+					
+				_:
+					print("No hace nada xd")
+					#Por el momento está roto, ocasiona problemas ya que no le he dado una identidad a cada anomalía
+					
+			DialogueManager.show_dialogue_balloon(dialogo)
+			await DialogueManager.dialogue_ended
+			
+			#Se regresan las propiedades de la anomalía a la normalidad		
+			anomalie_actual.global_position = Vector2.ZERO
+			anomalie_actual.scale = Vector2.ONE
+		
+			
 		# Oculta la anomalía
 		anomalie_actual.visible = false
 		# Obtiene el punto donde estaba la anomalía
@@ -133,7 +176,8 @@ func validar_reporte(tipo_reportado):
 	else:
 		# Muestra mensaje de error
 		mostrar_mensaje("Incorrecto", Color.RED)
-		GameManager.perder_vida() # Nery agregó esto
+		#Se da como argumento el daño que ocasiona la anomalía específica
+		GameManager.perder_vida(anomalie_actual.damage) # Nery agregó esto
 
 func mostrar_mensaje(texto, color):
 	# Asigna el texto al label

@@ -8,6 +8,9 @@ class_name anomalies
 # Tipo de anomalía (por ejemplo: cambio de posición, ente, etc)
 @export var type : String 
 
+# Quería poner name pero no me dejó jaja, esto es solo para las anomalías de tipo ente y visitante.  Es para manejar la cuestión de los dialogos
+@export var identity : String
+
 # Cantidad de daño que provoca la anomalía
 @export var damage : int 
 

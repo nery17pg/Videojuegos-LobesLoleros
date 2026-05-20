@@ -1,0 +1,11 @@
+~ start
+Sato:
+	Jeje
+Lobelito: 
+- O_o
+	Sato: Elegiste la muerte
+	do GameManager.perder_vida(anomalie_actual.damage)
+- Jeje
+	Sato: :D
+
+=> END

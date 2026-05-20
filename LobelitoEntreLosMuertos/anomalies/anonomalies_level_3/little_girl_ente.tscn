@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://btt37bpegx2g6"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_ulsuo"]
+[ext_resource type="Texture2D" uid="uid://c0beu41cglql6" path="res://art/anomalies/AnomaliesLevel3/anomalies_littleGirl_ente.png" id="2_c1mpg"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_ys1bi"]
+
+[node name="anomalies" type="Node2D" unique_id=2089974412]
+script = ExtResource("1_ulsuo")
+level = 3
+type = "ente"
+identity = "little_girl"
+damage = 3
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=169979648]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_c1mpg")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=1251061859]
+script = ExtResource("3_ys1bi")
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=541619734]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1490328258]
+scale = Vector2(0.4, 0.4)
+polygon = PackedVector2Array(-110, 23, -115, -23, -106, -73, -101, -137, -88, -155, -64, -156, -44, -158, -54, -172, -73, -192, -66, -221, -38, -257, -5, -280, 24, -275, 49, -262, 70, -223, 69, -186, 57, -156, 36, -142, 62, -125, 64, -91, 65, -73, 89, -22, 89, 2, 78, 13, 90, 38, 100, 58, 122, 91, 121, 132, 99, 151, 95, 186, 51, 191, 41, 294, -45, 299, -59, 273, -59, 244, -83, 207, -79, 160, -87, 132, -110, 114, -105, 77, -120, 47)

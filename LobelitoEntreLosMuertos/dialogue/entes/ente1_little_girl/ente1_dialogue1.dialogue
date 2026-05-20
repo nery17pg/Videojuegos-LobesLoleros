@@ -1,0 +1,15 @@
+~ start
+Niña: [[Pero miren a quién tenemos aquí|Eres toda una celebridad por aquí|Esta no es la primera vez que nos vemos]], [wait=1]en fin, ¿has visto a mi mamá? Casi parece que llevo siglos búscandola
+Lobelito:
+- La verdad que no
+	Niña: Está bien, ¡si la ves [wait=0.5] [wave]no dudes en buscarme![/wave]
+
+- Dudo que siga viva...
+	Niña: [[No sabía que también eras comediante|Te arrepentirás|...]]
+	do GameManager.perder_vida(anomalie_actual.damage)
+	
+- Ignorarla
+	Niña: [[Que señor tan gruñón|Te deberías cambiar el nombre de Lobelito a Amargadito|Bah, me voy, la piedra de por allá es mucho más atenta e interesante]]
+	Lobelito: ...[wait=1]Esta juventud... 
+	Lobelit: Bueno, su cadaver debe estar hecho polvo, pero se nota que es y fue una niña...
+=> END

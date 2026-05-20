@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b8qm3vs8iqusa"
+path="res://.godot/imported/ente1_dialogue1.dialogue-1db01904ac302a6c6c1afc4bfa4e2161.tres"
+
+[deps]
+
+source_file="res://dialogue/entes/ente1_little_girl/ente1_dialogue1.dialogue"
+dest_files=["res://.godot/imported/ente1_dialogue1.dialogue-1db01904ac302a6c6c1afc4bfa4e2161.tres"]
+
+[params]
+
+defaults=true
