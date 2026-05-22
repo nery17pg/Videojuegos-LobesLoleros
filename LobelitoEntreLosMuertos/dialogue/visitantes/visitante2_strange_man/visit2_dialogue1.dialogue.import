@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://drcw7urb118y5"
+path="res://.godot/imported/visit2_dialogue1.dialogue-50bfd44392a668ceb1d77ae42d706ab8.tres"
+
+[deps]
+
+source_file="res://dialogue/visitantes/visitante2_strange_man/visit2_dialogue1.dialogue"
+dest_files=["res://.godot/imported/visit2_dialogue1.dialogue-50bfd44392a668ceb1d77ae42d706ab8.tres"]
+
+[params]
+
+defaults=true

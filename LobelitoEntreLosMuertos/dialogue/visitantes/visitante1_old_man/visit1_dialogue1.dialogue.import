@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c41luw3h3e68q"
+path="res://.godot/imported/visit1_dialogue1.dialogue-451ce3a3715b90bd3d126ea668e219d7.tres"
+
+[deps]
+
+source_file="res://dialogue/visitantes/visitante1_old_man/visit1_dialogue1.dialogue"
+dest_files=["res://.godot/imported/visit1_dialogue1.dialogue-451ce3a3715b90bd3d126ea668e219d7.tres"]
+
+[params]
+
+defaults=true

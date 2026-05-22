@@ -1,0 +1,23 @@
+~ start
+Hombre extraño: Llevo semanas acampado en el cementerio buscando actividad paranormal
+Hombre extraño: Y hasta ahora no ha pasado nada
+Lobelito: 
+- Quisiera ser tu
+	Lobelito: Llevo toda la noche viendo cosas extrañas pasar
+	Hombre extraño: [b][shake]Así que te burlas de mi
+	Lobelito: 
+	- Es gracioso
+		Lobelito: No puedes culparme, no estoy haciendo nada y sin embargo ya logré lo que te ha tomado tanto tiempo en una sola noche 
+		Hombre extraño: ...
+		do GameManager.perder_vida(anomalie_actual.damage)
+	- Lo siento
+		Lobelito: No es nada de eso, jamás me burlaría de ti
+		Lobelito: Esta búsqueda debe haberte dejado exhausto, ¿no crees que sería buena idea regresar a casa por esta noche?
+		Hombre extraño: Me voy de aquí, eres un bicho raro
+		Lobelito: ... ¿De verdad el bicho raro me acaba de llamar bicho raro?
+- No te rindas
+	Hombre extraño: [wave]Si estuvieras [b]muerto[/b] seríamos grandes amigos
+- Ignorarlo
+	Hombre extraño: [shake][b]Si vas a estar callado sería mejor que estuvieras muerto
+	do GameManager.perder_vida(anomalie_actual.damage)
+=> END

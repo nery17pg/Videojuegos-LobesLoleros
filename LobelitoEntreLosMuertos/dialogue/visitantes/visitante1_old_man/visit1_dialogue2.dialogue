@@ -1,0 +1,27 @@
+~ start
+Anciano: ¿Ya la conociste?
+Lobelito: ¿A quién?
+Anciano: Es una niña pelinegra
+Lobelito:
+- No sé de quién hablas
+	Anciano: Ya veo
+	Anciano: Supongo que será una historia para después
+- Si, la conozco
+	Anciano: Es energética, ¿no crees?
+	Lobelito: Para estar muerta, sí que lo es
+	Anciano: ¿Y sabes cómo terminó así?
+	Lobelito: 
+	- No tengo tiempo para esto
+		Anciano: No te preocupes, la noche es joven
+	- ...
+		Anciano: A juzgar por tu cara parece ser que no
+		Anciano: La conozco desde que estaba en el vientre de su madre, hace unos 60 años
+		Lobelito: ... ¿Qué edad tienes?
+		Anciano: Lo que se ve no se pregunta. En fin, ¿has visto ese peluche en el árbol de las muñeecas?
+		Lobelito: Sí, es igual al que siempre lleva la niña
+		Anciano: Solo diré que su destino fue exactamente el mismo
+		Anciano: Nunca conoció a su padre y su madre la orilló a tomar una decisión tan drástica a tan tierna edad...
+		Anciano: Es bueno saber que su único consuelo, el conejo de felpa, está con ella incluso después de la muerte
+- Ignorarlo
+	Anciano: Entiendo, hablaremos en otro momento
+=> END

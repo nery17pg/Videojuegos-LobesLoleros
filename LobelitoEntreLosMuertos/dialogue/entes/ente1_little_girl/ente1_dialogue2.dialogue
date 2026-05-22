@@ -1,4 +1,20 @@
 ~ start
-Niña: Nos volvemos a encontrar, Lobelito
-Lobelito: Por desgracia
+Niña: Esta es una conversacion sencilla
+
+Niña: Pueden salir [[ esto | o esto | o esto otro]] aleatoriamente
+
+Lobelito: 
+- Opcion 1
+	Lobelito: Se puede decorar el texto
+	Lobelito: Con [b]negritas[/b], [i]italicas[/i] y más
+- Opcion 2
+	Niña: También hay animaciónes
+	Niña: Esto da una sencación de [shake]terror[/shake]
+	Niña: Y esto de [wave]felicidad o alegría[/wave]
+	Niña: [wave]Se puede aplicar a todo el texto
+	Niña: [shake]Solo si no cierras las etiquetas
+- Opcion 3
+	Lobelito: Para agregar un poco[wait=1] de suspenso, se pueden agregar pausas
+Luka: En cuanto al diálogo que podrías hacer de la niña,
+debe demostrar que es inocente pero retorcida a la vez
 => END

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://1vn5lv1hj5p1"
+path="res://.godot/imported/ente3_dialogue3.dialogue-9f0a27e2475aa265174e55f3252d4e35.tres"
+
+[deps]
+
+source_file="res://dialogue/entes/ente3_pregnant_woman/ente3_dialogue3.dialogue"
+dest_files=["res://.godot/imported/ente3_dialogue3.dialogue-9f0a27e2475aa265174e55f3252d4e35.tres"]
+
+[params]
+
+defaults=true

@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://j4hhbkg7hwr6" path="res://anomalies/anomalies_level_1/shadow_anomaly_1.tscn" id="10_c08u8"]
 [ext_resource type="PackedScene" uid="uid://cnccl8m54f12n" path="res://anomalies/anomalies_level_1/statue_anomaly_1.tscn" id="11_a5bbb"]
 [ext_resource type="PackedScene" uid="uid://bbva61l8m1cw6" path="res://anomalies/anomalies_level_1/shadow_anomaly_2.tscn" id="12_4uwjs"]
+[ext_resource type="Texture2D" uid="uid://woyn0cwrxcfm" path="res://art/background_elements/dollsTree.png" id="12_gob4j"]
 [ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="12_px363"]
 [ext_resource type="PackedScene" uid="uid://dkse6wkxvw4mg" path="res://anomalies/anomalies_level_1/lobelito_anomaly.tscn" id="13_px363"]
 [ext_resource type="PackedScene" uid="uid://dvhew81vy32gn" path="res://anomalies/anomalies_level_2/light_anomaly.tscn" id="14_rtjhp"]
@@ -214,8 +215,19 @@ texture = ExtResource("3_wjctj")
 position = Vector2(576.5, 324)
 texture = ExtResource("6_gob4j")
 
-[node name="caseta" parent="." unique_id=1519634108 instance=ExtResource("7_wjctj")]
+[node name="background_elements" type="Node2D" parent="." unique_id=638782762]
+
+[node name="estatua" type="Sprite2D" parent="background_elements" unique_id=205102565]
+visible = false
+position = Vector2(-1792, 299)
+texture = ExtResource("9_itumj")
+
+[node name="caseta" parent="background_elements" unique_id=1519634108 instance=ExtResource("7_wjctj")]
 position = Vector2(913, 452)
+
+[node name="arbol" type="Sprite2D" parent="background_elements" unique_id=1766531754]
+position = Vector2(4032, 324)
+texture = ExtResource("12_gob4j")
 
 [node name="lobelito" parent="." unique_id=1034264886 instance=ExtResource("6_wjctj")]
 position = Vector2(621, 0)
@@ -295,11 +307,6 @@ offset_top = -4.0
 offset_right = 6901.95
 offset_bottom = -4.0
 text = "Arbol de las muñecas"
-
-[node name="Estatua" type="Sprite2D" parent="." unique_id=205102565]
-visible = false
-position = Vector2(-1792, 299)
-texture = ExtResource("9_itumj")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=101426990]
 script = ExtResource("9_dp3pf")

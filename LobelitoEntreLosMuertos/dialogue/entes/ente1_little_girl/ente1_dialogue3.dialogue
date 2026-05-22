@@ -1,4 +1,22 @@
 ~ start
-Niña: No es esta nuestra tercera conversación?
-Lobelito: Así es
+Niña: ¿Acaso planeas robarte a mi mejor amigo?
+Lobelito: 
+- Así es
+	Niña: No lo permitiré
+	do GameManager.perder_vida(anomalie_actual.damage)
+- No sé de qué hablas
+
+	Niña: [b][shake]¡Mentiroso![/shake][/b]
+	
+	Lobelito: 
+	- No miento
+		Niña: Mamá siempre decía que mentir es de niños malos
+		Niña: [shake]Y a los niños malos hay que castigarlos		
+		do GameManager.perder_vida(anomalie_actual.damage)
+	- Lo siento
+		Niña: ...[wait=1] Está bien
+		Niña: Iré a jugar con [b]mi[/b] mejor amigo
+		Niña: [wave]¡El señor conejo!
+		Lobelito: Tanto escándalo por un peluche[wait=1], definitivamente jamás tendré hijos
+- Ignorarla
 => END

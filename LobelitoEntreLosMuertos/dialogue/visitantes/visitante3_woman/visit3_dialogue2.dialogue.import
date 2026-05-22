@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bin82xygmhqw8"
+path="res://.godot/imported/visit3_dialogue2.dialogue-c28b0007e2d0c110c9e7e5ab6917d3b6.tres"
+
+[deps]
+
+source_file="res://dialogue/visitantes/visitante3_woman/visit3_dialogue2.dialogue"
+dest_files=["res://.godot/imported/visit3_dialogue2.dialogue-c28b0007e2d0c110c9e7e5ab6917d3b6.tres"]
+
+[params]
+
+defaults=true
