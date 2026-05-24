@@ -42,6 +42,7 @@ func _ready():
 	# Oculta el cuadro de confirmación al iniciar
 	$CanvasLayer/ConfirmationDialog.visible = false
 
+
 	# Obtiene todos los nodos del grupo "anomalias"
 	var grupoAnomalias = get_tree().get_nodes_in_group("anomalias")
 	print(grupoAnomalias)
@@ -75,10 +76,42 @@ var dialogos_ente1 = [ #Estos son los dialogos del ente "Niña", se obtienen y s
 	preload("res://dialogue/entes/ente1_little_girl/ente1_dialogue3.dialogue")
 ]
 
+var dialogos_ente2 = [
+	preload("res://dialogue/entes/ente2_ghoul/ente2_dialogue1.dialogue"),
+	preload("res://dialogue/entes/ente2_ghoul/ente2_dialogue2.dialogue"),
+	preload("res://dialogue/entes/ente2_ghoul/ente2_dialogue3.dialogue"),
+	preload("res://dialogue/entes/ente2_ghoul/ente2_dialogue4.dialogue")
+]
+
+var dialogos_ente3 = [
+	preload("res://dialogue/entes/ente3_pregnant_woman/ente3_dialogue1.dialogue"),
+	preload("res://dialogue/entes/ente3_pregnant_woman/ente3_dialogue2.dialogue"),
+	preload("res://dialogue/entes/ente3_pregnant_woman/ente3_dialogue3.dialogue")
+]
+
+var dialogos_ente4 = [
+	preload("res://dialogue/entes/ente4_oni/ente4_dialogue1.dialogue"),
+	preload("res://dialogue/entes/ente4_oni/ente4_dialogue2.dialogue"),
+	preload("res://dialogue/entes/ente4_oni/ente4_dialogue3.dialogue")
+]
+
 var dialogos_vis1 = [
-	preload("res://dialogue/visitantes/visitante1_/visit1_dialogue1.dialogue"),
-	preload("res://dialogue/visitantes/visitante1_/visit1_dialogue2.dialogue"),
-	preload("res://dialogue/visitantes/visitante1_/visit1_dialogue3.dialogue")
+	preload("res://dialogue/visitantes/visitante1_old_man/visit1_dialogue1.dialogue"),
+	preload("res://dialogue/visitantes/visitante1_old_man/visit1_dialogue2.dialogue"),
+	preload("res://dialogue/visitantes/visitante1_old_man/visit1_dialogue3.dialogue")
+]
+
+var dialogos_vis2 = [
+	preload("res://dialogue/visitantes/visitante2_strange_man/visit2_dialogue1.dialogue"),
+	preload("res://dialogue/visitantes/visitante2_strange_man/visit2_dialogue2.dialogue"),
+	preload("res://dialogue/visitantes/visitante2_strange_man/visit2_dialogue3.dialogue"),
+	preload("res://dialogue/visitantes/visitante2_strange_man/visit2_dialogue4.dialogue")
+]
+
+var dialogos_vis3 = [
+	preload("res://dialogue/visitantes/visitante3_woman/visit3_dialogue1.dialogue"),
+	preload("res://dialogue/visitantes/visitante3_woman/visit3_dialogue2.dialogue"),
+	preload("res://dialogue/visitantes/visitante3_woman/visit3_dialogue3.dialogue")
 ]
 
 func _on_anomaly_wanna_spawn(anomaly):
@@ -131,32 +164,57 @@ func validar_reporte(tipo_reportado):
 	if anomalie_actual.type == tipo_reportado:
 		menu.visible = false
 		if anomalie_actual.type == "ente" || anomalie_actual.type == "visitante":
-			
+			#El sprite de lobelito se oculta y el jugador no podrá moverse en lo que dura el diálogo
+			$lobelito.visible = false
+			$lobelito.inmovilizado = true
 			#Se obtiene la cámara, que es un nodo hijo de "lobelito"
 			var camara = get_viewport().get_camera_2d()
 				
 			#Se cambia la posicion de la anomalía por el centro de la camara
 			anomalie_actual.global_position = camara.get_screen_center_position()
 				#Se agranda el sprite para que parezca que el jugador está hablando frente a frente
-			anomalie_actual.scale = Vector2(3, 3)
+				
+			anomalie_actual.z_index = 999
+			if anomalie_actual.identity == "little_girl":
+				anomalie_actual.scale = Vector2(3, 3)
+			else: 
+				anomalie_actual.scale = Vector2(2, 2)
+				
 			var dialogo	
 			match anomalie_actual.identity:
 				"little_girl": 
 					#Se selecciona un dialogo aleatorio
 					dialogo = dialogos_ente1.pick_random()
-				"sato":
+				"ghoul":
+					dialogo = dialogos_ente2.pick_random()
+					
+				"pregnant_woman":
+					dialogo = dialogos_ente3.pick_random()
+					
+				"oni":
+					dialogo = dialogos_ente4.pick_random()
+					
+				"old_man":
 					dialogo = dialogos_vis1.pick_random()
 					
+				"strange_man":
+					dialogo = dialogos_vis2.pick_random()
+					
+				"woman":
+					dialogo = dialogos_vis3.pick_random()
 				_:
 					print("No hace nada xd")
 					#Por el momento está roto, ocasiona problemas ya que no le he dado una identidad a cada anomalía
 					
 			DialogueManager.show_dialogue_balloon(dialogo)
 			await DialogueManager.dialogue_ended
-			
+			if !is_inside_tree():
+				return
 			#Se regresan las propiedades de la anomalía a la normalidad		
 			anomalie_actual.global_position = Vector2.ZERO
 			anomalie_actual.scale = Vector2.ONE
+			anomalie_actual.z_index = 0
+		
 		
 			
 		# Oculta la anomalía
@@ -169,7 +227,12 @@ func validar_reporte(tipo_reportado):
 		# Activa tiempo de espera antes de reutilizar el punto
 		spawn.on_waiting_time = true 
 		# Inicia un temporizador aleatorio
-		spawn.get_node("RandomTimer").start_random()
+		if spawn and spawn.is_inside_tree():
+			spawn.get_node("RandomTimer").start_random()
+		
+		#Lobelito vuelve a ser visible y el jugador puede volver a moverse
+		$lobelito.visible = true
+		$lobelito.inmovilizado = false
 		
 		# Muestra mensaje de acierto
 		mostrar_mensaje("Correcto", Color.GREEN)
@@ -180,6 +243,9 @@ func validar_reporte(tipo_reportado):
 		GameManager.perder_vida(anomalie_actual.damage) # Nery agregó esto
 
 func mostrar_mensaje(texto, color):
+	
+	if !is_inside_tree():
+		return
 	# Asigna el texto al label
 	label_feedback.text = texto
 	# Cambia el color del texto

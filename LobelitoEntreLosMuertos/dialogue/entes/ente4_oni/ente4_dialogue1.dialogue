@@ -1,0 +1,16 @@
+~ start
+Oni: [[Por muy sorprendente que suene,|Parece mentira pero]] incluso los onis tenemos miedos
+Lobelito: 
+- ¿Cuáles son tus miedos?
+	Oni: Las muñecas
+	Lobelito: Oh...
+	Oni: Un ser inferior como tu no lo entiende, pero las muñecas son quienes gobiernan estas tierras
+	Oni: La única razón por la que Ghoul aún no te ha devorado es por ese conejo de felpa
+	Oni: A pesar de ser el miembro más joven, es el más poderoso
+- No me interesa
+	Oni: Que respuesta tan propia de alguien que no comprende su posición
+- Ignorarlo
+	Oni: [shake][b]¿Acaso soy yo tu miedo?
+	do GameManager.perder_vida(anomalie_actual.damage)
+
+=> END

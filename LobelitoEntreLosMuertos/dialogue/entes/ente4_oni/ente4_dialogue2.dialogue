@@ -1,0 +1,26 @@
+~ start
+Oni: Parece que tienes algo en mente
+Oni: Preocuparse demasiado arruina el sabor de la carne, habla conmigo
+Lobelito:
+- Sobre tu origen
+	Lobelito: A decir verdad... Creía que los Onis eran japoneses
+	Oni: Lo son
+	Lobelito: Entonces... ¿Qué haces aquí?
+	Oni: ¿Por qué eres un lobo?
+	Lobelito: Eh-
+	Oni: Hay preguntas para las que no hay una respuesta
+- Sobre tu vestimenta
+	Lobelito: A decir verdad... Tu vestimenta luce bastante moderna
+	Oni: [wave]¡Finalmente alguien lo nota!
+	Oni: Tomé [b]prestada[/b] la prenda de mi última presa
+	Oni: Me sorprendió que tuviera una complexión similar a la mía
+	Oni: Así que aproveché la ocasión para cambiar un poco mi apariencia
+	Lobelito: Oh... Eh... Te queda bien 
+	Lobelito: [[Me voy de aquí antes de que se haga un abrigo con mi piel|Tenemos diferentes definiciones de pedir algo prestado]]
+- Ignorarlo
+	Oni: Es triste ver cómo poco a poco pierdes el sabor
+	Oni: Pero no te preocupes
+	Oni: [shake][b]Nunca he sido exigente con la comida
+	do GameManager.perder_vida(anomalie_actual.damage)
+
+=> END

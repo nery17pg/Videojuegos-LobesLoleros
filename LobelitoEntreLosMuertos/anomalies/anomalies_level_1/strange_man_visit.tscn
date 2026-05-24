@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://domxih6grhfnh"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_ygkg4"]
+[ext_resource type="Texture2D" uid="uid://cjh3umvx50b5q" path="res://art/anomalies/AnomaliesLevel1/visitante_strange_man.png" id="2_h4ytx"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_h4ytx"]
+
+[node name="anomalies" type="Node2D" unique_id=1485426382]
+script = ExtResource("1_ygkg4")
+level = 1
+type = "visitante"
+identity = "strange_man"
+damage = 1
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=819585994]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_h4ytx")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=773347065]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=72193030]
+position = Vector2(0, 1)
+polygon = PackedVector2Array(33, -10, 34, -16, 52, -26, 61, -73, 57, -90, 53, -95, 56, -107, 57, -114, 63, -125, 66, -136, 64, -149, 54, -158, 39, -165, 21, -160, 15, -151, 6, -148, 3, -145, 4, -141, -4, -134, -8, -125, -8, -121, -21, -121, -33, -112, -41, -104, -44, -87, -56, -69, -59, -58, -51, -43, -46, -36, -49, -27, -46, -18, -50, -7, -48, 32, -48, 61, -50, 90, -48, 103, -50, 127, -44, 132, -46, 139, -57, 148, -61, 156, -59, 164, -44, 166, -28, 160, -18, 149, -12, 149, -4, 153, 4, 160, 19, 163, 40, 158, 43, 149, 24, 140, 16, 129, 19, 126, 25, 101, 27, 81, 29, 57, 33, 30, 29, 2)
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=606554382]
+script = ExtResource("3_h4ytx")
+min_wait_time = 10.0
+max_wait_time = 15.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

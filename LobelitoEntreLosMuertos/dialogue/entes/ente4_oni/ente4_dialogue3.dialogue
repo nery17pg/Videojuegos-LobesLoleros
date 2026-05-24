@@ -1,0 +1,15 @@
+~ start
+Oni: El conejo nos advirtió no clavarte el diente
+Lobelito: 
+- Continúa
+	Oni: Ghoul y yo apostamos por quién te comería primero
+	Oni: Pero por desgracia cuentas con la protección del "señor conejo"
+	Oni: Por supuesto, si haces enojar a alguien de por aquí considerate muerto
+- Soy invulnerable
+	Oni: Me produces más lástima que hambre
+	Oni: Ni siquiera entiendes lo insignificante que eres
+- Ignorarlo
+	Oni: No deberías darle la espalda a tu depredador
+	do GameManager.perder_vida(anomalie_actual.damage)
+
+=> END
