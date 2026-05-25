@@ -1,28 +1,24 @@
 ~ start
-Hombre misterioso/extraño: No, tristemente no se llama
-Michael Jackson
-Luka: Me imagino la personalidad de este personaje
-como un antisocial que prefiere pasar el rato con los
-muertos. Está obsesionado con la actividad paranormal,
-todo el mundo habla de que el cementerio está embrujado
-sim embargo las anomalías/espiritus/entes nunca se
-han mostrado ante él. 
-Sus dialogos deben reflejar que es una persona
-extraña y obsesiva. También estaría bien que incluyeras
-un dialogo de un ente burlandose de que ni siquiera
-los muertos quieren estar cerca de él
+Luka: 
+- Saltar dialogos
+- Detalles del personaje
+	Hombre misterioso/extraño: No, tristemente no se llama
+	Michael Jackson
+	Luka: Me imagino la personalidad de este personaje
+	como un antisocial que prefiere pasar el rato con los
+	muertos. Está obsesionado con la actividad paranormal,
+	todo el mundo habla de que el cementerio está embrujado
+	sim embargo las anomalías/espiritus/entes nunca se
+	han mostrado ante él. 
+	Sus dialogos deben reflejar que es una persona
+	extraña y obsesiva. También estaría bien que incluyeras
+	un dialogo de un ente burlandose de que ni siquiera
+	los muertos quieren estar cerca de él
 
-**Importante**
-Siempre debe haber opción de ignorar a las anomalías
-Pero no todas bajan vidas por ignorarlas.
-En el caso del hombre extraño, el siempre bajará vida
-al ser ignorado
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+	**Importante**
+	Siempre debe haber opción de ignorar a las anomalías
+	Pero no todas bajan vidas por ignorarlas.
+	En el caso del hombre extraño, el siempre bajará vida
+	al ser ignorado
+
 => END

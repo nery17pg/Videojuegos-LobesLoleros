@@ -84,15 +84,9 @@ var dialogos_ente2 = [
 ]
 
 var dialogos_ente3 = [
-	preload("res://dialogue/entes/ente3_pregnant_woman/ente3_dialogue1.dialogue"),
-	preload("res://dialogue/entes/ente3_pregnant_woman/ente3_dialogue2.dialogue"),
-	preload("res://dialogue/entes/ente3_pregnant_woman/ente3_dialogue3.dialogue")
-]
-
-var dialogos_ente4 = [
-	preload("res://dialogue/entes/ente4_oni/ente4_dialogue1.dialogue"),
-	preload("res://dialogue/entes/ente4_oni/ente4_dialogue2.dialogue"),
-	preload("res://dialogue/entes/ente4_oni/ente4_dialogue3.dialogue")
+	preload("res://dialogue/entes/ente3_oni/ente3_dialogue1.dialogue"),
+	preload("res://dialogue/entes/ente3_oni/ente3_dialogue2.dialogue"),
+	preload("res://dialogue/entes/ente3_oni/ente3_dialogue3.dialogue")
 ]
 
 var dialogos_vis1 = [
@@ -188,11 +182,8 @@ func validar_reporte(tipo_reportado):
 				"ghoul":
 					dialogo = dialogos_ente2.pick_random()
 					
-				"pregnant_woman":
-					dialogo = dialogos_ente3.pick_random()
-					
 				"oni":
-					dialogo = dialogos_ente4.pick_random()
+					dialogo = dialogos_ente3.pick_random()
 					
 				"old_man":
 					dialogo = dialogos_vis1.pick_random()

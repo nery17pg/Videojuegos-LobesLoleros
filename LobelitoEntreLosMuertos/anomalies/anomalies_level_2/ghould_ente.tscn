@@ -1,28 +1,25 @@
 [gd_scene format=3 uid="uid://diys43kef84gk"]
 
 [ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_eaedo"]
-[ext_resource type="Texture2D" uid="uid://bnc22gkf6pwry" path="res://art/anomalies/AnomaliesLevel2/Ajin.webp" id="2_ahjlm"]
+[ext_resource type="Texture2D" uid="uid://cj5fcb5thwgmu" path="res://art/anomalies/AnomaliesLevel2/anomalies_ghoul.png" id="2_t6yfn"]
 [ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_ahjlm"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4jeco"]
-radius = 131.0
-height = 476.0
 
 [node name="anomalies" type="Node2D" unique_id=938380893]
 script = ExtResource("1_eaedo")
 level = 2
-type = "visitante"
+type = "ente"
+identity = "ghoul"
 damage = 2
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1858275552]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_ahjlm")
+texture = ExtResource("2_t6yfn")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1539149558]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=419679700]
-shape = SubResource("CapsuleShape2D_4jeco")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1888740876]
+polygon = PackedVector2Array(-54, -9, -53, 2, -55, 27, -48, 64, -35, 76, -37, 103, -35, 129, -47, 139, -59, 144, -57, 164, -45, 172, -28, 165, -5, 152, 28, 158, 39, 167, 78, 174, 87, 162, 82, 142, 77, 121, 74, 96, 69, 72, 89, 72, 105, 59, 104, 42, 95, 32, 89, 29, 83, -6, 83, -24, 88, -37, 73, -64, 61, -100, 36, -109, 31, -114, 33, -128, 30, -146, 19, -155, -3, -157, -24, -147, -29, -136, -29, -122, -39, -115, -38, -93, -49, -76, -53, -47, -54, -24)
 
 [node name="RandomTimer" type="Timer" parent="." unique_id=1849347045]
 script = ExtResource("3_ahjlm")
