@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://ild6l4h4o5ni"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_3cyuq"]
+[ext_resource type="Texture2D" uid="uid://ckhysvtootafi" path="res://art/anomalies/AnomaliesLevel1/anomalies_dolls_gone.png" id="2_ifiih"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_3vg5s"]
+
+[node name="anomalies" type="Node2D" unique_id=836312504]
+script = ExtResource("1_3cyuq")
+level = 2
+type = "otro"
+damage = 2
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=745654141]
+texture = ExtResource("2_ifiih")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2129289199]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1724500600]
+polygon = PackedVector2Array(126, -33, 158, -65, 200, -49, 181, -6, 222, 41, 282, -4, 357, -10, 374, -68, 328, -136, 383, -161, 365, -224, 398, -250, 400, -345, -536, -335, -543, -255, -595, -211, -567, -149, -543, -111, -490, -113, -437, -121, -351, -144, -323, -139, -299, -110, -258, -96, -253, -55, -224, -37, -207, -26, -212, 30, -230, 97, -273, 200, -291, 250, -273, 291, -228, 272, -200, 272, -192, 301, -159, 320, -29, 304, -7, 285, 28, 298, 42, 256, 154, 285, 213, 271, 199, 229, 172, 111, 143, 77, 126, 23, 124, -15)
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=652754971]
+script = ExtResource("3_3vg5s")
+min_wait_time = 5.0
+max_wait_time = 10.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

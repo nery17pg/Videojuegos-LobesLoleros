@@ -129,6 +129,9 @@ func _on_anomaly_wanna_spawn(anomaly):
 	else:
 		# Elige un punto aleatorio disponible
 		var spawnPoint = freesSpawns.pick_random()	
+		# Si la anomalía reemplaza a un objeto existente lo oculta
+		if spawnPoint.will_change and spawnPoint.original_object:
+			spawnPoint.original_object.visible = false
 		# Coloca la anomalía en la posición del punto
 		anomaly.position = spawnPoint.position
 		# Guarda el punto actual en la anomalía
@@ -202,6 +205,7 @@ func validar_reporte(tipo_reportado):
 			if !is_inside_tree():
 				return
 			#Se regresan las propiedades de la anomalía a la normalidad		
+			
 			anomalie_actual.global_position = Vector2.ZERO
 			anomalie_actual.scale = Vector2.ONE
 			anomalie_actual.z_index = 0
@@ -210,8 +214,12 @@ func validar_reporte(tipo_reportado):
 			
 		# Oculta la anomalía
 		anomalie_actual.visible = false
+		
 		# Obtiene el punto donde estaba la anomalía
 		var spawn = anomalie_actual.current_spawn
+		if spawn.will_change and spawn.original_object:
+				spawn.original_object.visible = true
+		
 		# Libera el punto de aparición
 		spawn.ocupado = false
 		spawn.anomaly_actual = null
