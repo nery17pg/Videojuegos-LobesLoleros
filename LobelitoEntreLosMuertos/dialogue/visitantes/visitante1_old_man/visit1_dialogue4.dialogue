@@ -1,0 +1,21 @@
+~ start
+Anciano: No sé como hacer notas en los dialogos, pero
+trata de hacer que los personajes tengan personalidad
+en el caso del anciano, que sea una persona sabia y
+que cuente una que otra leyenda del lugar. 
+Tambien puede ser un antiguo criminal de guerra
+(como el Sato jeje)
+Trata de que los personajes sean interesantes 
+para que el juegono sea tan aburrido
+Si usas chat dile que defina claramente la personalidad
+antes de escribir los dialogos
+Sato:
+	Jeje
+Lobelito: 
+- O_o
+	Sato: Elegiste la muerte
+	do GameManager.perder_vida(anomalie_actual.damage)
+- Jeje
+	Sato: :D
+
+=> END
