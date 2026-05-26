@@ -1,0 +1,20 @@
+~ start
+Oni: Antes este lugar estaba lleno de niños
+Lobelito:
+- ...¿Qué les pasó?
+	Oni: [[Dejaron de reír|Uno por uno fueron desapareciendo|El lugar terminó tragándoselos|Aprendieron a quedarse callados]]
+		Lobelito:
+	- ¿Quién los hizo desaparecer?
+		Oni: [[Algunos abrieron puertas que no debían|Algunos escucharon voces en la oscuridad]]
+	- ¿Tú estabas aquí?
+		Oni: [[Siempre he estado aquí|Yo vi todo|Más de lo que hubiera querido]]
+	- Eso no responde nada
+		Oni: [[Porque no hay una sola respuesta|Porque no entenderías aunque te lo dijera]]
+			
+- No quiero escuchar esto
+	Oni: Pero necesitas hacerlo
+	
+- Tú hiciste algo, ¿verdad?
+	Oni: [shake]No fui yo quien los despedazó 
+
+=> END

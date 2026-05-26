@@ -1,3 +1,21 @@
 ~ start
-Ghoul: Que csm claudia cheinbaum
+Ghoul: A veces los cadáveres llegan [[ incompletos | abiertos | mal cerrados ]].
+
+Lobelito:
+- No quiero escuchar eso
+	Ghoul: Yo sí quiero encontrar [[ lo que falta | lo que se llevaron ]].
+
+- Qué enfermo
+	Ghoul: [shake]Todavía está [[ tibio | caliente | fresco ]] cuando pasa.
+	do GameManager.perder_vida(anomalie_actual.damage)
+
+- ¿Quién haría algo así?
+	Ghoul: [[ Hambre | Costumbre | Necesidad ]].
+	Ghoul: Algunas cosas siguen comiendo después de morir.
+	do GameManager.perder_vida(anomalie_actual.damage)
+	
+- ¿Qué partes faltan?
+	Ghoul: [shake][color=red]La misma cada vez, el corazón.
+	do GameManager.perder_vida(anomalie_actual.damage)
+
 => END

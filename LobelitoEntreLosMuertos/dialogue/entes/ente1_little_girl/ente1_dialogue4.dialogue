@@ -1,0 +1,19 @@
+~ start
+Niña: [wave]Hay lugares aquí donde el eco responde distinto...
+
+Lobelito:
+- Eso no da miedo
+	Niña: Todavía no entiendes qué significa.
+
+- ¿Distinto cómo?
+	Niña: A veces responde con otra voz.
+	Niña: ¿Qué sería peor?
+
+	- Escuchar tu eco con una voz distinta
+		Niña: [shake] A mamá le pasaba eso, así que tuve que deshacerme de ella
+
+	- Escuchar que responden a tu eco
+		Niña: [shake][color=red]Entonces no estabas hablando solo.
+		do GameManager.perder_vida(anomalie_actual.damage)
+
+=> END

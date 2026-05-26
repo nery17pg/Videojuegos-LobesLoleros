@@ -1,6 +1,15 @@
 ~ start
-Ghoul: ...
+Ghoul: [wave]¿Sabes qué hacen los ghouls cuando tienen hambre?[/wave]
+
 Lobelito:
-- Dejarlo tranquilo
-- Hablar
+- Comer cadáveres
+	Ghoul: [pulse] [color=red] Solo cuando no encuentran algo vivo.
+
+- No existen los ghouls
+	Ghoul: Entonces deja de hablar conmigo.
+	do GameManager.perder_vida(anomalie_actual.damage)
+
+- ¿Tú eres uno?
+	Ghoul: [shake]Todavía no completamente.[/shake]
+
 => END
