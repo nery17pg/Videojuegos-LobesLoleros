@@ -1,28 +1,23 @@
 [gd_scene format=3 uid="uid://ng1bggqsky4u"]
 
-[ext_resource type="Texture2D" uid="uid://bdqpr4jdof8r6" path="res://art/background/placeholderInsidepng.png" id="1_67xbl"]
 [ext_resource type="Script" uid="uid://bl48imh3ynpdj" path="res://game/inside.gd" id="1_jde34"]
-[ext_resource type="Texture2D" uid="uid://b4qwguhn7mchg" path="res://art/ui/libreta_abierta.webp" id="3_6iwqh"]
+[ext_resource type="Texture2D" uid="uid://dcjlacemgyg3j" path="res://art/background/inside_rest.png" id="2_u5na0"]
+[ext_resource type="Texture2D" uid="uid://bcpqj8ewhplh0" path="res://art/background/inside_libreta_1.png" id="3_0onei"]
 [ext_resource type="Texture2D" uid="uid://6jmc30gg74uo" path="res://art/ui/reloj.webp" id="3_jde34"]
-[ext_resource type="Texture2D" uid="uid://cjot485rerryn" path="res://art/ui/puerta_3.webp" id="4_6iwqh"]
-[ext_resource type="Texture2D" uid="uid://dfloasp6qsryi" path="res://2972368.png" id="5_r5i4s"]
-[ext_resource type="Texture2D" uid="uid://bnfyr7giknkgv" path="res://art/ui/libreta_abierta.png" id="6_r5i4s"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_r5i4s"]
-size = Vector2(376, 213.5)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_u5na0"]
-radius = 117.01709
+[ext_resource type="Texture2D" uid="uid://bfn7sqyo07gic" path="res://art/background/inside_reloj.png" id="5_ko1oo"]
+[ext_resource type="Texture2D" uid="uid://dkjdfbbjx62cq" path="res://art/background/inside_puerta.png" id="6_808hi"]
+[ext_resource type="Texture2D" uid="uid://cstoind5fx6l5" path="res://art/background/inside_libreta_closeup.png" id="7_u5na0"]
+[ext_resource type="Texture2D" uid="uid://cfv450birw7lo" path="res://art/background/inside_reloj_closeup.png" id="8_0onei"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0onei"]
-size = Vector2(228.5, 348)
+size = Vector2(249, 654)
 
 [node name="inside" type="Node2D" unique_id=465977253]
 script = ExtResource("1_jde34")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=897210778]
 position = Vector2(576, 324)
-texture = ExtResource("1_67xbl")
+texture = ExtResource("2_u5na0")
 
 [node name="Label" type="Label" parent="Sprite2D" unique_id=1375391066]
 offset_left = -88.0
@@ -33,13 +28,12 @@ text = "*Interior de caseta*"
 [node name="Libreta" type="Area2D" parent="." unique_id=343550184]
 
 [node name="Sprite2D" type="Sprite2D" parent="Libreta" unique_id=1641184097]
-position = Vector2(552, 308.76758)
-scale = Vector2(0.7046264, 0.7213281)
-texture = ExtResource("3_6iwqh")
+position = Vector2(576, 324)
+texture = ExtResource("3_0onei")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Libreta" unique_id=613836274]
-position = Vector2(557, 311.25)
-shape = SubResource("RectangleShape2D_r5i4s")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Libreta" unique_id=1868821926]
+position = Vector2(576, 324)
+polygon = PackedVector2Array(-3, 86, 48, 75, 96, 82, 145, 84, 266, 137, 258, 164, 196, 223, 17, 194, -41, 183, -138, 166, -147, 132, -46, 90)
 
 [node name="Reloj" type="Area2D" parent="." unique_id=1220173267]
 
@@ -50,23 +44,20 @@ scale = Vector2(0.7114286, 0.6857143)
 texture = ExtResource("3_jde34")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Reloj" unique_id=575060336]
-position = Vector2(956, 161)
-scale = Vector2(0.54296875, 0.6074219)
-texture = ExtResource("5_r5i4s")
+position = Vector2(576, 324)
+texture = ExtResource("5_ko1oo")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Reloj" unique_id=1235945355]
-position = Vector2(962, 159)
-shape = SubResource("CircleShape2D_u5na0")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Reloj" unique_id=585085955]
+polygon = PackedVector2Array(909, 342, 1113, 369, 1104, 538, 905, 504)
 
 [node name="Puerta" type="Area2D" parent="." unique_id=184654660]
 
 [node name="Sprite2D" type="Sprite2D" parent="Puerta" unique_id=741064719]
-position = Vector2(199, 476.00003)
-scale = Vector2(1.6306818, 1.3671428)
-texture = ExtResource("4_6iwqh")
+position = Vector2(576, 324)
+texture = ExtResource("6_808hi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta" unique_id=1363609124]
-position = Vector2(194.75, 474)
+position = Vector2(125.5, 321)
 shape = SubResource("RectangleShape2D_0onei")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1796473966]
@@ -84,7 +75,7 @@ offset_left = 324.0
 offset_top = 103.0
 offset_right = 794.0
 offset_bottom = 531.0
-texture = ExtResource("6_r5i4s")
+texture = ExtResource("7_u5na0")
 
 [node name="Label" type="Label" parent="CanvasLayer/LibretaUI" unique_id=1881081596]
 layout_mode = 1
@@ -144,7 +135,7 @@ offset_left = 279.0
 offset_top = 100.0
 offset_right = 867.0
 offset_bottom = 661.0
-texture = ExtResource("5_r5i4s")
+texture = ExtResource("8_0onei")
 expand_mode = 1
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/RelojZoom/TextureRect" unique_id=1312272006]
