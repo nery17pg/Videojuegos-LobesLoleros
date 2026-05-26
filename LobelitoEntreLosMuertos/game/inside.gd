@@ -8,6 +8,7 @@ extends Node2D
 @onready var reloj_zoom = $CanvasLayer/RelojZoom
 @onready var boton_cerrar_zoom = $CanvasLayer/RelojZoom/Button
 @onready var puerta = $Puerta
+var pagina_actual = 1
 
 func _ready() -> void:
 
@@ -26,6 +27,20 @@ func _ready() -> void:
 	# Reloj
 	reloj.input_event.connect(_on_reloj_click)
 	boton_cerrar_zoom.pressed.connect(_cerrar_reloj_zoom)
+	
+	#Paginacion libreta
+	$CanvasLayer/LibretaUI/Pagina1.show()
+	$CanvasLayer/LibretaUI/Pagina2.hide()
+	$CanvasLayer/LibretaUI/Pagina3.hide()
+	$CanvasLayer/LibretaUI/Pagina4.hide()
+	$CanvasLayer/LibretaUI/Pagina5.hide()
+	$CanvasLayer/LibretaUI/Pagina6.hide()
+	$CanvasLayer/LibretaUI/Pagina7.hide()
+	$CanvasLayer/LibretaUI/Pagina8.hide()
+	$CanvasLayer/LibretaUI/Pagina9.hide()
+	$CanvasLayer/LibretaUI/Pagina10.hide()
+	$CanvasLayer/LibretaUI/Pagina11.hide()
+
 
 # Funciones de libretas
 func _on_libreta_click(viewport, event, shape_idx):
@@ -83,3 +98,58 @@ func _process(delta):
 	label_tiempo.text = texto
 	label_tiempo_1.text = texto
 	
+#funcion que cambia de pagina
+func actualizar_paginas():
+	$CanvasLayer/LibretaUI/Pagina1.hide()
+	$CanvasLayer/LibretaUI/Pagina2.hide()
+	$CanvasLayer/LibretaUI/Pagina3.hide()
+	$CanvasLayer/LibretaUI/Pagina4.hide()
+	$CanvasLayer/LibretaUI/Pagina5.hide()
+	$CanvasLayer/LibretaUI/Pagina6.hide()
+	$CanvasLayer/LibretaUI/Pagina7.hide()
+	$CanvasLayer/LibretaUI/Pagina8.hide()
+	$CanvasLayer/LibretaUI/Pagina9.hide()
+	$CanvasLayer/LibretaUI/Pagina10.hide()
+	$CanvasLayer/LibretaUI/Pagina11.hide()
+
+	match pagina_actual:
+		1:
+			$CanvasLayer/LibretaUI/Pagina1.show()
+		2:
+			$CanvasLayer/LibretaUI/Pagina2.show()
+		3:
+			$CanvasLayer/LibretaUI/Pagina3.show()
+			
+		4:
+			$CanvasLayer/LibretaUI/Pagina4.show()
+		5:
+			$CanvasLayer/LibretaUI/Pagina5.show()
+		6:
+			$CanvasLayer/LibretaUI/Pagina6.show()
+		7:
+			$CanvasLayer/LibretaUI/Pagina7.show()
+		8:
+			$CanvasLayer/LibretaUI/Pagina8.show()
+		9:
+			$CanvasLayer/LibretaUI/Pagina9.show()
+		10:
+			$CanvasLayer/LibretaUI/Pagina10.show()
+		11:
+			$CanvasLayer/LibretaUI/Pagina11.show()
+		
+
+
+func _on_atras_pressed() -> void:
+	if pagina_actual > 1:
+		pagina_actual -= 1
+
+	actualizar_paginas()
+	
+
+
+
+func _on_siguiente_pressed() -> void:
+	if pagina_actual < 11:
+		pagina_actual += 1
+
+	actualizar_paginas()

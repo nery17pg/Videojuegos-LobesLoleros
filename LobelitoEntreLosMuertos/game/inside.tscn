@@ -8,6 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://dkjdfbbjx62cq" path="res://art/background/inside_puerta.png" id="6_808hi"]
 [ext_resource type="Texture2D" uid="uid://cstoind5fx6l5" path="res://art/background/inside_libreta_closeup.png" id="7_u5na0"]
 [ext_resource type="Texture2D" uid="uid://cfv450birw7lo" path="res://art/background/inside_reloj_closeup.png" id="8_0onei"]
+[ext_resource type="Texture2D" uid="uid://dthjsn8onomqw" path="res://anterior.png" id="8_ko1oo"]
+[ext_resource type="Texture2D" uid="uid://cjh3umvx50b5q" path="res://art/anomalies/AnomaliesLevel1/visitante_strange_man.png" id="8_qwcb4"]
+[ext_resource type="Texture2D" uid="uid://dqw37nsxhcq2g" path="res://siguiente.png" id="9_808hi"]
+[ext_resource type="Texture2D" uid="uid://cj5fcb5thwgmu" path="res://art/anomalies/AnomaliesLevel2/anomalies_ghoul.png" id="9_m7k8n"]
+[ext_resource type="Texture2D" uid="uid://cvpcsytqbicxa" path="res://art/anomalies/AnomaliesLevel2/anomalies_oni.png" id="10_354ll"]
+[ext_resource type="Texture2D" uid="uid://c0beu41cglql6" path="res://art/anomalies/AnomaliesLevel3/anomalies_littleGirl_ente.png" id="11_22b0i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0onei"]
 size = Vector2(249, 654)
@@ -64,7 +70,6 @@ shape = SubResource("RectangleShape2D_0onei")
 
 [node name="LibretaUI" type="Panel" parent="CanvasLayer" unique_id=1253953198]
 process_mode = 2
-visible = false
 offset_left = -4.0
 offset_top = -3.0
 offset_right = 1155.0
@@ -72,61 +77,375 @@ offset_bottom = 649.0
 
 [node name="ImagenLibreta" type="TextureRect" parent="CanvasLayer/LibretaUI" unique_id=1995777197]
 layout_mode = 0
-offset_left = 324.0
-offset_top = 103.0
-offset_right = 794.0
-offset_bottom = 531.0
+offset_left = 7.0
+offset_right = 1159.0
+offset_bottom = 648.0
 texture = ExtResource("7_u5na0")
-
-[node name="Label" type="Label" parent="CanvasLayer/LibretaUI" unique_id=1881081596]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 388.0
-offset_top = -139.0
-offset_right = 671.0
-offset_bottom = 118.0
-grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "REGLAS:
-
-1. Reporta 
-cualquier anomalía.
-
-2. No ignores 
-cambios en el 
-entorno.
-"
-vertical_alignment = 1
-
-[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Label" unique_id=448493949]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 203.0
-offset_top = -137.5
-offset_right = 486.0
-offset_bottom = 119.5
-grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "3. Observa el reloj.
-
-4. Sobrevive 
-hasta las 6 AM."
-vertical_alignment = 1
 
 [node name="Button" type="Button" parent="CanvasLayer/LibretaUI" unique_id=2074743394]
 layout_mode = 0
-offset_left = 536.0
-offset_top = 376.0
-offset_right = 594.0
-offset_bottom = 407.0
+offset_left = 558.0
+offset_top = 481.0
+offset_right = 616.0
+offset_bottom = 512.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "Cerrar"
 
+[node name="Pagina1" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=595572141]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina1" unique_id=1881081596]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 613.0
+offset_top = 101.0
+offset_right = 870.0
+offset_bottom = 488.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "REGLAS:
+Reportar anomalía de luz
+
+Reportar anomalía de sombra
+
+Reportar como tipo “lobelito”:
+-Cuando veas una tumba con 
+tu nombre
+-Cuando te veas a ti mismo
+
+Reportar visitantes:
+-Hombre extraño
+-Mujer
+-Anciano"
+vertical_alignment = 1
+
+[node name="Pagina2" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=901331056]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label2" type="Label" parent="CanvasLayer/LibretaUI/Pagina2" unique_id=448493949]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 615.0
+offset_top = 124.0
+offset_right = 868.0
+offset_bottom = 459.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Entes
+-Ghoul:
+-Oni
+-Niña
+
+Reportar como tipo “otro”:
+-Cuando haya un visitante. 
+Cuando las muñecas del árbol 
+de muñecas desaparezcan. 
+-Si la puerta de la capilla cambia 
+de estado (abrir o cerrarse) 
+después de las 3 AM. 
+-Estatua sin alas"
+vertical_alignment = 1
+
+[node name="Pagina3" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=2119174355]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina3" unique_id=1239007613]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.550001
+anchor_top = 7.5250006
+anchor_right = 18.550001
+anchor_bottom = 7.5250006
+offset_left = -135.00006
+offset_top = -158.00003
+offset_right = 134.99994
+offset_bottom = 157.99997
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Mantén apagada tu linterna y
+dirígete a la caseta de seguridad:
+Cuando hay una neblina extraña.
+Si el entorno se vuelve silencioso.
+Cuando hay una sombra luminosa
+
+Parpadear la linterna Cuando:
+-Cuando las estatuas empiezan 
+a murmurar.
+-Cuando alguna estatua esté 
+llorando."
+
+[node name="Pagina4" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=430557522]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina4" unique_id=851185140]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.225
+anchor_top = 7.3620005
+anchor_right = 18.225
+anchor_bottom = 7.3620005
+offset_left = -113.0
+offset_top = -33.48001
+offset_right = 113.0
+offset_bottom = 33.51999
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Visitantes"
+
+[node name="Pagina5" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=2023667027]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina5" unique_id=1593174338]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.537
+anchor_top = 7.675
+anchor_right = 18.537
+anchor_bottom = 7.675
+offset_left = -128.48004
+offset_top = -160.0
+offset_right = 134.51996
+offset_bottom = 175.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Hombre extraño (aka ayuwoki):
+
+Motivos por los que bajaría vidas 
+-  Juzgarlo de loco o ignorarlo
+
+Está obsesionado con la actividad 
+paranormal, sin embargo las
+anomalías deciden no mostrarse 
+ante él.
+Se obsesionó con querer
+ encontrarse con algún ente,
+ investiga las historias del
+ cementerio"
+
+[node name="VisitanteStrangeMan" type="Sprite2D" parent="CanvasLayer/LibretaUI/Pagina5" unique_id=1431394914]
+position = Vector2(454, 313)
+scale = Vector2(0.5859375, 0.55401236)
+texture = ExtResource("8_qwcb4")
+
+[node name="Pagina6" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=1121147678]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina6" unique_id=1166309994]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.475
+anchor_top = 7.6500006
+anchor_right = 18.475
+anchor_bottom = 7.6500006
+offset_left = -133.0
+offset_top = -166.00003
+offset_right = 133.0
+offset_bottom = 165.99997
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Mujer:
+
+Es la nieta del antiguo velador
+ ya fallecido, deambula por el
+ cementerio con la esperanza 
+de encontrarse con su abuelo "
+
+[node name="Pagina7" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=1949215535]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina7" unique_id=123071792]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.462002
+anchor_top = 7.5250006
+anchor_right = 18.462002
+anchor_bottom = 7.5250006
+offset_left = -131.4801
+offset_top = -165.00003
+offset_right = 131.5199
+offset_bottom = 164.99997
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Anciano:"
+
+[node name="Pagina8" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=899416508]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina8" unique_id=254156705]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.437
+anchor_top = 7.5750003
+anchor_right = 18.437
+anchor_bottom = 7.5750003
+offset_left = -65.47998
+offset_top = -33.0
+offset_right = 65.52002
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Entes"
+
+[node name="Pagina9" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=209167479]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina9" unique_id=1014666164]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.475
+anchor_top = 7.8
+anchor_right = 18.475
+anchor_bottom = 7.8
+offset_left = -124.0
+offset_top = -167.0
+offset_right = 124.0
+offset_bottom = 167.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Ghoul:
+
+Motivos por los que bajaría vidas 
+- Intentar escapar de él 
+
+
+Un ser que se alimenta de 
+cadaveres
+"
+
+[node name="AnomaliesGhoul" type="Sprite2D" parent="CanvasLayer/LibretaUI/Pagina9" unique_id=304849829]
+position = Vector2(439, 299)
+scale = Vector2(0.5008681, 0.5632716)
+texture = ExtResource("9_m7k8n")
+
+[node name="Pagina10" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=1431981962]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina10" unique_id=339263676]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.512001
+anchor_top = 7.8620005
+anchor_right = 18.512001
+anchor_bottom = 7.8620005
+offset_left = -131.48004
+offset_top = -167.48001
+offset_right = 131.51996
+offset_bottom = 167.51999
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Oni:
+
+Motivos por los que bajaría vidas 
+- Ignorarlo
+
+Un demonio japones que fue
+ repudiado por los de su especie 
+y terminó viajando por todo 
+el mundo hasta llegar al
+ cementerio de donde ya no
+ puede salir por una fuerza mayor"
+
+[node name="AnomaliesOni" type="Sprite2D" parent="CanvasLayer/LibretaUI/Pagina10" unique_id=1146423533]
+position = Vector2(462, 317)
+scale = Vector2(0.52821183, 0.5146605)
+texture = ExtResource("10_354ll")
+
+[node name="Pagina11" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=1393400296]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina11" unique_id=904667522]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.287
+anchor_top = 7.3870006
+anchor_right = 18.287
+anchor_bottom = 7.3870006
+offset_left = -129.48004
+offset_top = -157.48001
+offset_right = 129.51996
+offset_bottom = 157.51999
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Niña
+Motivos por los que bajaría vidas 
+- Ignorarla 
+- Decir algo negativo de su madre
+
+ Su madre fue abandonada en el 
+embarazo y con el tiempo empezó 
+a desquitarse con su hija, nunca 
+supo que su esposo jamás la dejó 
+y fue asesinado. Su memoria es 
+frágil como un ente, así que la 
+niña no recuerda las maldades
+ que sufrió por parte de su madre.
+"
+
+[node name="AnomaliesLittleGirlEnte" type="Sprite2D" parent="CanvasLayer/LibretaUI/Pagina11" unique_id=1664792253]
+position = Vector2(444.5, 313.25)
+scale = Vector2(0.64634144, 0.5409407)
+texture = ExtResource("11_22b0i")
+
+[node name="Atras" type="TextureButton" parent="CanvasLayer/LibretaUI" unique_id=129127579]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.39100003
+anchor_top = 0.777
+anchor_right = 0.39100003
+anchor_bottom = 0.777
+offset_left = -48.169037
+offset_top = -13.603973
+offset_right = 1951.8309
+offset_bottom = 1929.396
+scale = Vector2(0.04778909, 0.013679729)
+texture_normal = ExtResource("8_ko1oo")
+
+[node name="Siguiente" type="TextureButton" parent="CanvasLayer/LibretaUI" unique_id=173595761]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.63600004
+anchor_top = 0.77300006
+anchor_right = 0.63600004
+anchor_bottom = 0.77300006
+offset_left = -46.124023
+offset_top = -13.996033
+offset_right = 1953.876
+offset_bottom = 1929.0039
+scale = Vector2(0.046421442, 0.014310042)
+texture_normal = ExtResource("9_808hi")
+
 [node name="RelojZoom" type="Panel" parent="CanvasLayer" unique_id=1488102550]
+visible = false
 offset_right = 1152.0
 offset_bottom = 651.0
 
@@ -175,3 +494,6 @@ rotation = 0.09861264
 theme_override_font_sizes/font_size = 35
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/LibretaUI/Atras" to="." method="_on_atras_pressed"]
+[connection signal="pressed" from="CanvasLayer/LibretaUI/Siguiente" to="." method="_on_siguiente_pressed"]
