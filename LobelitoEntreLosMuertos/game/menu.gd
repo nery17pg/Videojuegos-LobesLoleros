@@ -9,8 +9,9 @@ func _on_nueva_partida_pressed() -> void:
 	get_tree().change_scene_to_file("res://game/main.tscn")
 
 func _on_cargar_partida_pressed() -> void:
-	# Por ahora igual que nueva partida, hasta que implementen el guardado
+	GameManager.cargar_partida()
 	get_tree().change_scene_to_file("res://game/main.tscn")
+
 
 func _on_salir_pressed() -> void:
 	get_tree().quit()

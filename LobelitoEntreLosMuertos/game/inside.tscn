@@ -135,7 +135,6 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "Cerrar"
 
 [node name="RelojZoom" type="Panel" parent="CanvasLayer" unique_id=1488102550]
-visible = false
 offset_right = 1152.0
 offset_bottom = 651.0
 

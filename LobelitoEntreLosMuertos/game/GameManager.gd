@@ -6,6 +6,8 @@ var tiempo_restante = 960
 var vidas = 3
 
 var timer := Timer.new()
+#prueba de guardado
+var ruta_guardado = "user://savegame.save"
 
 func _ready():
 	add_child(timer)
@@ -38,3 +40,27 @@ func _derrota():
 
 #func _on_timeout():
 #	get_tree().change_scene_to_file("res://game/finjuego.tscn")
+func guardar_partida():
+	var archivo = FileAccess.open(ruta_guardado, FileAccess.WRITE)
+	
+	var datos = {
+		"vidas": vidas,
+		"tiempo_restante": tiempo_restante
+	}
+	
+	archivo.store_var(datos)
+	print("PARTIDA GUARDADA")
+
+func cargar_partida():
+	if FileAccess.file_exists(ruta_guardado):
+		var archivo = FileAccess.open(ruta_guardado, FileAccess.READ)
+		var datos = archivo.get_var()
+		
+		vidas = datos["vidas"]
+		tiempo_restante = datos["tiempo_restante"]
+		
+		timer.stop()
+		timer.wait_time = tiempo_restante
+		timer.start()
+		
+		print("PARTIDA CARGADA")

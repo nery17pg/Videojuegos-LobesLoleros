@@ -260,9 +260,12 @@ func mostrar_mensaje(texto, color):
 	label_feedback.visible = false
 
 func _on_confirmation_dialog_confirmed() -> void:
+	#guardar
+	GameManager.guardar_partida()
 	# Cambia a la escena principal del juego
 	get_tree().change_scene_to_file("res://game/inside.tscn")
 	
+
 #@onready var game_timer = $GameTimer
 
 #func _process(delta):
