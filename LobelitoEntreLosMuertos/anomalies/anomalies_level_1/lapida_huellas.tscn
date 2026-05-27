@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://blo0kq14gwxv0"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_g8ibx"]
+[ext_resource type="Texture2D" uid="uid://bpf0npgsxo8c1" path="res://art/anomalies/AnomaliesLevel1/lapida_huellas.png" id="2_wcm3k"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_dya86"]
+
+[node name="anomalies" type="Node2D" unique_id=860532881]
+script = ExtResource("1_g8ibx")
+level = 1
+type = "objeto"
+damage = 1
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=842547478]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_wcm3k")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1121728512]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=838502496]
+position = Vector2(12, 35)
+polygon = PackedVector2Array(28, -45, 84, -44, 81, 68, 120, 107, 104, 133, -89, 133, -105, 120, -98, 69, -76, 64, -77, -43, -25, -42, -25, -83, -45, -81, -70, -74, -71, -123, -69, -150, -29, -133, -20, -142, -31, -175, 40, -176, 29, -135, 51, -137, 75, -150, 77, -77, 46, -85, 29, -80)
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=144757581]
+script = ExtResource("3_dya86")
+min_wait_time = 5.0
+max_wait_time = 10.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

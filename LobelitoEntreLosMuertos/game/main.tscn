@@ -32,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://bghsjctoqapf1" path="res://art/background_elements/tumba_cruz_fondo.png" id="20_4gc7v"]
 [ext_resource type="Texture2D" uid="uid://derqgo22cgvju" path="res://art/background_elements/tumba_cruz1.png" id="21_f1cjg"]
 [ext_resource type="PackedScene" uid="uid://chk5ekrc3hj37" path="res://anomalies/anomalies_level_2/dolls_eyes_anomaly.tscn" id="26_l78i6"]
+[ext_resource type="PackedScene" uid="uid://blo0kq14gwxv0" path="res://anomalies/anomalies_level_1/lapida_huellas.tscn" id="27_e00sq"]
 [ext_resource type="PackedScene" uid="uid://ild6l4h4o5ni" path="res://anomalies/anomalies_level_2/dolls_gone_anomaly.tscn" id="27_wubem"]
 [ext_resource type="PackedScene" uid="uid://coawea8diwifv" path="res://game/spawner.tscn" id="28_px363"]
 [ext_resource type="PackedScene" uid="uid://utbahf860an0" path="res://anomalies/anomalies_level_3/lobelito_tree_anomaly.tscn" id="29_l78i6"]
@@ -517,6 +518,10 @@ spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spa
 [node name="anomaly1_5" parent="Anomalies/Level1" unique_id=1485426382 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("16_px363")]
 visible = false
 spawns = [NodePath("../../../Spawns/spawnPoint6"), NodePath("../../../Spawns/spawnPoint7")]
+
+[node name="anomaly1_6" parent="Anomalies/Level1" unique_id=860532881 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("27_e00sq")]
+visible = false
+spawns = [NodePath("../../../Spawns/spawnPoint10")]
 
 [node name="Level2" type="Node2D" parent="Anomalies" unique_id=989332924]
 
