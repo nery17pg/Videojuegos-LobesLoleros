@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://m7b4ffvvurg4"]
 
-[ext_resource type="Script" path="res://game/finjuego.gd" id="1_igvrf"]
+[ext_resource type="Script" uid="uid://dmqs23slhft6q" path="res://game/finjuego.gd" id="1_igvrf"]
 [ext_resource type="FontFile" uid="uid://bgp3p3h5cs32l" path="res://art/fonts/Cinzel-Bold.ttf" id="2_l0sqf"]
 [ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="3_i3361"]
 
@@ -34,6 +34,7 @@ offset_left = 200.0
 offset_top = 225.0
 offset_right = 993.0
 offset_bottom = 361.0
+theme_override_constants/separation = 15
 alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=1114605788]
@@ -50,13 +51,13 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.8991288, 0.83051133, 0.63875973, 1)
 theme_override_fonts/font = ExtResource("2_l0sqf")
 theme_override_font_sizes/font_size = 21
-text = "¡Eres un perron, lo lograste!"
+text = "¡Eres un campeón, lo lograste!"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=299142758]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0.78431374, 0.72156864, 0.47843137, 1)
+theme_override_colors/font_color = Color(0.009094006, 0.0071269623, 0.0019387044, 1)
 theme_override_fonts/font = ExtResource("3_i3361")
 theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_1ljn3")
