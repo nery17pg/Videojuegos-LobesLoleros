@@ -138,6 +138,9 @@ func _on_anomaly_wanna_spawn(anomaly):
 		anomaly.current_spawn = spawnPoint
 		# Hace visible la anomalía
 		anomaly.visible = true
+		var audio = anomaly.get_node_or_null("AudioStreamPlayer2D")
+		if audio:
+			audio.play()
 		# Marca el punto como ocupado
 		spawnPoint.ocupado = true
 		# Asocia la anomalía al punto

@@ -33,7 +33,11 @@
 [ext_resource type="PackedScene" uid="uid://ild6l4h4o5ni" path="res://anomalies/anomalies_level_2/dolls_gone_anomaly.tscn" id="27_wubem"]
 [ext_resource type="PackedScene" uid="uid://coawea8diwifv" path="res://game/spawner.tscn" id="28_px363"]
 [ext_resource type="PackedScene" uid="uid://utbahf860an0" path="res://anomalies/anomalies_level_3/lobelito_tree_anomaly.tscn" id="29_l78i6"]
+[ext_resource type="Texture2D" uid="uid://pdlckc6n2bw7" path="res://art/background_elements/estatua_fondo.png" id="31_uvurp"]
+[ext_resource type="Texture2D" uid="uid://cdhwj70jcvnrk" path="res://art/background_elements/estatua_2.png" id="31_wubem"]
+[ext_resource type="Texture2D" uid="uid://xsyaleq65p4w" path="res://art/background_elements/estatua_fondo_2.png" id="32_vcdjx"]
 [ext_resource type="PackedScene" uid="uid://btt37bpegx2g6" path="res://anomalies/anomalies_level_3/little_girl_ente.tscn" id="33_gob4j"]
+[ext_resource type="PackedScene" uid="uid://bm8ocy7gks3oa" path="res://anomalies/anomalies_level_3/statue_crying_anom.tscn" id="35_vcdjx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
 size = Vector2(38, 749)
@@ -220,7 +224,6 @@ texture = ExtResource("8_xkbyp")
 script = ExtResource("9_lx3aj")
 
 [node name="Oscuridad" type="CanvasModulate" parent="." unique_id=930947093]
-visible = false
 color = Color(0.03250689, 0.09005656, 0.08164092, 1)
 
 [node name="NombresZonas" type="Label" parent="." unique_id=1874981034]
@@ -436,6 +439,40 @@ position = Vector2i(0, 36)
 size = Vector2i(400, 100)
 visible = true
 
+[node name="Objects" type="Node2D" parent="." unique_id=1242805829]
+
+[node name="arbol" type="Sprite2D" parent="Objects" unique_id=1766531754]
+position = Vector2(4032, 324)
+texture = ExtResource("12_gob4j")
+
+[node name="estatuaBackground1" type="Sprite2D" parent="Objects" unique_id=1459233481]
+position = Vector2(-2271, 468)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("31_uvurp")
+
+[node name="estatuaBackground2" type="Sprite2D" parent="Objects" unique_id=1726694478]
+position = Vector2(-1603.0001, 468.00003)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("32_vcdjx")
+
+[node name="estatuaBack1" type="Sprite2D" parent="Objects" unique_id=19148923]
+position = Vector2(-2082, 410)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("31_wubem")
+
+[node name="estatuaBack2" type="Sprite2D" parent="Objects" unique_id=1281511379]
+position = Vector2(-1797, 410)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("9_itumj")
+
+[node name="estatuaWillChange1" type="Sprite2D" parent="Objects" unique_id=250961571]
+position = Vector2(-2200, 298)
+texture = ExtResource("31_wubem")
+
+[node name="estatuaWillChange2" type="Sprite2D" parent="Objects" unique_id=205102565]
+position = Vector2(-1678, 298)
+texture = ExtResource("9_itumj")
+
 [node name="Anomalies" type="Node2D" parent="." unique_id=1294360125]
 
 [node name="Level1" type="Node2D" parent="Anomalies" unique_id=653965826]
@@ -446,7 +483,6 @@ spawns = [NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spa
 
 [node name="anomaly1_2" parent="Anomalies/Level1" unique_id=376088578 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("11_a5bbb")]
 visible = false
-position = Vector2(-1573, 320)
 type = "objeto"
 spawns = [NodePath("../../../Spawns/spawnPoint8")]
 
@@ -508,17 +544,9 @@ spawns = [NodePath("../../../Spawns/spawnPoint5")]
 visible = false
 spawns = [NodePath("../../../Spawns/spawnPoint9")]
 
-[node name="Objects" type="Node2D" parent="." unique_id=1242805829]
-
-[node name="arbol" type="Sprite2D" parent="Objects" unique_id=1766531754]
+[node name="anomaly3_3" parent="Anomalies/Level3" unique_id=577413601 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("35_vcdjx")]
 visible = false
-position = Vector2(4032, 324)
-texture = ExtResource("12_gob4j")
-
-[node name="estatua" type="Sprite2D" parent="Objects" unique_id=205102565]
-visible = false
-position = Vector2(-1573, 320)
-texture = ExtResource("9_itumj")
+spawns = [NodePath("../../../Spawns/spawnPoint8")]
 
 [node name="caseta" parent="." unique_id=1519634108 instance=ExtResource("7_wjctj")]
 position = Vector2(913, 452)
@@ -526,7 +554,7 @@ position = Vector2(913, 452)
 [node name="Spawns" type="Node2D" parent="." unique_id=468649698]
 
 [node name="spawnPoint1" parent="Spawns" unique_id=796524399 instance=ExtResource("28_px363")]
-position = Vector2(-1419, 438)
+position = Vector2(-1923, 438)
 will_change = true
 
 [node name="spawnPoint2" parent="Spawns" unique_id=1524403577 instance=ExtResource("28_px363")]
@@ -548,9 +576,9 @@ position = Vector2(1046, 424)
 position = Vector2(3758, 448)
 
 [node name="spawnPoint8" parent="Spawns" unique_id=1836475908 node_paths=PackedStringArray("original_object") instance=ExtResource("28_px363")]
-position = Vector2(-1573, 320)
+position = Vector2(-1678, 298)
 will_change = true
-original_object = NodePath("../../Objects/estatua")
+original_object = NodePath("../../Objects/estatuaWillChange2")
 
 [node name="spawnPoint9" parent="Spawns" unique_id=257369660 node_paths=PackedStringArray("original_object") instance=ExtResource("28_px363")]
 position = Vector2(4032, 324)
