@@ -40,6 +40,7 @@
 [ext_resource type="Texture2D" uid="uid://xsyaleq65p4w" path="res://art/background_elements/estatua_fondo_2.png" id="32_vcdjx"]
 [ext_resource type="PackedScene" uid="uid://btt37bpegx2g6" path="res://anomalies/anomalies_level_3/little_girl_ente.tscn" id="33_gob4j"]
 [ext_resource type="PackedScene" uid="uid://bm8ocy7gks3oa" path="res://anomalies/anomalies_level_3/statue_crying_anom.tscn" id="35_vcdjx"]
+[ext_resource type="PackedScene" uid="uid://cxjtvt0pxha82" path="res://anomalies/anomalies_level_1/conejo_gone_anomaly.tscn" id="38_f1cjg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
 size = Vector2(38, 749)
@@ -565,6 +566,13 @@ spawns = [NodePath("../../../Spawns/spawnPoint9")]
 [node name="anomaly3_3" parent="Anomalies/Level3" unique_id=577413601 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("35_vcdjx")]
 visible = false
 spawns = [NodePath("../../../Spawns/spawnPoint8")]
+
+[node name="anomaly3_4" parent="Anomalies/Level3" unique_id=1388388929 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("38_f1cjg")]
+visible = false
+level = 3
+type = "otro"
+damage = 3
+spawns = [NodePath("../../../Spawns/spawnPoint9")]
 
 [node name="caseta" parent="." unique_id=1519634108 instance=ExtResource("7_wjctj")]
 position = Vector2(913, 452)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1l0xvjccqa6i"
-path="res://.godot/imported/IBM1.png-744bf30ab6845052eb53fcb67d5c6bda.ctex"
+uid="uid://bpf0npgsxo8c1"
+path="res://.godot/imported/lapida_huellas.png-f5e6fa7fc040b15c90b978b3b1c5f26a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/anomalies/AnomaliesLevel3/IBM1.png"
-dest_files=["res://.godot/imported/IBM1.png-744bf30ab6845052eb53fcb67d5c6bda.ctex"]
+source_file="res://art/anomalies/AnomaliesLevel1/lapida_huellas.png"
+dest_files=["res://.godot/imported/lapida_huellas.png-f5e6fa7fc040b15c90b978b3b1c5f26a.ctex"]
 
 [params]
 
