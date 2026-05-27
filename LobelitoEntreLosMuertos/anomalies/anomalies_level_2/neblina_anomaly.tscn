@@ -10,7 +10,7 @@ size = Vector2(1144, 316)
 [node name="anomalies" type="Node2D" unique_id=1109891821]
 script = ExtResource("1_e84br")
 level = 2
-type = "neblina"
+type = "apagado"
 damage = 2
 should_be_reported = true
 metadata/_custom_type_script = "uid://inw2f6xeejb5"

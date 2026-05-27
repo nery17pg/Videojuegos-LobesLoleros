@@ -56,6 +56,14 @@ texture = ExtResource("5_ko1oo")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Reloj" unique_id=585085955]
 polygon = PackedVector2Array(909, 342, 1113, 369, 1104, 538, 905, 504)
 
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1374319906]
+
+[node name="MensajeApagado" type="Label" parent="CanvasLayer2" unique_id=657968155]
+offset_left = 517.0
+offset_top = 562.0
+offset_right = 649.0
+offset_bottom = 604.0
+
 [node name="Puerta" type="Area2D" parent="." unique_id=184654660]
 
 [node name="Sprite2D" type="Sprite2D" parent="Puerta" unique_id=741064719]
@@ -141,14 +149,13 @@ offset_right = 868.0
 offset_bottom = 459.0
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Entes
+text = "Reportar como tipo ente
 -Ghoul:
 -Oni
 -Niña
 
 Reportar como tipo “otro”:
--Cuando haya un visitante. 
-Cuando las muñecas del árbol 
+-Cuando las muñecas del árbol 
 de muñecas desaparezcan. 
 -Si la puerta de la capilla cambia 
 de estado (abrir o cerrarse) 
@@ -157,7 +164,6 @@ después de las 3 AM.
 vertical_alignment = 1
 
 [node name="Pagina3" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=2119174355]
-visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -180,7 +186,8 @@ Cuando hay una neblina extraña.
 Si el entorno se vuelve silencioso.
 Cuando hay una sombra luminosa
 
-Parpadear la linterna Cuando:
+Parpadear la linterna hasta que
+desaparezca la anomalia  cuando:
 -Cuando las estatuas empiezan 
 a murmurar.
 -Cuando alguna estatua esté 

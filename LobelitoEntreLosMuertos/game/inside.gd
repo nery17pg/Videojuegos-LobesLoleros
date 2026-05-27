@@ -9,6 +9,7 @@ extends Node2D
 @onready var boton_cerrar_zoom = $CanvasLayer/RelojZoom/Button
 @onready var puerta = $Puerta
 var pagina_actual = 1
+@onready var mensaje_apagado = $CanvasLayer2/MensajeApagado
 
 func _ready() -> void:
 
@@ -40,6 +41,20 @@ func _ready() -> void:
 	$CanvasLayer/LibretaUI/Pagina9.hide()
 	$CanvasLayer/LibretaUI/Pagina10.hide()
 	$CanvasLayer/LibretaUI/Pagina11.hide()
+	
+	mensaje_apagado.hide()
+
+	if GameManager.mostrar_mensaje_apagado:
+
+		mensaje_apagado.show()
+
+		GameManager.mostrar_mensaje_apagado = false
+
+		await get_tree().process_frame
+
+		await get_tree().create_timer(2.0).timeout
+
+		mensaje_apagado.hide()
 
 
 # Funciones de libretas
@@ -145,8 +160,6 @@ func _on_atras_pressed() -> void:
 
 	actualizar_paginas()
 	
-
-
 
 func _on_siguiente_pressed() -> void:
 	if pagina_actual < 11:

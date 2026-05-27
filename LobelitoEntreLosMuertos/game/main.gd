@@ -7,6 +7,11 @@ const GRID_SIZE = 350
 
 # Referencia a la anomalía actualmente seleccionada
 var anomalie_actual = null
+#para el parpadeo
+var anomalia_parpadeo_activa = null
+#Para apagado
+var anomalia_apagado_activa = null
+var apagado_resuelto = false
 # Referencia a la anomalía sobre la que está el mouse
 var anomalie_hover = null  
 
@@ -29,9 +34,30 @@ func _input(event):
 				anomalie_actual = anomalie_hover
 				# Hace visible el menú
 				menu.visible = true
+				
 			else:
 				# Alterna la visibilidad del menú si no hay anomalía seleccionada
 				menu.visible = not menu.visible
+				
+	if event is InputEventKey and event.pressed:
+		if event.keycode == KEY_F:
+
+			# Si hay anomalía de parpadeo activa
+			if anomalia_parpadeo_activa != null:
+				await hacer_parpadeo_linterna()
+				remover_anomalia_parpadeo()
+			
+			#Apagado
+			var luz = $Luz
+
+		# Si la luz quedó apagada y existe anomalía apagado
+			if luz.visible == false and anomalia_apagado_activa != null:
+				apagado_resuelto = true
+	
+				resolver_anomalia_apagado()
+	
+				GameManager.mostrar_mensaje_apagado = true
+		
 
 # Obtiene el ancho de la ventana
 var display_width = ProjectSettings.get("display/window/size/viewport_width")
@@ -138,6 +164,16 @@ func _on_anomaly_wanna_spawn(anomaly):
 		anomaly.current_spawn = spawnPoint
 		# Hace visible la anomalía
 		anomaly.visible = true
+		#Parpadeo
+		if anomaly.type == "parpadeo":
+			anomalia_parpadeo_activa = anomaly
+		#apagado
+		if anomaly.type == "apagado":
+			anomalia_apagado_activa = anomaly
+			apagado_resuelto = false
+			
+		
+		
 		var audio = anomaly.get_node_or_null("AudioStreamPlayer2D")
 		if audio:
 			audio.play()
@@ -265,9 +301,83 @@ func mostrar_mensaje(texto, color):
 func _on_confirmation_dialog_confirmed() -> void:
 	#guardar
 	GameManager.guardar_partida()
+	#apagado
+	if apagado_resuelto:
+		
+		GameManager.set_meta("mostrar_mensaje_apagado", true)
 	# Cambia a la escena principal del juego
 	get_tree().change_scene_to_file("res://game/inside.tscn")
 	
+#Parpadeo
+func hacer_parpadeo_linterna():
+
+	var luz = $Luz
+
+	for i in range(8):
+
+		luz.visible = false
+		await get_tree().create_timer(randf_range(0.05, 0.15)).timeout
+
+		luz.visible = true
+		await get_tree().create_timer(randf_range(0.05, 0.15)).timeout
+
+	luz.visible = true
+
+func remover_anomalia_parpadeo():
+
+	if anomalia_parpadeo_activa == null:
+		return
+
+	# Oculta anomalía
+	anomalia_parpadeo_activa.visible = false
+
+	# Obtiene spawn
+	var spawn = anomalia_parpadeo_activa.current_spawn
+
+	# Restaura objeto original si reemplazaba algo
+	if spawn.will_change and spawn.original_object:
+		spawn.original_object.visible = true
+
+	# Libera spawn
+	spawn.ocupado = false
+	spawn.anomaly_actual = null
+	spawn.on_waiting_time = true
+
+	# Reinicia timer
+	if spawn and spawn.is_inside_tree():
+		spawn.get_node("RandomTimer").start_random()
+
+	# Limpia referencia
+	anomalia_parpadeo_activa = null
+
+	mostrar_mensaje("Parpadeo resuelto", Color.GREEN)
+	
+#apagado
+func resolver_anomalia_apagado():
+
+	if anomalia_apagado_activa == null:
+		return
+
+	# Oculta anomalía
+	anomalia_apagado_activa.visible = false
+
+	var spawn = anomalia_apagado_activa.current_spawn
+
+	# Restaura objeto original
+	if spawn.will_change and spawn.original_object:
+		spawn.original_object.visible = true
+
+	# Libera spawn
+	spawn.ocupado = false
+	spawn.anomaly_actual = null
+	spawn.on_waiting_time = true
+
+	# Reinicia timer
+	if spawn and spawn.is_inside_tree():
+		spawn.get_node("RandomTimer").start_random()
+
+	anomalia_apagado_activa = null
+
 
 #@onready var game_timer = $GameTimer
 

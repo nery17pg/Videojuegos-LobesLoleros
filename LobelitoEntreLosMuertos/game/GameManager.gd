@@ -5,6 +5,8 @@ var tiempo_restante = 960
 
 var vidas = 3
 
+var mostrar_mensaje_apagado = false
+
 var timer := Timer.new()
 #prueba de guardado
 var ruta_guardado = "user://savegame.save"
