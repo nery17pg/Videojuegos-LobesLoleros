@@ -1,3 +1,77 @@
 [gd_scene format=3 uid="uid://c71sj4pcg2r3w"]
 
+[ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="1_h3kmp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1g6k"]
+bg_color = Color(0.5411765, 0.3529412, 0.14509805, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.5686275, 0.47843137, 0.21176471, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgmy5"]
+bg_color = Color(0.5411765, 0.3529412, 0.14509805, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.5686275, 0.47843137, 0.21176471, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
 [node name="Menupausa" type="Node2D" unique_id=1611660207]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1806800688]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1273427392]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.040268797, 0.040268805, 0.040268797, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/ColorRect" unique_id=851747201]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 200.0
+offset_right = 901.0
+offset_bottom = 453.0
+theme_override_constants/separation = 33
+alignment = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/ColorRect/VBoxContainer" unique_id=1770147610]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.78431374, 0.72156864, 0.47843137, 1)
+theme_override_fonts/font = ExtResource("1_h3kmp")
+theme_override_font_sizes/font_size = 78
+text = "Juego pausado"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/ColorRect/VBoxContainer" unique_id=455071428]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.78431374, 0.72156864, 0.47843137, 1)
+theme_override_fonts/font = ExtResource("1_h3kmp")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_e1g6k")
+text = "Continuar"
+
+[node name="Button2" type="Button" parent="CanvasLayer/ColorRect/VBoxContainer" unique_id=757387992]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.78431374, 0.72156864, 0.47843137, 1)
+theme_override_fonts/font = ExtResource("1_h3kmp")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_jgmy5")
+text = "Salir"

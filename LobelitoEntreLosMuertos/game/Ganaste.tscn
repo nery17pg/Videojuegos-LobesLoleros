@@ -11,10 +11,10 @@ border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.5682542, 0.48003465, 0.21229452, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
 corner_detail = 20
 
 [node name="Finjuego" type="Control" unique_id=406465912]
@@ -34,7 +34,7 @@ offset_left = 200.0
 offset_top = 225.0
 offset_right = 993.0
 offset_bottom = 361.0
-theme_override_constants/separation = 15
+theme_override_constants/separation = 20
 alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=1114605788]
@@ -55,12 +55,13 @@ text = "¡Eres un campeón, lo lograste!"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=299142758]
+custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0.009094006, 0.0071269623, 0.0019387044, 1)
+theme_override_colors/font_color = Color(0.78431374, 0.72156864, 0.47843137, 1)
 theme_override_fonts/font = ExtResource("3_i3361")
 theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_1ljn3")
-text = "Regresar al menú principal"
+text = "Regresar "
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
