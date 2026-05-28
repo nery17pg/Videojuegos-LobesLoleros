@@ -1,20 +1,6 @@
 ~ start
-GHOUL: Pasé tres noches invocando espíritus aquí
-
-Lobelito:
-
-- ¿Y apareció algo?
-	GHOUL: No
-    GHOUL: Ni siquiera los demonios quieren hablar conmigo
-
-	- Tal vez estás loco
-		GHOUL: [shake]No estoy loco
-    	GHOUL: Solo estoy rodeado de gente demasiado viva
-
-  - ¿Entonces por qué sigues intentando?
-	GHOUL: Porque una noche algo va a responder
-	GHOUL: Y cuando ocurra...
-	GHOUL: Voy a preguntarle qué se siente morir
-	- Eso da miedo
-	GHOUL: A mí me da miedo seguir vivo
+Luka: - Skip
+Luka: Cambié el diálogo de Ghoul a Hombre Extraño, por que es mucho
+más acorde a su personalidad, Ghoul no debería invocar nada
+Además de que técnicamente ya está muerto
 => END

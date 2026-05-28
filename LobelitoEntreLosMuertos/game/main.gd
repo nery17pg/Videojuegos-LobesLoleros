@@ -100,7 +100,9 @@ func _ready():
 var dialogos_ente1 = [ #Estos son los dialogos del ente "Niña", se obtienen y se guardan en un array para seleccionar uno de forma aleatoria posteeriormente
 	preload("res://dialogue/entes/ente1_little_girl/ente1_dialogue1.dialogue"),
 	preload("res://dialogue/entes/ente1_little_girl/ente1_dialogue2.dialogue"),
+	preload("res://dialogue/entes/ente1_little_girl/ente1_dialogue3.dialogue"),
 	preload("res://dialogue/entes/ente1_little_girl/ente1_dialogue3.dialogue")
+
 ]
 
 var dialogos_ente2 = [
@@ -113,12 +115,14 @@ var dialogos_ente2 = [
 var dialogos_ente3 = [
 	preload("res://dialogue/entes/ente3_oni/ente3_dialogue1.dialogue"),
 	preload("res://dialogue/entes/ente3_oni/ente3_dialogue2.dialogue"),
-	preload("res://dialogue/entes/ente3_oni/ente3_dialogue3.dialogue")
+	preload("res://dialogue/entes/ente3_oni/ente3_dialogue3.dialogue"),
+	preload("res://dialogue/entes/ente3_oni/ente3_dialogue4.dialogue")
 ]
 
 var dialogos_vis1 = [
 	preload("res://dialogue/visitantes/visitante1_old_man/visit1_dialogue1.dialogue"),
 	preload("res://dialogue/visitantes/visitante1_old_man/visit1_dialogue2.dialogue"),
+	preload("res://dialogue/visitantes/visitante1_old_man/visit1_dialogue3.dialogue"),
 	preload("res://dialogue/visitantes/visitante1_old_man/visit1_dialogue3.dialogue")
 ]
 
@@ -212,8 +216,10 @@ func validar_reporte(tipo_reportado):
 				#Se agranda el sprite para que parezca que el jugador está hablando frente a frente
 				
 			anomalie_actual.z_index = 999
-			if anomalie_actual.identity == "little_girl":
+			if anomalie_actual.identity == "little_girl": #el sprite de la niña es muy pequeño
 				anomalie_actual.scale = Vector2(3, 3)
+			if anomalie_actual.identity == "woman": # y el de la mujer muy grande xd
+				anomalie_actual.scale = Vector2(1, 1)
 			else: 
 				anomalie_actual.scale = Vector2(2, 2)
 				

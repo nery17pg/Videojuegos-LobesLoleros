@@ -1,11 +1,22 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Hombre extraño: Pasé tres noches invocando espíritus aquí
+
+Lobelito:
+
+- ¿Y apareció algo?
+	Hombre extraño: No
+    Hombre extraño: Ni siquiera los demonios quieren hablar conmigo
+
+- Tal vez estás loco
+	Hombre extraño: [b][shake]No estoy loco
+    Hombre extraño: Solo estoy rodeado de gente demasiado viva
+	do GameManager.perder_vida(anomalie_actual.damage)
+
+ - ¿Entonces por qué sigues intentando?
+	Hombre extraño: Porque una noche algo va a responder
+	Hombre extraño: Y cuando ocurra...
+	Hombre extraño: Voy a preguntarle qué se siente morir
+	- Eso da miedo
+		Hombre extraño: A mí me da miedo seguir vivo
+	- No decir nada
 => END

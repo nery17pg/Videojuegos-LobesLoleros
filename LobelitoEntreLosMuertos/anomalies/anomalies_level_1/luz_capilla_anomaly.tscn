@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dvswbttwobodg"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_jl0id"]
+[ext_resource type="Texture2D" uid="uid://byhw1iwmlvpjd" path="res://art/anomalies/AnomaliesLevel1/luz_capilla.png" id="2_auxke"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_auxke"]
+
+[node name="anomalies" type="Node2D" unique_id=552309265]
+script = ExtResource("1_jl0id")
+level = 1
+type = "luz"
+damage = 1
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=934852109]
+texture = ExtResource("2_auxke")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=984231932]
+color = Color(0.5624908, 0.22689924, 0.602114, 1)
+texture = ExtResource("2_auxke")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=310370557]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=719847506]
+polygon = PackedVector2Array(-16, -215, 75, -182, 156, -53, 208, 64, 154, 185, -42, 224, -220, 127, -204, -7, -112, -151)
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=1007282534]
+script = ExtResource("3_auxke")
+min_wait_time = 10.0
+max_wait_time = 15.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

@@ -8,6 +8,7 @@ Lobelito:
 		Lobelito: Deberías tener un poco más de sentido comúin
 		Lobelito: No te creas cualquier invento de la gente
 		Hombre extraño: [b][shake]...
+		do GameManager.perder_vida(anomalie_actual.damage)
 	- Podría ser cierto
 		Hombre extraño: Aún sigo investigando, pero sí, ¡podría serlo!
 		Hombre extraño: La leyenda dice que el Oni era repudiado incluso por los de su misma especie

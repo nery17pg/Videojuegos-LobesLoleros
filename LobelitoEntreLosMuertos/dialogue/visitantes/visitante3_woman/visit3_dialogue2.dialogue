@@ -1,11 +1,22 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Mujer: Hace frío y mi abuelo no se digna a aparecer
+Lobelito: 
+- ¿Dónde está tu abuelo?
+	Mujer: Justo debajo de nosotros
+	Lobelito: Oh... [[Mi más sincero pésame|Lo siento, no lo sabía|No debí haber dicho nada, lo siento]]
+	Mujer: Ah, no te preocupes
+	Mujer: Me prometió que cuidaría de mi
+	Mujer: Cuando me vea a punto de morir de frío
+	Mujer: Seguramente vendrá corriendo a ayudarme, lo conozco perfectamente
+	Lobelito:
+	- No decir nada
+		Mujer: Nos vemos luego
+	- Es una tontería 
+		Mujer: Eres como todos los demás
+		do GameManager.perder_vida(anomalie_actual.damage)
+- Deberías ir a casa
+	Lobelito: Podrías enfermarte, traeré mi suéter de la caseta
+	Mujer: [[Muy amable|Que caballero|Que lindo]], pero no hace falta
+	Mujer: Estoy segura de que [[pronto aparecerá | cuando me escuche estornudar vendrá corriendo como cuando era niña | no tendré que esperar mucho más tiempo]]
+- Ignorarla
 => END

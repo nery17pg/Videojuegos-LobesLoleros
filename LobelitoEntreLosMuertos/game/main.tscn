@@ -38,6 +38,8 @@
 [ext_resource type="PackedScene" uid="uid://d2nj06bjqecdl" path="res://anomalies/anomalies_level_1/fire_anomaly.tscn" id="28_k5wni"]
 [ext_resource type="PackedScene" uid="uid://coawea8diwifv" path="res://game/spawner.tscn" id="28_px363"]
 [ext_resource type="PackedScene" uid="uid://utbahf860an0" path="res://anomalies/anomalies_level_3/lobelito_tree_anomaly.tscn" id="29_l78i6"]
+[ext_resource type="PackedScene" uid="uid://miiwlhlfgfsf" path="res://anomalies/anomalies_level_1/woman_visit.tscn" id="30_s2dp4"]
+[ext_resource type="PackedScene" uid="uid://dvswbttwobodg" path="res://anomalies/anomalies_level_1/luz_capilla_anomaly.tscn" id="31_84ymw"]
 [ext_resource type="Texture2D" uid="uid://pdlckc6n2bw7" path="res://art/background_elements/estatua_fondo.png" id="31_uvurp"]
 [ext_resource type="Texture2D" uid="uid://cdhwj70jcvnrk" path="res://art/background_elements/estatua_2.png" id="31_wubem"]
 [ext_resource type="Texture2D" uid="uid://xsyaleq65p4w" path="res://art/background_elements/estatua_fondo_2.png" id="32_vcdjx"]
@@ -45,6 +47,8 @@
 [ext_resource type="PackedScene" uid="uid://bm8ocy7gks3oa" path="res://anomalies/anomalies_level_3/statue_crying_anom.tscn" id="35_vcdjx"]
 [ext_resource type="PackedScene" uid="uid://dabey8wfba3b1" path="res://anomalies/anomalies_level_1/seraph_anomaly.tscn" id="37_44l5f"]
 [ext_resource type="PackedScene" uid="uid://cxjtvt0pxha82" path="res://anomalies/anomalies_level_1/conejo_gone_anomaly.tscn" id="38_f1cjg"]
+[ext_resource type="PackedScene" uid="uid://dl1613wij05ff" path="res://anomalies/anomalies_level_2/lobelito_capilla.tscn" id="41_u4lhc"]
+[ext_resource type="PackedScene" uid="uid://dne8g2fhongak" path="res://anomalies/anomalies_level_2/eyes_capilla.tscn" id="42_gagp1"]
 [ext_resource type="AudioStream" uid="uid://dgb20dq18sgdi" path="res://sound/map/map.wav" id="46_w0y0c"]
 [ext_resource type="PackedScene" uid="uid://c71sj4pcg2r3w" path="res://game/menupausa.tscn" id="47_gq54d"]
 
@@ -234,6 +238,7 @@ texture = ExtResource("8_xkbyp")
 script = ExtResource("9_lx3aj")
 
 [node name="Oscuridad" type="CanvasModulate" parent="." unique_id=930947093]
+visible = false
 color = Color(0.03250689, 0.09005656, 0.08164092, 1)
 
 [node name="NombresZonas" type="Label" parent="." unique_id=1874981034]
@@ -536,6 +541,15 @@ spawns = [NodePath("../../../Spawns/spawnPoint10")]
 visible = false
 spawns = [NodePath("../../../Spawns/spawnPoint11"), NodePath("../../../Spawns/spawnPoint12")]
 
+[node name="anomaly1_8" parent="Anomalies/Level1" unique_id=899923105 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("30_s2dp4")]
+visible = false
+position = Vector2(2645, 451)
+spawns = [NodePath("../../../Spawns/spawnPoint14")]
+
+[node name="anomaly1_9" parent="Anomalies/Level1" unique_id=552309265 node_paths=PackedStringArray("current_spawn") groups=["anomalias"] instance=ExtResource("31_84ymw")]
+visible = false
+current_spawn = NodePath("../../../Spawns/spawnPoint13")
+
 [node name="Level2" type="Node2D" parent="Anomalies" unique_id=989332924]
 
 [node name="anomaly2_1" parent="Anomalies/Level2" unique_id=1621702828 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("14_rtjhp")]
@@ -575,6 +589,14 @@ spawns = [NodePath("../../../Spawns/spawnPoint9")]
 [node name="anomaly2_9" parent="Anomalies/Level2" unique_id=1568386675 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("37_44l5f")]
 visible = false
 spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spawnPoint7")]
+
+[node name="anomaly2_10" parent="Anomalies/Level2" unique_id=57451332 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("41_u4lhc")]
+visible = false
+spawns = [NodePath("../../../Spawns/spawnPoint13")]
+
+[node name="anomaly2_11" parent="Anomalies/Level2" unique_id=909077368 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("42_gagp1")]
+visible = false
+spawns = [NodePath("../../../Spawns/spawnPoint13")]
 
 [node name="Level3" type="Node2D" parent="Anomalies" unique_id=1766864124]
 
@@ -644,6 +666,13 @@ position = Vector2(218, 580)
 
 [node name="spawnPoint12" parent="Spawns" unique_id=1262797056 instance=ExtResource("28_px363")]
 position = Vector2(-3283, 549)
+
+[node name="spawnPoint13" parent="Spawns" unique_id=172689816 instance=ExtResource("28_px363")]
+position = Vector2(-2878, 348)
+
+[node name="spawnPoint14" parent="Spawns" unique_id=1176724763 instance=ExtResource("28_px363")]
+position = Vector2(2645, 451)
+scale = Vector2(0.5, 0.5)
 
 [node name="GameTimer" type="Timer" parent="." unique_id=560415717]
 

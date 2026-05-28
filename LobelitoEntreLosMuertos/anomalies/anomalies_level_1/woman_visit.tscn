@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://miiwlhlfgfsf"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_3fya4"]
+[ext_resource type="Texture2D" uid="uid://bucq1qh4034r8" path="res://art/anomalies/AnomaliesLevel1/visitante_woman.png" id="2_glv3v"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_0kk07"]
+
+[node name="anomalies" type="Node2D" unique_id=899923105]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_3fya4")
+level = 1
+type = "visitante"
+identity = "woman"
+damage = 1
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1081320011]
+texture = ExtResource("2_glv3v")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1625533826]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1051271684]
+polygon = PackedVector2Array(102, -23, 114, 22, 121, 56, 126, 84, 91, 101, 74, 104, 75, 131, 66, 158, 62, 211, 63, 232, 60, 253, 68, 274, 69, 299, 62, 314, 39, 318, -1, 324, -22, 306, -40, 289, -47, 265, -40, 224, -56, 147, -43, 114, -47, 89, -92, 75, -112, 60, -100, 32, -56, -42, -63, -74, -77, -119, -77, -198, -25, -247, -31, -285, -9, -320, 38, -329, 80, -310, 89, -262, 86, -240, 129, -197, 123, -164, 107, -139, 104, -52)
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=248919782]
+script = ExtResource("3_0kk07")
+min_wait_time = 10.0
+max_wait_time = 15.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

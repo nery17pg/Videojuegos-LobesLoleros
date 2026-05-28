@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dl1613wij05ff"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_0rpqc"]
+[ext_resource type="Texture2D" uid="uid://b7bxnk2c1wdd1" path="res://art/anomalies/AnomaliesLevel2/lobelito_capilla.png" id="2_g8v1f"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_g8v1f"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_83pre"]
+radius = 22.0
+height = 94.0
+
+[node name="anomalies" type="Node2D" unique_id=57451332]
+script = ExtResource("1_0rpqc")
+level = 2
+type = "lobelito"
+damage = 2
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1580192555]
+texture = ExtResource("2_g8v1f")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1971159384]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=944465818]
+position = Vector2(-199, 6)
+shape = SubResource("CapsuleShape2D_83pre")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=343301290]
+script = ExtResource("3_g8v1f")
+min_wait_time = 10.0
+max_wait_time = 15.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

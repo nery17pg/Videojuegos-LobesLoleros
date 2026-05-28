@@ -1,11 +1,21 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Mujer: Estoy segura de que mi abuelo está encantado contigo siendo el nuevo velador
+Lobelito:
+- ¿De verdad?
+	Mujer: Por supuesto, eres tan extraño como esos fenómenos que rondan el cementerio
+	Mujer: Pero no eres un salvaje
+	Mujer: [[Incluso tu pelaje es esponjoso|Incluso estás completamente vestido|Incluso te recortas las garras]]
+	Lobelito:
+	- Ah... Pues gracias
+		Mujer: Solo bromeo, no deberías dejarte pisotear tan facilmente
+		Mujer: Especialmente en este lugar, mi abuelo siempre me contaba lo molesto que era tener que lidiar con las entidades atrapadas en el cementerio
+		Mujer: Lo trataban como a un insecto más
+		Lobelito: Tu abuelo no mentía...
+	- Dejarla parlotear
+		Mujer: ¡Jaja!, te tomé por sorpresa, ¿No es así?
+		Mujer: Tómalo como una pequeña novatada
+		Mujer: Espero estés disfrutando tu nuevo trabajo
+		Lobelito: Definamos disfrutar...
+	- ... Tengo que irme
+- Ignorarla
 => END

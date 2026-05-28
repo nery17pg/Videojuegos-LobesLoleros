@@ -1,28 +1,28 @@
 ~ start
 
-GHOUL: [shake]Los fantasmas me odian porque descubrí cómo nacen
+Ghoul: [shake]Los fantasmas me odian porque descubrí cómo nacen
 
 Lobelito:
 
 - ¿Cómo nacen?
-	GHOUL: Del miedo que se pudre
-	GHOUL: Igual que la carne
+	Ghoul: Del miedo que se pudre
+	Ghoul: Igual que la carne
 	- Eso no tiene sentido
 		do GameManager.perder_vida(anomalie_actual.damage)
-		GHOUL: Tampoco tiene sentido que sigas aquí después del anochecer
+		Ghoul: Tampoco tiene sentido que sigas aquí después del anochecer
 
  - ¿Por qué te odiarian por eso?
-	GHOUL: Es que siempre los observo
-	GHOUL: Tomo notas
-	GHOUL: Porque quiero abrirlos para ver qué tienen dentro
+	Ghoul: Es que siempre los observo
+	Ghoul: Tomo notas
+	Ghoul: Porque quiero abrirlos para ver qué tienen dentro
 
     - Tú sí estás loco
-		GHOUL: [wave]Una niña con un conejo me dijo lo mismo
+		Ghoul: [wave]Una niña con un conejo me dijo lo mismo
 
   - ¿Ya viste un fantasma?
-	GHOUL: Una vez
-	GHOUL: Pero cuando intenté tocarlo...
-	GHOUL: Descubrí que era yo reflejado en una ventana
+	Ghoul: Una vez
+	Ghoul: Pero cuando intenté tocarlo...
+	Ghoul: Descubrí que era yo reflejado en una ventana
 	
 
 => END

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dne8g2fhongak"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_y4nts"]
+[ext_resource type="Texture2D" uid="uid://mma66elcfvig" path="res://art/anomalies/AnomaliesLevel2/eyes_capilla.png" id="2_4echv"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_4echv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0bctf"]
+radius = 73.0
+height = 280.0
+
+[node name="anomalies" type="Node2D" unique_id=909077368]
+script = ExtResource("1_y4nts")
+level = 2
+type = "apagado"
+damage = 2
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=698984390]
+texture = ExtResource("2_4echv")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1892442220]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=280710675]
+position = Vector2(0, 21)
+shape = SubResource("CapsuleShape2D_0bctf")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=1382392191]
+script = ExtResource("3_4echv")
+min_wait_time = 10.0
+max_wait_time = 15.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"
