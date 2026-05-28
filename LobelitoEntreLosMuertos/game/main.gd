@@ -68,7 +68,6 @@ func _ready():
 	# Oculta el cuadro de confirmación al iniciar
 	$CanvasLayer/ConfirmationDialog.visible = false
 
-
 	# Obtiene todos los nodos del grupo "anomalias"
 	var grupoAnomalias = get_tree().get_nodes_in_group("anomalias")
 	print(grupoAnomalias)

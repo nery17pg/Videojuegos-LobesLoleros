@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://bv236eu6snqay" path="res://anomalies/anomalies_level_2/tumba_nombreLobelito.tscn" id="19_l78i6"]
 [ext_resource type="Texture2D" uid="uid://bghsjctoqapf1" path="res://art/background_elements/tumba_cruz_fondo.png" id="20_4gc7v"]
 [ext_resource type="Texture2D" uid="uid://derqgo22cgvju" path="res://art/background_elements/tumba_cruz1.png" id="21_f1cjg"]
+[ext_resource type="Texture2D" uid="uid://cpy4sqqhadh7" path="res://art/background_elements/capilla.png" id="22_2da88"]
 [ext_resource type="PackedScene" uid="uid://chk5ekrc3hj37" path="res://anomalies/anomalies_level_2/dolls_eyes_anomaly.tscn" id="26_l78i6"]
 [ext_resource type="PackedScene" uid="uid://blo0kq14gwxv0" path="res://anomalies/anomalies_level_1/lapida_huellas.tscn" id="27_e00sq"]
 [ext_resource type="PackedScene" uid="uid://ild6l4h4o5ni" path="res://anomalies/anomalies_level_2/dolls_gone_anomaly.tscn" id="27_wubem"]
@@ -44,6 +45,7 @@
 [ext_resource type="PackedScene" uid="uid://bm8ocy7gks3oa" path="res://anomalies/anomalies_level_3/statue_crying_anom.tscn" id="35_vcdjx"]
 [ext_resource type="PackedScene" uid="uid://dabey8wfba3b1" path="res://anomalies/anomalies_level_1/seraph_anomaly.tscn" id="37_44l5f"]
 [ext_resource type="PackedScene" uid="uid://cxjtvt0pxha82" path="res://anomalies/anomalies_level_1/conejo_gone_anomaly.tscn" id="38_f1cjg"]
+[ext_resource type="AudioStream" uid="uid://dgb20dq18sgdi" path="res://sound/map/map.wav" id="46_w0y0c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
 size = Vector2(38, 749)
@@ -494,6 +496,10 @@ position = Vector2(2772, 459)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("21_f1cjg")
 
+[node name="capilla" type="Sprite2D" parent="Objects" unique_id=1352666391]
+position = Vector2(-2878, 348)
+texture = ExtResource("22_2da88")
+
 [node name="Anomalies" type="Node2D" parent="." unique_id=1294360125]
 
 [node name="Level1" type="Node2D" parent="Anomalies" unique_id=653965826]
@@ -544,6 +550,7 @@ spawns = [NodePath("../../../Spawns/spawnPoint2")]
 
 [node name="anomaly2_4" parent="Anomalies/Level2" unique_id=1109891821 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("17_0etgu")]
 visible = false
+z_index = 1000
 type = "parpadeo"
 spawns = [NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spawnPoint3"), NodePath("../../../Spawns/spawnPoint4")]
 
@@ -634,12 +641,16 @@ original_object = NodePath("../../Objects/lapida_cruzWillChange")
 position = Vector2(218, 580)
 
 [node name="spawnPoint12" parent="Spawns" unique_id=1262797056 instance=ExtResource("28_px363")]
-position = Vector2(-3317, 558)
+position = Vector2(-3283, 549)
 
 [node name="GameTimer" type="Timer" parent="." unique_id=560415717]
 
 [node name="lobelito" parent="." unique_id=1034264886 instance=ExtResource("6_wjctj")]
 position = Vector2(621, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=7566459]
+stream = ExtResource("46_w0y0c")
+autoplay = true
 
 [connection signal="pressed" from="CanvasLayer/MenuAnomalias/objeto" to="CanvasLayer/MenuAnomalias" method="_on_objeto_pressed"]
 [connection signal="pressed" from="CanvasLayer/MenuAnomalias/visitante" to="CanvasLayer/MenuAnomalias" method="_on_visitante_pressed"]

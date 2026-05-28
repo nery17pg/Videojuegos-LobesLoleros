@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cj5fcb5thwgmu" path="res://art/anomalies/AnomaliesLevel2/anomalies_ghoul.png" id="9_m7k8n"]
 [ext_resource type="Texture2D" uid="uid://cvpcsytqbicxa" path="res://art/anomalies/AnomaliesLevel2/anomalies_oni.png" id="10_354ll"]
 [ext_resource type="Texture2D" uid="uid://c0beu41cglql6" path="res://art/anomalies/AnomaliesLevel3/anomalies_littleGirl_ente.png" id="11_22b0i"]
+[ext_resource type="AudioStream" uid="uid://d26v5onmo10x4" path="res://sound/caseta/caseta.wav" id="15_m7k8n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0onei"]
 size = Vector2(249, 654)
@@ -26,6 +27,7 @@ position = Vector2(576, 324)
 texture = ExtResource("2_u5na0")
 
 [node name="Label" type="Label" parent="Sprite2D" unique_id=1375391066]
+visible = false
 offset_left = -88.0
 offset_top = -23.0
 offset_right = 66.0
@@ -501,6 +503,10 @@ rotation = 0.09861264
 theme_override_font_sizes/font_size = 35
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1439822261]
+stream = ExtResource("15_m7k8n")
+autoplay = true
 
 [connection signal="pressed" from="CanvasLayer/LibretaUI/Atras" to="." method="_on_atras_pressed"]
 [connection signal="pressed" from="CanvasLayer/LibretaUI/Siguiente" to="." method="_on_siguiente_pressed"]
