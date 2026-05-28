@@ -13,6 +13,8 @@ Lobelito:
 		Niña: Mamá siempre decía que mentir es de niños malos
 		Niña: [shake]Y a los niños malos hay que castigarlos		
 		do GameManager.perder_vida(anomalie_actual.damage)
+
+
 	- Lo siento
 		Niña: ...[wait=1] Está bien
 		Niña: Iré a jugar con [b]mi[/b] mejor amigo

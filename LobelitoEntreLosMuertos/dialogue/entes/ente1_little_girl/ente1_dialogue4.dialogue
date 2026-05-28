@@ -1,19 +1,29 @@
 ~ start
-Niña: [wave]Hay lugares aquí donde el eco responde distinto...
 
-Lobelito:
-- Eso no da miedo
-	Niña: Todavía no entiendes qué significa.
+* Niña: [wave]¿Quieres jugar?
 
-- ¿Distinto cómo?
-	Niña: A veces responde con otra voz.
-	Niña: ¿Qué sería peor?
+* Lobelito:
 
-	- Escuchar tu eco con una voz distinta
-		Niña: [shake] A mamá le pasaba eso, así que tuve que deshacerme de ella
+- Ignorarla
+    Niña: Te vas a arrepentir
 
-	- Escuchar que responden a tu eco
-		Niña: [shake][color=red]Entonces no estabas hablando solo.
-		do GameManager.perder_vida(anomalie_actual.damage)
+- Aléjate, niña
+	Niña: Debes aprender a comportarte ante entidades mayores que tú
+	Niña: Mi madre me regañaría si hablara como tú
+
+    - Pues qué madre tan horrible
+		Niña: [shake]Haré que desaparezcas para siempre
+		
+	- No te tengo miedo
+		Niña: Deberías
+		Niña: No soy la única aquí
+		Niña: Y si me desagradas...
+		Niña: Puedo pedirle un favor al ONI
+
+- Ve a jugar a otro lado
+	Niña: No puedo salir del cementerio
+	- Tu mamá no debió dejarte sola
+		Niña: [shake]No menciones a mi madre...
+      	Niña: O podría decirle al GHOUL que venga por ti
 
 => END
