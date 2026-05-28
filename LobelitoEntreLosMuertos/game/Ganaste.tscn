@@ -26,7 +26,7 @@ script = ExtResource("1_igvrf")
 layout_mode = 0
 offset_right = 1154.0
 offset_bottom = 646.0
-color = Color(0.08701607, 0.08701607, 0.08701607, 1)
+color = Color(0.0071415612, 0.0071415612, 0.0071415603, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=544828931]
 layout_mode = 0
