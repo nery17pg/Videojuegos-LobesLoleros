@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c71sj4pcg2r3w"]
 
+[ext_resource type="Script" uid="uid://cqg730hr57lu6" path="res://game/menupausa.gd" id="1_e1g6k"]
 [ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="1_h3kmp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1g6k"]
@@ -27,10 +28,13 @@ corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [node name="Menupausa" type="Node2D" unique_id=1611660207]
+process_mode = 3
+script = ExtResource("1_e1g6k")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1806800688]
+[node name="PausaLayer" type="CanvasLayer" parent="." unique_id=1806800688]
+visible = false
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1273427392]
+[node name="ColorRect" type="ColorRect" parent="PausaLayer" unique_id=1273427392]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -38,7 +42,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.040268797, 0.040268805, 0.040268797, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/ColorRect" unique_id=851747201]
+[node name="VBoxContainer" type="VBoxContainer" parent="PausaLayer/ColorRect" unique_id=851747201]
 layout_mode = 0
 offset_left = 280.0
 offset_top = 200.0
@@ -47,7 +51,7 @@ offset_bottom = 453.0
 theme_override_constants/separation = 33
 alignment = 1
 
-[node name="Label" type="Label" parent="CanvasLayer/ColorRect/VBoxContainer" unique_id=1770147610]
+[node name="Label" type="Label" parent="PausaLayer/ColorRect/VBoxContainer" unique_id=1770147610]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.78431374, 0.72156864, 0.47843137, 1)
 theme_override_fonts/font = ExtResource("1_h3kmp")
@@ -56,7 +60,7 @@ text = "Juego pausado"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="CanvasLayer/ColorRect/VBoxContainer" unique_id=455071428]
+[node name="Button" type="Button" parent="PausaLayer/ColorRect/VBoxContainer" unique_id=455071428]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -67,7 +71,7 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_e1g6k")
 text = "Continuar"
 
-[node name="Button2" type="Button" parent="CanvasLayer/ColorRect/VBoxContainer" unique_id=757387992]
+[node name="Button2" type="Button" parent="PausaLayer/ColorRect/VBoxContainer" unique_id=757387992]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -77,3 +81,6 @@ theme_override_fonts/font = ExtResource("1_h3kmp")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_jgmy5")
 text = "Salir"
+
+[connection signal="pressed" from="PausaLayer/ColorRect/VBoxContainer/Button" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="PausaLayer/ColorRect/VBoxContainer/Button2" to="." method="_on_salir_pressed"]

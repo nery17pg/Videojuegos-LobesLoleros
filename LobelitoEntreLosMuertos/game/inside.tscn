@@ -20,6 +20,7 @@
 size = Vector2(249, 654)
 
 [node name="inside" type="Node2D" unique_id=465977253]
+process_mode = 3
 script = ExtResource("1_jde34")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=897210778]

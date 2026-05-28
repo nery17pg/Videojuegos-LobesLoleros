@@ -41,10 +41,11 @@ func _input(event):
 				
 	if event is InputEventKey and event.pressed:
 		if event.keycode == KEY_F:
-
+			print("F presionado - anomalia_parpadeo_activa:", anomalia_parpadeo_activa)
 			# Si hay anomalía de parpadeo activa
 			if anomalia_parpadeo_activa != null:
 				await hacer_parpadeo_linterna()
+				print("parpadeo terminado - anomalia_parpadeo_activa:", anomalia_parpadeo_activa)
 				remover_anomalia_parpadeo()
 			
 			#Apagado
@@ -94,6 +95,7 @@ func _ready():
 				anomalie_hover = null
 		)
 		
+
 #Obtiene los dialogos de las anomalías
 var dialogos_ente1 = [ #Estos son los dialogos del ente "Niña", se obtienen y se guardan en un array para seleccionar uno de forma aleatoria posteeriormente
 	preload("res://dialogue/entes/ente1_little_girl/ente1_dialogue1.dialogue"),
