@@ -4,11 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cem3ig1jig76d" path="res://art/anomalies/AnomaliesLevel1/sombra_2.png" id="2_jqc4b"]
 [ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_jqc4b"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oyln3"]
-radius = 97.0
-height = 428.0
-
 [node name="anomalies" type="Node2D" unique_id=1017840837]
+scale = Vector2(0.7, 0.7)
 script = ExtResource("1_q4uti")
 level = 1
 type = "sombras"
@@ -16,13 +13,12 @@ damage = 1
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1015487727]
-scale = Vector2(0.08, 0.08)
 texture = ExtResource("2_jqc4b")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1429808075]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2145329417]
-shape = SubResource("CapsuleShape2D_oyln3")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1888555625]
+polygon = PackedVector2Array(88, -58, 84, -24, 87, 4, 140, 0, 148, 47, 135, 77, 99, 111, 74, 124, 144, 188, 193, 218, 170, 247, 121, 251, 65, 271, 10, 265, -17, 248, -77, 260, -119, 235, -96, 194, -92, 159, -129, 115, -207, 28, -199, -36, -183, -120, -140, -185, -63, -223, 17, -202, 59, -146, 89, -98)
 
 [node name="RandomTimer" type="Timer" parent="." unique_id=866293829]
 script = ExtResource("3_jqc4b")

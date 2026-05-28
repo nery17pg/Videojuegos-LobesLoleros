@@ -34,6 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://chk5ekrc3hj37" path="res://anomalies/anomalies_level_2/dolls_eyes_anomaly.tscn" id="26_l78i6"]
 [ext_resource type="PackedScene" uid="uid://blo0kq14gwxv0" path="res://anomalies/anomalies_level_1/lapida_huellas.tscn" id="27_e00sq"]
 [ext_resource type="PackedScene" uid="uid://ild6l4h4o5ni" path="res://anomalies/anomalies_level_2/dolls_gone_anomaly.tscn" id="27_wubem"]
+[ext_resource type="PackedScene" uid="uid://d2nj06bjqecdl" path="res://anomalies/anomalies_level_1/fire_anomaly.tscn" id="28_k5wni"]
 [ext_resource type="PackedScene" uid="uid://coawea8diwifv" path="res://game/spawner.tscn" id="28_px363"]
 [ext_resource type="PackedScene" uid="uid://utbahf860an0" path="res://anomalies/anomalies_level_3/lobelito_tree_anomaly.tscn" id="29_l78i6"]
 [ext_resource type="Texture2D" uid="uid://pdlckc6n2bw7" path="res://art/background_elements/estatua_fondo.png" id="31_uvurp"]
@@ -41,6 +42,7 @@
 [ext_resource type="Texture2D" uid="uid://xsyaleq65p4w" path="res://art/background_elements/estatua_fondo_2.png" id="32_vcdjx"]
 [ext_resource type="PackedScene" uid="uid://btt37bpegx2g6" path="res://anomalies/anomalies_level_3/little_girl_ente.tscn" id="33_gob4j"]
 [ext_resource type="PackedScene" uid="uid://bm8ocy7gks3oa" path="res://anomalies/anomalies_level_3/statue_crying_anom.tscn" id="35_vcdjx"]
+[ext_resource type="PackedScene" uid="uid://dabey8wfba3b1" path="res://anomalies/anomalies_level_1/seraph_anomaly.tscn" id="37_44l5f"]
 [ext_resource type="PackedScene" uid="uid://cxjtvt0pxha82" path="res://anomalies/anomalies_level_1/conejo_gone_anomaly.tscn" id="38_f1cjg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
@@ -228,7 +230,6 @@ texture = ExtResource("8_xkbyp")
 script = ExtResource("9_lx3aj")
 
 [node name="Oscuridad" type="CanvasModulate" parent="." unique_id=930947093]
-visible = false
 color = Color(0.03250689, 0.09005656, 0.08164092, 1)
 
 [node name="NombresZonas" type="Label" parent="." unique_id=1874981034]
@@ -523,6 +524,10 @@ spawns = [NodePath("../../../Spawns/spawnPoint6"), NodePath("../../../Spawns/spa
 visible = false
 spawns = [NodePath("../../../Spawns/spawnPoint10")]
 
+[node name="anomaly1_7" parent="Anomalies/Level1" unique_id=1153242654 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("28_k5wni")]
+visible = false
+spawns = [NodePath("../../../Spawns/spawnPoint11"), NodePath("../../../Spawns/spawnPoint12")]
+
 [node name="Level2" type="Node2D" parent="Anomalies" unique_id=989332924]
 
 [node name="anomaly2_1" parent="Anomalies/Level2" unique_id=1621702828 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("14_rtjhp")]
@@ -539,7 +544,7 @@ spawns = [NodePath("../../../Spawns/spawnPoint2")]
 
 [node name="anomaly2_4" parent="Anomalies/Level2" unique_id=1109891821 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("17_0etgu")]
 visible = false
-type = "sombras"
+type = "parpadeo"
 spawns = [NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spawnPoint3"), NodePath("../../../Spawns/spawnPoint4")]
 
 [node name="anomaly2_5" parent="Anomalies/Level2" unique_id=938380893 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("18_fsjy5")]
@@ -557,6 +562,10 @@ spawns = [NodePath("../../../Spawns/spawnPoint9")]
 [node name="anomaly2_8" parent="Anomalies/Level2" unique_id=836312504 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("27_wubem")]
 visible = false
 spawns = [NodePath("../../../Spawns/spawnPoint9")]
+
+[node name="anomaly2_9" parent="Anomalies/Level2" unique_id=1568386675 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("37_44l5f")]
+visible = false
+spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spawnPoint7")]
 
 [node name="Level3" type="Node2D" parent="Anomalies" unique_id=1766864124]
 
@@ -620,6 +629,12 @@ original_object = NodePath("../../Objects/arbol")
 position = Vector2(2773, 459)
 will_change = true
 original_object = NodePath("../../Objects/lapida_cruzWillChange")
+
+[node name="spawnPoint11" parent="Spawns" unique_id=537229589 instance=ExtResource("28_px363")]
+position = Vector2(218, 580)
+
+[node name="spawnPoint12" parent="Spawns" unique_id=1262797056 instance=ExtResource("28_px363")]
+position = Vector2(-3317, 558)
 
 [node name="GameTimer" type="Timer" parent="." unique_id=560415717]
 

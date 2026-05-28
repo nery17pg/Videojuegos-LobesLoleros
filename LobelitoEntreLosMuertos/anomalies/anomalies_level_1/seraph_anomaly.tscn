@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dabey8wfba3b1"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_ivvhy"]
+[ext_resource type="Texture2D" uid="uid://bmekhbphy3n4w" path="res://art/anomalies/AnomaliesLevel2/seraph_iluminated.png" id="2_7redw"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_hweuf"]
+
+[node name="anomalies" type="Node2D" unique_id=1568386675]
+script = ExtResource("1_ivvhy")
+level = 2
+type = "apagado"
+damage = 2
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=415347203]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_7redw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=434480278]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_7redw")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=585221642]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1196316815]
+polygon = PackedVector2Array(120, -37, 143, 17, 126, 70, 99, 138, 49, 184, -3, 185, -62, 178, -119, 130, -133, 70, -154, 25, -148, -19, -124, -37, -158, -67, -174, -107, -155, -134, -123, -131, -119, -170, -89, -179, -52, -173, -26, -147, -9, -113, 15, -142, 46, -171, 72, -185, 95, -180, 108, -163, 106, -136, 131, -127, 157, -111, 158, -86, 139, -58)
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=1961496068]
+script = ExtResource("3_hweuf")
+min_wait_time = 10.0
+max_wait_time = 20.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"
