@@ -3,27 +3,27 @@ Ghoul: [wave]No deberías quedarte solo aquí tan tarde.
 
 Lobelito:
 - Estoy trabajando
-	Ghoul: [[ Eso dicen todos | El otro velador también | Hasta que dejan de hacerlo ]].
+	Ghoul: [[ Eso dicen todos | El otro velador también]].
 
 	- ¿Qué le pasó al otro velador?
 		Ghoul: [shake] [color=red] Encontraron sangre en la tierra.
 
 	- ¿Estás intentando asustarme?
-		Ghoul: No, solo quiero que tengas en cuenta lo que puede pasar.
+		Ghoul: Solo quiero que tengas en cuenta lo que puede pasar, pues tengo hambre..
 
 - No me das miedo
 	Ghoul: [shake]Todavía no necesito hacerlo.
 
-	- ¿Necesitas hacer qué?
-		Ghoul: [[ Acercarme | Tener hambre ]].
+	- ¿No necesitas hacer qué?
+		Ghoul: [[ Acercarme | Comer ]]
 
 	- Estás enfermo
-		Ghoul: [wave]Y tú estás solo.
+		Ghoul: [wave]Y tú aquí solo conmigo
 		do GameManager.perder_vida(anomalie_actual.damage)
 		
 
-- ¿Por qué me hablas así?
-	Ghoul: Porque hueles diferente cuando tienes miedo.
+- ¿A qué te refieres?
+	Ghoul: Mmm...hueles diferente cuando tienes miedo.
 	do GameManager.perder_vida(anomalie_actual.damage)
 
 - Ya me voy

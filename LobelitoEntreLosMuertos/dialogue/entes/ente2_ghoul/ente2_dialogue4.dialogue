@@ -6,7 +6,7 @@ Lobelito:
 	Ghoul: Yo sí quiero encontrar [[ lo que falta | lo que se llevaron ]].
 
 - Qué enfermo
-	Ghoul: [shake]Todavía está [[ tibio | caliente | fresco ]] cuando pasa.
+	Ghoul: [shake]Todavía está [[ tibio | caliente | fresco ]] cuando recién lo pruebasd
 	do GameManager.perder_vida(anomalie_actual.damage)
 
 - ¿Quién haría algo así?

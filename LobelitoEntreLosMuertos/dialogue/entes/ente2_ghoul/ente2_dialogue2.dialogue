@@ -1,15 +1,28 @@
 ~ start
-Ghoul: [wave]¿Sabes qué hacen los ghouls cuando tienen hambre?[/wave]
+
+GHOUL: [shake]Los fantasmas me odian porque descubrí cómo nacen
 
 Lobelito:
-- Comer cadáveres
-	Ghoul: [pulse] [color=red] Solo cuando no encuentran algo vivo.
 
-- No existen los ghouls
-	Ghoul: Entonces deja de hablar conmigo.
-	do GameManager.perder_vida(anomalie_actual.damage)
+- ¿Cómo nacen?
+	GHOUL: Del miedo que se pudre
+	GHOUL: Igual que la carne
+	- Eso no tiene sentido
+		do GameManager.perder_vida(anomalie_actual.damage)
+		GHOUL: Tampoco tiene sentido que sigas aquí después del anochecer
 
-- ¿Tú eres uno?
-	Ghoul: [shake]Todavía no completamente.[/shake]
+ - ¿Por qué te odiarian por eso?
+	GHOUL: Es que siempre los observo
+	GHOUL: Tomo notas
+	GHOUL: Porque quiero abrirlos para ver qué tienen dentro
+
+    - Tú sí estás loco
+		GHOUL: [wave]Una niña con un conejo me dijo lo mismo
+
+  - ¿Ya viste un fantasma?
+	GHOUL: Una vez
+	GHOUL: Pero cuando intenté tocarlo...
+	GHOUL: Descubrí que era yo reflejado en una ventana
+	- JA JA JA ni si quiera has visto uno 
 
 => END

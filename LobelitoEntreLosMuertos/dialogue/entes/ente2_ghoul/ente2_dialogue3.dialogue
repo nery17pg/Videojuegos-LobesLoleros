@@ -1,15 +1,20 @@
 ~ start
-Ghoul: [wave]¿Qué harías si ves una mano salir de la tierra?[/wave]
+GHOUL: Pasé tres noches invocando espíritus aquí
 
 Lobelito:
-- Salir corriendo
-	Ghoul: Buena idea.
 
-- Ayudaría a sacarla
-	Ghoul: [shake][color=red]Eso quiere.[/color][/shake]
-	do GameManager.perder_vida(anomalie_actual.damage)
+- ¿Y apareció algo?
+	GHOUL: No
+    GHOUL: Ni siquiera los demonios quieren hablar conmigo
 
-- Te estás burlando de mí
-	Ghoul: Te estoy advirtiendo.
+	- Tal vez estás loco
+		GHOUL: [shake]No estoy loco
+    	GHOUL: Solo estoy rodeado de gente demasiado viva
 
+  - ¿Entonces por qué sigues intentando?
+	GHOUL: Porque una noche algo va a responder
+	GHOUL: Y cuando ocurra...
+	GHOUL: Voy a preguntarle qué se siente morir
+	- Eso da miedo
+	GHOUL: A mí me da miedo seguir vivo
 => END
