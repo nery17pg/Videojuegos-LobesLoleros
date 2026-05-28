@@ -20,6 +20,7 @@ Lobelito:
 	- Estás enfermo
 		Ghoul: [wave]Y tú estás solo.
 		do GameManager.perder_vida(anomalie_actual.damage)
+		
 
 - ¿Por qué me hablas así?
 	Ghoul: Porque hueles diferente cuando tienes miedo.

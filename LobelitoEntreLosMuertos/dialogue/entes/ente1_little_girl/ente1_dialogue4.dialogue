@@ -1,11 +1,11 @@
 ~ start
 
-* Niña: [wave]¿Quieres jugar?
+Niña: [wave]¿Quieres jugar?
 
-* Lobelito:
-
+Lobelito:
 - Ignorarla
     Niña: Te vas a arrepentir
+	do GameManager.perder_vida(anomalie_actual.damage)
 
 - Aléjate, niña
 	Niña: Debes aprender a comportarte ante entidades mayores que tú
@@ -13,6 +13,7 @@
 
     - Pues qué madre tan horrible
 		Niña: [shake]Haré que desaparezcas para siempre
+		do GameManager.perder_vida(anomalie_actual.damage)
 		
 	- No te tengo miedo
 		Niña: Deberías
@@ -23,7 +24,8 @@
 - Ve a jugar a otro lado
 	Niña: No puedo salir del cementerio
 	- Tu mamá no debió dejarte sola
-		Niña: [shake]No menciones a mi madre...
-      	Niña: O podría decirle al GHOUL que venga por ti
+		Niña: [shake][color=red]No menciones a mi madre...
+		Niña: O podría decirle al GHOUL que venga por ti
+		do GameManager.perder_vida(anomalie_actual.damage)
 
 => END

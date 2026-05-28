@@ -1,8 +1,9 @@
 ~ start
 Niña: [wave]Hay nombres que no deberías decir aquí...[/wave]
 Lobelito:
-- No responder
+- Ignorarla
 	Niña: [shake]Eres un bebé miedoso.[/shake]
+	do GameManager.perder_vida(anomalie_actual.damage)
 - ¿Por qué?
 	Niña: Porque algunas cosas responden.
 	Niña: [wave]¿Qué sería peor?[/wave]
