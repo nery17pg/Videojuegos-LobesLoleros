@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c7n71trqlir5l"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_tbt6y"]
+[ext_resource type="Texture2D" uid="uid://xv65cwa5n4wy" path="res://art/anomalies/AnomaliesLevel2/eyes_mausoleo.png" id="2_jbu3l"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_yecub"]
+
+[node name="anomalies" type="Node2D" unique_id=1892185550]
+script = ExtResource("1_tbt6y")
+level = 2
+type = "apagado"
+damage = 2
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1828972240]
+texture = ExtResource("2_jbu3l")
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=915998842]
+script = ExtResource("3_yecub")
+min_wait_time = 150.0
+max_wait_time = 200.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=888590182]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1264466093]
+polygon = PackedVector2Array(238, -27, 250, 12, 280, 50, 245, 112, 244, 166, 282, 201, 283, 269, 122, 307, -75, 314, -250, 296, -278, 195, -231, 164, -251, 92, -270, 17, -201, -13, -201, -63, -236, -144, -257, -187, -8, -305, 253, -195, 235, -87)

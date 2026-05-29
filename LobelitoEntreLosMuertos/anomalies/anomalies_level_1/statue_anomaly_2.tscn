@@ -22,6 +22,6 @@ polygon = PackedVector2Array(-16, -250, -9, -230, -8, -222, -15, -215, 4, -205, 
 
 [node name="RandomTimer" type="Timer" parent="." unique_id=1766158038]
 script = ExtResource("3_kqyal")
-min_wait_time = 10.0
-max_wait_time = 20.0
+min_wait_time = 45.0
+max_wait_time = 200.0
 metadata/_custom_type_script = "uid://cxvm6m2lnt4au"

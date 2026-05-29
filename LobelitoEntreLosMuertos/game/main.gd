@@ -218,7 +218,7 @@ func validar_reporte(tipo_reportado):
 			anomalie_actual.z_index = 999
 			if anomalie_actual.identity == "little_girl": #el sprite de la niña es muy pequeño
 				anomalie_actual.scale = Vector2(3, 3)
-			if anomalie_actual.identity == "woman": # y el de la mujer muy grande xd
+			if anomalie_actual.identity == "woman" || anomalie_actual.identity == "old_man":# y el de la mujer y anciano muy grande xd
 				anomalie_actual.scale = Vector2(1, 1)
 			else: 
 				anomalie_actual.scale = Vector2(2, 2)

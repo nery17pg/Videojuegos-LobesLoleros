@@ -22,9 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://woyn0cwrxcfm" path="res://art/background_elements/dollsTree.png" id="12_gob4j"]
 [ext_resource type="FontFile" uid="uid://eodwykn3iowu" path="res://art/fonts/Cinzel-Medium.ttf" id="12_px363"]
 [ext_resource type="PackedScene" uid="uid://dkse6wkxvw4mg" path="res://anomalies/anomalies_level_1/lobelito_anomaly.tscn" id="13_px363"]
-[ext_resource type="PackedScene" uid="uid://dvhew81vy32gn" path="res://anomalies/anomalies_level_2/light_anomaly.tscn" id="14_rtjhp"]
 [ext_resource type="PackedScene" uid="uid://3sqotblr3d2r" path="res://anomalies/anomalies_level_2/oni_ente.tscn" id="15_ibube"]
-[ext_resource type="PackedScene" uid="uid://ddh26fcimgilb" path="res://anomalies/anomalies_level_2/door_anomaly_2.tscn" id="16_77ae2"]
 [ext_resource type="PackedScene" uid="uid://domxih6grhfnh" path="res://anomalies/anomalies_level_1/strange_man_visit.tscn" id="16_px363"]
 [ext_resource type="PackedScene" uid="uid://dj4ncufm08gta" path="res://anomalies/anomalies_level_2/neblina_anomaly.tscn" id="17_0etgu"]
 [ext_resource type="PackedScene" uid="uid://diys43kef84gk" path="res://anomalies/anomalies_level_2/ghould_ente.tscn" id="18_fsjy5"]
@@ -47,13 +45,18 @@
 [ext_resource type="Texture2D" uid="uid://cdhwj70jcvnrk" path="res://art/background_elements/estatua_2.png" id="31_wubem"]
 [ext_resource type="Texture2D" uid="uid://xsyaleq65p4w" path="res://art/background_elements/estatua_fondo_2.png" id="32_vcdjx"]
 [ext_resource type="PackedScene" uid="uid://btt37bpegx2g6" path="res://anomalies/anomalies_level_3/little_girl_ente.tscn" id="33_gob4j"]
+[ext_resource type="PackedScene" uid="uid://bedoeug6v3tvc" path="res://anomalies/anomalies_level_1/hierba_mausoleo.tscn" id="35_l8dhh"]
 [ext_resource type="PackedScene" uid="uid://bm8ocy7gks3oa" path="res://anomalies/anomalies_level_3/statue_crying_anom.tscn" id="35_vcdjx"]
+[ext_resource type="PackedScene" uid="uid://ugiqfyda4h8x" path="res://anomalies/anomalies_level_1/old_man_visit.tscn" id="36_5amgw"]
 [ext_resource type="PackedScene" uid="uid://dabey8wfba3b1" path="res://anomalies/anomalies_level_1/seraph_anomaly.tscn" id="37_44l5f"]
+[ext_resource type="PackedScene" uid="uid://msxt1x1elsfs" path="res://anomalies/anomalies_level_1/cuervo.tscn" id="37_73tpa"]
+[ext_resource type="PackedScene" uid="uid://c7n71trqlir5l" path="res://anomalies/anomalies_level_1/eyes_mausoleo.tscn" id="37_l8dhh"]
 [ext_resource type="PackedScene" uid="uid://cxjtvt0pxha82" path="res://anomalies/anomalies_level_1/conejo_gone_anomaly.tscn" id="38_f1cjg"]
 [ext_resource type="PackedScene" uid="uid://dl1613wij05ff" path="res://anomalies/anomalies_level_2/lobelito_capilla.tscn" id="41_u4lhc"]
 [ext_resource type="PackedScene" uid="uid://dne8g2fhongak" path="res://anomalies/anomalies_level_2/eyes_capilla.tscn" id="42_gagp1"]
 [ext_resource type="AudioStream" uid="uid://dgb20dq18sgdi" path="res://sound/map/map.wav" id="46_w0y0c"]
 [ext_resource type="PackedScene" uid="uid://c71sj4pcg2r3w" path="res://game/menupausa.tscn" id="47_gq54d"]
+[ext_resource type="PackedScene" uid="uid://djrg5shb63m3j" path="res://anomalies/anomalies_level_1/statue_laughing.tscn" id="52_3tfmv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx3aj"]
 size = Vector2(38, 749)
@@ -570,26 +573,32 @@ spawns = [NodePath("../../../Spawns/spawnPoint11"), NodePath("../../../Spawns/sp
 
 [node name="anomaly1_8" parent="Anomalies/Level1" unique_id=899923105 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("30_s2dp4")]
 visible = false
-position = Vector2(2645, 451)
 spawns = [NodePath("../../../Spawns/spawnPoint14")]
 
 [node name="anomaly1_9" parent="Anomalies/Level1" unique_id=552309265 node_paths=PackedStringArray("current_spawn") groups=["anomalias"] instance=ExtResource("31_84ymw")]
 visible = false
 current_spawn = NodePath("../../../Spawns/spawnPoint13")
 
+[node name="anomaly1_10" parent="Anomalies/Level1" unique_id=1438505524 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("35_l8dhh")]
+visible = false
+spawns = [NodePath("../../../Spawns/spawnPoint15")]
+
+[node name="anomalies" parent="Anomalies/Level1" unique_id=1266545526 groups=["anomalias"] instance=ExtResource("36_5amgw")]
+position = Vector2(46, 391)
+
+[node name="anomaly1_12" parent="Anomalies/Level1" unique_id=93827321 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("37_73tpa")]
+position = Vector2(-471, 135)
+spawns = [NodePath("../../../Spawns/spawnPoint16")]
+
 [node name="Level2" type="Node2D" parent="Anomalies" unique_id=989332924]
 
-[node name="anomaly2_1" parent="Anomalies/Level2" unique_id=1621702828 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("14_rtjhp")]
+[node name="anomaly2_1" parent="Anomalies/Level2" unique_id=1892185550 node_paths=PackedStringArray("spawns") instance=ExtResource("37_l8dhh")]
 visible = false
-spawns = [NodePath("../../../Spawns/spawnPoint1"), NodePath("../../../Spawns/spawnPoint2"), NodePath("../../../Spawns/spawnPoint3"), NodePath("../../../Spawns/spawnPoint4")]
+spawns = [NodePath("../../../Spawns/spawnPoint15")]
 
 [node name="anomaly2_2" parent="Anomalies/Level2" unique_id=1119001943 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("15_ibube")]
 visible = false
 spawns = [NodePath("../../../Spawns/spawnPoint1")]
-
-[node name="anomaly2_3" parent="Anomalies/Level2" unique_id=2007177177 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("16_77ae2")]
-visible = false
-spawns = [NodePath("../../../Spawns/spawnPoint2")]
 
 [node name="anomaly2_4" parent="Anomalies/Level2" unique_id=1109891821 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("17_0etgu")]
 visible = false
@@ -646,6 +655,10 @@ type = "otro"
 damage = 3
 spawns = [NodePath("../../../Spawns/spawnPoint9")]
 
+[node name="anomaly3_5" parent="Anomalies/Level3" unique_id=420621922 node_paths=PackedStringArray("current_spawn") groups=["anomalias"] instance=ExtResource("52_3tfmv")]
+visible = false
+current_spawn = NodePath("../../../Spawns/spawnPoint8")
+
 [node name="caseta" parent="." unique_id=1519634108 instance=ExtResource("7_wjctj")]
 position = Vector2(913, 452)
 
@@ -699,6 +712,15 @@ position = Vector2(-2878, 348)
 
 [node name="spawnPoint14" parent="Spawns" unique_id=1176724763 instance=ExtResource("28_px363")]
 position = Vector2(2645, 451)
+scale = Vector2(0.5, 0.5)
+
+[node name="spawnPoint15" parent="Spawns" unique_id=394567185 node_paths=PackedStringArray("original_object") instance=ExtResource("28_px363")]
+position = Vector2(-668, 359)
+will_change = true
+original_object = NodePath("../../Objects/mausoleo")
+
+[node name="spawnPoint16" parent="Spawns" unique_id=1181341675 instance=ExtResource("28_px363")]
+position = Vector2(1033, 265)
 scale = Vector2(0.5, 0.5)
 
 [node name="GameTimer" type="Timer" parent="." unique_id=560415717]
