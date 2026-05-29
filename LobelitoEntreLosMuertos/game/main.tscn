@@ -32,6 +32,9 @@
 [ext_resource type="Texture2D" uid="uid://bghsjctoqapf1" path="res://art/background_elements/tumba_cruz_fondo.png" id="20_4gc7v"]
 [ext_resource type="Texture2D" uid="uid://derqgo22cgvju" path="res://art/background_elements/tumba_cruz1.png" id="21_f1cjg"]
 [ext_resource type="Texture2D" uid="uid://cpy4sqqhadh7" path="res://art/background_elements/capilla.png" id="22_2da88"]
+[ext_resource type="Texture2D" uid="uid://ckydxh7nldfgs" path="res://art/background_elements/mausoleoBackground2.png" id="23_5amgw"]
+[ext_resource type="Texture2D" uid="uid://cied457kgnde3" path="res://art/background_elements/mausoleo_backgrounud.png" id="23_gagp1"]
+[ext_resource type="Texture2D" uid="uid://sk6oy1pje25k" path="res://art/background_elements/mausoleo.png" id="24_5amgw"]
 [ext_resource type="PackedScene" uid="uid://chk5ekrc3hj37" path="res://anomalies/anomalies_level_2/dolls_eyes_anomaly.tscn" id="26_l78i6"]
 [ext_resource type="PackedScene" uid="uid://blo0kq14gwxv0" path="res://anomalies/anomalies_level_1/lapida_huellas.tscn" id="27_e00sq"]
 [ext_resource type="PackedScene" uid="uid://ild6l4h4o5ni" path="res://anomalies/anomalies_level_2/dolls_gone_anomaly.tscn" id="27_wubem"]
@@ -506,6 +509,30 @@ texture = ExtResource("21_f1cjg")
 [node name="capilla" type="Sprite2D" parent="Objects" unique_id=1352666391]
 position = Vector2(-2878, 348)
 texture = ExtResource("22_2da88")
+
+[node name="mausoleBackground4" type="Sprite2D" parent="Objects" unique_id=1236651111]
+position = Vector2(-446, 278)
+scale = Vector2(0.36922503, 0.5852588)
+texture = ExtResource("23_5amgw")
+
+[node name="mausoleBackground3" type="Sprite2D" parent="Objects" unique_id=1842726300]
+position = Vector2(-877, 393)
+scale = Vector2(0.6076389, 0.9313271)
+texture = ExtResource("23_5amgw")
+
+[node name="mausoleBackground2" type="Sprite2D" parent="Objects" unique_id=137574200]
+position = Vector2(-372, 452.00003)
+scale = Vector2(0.49980637, 0.64891225)
+texture = ExtResource("23_gagp1")
+
+[node name="mausoleBackground" type="Sprite2D" parent="Objects" unique_id=1206733039]
+position = Vector2(-814.00006, 496)
+scale = Vector2(0.3873155, 0.5031828)
+texture = ExtResource("23_gagp1")
+
+[node name="mausoleo" type="Sprite2D" parent="Objects" unique_id=1687415790]
+position = Vector2(-668, 359)
+texture = ExtResource("24_5amgw")
 
 [node name="Anomalies" type="Node2D" parent="." unique_id=1294360125]
 
