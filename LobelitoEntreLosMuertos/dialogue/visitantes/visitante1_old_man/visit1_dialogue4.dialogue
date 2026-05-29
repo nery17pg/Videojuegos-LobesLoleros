@@ -1,21 +1,68 @@
 ~ start
-Anciano: No sé como hacer notas en los dialogos, pero
-trata de hacer que los personajes tengan personalidad
-en el caso del anciano, que sea una persona sabia y
-que cuente una que otra leyenda del lugar. 
-Tambien puede ser un antiguo criminal de guerra
-(como el Sato jeje)
-Trata de que los personajes sean interesantes 
-para que el juegono sea tan aburrido
-Si usas chat dile que defina claramente la personalidad
-antes de escribir los dialogos
-Sato:
-	Jeje
-Lobelito: 
-- O_o
-	Sato: Elegiste la muerte
-	do GameManager.perder_vida(anomalie_actual.damage)
-- Jeje
-	Sato: :D
+
+Anciano: [wait=1]¿Ya hablaste con la niña del conejo?
+
+Lobelito: Sí...
+Lobelito: Da un poco de miedo.
+
+Anciano: [wave]Pobrecita...[/wave]
+
+Anciano: La conocí desde antes de que naciera.
+
+Anciano: Su madre era una basura de persona.
+
+Anciano: [wait=0.5]
+Anciano: La golpeaba.
+Anciano: La encerraba sola durante días.
+
+Anciano: Y cuando bebía...
+Anciano: [shake][b]se desquitaba con la niña [/b][/shake]
+
+Lobelito: ... ¿Y el padre?
+
+Anciano: [wait=1]
+Anciano: Eso es lo triste.
+
+Anciano: La niña creció creyendo
+Anciano: que su padre la había abandonado.
+
+Anciano: Todas las noches lloraba
+Anciano: abrazando ese conejo viejo.
+
+Anciano: [wave]“¿Por qué mi papá no me quiere?”[/wave]
+
+Lobelito: ...
+
+Anciano: Una noche...
+Anciano: simplemente no soportó más.
+
+Anciano: [wait=1]
+
+Anciano: [shake][b]La encontraron colgando cerca del árbol de muñecas [/b][/shake]
+
+Lobelito: Qué horrible...
+
+Anciano: Lo peor es que su padre
+Anciano: jamás la abandonó.
+
+Lobelito: ¿Entonces qué pasó?
+
+Anciano: [wait=1]
+
+Anciano: [shake][b]Yo lo maté [/b][/shake]
+
+Lobelito: ... ¿Qué?
+
+Anciano: Teníamos asuntos pendientes.
+
+Anciano: Y los hombres como él
+Anciano: siempre terminan bajo tierra.
+
+Anciano: [wave]Aunque supongo... que jamás imaginó que su hija terminaría acompañándolo [/wave]
+
+Lobelito: ...
+
+Anciano: Jeh...
+Anciano: [shake]Este cementerio guarda demasiadas historias, muchacho [/shake]
 
 => END

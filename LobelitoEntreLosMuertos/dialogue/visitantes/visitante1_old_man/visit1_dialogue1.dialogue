@@ -1,21 +1,31 @@
 ~ start
-Anciano: No sé como hacer notas en los dialogos, pero
-trata de hacer que los personajes tengan personalidad
-en el caso del anciano, que sea una persona sabia y
-que cuente una que otra leyenda del lugar. 
-Tambien puede ser un antiguo criminal de guerra
-(como el Sato jeje)
-Trata de que los personajes sean interesantes 
-para que el juegono sea tan aburrido
-Si usas chat dile que defina claramente la personalidad
-antes de escribir los dialogos
-Sato:
-	Jeje
-Lobelito: 
-- O_o
-	Sato: Elegiste la muerte
+
+Anciano: [[Así que tú eres Lobelito...|El nuevo velador|Jeh... todavía tienes ojos de alguien vivo]], [wait=1] dime muchacho... ¿ya te contaron la leyenda de la mujer sin rostro?
+
+Lobelito:
+- No
+	Anciano: Hace muchos años enterraron aquí a una mujer.
+	Anciano: Nadie sabía quién era.
+	Anciano: Y cuando abrieron el ataúd...
+	Anciano: [wait=1][shake][b]no tenía cara.[/b][/shake]
+
+	Anciano: Desde entonces algunos veladores escuchan
+	Anciano: a una mujer llorando entre las tumbas.
+
+	Anciano: El último idiota decidió seguirla.
+	Anciano: [wait=1]
+	Anciano: A la mañana siguiente...
+	Anciano: [shake][b]solo encontraron sus ojos en el lodo.[/b][/shake]
+
+	Anciano: Así que si escuchas llorar a alguien esta noche...
+	Anciano: [shake][b]NO LA SIGAS.[/b][/shake]
+
+- Seguro es mentira
+	Anciano: [shake][b][[Eso mismo dijo el último velador|Todos se ríen hasta escucharla|El cementerio ama a los incrédulos]][/b][/shake]
 	do GameManager.perder_vida(anomalie_actual.damage)
-- Jeje
-	Sato: :D
+
+- Ignorarlo
+	Anciano: [[Bah... los jóvenes nunca escuchan|Jeh... ya verás cuando las tumbas pronuncien tu nombre|Qué carácter tienes, Lobelito]]
+	Lobelito: ...Este anciano sí da mala espina.
 
 => END

@@ -1,27 +1,77 @@
+
 ~ start
-Anciano: ¿Ya la conociste?
+
+Anciano: [wait=0.5]¿Ya la conociste?
+
 Lobelito: ¿A quién?
-Anciano: Es una niña pelinegra
+
+Anciano: [wave]A la niña pelinegra [/wave]
+
+Anciano: La que siempre carga
+Anciano: ese conejo de felpa viejo.
+
 Lobelito:
 - No sé de quién hablas
-	Anciano: Ya veo
-	Anciano: Supongo que será una historia para después
-- Si, la conozco
-	Anciano: Es energética, ¿no crees?
-	Lobelito: Para estar muerta, sí que lo es
+	Anciano: [wait=1]Ya veo...
+	Anciano: Supongo que esa historia
+	Anciano: será para después.
+
+- Sí, la conozco
+	Anciano: [wave]Es energética, ¿no crees?[/wave]
+
+	Lobelito: Para estar muerta,
+	Lobelito: sí que lo es.
+
+	Anciano: [shake]Jeh...[/shake]
+
 	Anciano: ¿Y sabes cómo terminó así?
-	Lobelito: 
+
+	Lobelito:
 	- No tengo tiempo para esto
-		Anciano: No te preocupes, la noche es joven
+		Anciano: No te preocupes.
+		Anciano: [wave]La noche es joven [/wave]
+
 	- ...
-		Anciano: A juzgar por tu cara parece ser que no
-		Anciano: La conozco desde que estaba en el vientre de su madre, hace unos 60 años
+		Anciano: A juzgar por tu cara,
+		Anciano: parece que no.
+
+		Anciano: La conozco desde que estaba
+		Anciano: en el vientre de su madre.
+
+		Anciano: [wait=1]
+		Anciano: Hace unos [b]60 años [/b]
+
 		Lobelito: ... ¿Qué edad tienes?
-		Anciano: Lo que se ve no se pregunta. En fin, ¿has visto ese peluche en el árbol de las muñeecas?
-		Lobelito: Sí, es igual al que siempre lleva la niña
-		Anciano: Solo diré que su destino fue exactamente el mismo
-		Anciano: Nunca conoció a su padre y su madre la orilló a tomar una decisión tan drástica a tan tierna edad...
-		Anciano: Es bueno saber que su único consuelo, el conejo de felpa, está con ella incluso después de la muerte
+
+		Anciano: [shake]Lo que se ve no se pregunta [/shake]
+
+		Anciano: En fin...
+		Anciano: ¿has visto ese peluche
+		Anciano: en el árbol de las muñecas?
+
+		Lobelito: Sí.
+		Lobelito: Es igual al que lleva la niña.
+
+		Anciano: Porque es el mismo.
+
+		Anciano: [wait=1]
+
+		Anciano: Nunca conoció a su padre.
+
+		Anciano: Y su madre...
+		Anciano: [shake][b]la orilló a tomar una decisión
+		Anciano: demasiado drástica
+		Anciano: para una niña tan pequeña [/b][/shake]
+
+		Anciano: [wave]Dicen que el conejo
+		Anciano: fue lo único que abrazó
+		Anciano: antes de morir [/wave]
+
+		Anciano: Y ahora...
+		Anciano: sigue con ella incluso después de la muerte.
+
 - Ignorarlo
-	Anciano: Entiendo, hablaremos en otro momento
+	Anciano: Entiendo...
+	Anciano: [wave]Hablaremos en otro momento, Lobelito [/wave]
+
 => END

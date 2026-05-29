@@ -1,6 +1,43 @@
+
 ~ start
-Sato:
-	Por qué la gallina cruzó la calle
-Lobelito: 
-	Mejor no digas nada
+
+Anciano: [wait=1]Lobelito...
+Anciano: ¿Ya viste el reloj
+Anciano: que está junto a la capilla?
+
+Lobelito:
+- Sí, ¿qué tiene?
+	Anciano: [wave]Nunca marca la misma hora [/wave]
+
+	Anciano: Hace años
+	Anciano: un velador intentó arreglarlo.
+
+	Anciano: Decía que cada madrugada
+	Anciano: el reloj se detenía exactamente
+	Anciano: a las [b]3:33 [/b]
+
+	Lobelito: ¿Y qué pasó?
+
+	Anciano: [wait=1]
+
+	Anciano: Una noche escuchó
+	Anciano: que alguien lloraba dentro de la capilla.
+
+	Anciano: El muy idiota entró a mirar.
+
+	Anciano: [shake][b]A la mañana siguiente encontraron el reloj funcionando otra vez [/b][/shake]
+
+	Lobelito: ... ¿Y el velador?
+
+	Anciano: [wave]El reloj necesitaba algo para volver a moverse [/wave]
+
+- Seguro solo está descompuesto
+	Anciano: [shake][b][[Eso mismo dicen todos|Hasta escuchar campanas en la madrugada|Jeh... qué inocente eres]][/b][/shake]
+
+	do GameManager.perder_vida(anomalie_actual.damage)
+
+- Ignorarlo
+	Anciano: Bah...
+	Anciano: [wave]Los jóvenes ya no respetan a los muertos [/wave]
+
 => END
