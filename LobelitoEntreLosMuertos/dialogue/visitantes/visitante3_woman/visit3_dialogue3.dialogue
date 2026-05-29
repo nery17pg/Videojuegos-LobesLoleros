@@ -1,21 +1,63 @@
 ~ start
-Mujer: Estoy segura de que mi abuelo está encantado contigo siendo el nuevo velador
+
+Mujer: [wait=1]Estoy segura de que mi abuelo
+Mujer: está encantado contigo
+Mujer: siendo el nuevo velador.
+
 Lobelito:
 - ¿De verdad?
-	Mujer: Por supuesto, eres tan extraño como esos fenómenos que rondan el cementerio
-	Mujer: Pero no eres un salvaje
+	Mujer: Por supuesto.
+
+	Mujer: Eres tan extraño
+	Mujer: como esos fenómenos
+	Mujer: que rondan el cementerio.
+
+	Mujer: Pero no eres un salvaje.
+
 	Mujer: [[Incluso tu pelaje es esponjoso|Incluso estás completamente vestido|Incluso te recortas las garras]]
+
 	Lobelito:
-	- Ah... Pues gracias
-		Mujer: Solo bromeo, no deberías dejarte pisotear tan facilmente
-		Mujer: Especialmente en este lugar, mi abuelo siempre me contaba lo molesto que era tener que lidiar con las entidades atrapadas en el cementerio
-		Mujer: Lo trataban como a un insecto más
+	- Ah... pues gracias
+		Mujer: [wave]Solo bromeo [/wave]
+
+		Mujer: No deberías dejarte
+		Mujer: pisotear tan fácilmente.
+
+		Mujer: Especialmente en este lugar.
+
+		Mujer: Mi abuelo siempre me contaba
+		Mujer: lo molesto que era lidiar
+		Mujer: con las entidades atrapadas aquí.
+
+		Mujer: [shake]Lo trataban como a un insecto más [/shake]
+
 		Lobelito: Tu abuelo no mentía...
-	- Dejarla parlotear
-		Mujer: ¡Jaja!, te tomé por sorpresa, ¿No es así?
-		Mujer: Tómalo como una pequeña novatada
-		Mujer: Espero estés disfrutando tu nuevo trabajo
-		Lobelito: Definamos disfrutar...
+
+	- Dejarla hablando sola
+		Mujer: [shake]¡Jaja![/shake]
+
+		Mujer: Te tomé por sorpresa,
+		Mujer: ¿no es así?
+
+		Mujer: Tómalo como
+		Mujer: una pequeña novatada.
+
+		Mujer: [wave]Espero que estés disfrutando tu nuevo trabajo [/wave]
+
+		Lobelito: Definamos “disfrutar”...
+
 	- ... Tengo que irme
+		Mujer: [wait=1]
+
+		Mujer: Qué serio eres.
+
+		Mujer: [wave]Mi abuelo también huía cuando algo le incomodaba [/wave]
+
 - Ignorarla
+	Mujer: [shake]...[/shake]
+
+	Mujer: Supongo que hablar solo
+	Mujer: es una tradición
+	Mujer: de este cementerio.
+
 => END

@@ -1,22 +1,59 @@
 ~ start
-Mujer: Hace frío y mi abuelo no se digna a aparecer
-Lobelito: 
+
+Mujer: [wait=1]Hace frío...
+Mujer: y mi abuelo no se digna a aparecer.
+
+Lobelito:
 - ¿Dónde está tu abuelo?
-	Mujer: Justo debajo de nosotros
-	Lobelito: Oh... [[Mi más sincero pésame|Lo siento, no lo sabía|No debí haber dicho nada, lo siento]]
-	Mujer: Ah, no te preocupes
-	Mujer: Me prometió que cuidaría de mi
-	Mujer: Cuando me vea a punto de morir de frío
-	Mujer: Seguramente vendrá corriendo a ayudarme, lo conozco perfectamente
+	Mujer: [wave]Justo debajo de nosotros [/wave]
+
+	Lobelito: Oh...
+
+	Lobelito: [[Mi más sincero pésame|Lo siento, no lo sabía|No debí preguntar eso]]
+
+	Mujer: Ah, no te preocupes.
+
+	Mujer: Me prometió que siempre cuidaría de mí.
+
+	Mujer: Cuando me vea
+	Mujer: a punto de morir de frío...
+
+	Mujer: [wave]seguramente vendrá corriendo a ayudarme [/wave]
+
+	Mujer: Lo conozco perfectamente.
+
 	Lobelito:
 	- No decir nada
-		Mujer: Nos vemos luego
-	- Es una tontería 
-		Mujer: Eres como todos los demás
+		Mujer: [wait=1]
+
+		Mujer: Nos vemos luego.
+
+	- Es una tontería
+		Mujer: [wait=1]
+
+		Mujer: [shake][b]Eres igual que todos los demás [/b][/shake]
+
+		Mujer: Siempre creen
+		Mujer: que estoy loca.
+
+		Mujer: [shake][b]¡Mi abuelo volverá![/b][/shake]
+
 		do GameManager.perder_vida(anomalie_actual.damage)
+
 - Deberías ir a casa
-	Lobelito: Podrías enfermarte, traeré mi suéter de la caseta
-	Mujer: [[Muy amable|Que caballero|Que lindo]], pero no hace falta
-	Mujer: Estoy segura de que [[pronto aparecerá | cuando me escuche estornudar vendrá corriendo como cuando era niña | no tendré que esperar mucho más tiempo]]
+	Lobelito: Podrías enfermarte.
+
+	Lobelito: Traeré mi suéter
+	Lobelito: desde la caseta.
+
+	Mujer: [[Muy amable|Qué caballero|Qué lindo]], pero no hace falta.
+
+	Mujer: Estoy segura de que
+	Mujer: [[pronto aparecerá|cuando me escuche estornudar vendrá corriendo como cuando era niña|no tendré que esperar mucho más tiempo]]
+
 - Ignorarla
+	Mujer: [shake]...[/shake]
+
+	Mujer: [wave]Supongo que incluso los vivos terminan abandonándome [/wave]
+
 => END
