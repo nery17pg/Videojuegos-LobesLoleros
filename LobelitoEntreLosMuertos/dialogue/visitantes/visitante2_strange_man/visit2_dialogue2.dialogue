@@ -1,23 +1,59 @@
+
 ~ start
-Hombre extraño: Llevo semanas acampado en el cementerio buscando actividad paranormal
-Hombre extraño: Y hasta ahora no ha pasado nada
-Lobelito: 
-- Quisiera ser tu
-	Lobelito: Llevo toda la noche viendo cosas extrañas pasar
-	Hombre extraño: [b][shake]Así que te burlas de mi
-	Lobelito: 
+
+Hombre extraño: [wait=1]Llevo semanas acampando en este cementerio
+Hombre extraño: buscando actividad paranormal.
+
+Hombre extraño: Y hasta ahora...
+Hombre extraño: [shake][b]no ha pasado nada.[/b][/shake]
+
+Lobelito:
+- Quisiera ser tú
+	Lobelito: Llevo toda la noche
+	Lobelito: viendo cosas extrañas pasar.
+
+	Hombre extraño: [shake][b]Así que te burlas de mí.[/b][/shake]
+
+	Lobelito:
 	- Es gracioso
-		Lobelito: No puedes culparme, no estoy haciendo nada y sin embargo ya logré lo que te ha tomado tanto tiempo en una sola noche 
-		Hombre extraño: ...
+		Lobelito: No puedes culparme.
+
+		Lobelito: Yo no estoy haciendo nada
+		Lobelito: y aun así ya logré
+		Lobelito: lo que te tomó años buscar.
+
+		Hombre extraño: [wait=1]...
+
+		Hombre extraño: [shake][b]Los muertos también se ríen de mí.[/b][/shake]
+
 		do GameManager.perder_vida(anomalie_actual.damage)
+
 	- Lo siento
-		Lobelito: No es nada de eso, jamás me burlaría de ti
-		Lobelito: Esta búsqueda debe haberte dejado exhausto, ¿no crees que sería buena idea regresar a casa por esta noche?
-		Hombre extraño: Me voy de aquí, eres un bicho raro
-		Lobelito: ... ¿De verdad el bicho raro me acaba de llamar bicho raro?
+		Lobelito: No es eso.
+		Lobelito: Jamás me burlaría de ti.
+
+		Lobelito: Esta búsqueda debe haberte dejado agotado.
+		Lobelito: ¿No crees que sería buena idea regresar a casa?
+
+		Hombre extraño: [wave]Me voy de aquí...[/wave]
+
+		Hombre extraño: Eres un bicho raro.
+
+		Lobelito: ... ¿De verdad el bicho raro
+		Lobelito: me acaba de llamar bicho raro?
+
 - No te rindas
-	Hombre extraño: [wave]Si estuvieras [b]muerto[/b] seríamos grandes amigos
+	Hombre extraño: [wait=1]
+
+	Hombre extraño: [wave]Si estuvieras [b]muerto[/b]...[/wave]
+
+	Hombre extraño: [shake]seríamos grandes amigos.[/shake]
+
 - Ignorarlo
-	Hombre extraño: [shake][b]Si vas a estar callado sería mejor que estuvieras muerto
+	Hombre extraño: [shake][b]Si vas a quedarte callado...[/b][/shake]
+
+	Hombre extraño: [shake][b]sería mejor que estuvieras muerto.[/b][/shake]
+
 	do GameManager.perder_vida(anomalie_actual.damage)
+
 => END

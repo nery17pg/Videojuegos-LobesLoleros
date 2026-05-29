@@ -1,24 +1,44 @@
 ~ start
-Luka: 
-- Saltar dialogos
-- Detalles del personaje
-	Hombre misterioso/extraño: No, tristemente no se llama
-	Michael Jackson
-	Luka: Me imagino la personalidad de este personaje
-	como un antisocial que prefiere pasar el rato con los
-	muertos. Está obsesionado con la actividad paranormal,
-	todo el mundo habla de que el cementerio está embrujado
-	sim embargo las anomalías/espiritus/entes nunca se
-	han mostrado ante él. 
-	Sus dialogos deben reflejar que es una persona
-	extraña y obsesiva. También estaría bien que incluyeras
-	un dialogo de un ente burlandose de que ni siquiera
-	los muertos quieren estar cerca de él
 
-	**Importante**
-	Siempre debe haber opción de ignorar a las anomalías
-	Pero no todas bajan vidas por ignorarlas.
-	En el caso del hombre extraño, el siempre bajará vida
-	al ser ignorado
+Hombre Extraño: [wait=1]Tú puedes verlos, ¿verdad?
+
+Lobelito: ¿Ver qué?
+
+Hombre Extraño: [wave]A los muertos.[/wave]
+
+Hombre Extraño: Lo noto en tus ojos.
+Hombre Extraño: Ellos te observan.
+
+Lobelito:
+- No sé de qué hablas
+	Hombre Extraño: [shake]Mentira.[/shake]
+
+	Hombre Extraño: Llevo años buscándolos.
+
+	Hombre Extraño: Abrí tumbas.
+	Hombre Extraño: Dormí con cadáveres.
+	Hombre Extraño: Incluso intenté morir una vez...
+
+	Hombre Extraño: [wait=1]
+
+	Hombre Extraño: Pero ni así quisieron hablarme.
+
+	Hombre Extraño: [shake][b]Los muertos me odian.[/b][/shake]
+
+- Tal vez estás loco
+	Hombre Extraño: [shake][b][[Todos dicen eso|Los vivos siempre son iguales|Por eso prefiero a los muertos]][/b][/shake]
+
+	Hombre Extraño: Aunque ellos tampoco me soporten.
+
+- Ignorarlo
+	Hombre Extraño: [wait=1]
+
+	Hombre Extraño: [shake][b]NO ME IGNORES.[/b][/shake]
+
+	Hombre Extraño: ¡Ellos también hacen eso!
+
+	Hombre Extraño: [wave]¡Todos ustedes me ignoran![/wave]
+
+	do GameManager.perder_vida(anomalie_actual.damage)
 
 => END
