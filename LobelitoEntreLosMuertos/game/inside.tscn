@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cj5fcb5thwgmu" path="res://art/anomalies/AnomaliesLevel2/anomalies_ghoul.png" id="9_m7k8n"]
 [ext_resource type="Texture2D" uid="uid://cvpcsytqbicxa" path="res://art/anomalies/AnomaliesLevel2/anomalies_oni.png" id="10_354ll"]
 [ext_resource type="Texture2D" uid="uid://c0beu41cglql6" path="res://art/anomalies/AnomaliesLevel3/anomalies_littleGirl_ente.png" id="11_22b0i"]
+[ext_resource type="Texture2D" uid="uid://4wk3acq63riy" path="res://art/background_elements/tache.png" id="12_354ll"]
 [ext_resource type="AudioStream" uid="uid://d26v5onmo10x4" path="res://sound/caseta/caseta.wav" id="15_m7k8n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0onei"]
@@ -109,6 +110,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina1" unique_id=1881081596]
+visible = false
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -119,21 +121,53 @@ offset_right = 870.0
 offset_bottom = 488.0
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "REGLAS:
-Reportar anomalía de luz
-
-Reportar anomalía de sombra
-
-Reportar como tipo “lobelito”:
--Cuando veas una tumba con 
-tu nombre
--Cuando te veas a ti mismo
-
-Reportar visitantes:
--Hombre extraño
--Mujer
--Anciano"
+text = "
+"
 vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/LibretaUI/Pagina1" unique_id=581627611]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 299.0
+offset_top = 104.0
+offset_right = 566.0
+offset_bottom = 491.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "17 de octubre de 2001
+No ha pasado mucho tiempo 
+desde que comencé a trabajar 
+en el cementerio, pero estoy 
+seguro de que lo he visto todo.
+Llevaré un registro de los
+descubrimientos que he hecho.
+
+El cementerio parece obsesionado
+conmigo, me veo en todas partes.
+Mi nombre escrito en una lápida,
+mi cara en lugares que no debería,
+e incluso un clon."
+vertical_alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina1" unique_id=146875037]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 151.0
+offset_right = 862.0
+offset_bottom = 456.0
+rotation = -0.016992124
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "Y ni siquiera es lo más extraño
+que he visto por aquí.
+
+[b][u]Recordar[/u][/b]
+Cuando te veas a ti mismo,
+reporta la anomalía bajo tu
+nombre
+"
 
 [node name="Pagina2" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=901331056]
 visible = false
@@ -141,7 +175,22 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina2" unique_id=419452384]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 151.0
+offset_right = 862.0
+offset_bottom = 456.0
+rotation = -0.016992124
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "15 de diciembre de 2003
+Esta noche el cementerio ha estado muy tranquilo, a diferencia de otros días que esas... cosas.... empiezan a molestar cambiando  o modificando [u]objetos[/u]
+
+Por supuesto, me parecen criaturas facinantes. Pero tener que reportar cada uno de los objetos es una molestia."
+
 [node name="Label2" type="Label" parent="CanvasLayer/LibretaUI/Pagina2" unique_id=448493949]
+visible = false
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -152,26 +201,19 @@ offset_right = 868.0
 offset_bottom = 459.0
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Reportar como tipo ente
--Ghoul:
--Oni
--Niña
-
-Reportar como tipo “otro”:
--Cuando las muñecas del árbol 
-de muñecas desaparezcan. 
--Si la puerta de la capilla cambia 
-de estado (abrir o cerrarse) 
-después de las 3 AM. 
--Estatua sin alas"
+text = "15 de diciembre de 2001
+Esta noche el cementerio ha estado muy tranquilo, a diferencia de otros días que esas... cosas.... empiezan a molestar cambiando objetos"
 vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="Pagina3" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=2119174355]
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina3" unique_id=1239007613]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 18.550001
@@ -196,6 +238,46 @@ a murmurar.
 -Cuando alguna estatua esté 
 llorando."
 
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina3" unique_id=1945294620]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 151.0
+offset_right = 862.0
+offset_bottom = 486.10614
+rotation = -0.01769208
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "27 de mayo de 2011
+Desde el primer día que puse un pie en este lugar sentí que me observaban constantemente
+
+Hoy finalmente se mostró. 
+
+Un par de ojos ocultos en la oscuridad viéndome fijamente. 
+
+Cuando apago mi linterna desaparece. 
+
+
+"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina3" unique_id=445285688]
+layout_mode = 0
+offset_left = 305.99997
+offset_top = 151.0
+offset_right = 557.0
+offset_bottom = 531.47406
+rotation = 0.008256528
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "20 de febrero de 20010
+Mi [i]linterna[/i] es mi mejor amiga, no solo es útil para ahuyentar a los cuervos, también mantiene a raya a ciertas anomalías. 
+
+Como esos seres luminosos, no son un ente, no son una luz, no son una sombra. No hay manera de deshacerse de ellos sin hacer parpadear la linterna.
+
+Ellos mismos son tan brillantes, ¿Por qué serán tan temerosos?
+
+
+"
+
 [node name="Pagina4" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=430557522]
 visible = false
 layout_mode = 0
@@ -203,6 +285,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina4" unique_id=851185140]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 18.225
@@ -217,42 +300,82 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 45
 text = "Visitantes"
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina4" unique_id=1792171912]
+layout_mode = 0
+offset_left = 305.99997
+offset_top = 151.0
+offset_right = 557.0
+offset_bottom = 499.846
+rotation = 0.008256528
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "12 de abril de 20013
+¿Qué es lo que nos hace sentir que estamos vivos?
+
+¿Respirar? ¿Reír? Llorar?
+
+ Desde que llegué aquí siempre he escuchado risas y sollozos. Creí que eran intrusos gastandome alguna broma, pero no. Eran las estatas. Están vivas.
+
+Mejor dicho, cobran vida."
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina4" unique_id=931169480]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 151.0
+offset_right = 862.0
+offset_bottom = 486.10614
+rotation = -0.01769208
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "Están hechas de piedra, pero hay momentos en los que lágrimas nacen de sus ojos.
+
+Cuando las estatuas muestran emociones son muy agresivas, aunque he conseguido regresarlas a la normalidad con la linterna.
+
+[b][u]Recuerda: [/u][/b]
+Si las estatuas son emocionales, usa la linterna. De otra forma no son más que piedra."
+
 [node name="Pagina5" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=2023667027]
 visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina5" unique_id=1593174338]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 18.537
-anchor_top = 7.675
-anchor_right = 18.537
-anchor_bottom = 7.675
-offset_left = -128.48004
-offset_top = -160.0
-offset_right = 134.51996
-offset_bottom = 175.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Hombre extraño (aka ayuwoki):
-
-Motivos por los que bajaría vidas 
--  Juzgarlo de loco o ignorarlo
-
-Está obsesionado con la actividad 
-paranormal, sin embargo las
-anomalías deciden no mostrarse 
-ante él.
-Se obsesionó con querer
- encontrarse con algún ente,
- investiga las historias del
- cementerio"
-
 [node name="VisitanteStrangeMan" type="Sprite2D" parent="CanvasLayer/LibretaUI/Pagina5" unique_id=1431394914]
+visible = false
 position = Vector2(454, 313)
 scale = Vector2(0.5859375, 0.55401236)
 texture = ExtResource("8_qwcb4")
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina5" unique_id=1113085150]
+layout_mode = 0
+offset_left = 305.99997
+offset_top = 151.0
+offset_right = 557.0
+offset_bottom = 499.846
+rotation = 0.008256528
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "01 de julio de 2016
+Debo admitir que más que un diario, esto es un manual de instrucciones para los siguientes veladores.  Cuando tomé el puesto no tenía ni idea de lo que me esperaba. 
+
+Nadie me advirtió.
+Nadie me aconsejó
+
+Es por eso que he decicido tomar el papel de mentor, aunque sea madiante este escrito."
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina5" unique_id=424135387]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 151.0
+offset_right = 862.0
+offset_bottom = 486.10614
+rotation = -0.01769208
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "Las muñecas suelen preferir coexistir en paz con los vivos, sin embargo algo ha cambiado. Si bien siguen ocultandose para jugar, si fallas al reportarlo se pondrán agresivas.
+
+[u][b]Recuerda:[/b][/u]
+Las muñecas no tienen una categoría específica ya que no son entes, visitantes, ni objetos."
 
 [node name="Pagina6" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=1121147678]
 visible = false
@@ -261,6 +384,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina6" unique_id=1166309994]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 18.475
@@ -279,6 +403,39 @@ Es la nieta del antiguo velador
  cementerio con la esperanza 
 de encontrarse con su abuelo "
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina6" unique_id=421162660]
+layout_mode = 0
+offset_left = 305.99997
+offset_top = 151.0
+offset_right = 557.0
+offset_bottom = 499.846
+rotation = 0.008256528
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "15 de junio de 2016
+Mi nieta ha crecido tanto, es una niña increíble.
+A veces pienso en que si la niña de este cementerio no hubiera muerto, sería igual a mi nieta. 
+
+A todo esto, si llegas a encontrarte al ente que mencioné, jamas digas algo negativo de su madre y trata de no ignorarla. 
+
+Es una de las criaturas más peligrosas de este lugar."
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina6" unique_id=382460183]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 151.0
+offset_right = 862.0
+offset_bottom = 486.10614
+rotation = -0.01769208
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "Una vez cometí el eror tocar al peluche que lleva a todos lados. 
+
+Terminé en el hospital con heridas mortales.
+
+[b][u]Recuerda:[/u] [/b]
+No hagas enojar a la niña, de otra forma podrías no correr con la misma suerte que yo"
+
 [node name="Pagina7" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=1949215535]
 visible = false
 layout_mode = 0
@@ -286,6 +443,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina7" unique_id=123071792]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 18.462002
@@ -299,26 +457,63 @@ offset_bottom = 164.99997
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Anciano:"
 
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina7" unique_id=1306476353]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 151.0
+offset_right = 862.0
+offset_bottom = 486.10614
+rotation = -0.01769208
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "18 de febrero de 2018
+Es la primera vez que veo una neblina tan espesa que se forme en cuestión de segundos.
+
+Estaba pensando en cómo debería reportarla cuando mi linterna comenzó a fallar y parpadear.
+
+Curiosamente la neblina se disolvió inmediatamente."
+
 [node name="Pagina8" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=899416508]
 visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina8" unique_id=254156705]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 18.437
-anchor_top = 7.5750003
-anchor_right = 18.437
-anchor_bottom = 7.5750003
-offset_left = -65.47998
-offset_top = -33.0
-offset_right = 65.52002
-offset_bottom = 33.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 45
-text = "Entes"
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina8" unique_id=1000717215]
+layout_mode = 0
+offset_left = 305.99997
+offset_top = 151.0
+offset_right = 557.0
+offset_bottom = 499.846
+rotation = 0.008256528
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "09 de abril de 2019
+Si bien la niña es el ente más peligroso, no es la única. 
+
+Hay dos entes más que son especialmente fastidiosos
+
+Uno de ellos es el Oni, es algo insoportable, así que trata de seguirle el juego y nunca ignorarle. 
+
+El otro es el Ghoul, una verdadera bestia."
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina8" unique_id=892347411]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 151.0
+offset_right = 862.0
+offset_bottom = 500.29294
+rotation = -0.01769208
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "No puedes olvidar ni por un segundo que eres una presa, actúa inteligentemente.
+
+He logrado vivir hasta hoy gracias a la extraña jerarquía que hay en este cementerio.
+
+Un conejito de felpa siendo respetado por criaturas de tal calibre... Definitivamente ya lo he visto todo
+
+Mi mejor consejo es que no intentes escapar, será peor.
+"
 
 [node name="Pagina9" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=209167479]
 visible = false
@@ -333,25 +528,38 @@ anchor_left = 18.475
 anchor_top = 7.8
 anchor_right = 18.475
 anchor_bottom = 7.8
-offset_left = -124.0
+offset_left = -131.0
 offset_top = -167.0
-offset_right = 124.0
-offset_bottom = 167.0
+offset_right = 140.0
+offset_bottom = 194.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Ghoul:
+text = "Hay un hombre de la tarcera edad bastante misterioso, se molesta cuando trato de preguntar más sobre él.
+Está familiarizado con la niña, pero no he podido descifrar qué clase de conexión tienen.
 
-Motivos por los que bajaría vidas 
-- Intentar escapar de él 
-
-
-Un ser que se alimenta de 
-cadaveres
-"
+Por último, pero no menos importante, mi nieta suele venir a visitarme.  Se molesta cuando digo que su abuelo está muy viejo para eso"
+autowrap_mode = 3
 
 [node name="AnomaliesGhoul" type="Sprite2D" parent="CanvasLayer/LibretaUI/Pagina9" unique_id=304849829]
+visible = false
 position = Vector2(439, 299)
 scale = Vector2(0.5008681, 0.5632716)
 texture = ExtResource("9_m7k8n")
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/LibretaUI/Pagina9" unique_id=1788696312]
+layout_mode = 0
+offset_left = 305.99997
+offset_top = 151.0
+offset_right = 557.0
+offset_bottom = 499.846
+rotation = 0.008256528
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "13 de enero de 2020
+Hay personas que frecuentan el cementerio, incluso a altas horas de la noche.
+
+El más llamativo es sin duda un hombre sombrío, siempre va por ahí diciendo tonterias sobre fantasmas. Si pudiera, ¡Le daría mi trabajo!
+
+Ha intentado asesinarme un par de veces tras ser demasiado directo."
 
 [node name="Pagina10" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=1431981962]
 visible = false
@@ -368,22 +576,18 @@ anchor_right = 18.512001
 anchor_bottom = 7.8620005
 offset_left = -131.48004
 offset_top = -167.48001
-offset_right = 131.51996
+offset_right = 137.51996
 offset_bottom = 167.51999
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Oni:
+text = "24 de diciembre de 2023
+Hoy es noche buena. y sin embargo... Aquí estoy. 
+He perdido la protección del conejo.
 
-Motivos por los que bajaría vidas 
-- Ignorarlo
-
-Un demonio japones que fue
- repudiado por los de su especie 
-y terminó viajando por todo 
-el mundo hasta llegar al
- cementerio de donde ya no
- puede salir por una fuerza mayor"
+Esta es mi carta de despedida. Quisiera poder estar junto a mi nieta y decirle lo inteligente, linda e increíble que es. Que se cuide para no resfriarse. Que haga sus tareas. Que sea buena niña. Que no sufra mi partida. Que no venga-"
+autowrap_mode = 2
 
 [node name="AnomaliesOni" type="Sprite2D" parent="CanvasLayer/LibretaUI/Pagina10" unique_id=1146423533]
+visible = false
 position = Vector2(462, 317)
 scale = Vector2(0.52821183, 0.5146605)
 texture = ExtResource("10_354ll")
@@ -395,6 +599,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="CanvasLayer/LibretaUI/Pagina11" unique_id=904667522]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 18.287
@@ -422,9 +627,14 @@ niña no recuerda las maldades
 "
 
 [node name="AnomaliesLittleGirlEnte" type="Sprite2D" parent="CanvasLayer/LibretaUI/Pagina11" unique_id=1664792253]
+visible = false
 position = Vector2(444.5, 313.25)
 scale = Vector2(0.64634144, 0.5409407)
 texture = ExtResource("11_22b0i")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/LibretaUI/Pagina11" unique_id=324241403]
+position = Vector2(577, 335)
+texture = ExtResource("12_354ll")
 
 [node name="Atras" type="TextureButton" parent="CanvasLayer/LibretaUI" unique_id=129127579]
 layout_mode = 1

@@ -51,6 +51,7 @@
 [ext_resource type="PackedScene" uid="uid://dabey8wfba3b1" path="res://anomalies/anomalies_level_1/seraph_anomaly.tscn" id="37_44l5f"]
 [ext_resource type="PackedScene" uid="uid://msxt1x1elsfs" path="res://anomalies/anomalies_level_1/cuervo.tscn" id="37_73tpa"]
 [ext_resource type="PackedScene" uid="uid://c7n71trqlir5l" path="res://anomalies/anomalies_level_1/eyes_mausoleo.tscn" id="37_l8dhh"]
+[ext_resource type="PackedScene" uid="uid://7rdij4oqx4tw" path="res://anomalies/anomalies_level_1/shadow_little_girl.tscn" id="38_3tfmv"]
 [ext_resource type="PackedScene" uid="uid://cxjtvt0pxha82" path="res://anomalies/anomalies_level_1/conejo_gone_anomaly.tscn" id="38_f1cjg"]
 [ext_resource type="PackedScene" uid="uid://dl1613wij05ff" path="res://anomalies/anomalies_level_2/lobelito_capilla.tscn" id="41_u4lhc"]
 [ext_resource type="PackedScene" uid="uid://dne8g2fhongak" path="res://anomalies/anomalies_level_2/eyes_capilla.tscn" id="42_gagp1"]
@@ -583,12 +584,17 @@ current_spawn = NodePath("../../../Spawns/spawnPoint13")
 visible = false
 spawns = [NodePath("../../../Spawns/spawnPoint15")]
 
-[node name="anomalies" parent="Anomalies/Level1" unique_id=1266545526 groups=["anomalias"] instance=ExtResource("36_5amgw")]
-position = Vector2(46, 391)
+[node name="anomaly1_11" parent="Anomalies/Level1" unique_id=1266545526 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("36_5amgw")]
+visible = false
+spawns = [NodePath("../../../Spawns/spawnPoint18")]
 
 [node name="anomaly1_12" parent="Anomalies/Level1" unique_id=93827321 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("37_73tpa")]
-position = Vector2(-471, 135)
-spawns = [NodePath("../../../Spawns/spawnPoint16")]
+visible = false
+spawns = [NodePath("../../../Spawns/spawnPoint16"), NodePath("../../../Spawns/spawnPoint17")]
+
+[node name="anomalies" parent="Anomalies/Level1" unique_id=1053666747 node_paths=PackedStringArray("spawns") groups=["anomalias"] instance=ExtResource("38_3tfmv")]
+visible = false
+spawns = [NodePath("../../../Spawns/spawnPoint18"), NodePath("../../../Spawns/spawnPoint2")]
 
 [node name="Level2" type="Node2D" parent="Anomalies" unique_id=989332924]
 
@@ -722,6 +728,14 @@ original_object = NodePath("../../Objects/mausoleo")
 [node name="spawnPoint16" parent="Spawns" unique_id=1181341675 instance=ExtResource("28_px363")]
 position = Vector2(1033, 265)
 scale = Vector2(0.5, 0.5)
+
+[node name="spawnPoint17" parent="Spawns" unique_id=1612852979 instance=ExtResource("28_px363")]
+position = Vector2(-471, 135)
+scale = Vector2(0.5, 0.5)
+
+[node name="spawnPoint18" parent="Spawns" unique_id=154377588 instance=ExtResource("28_px363")]
+position = Vector2(-49.999992, 429)
+scale = Vector2(0.7, 0.7)
 
 [node name="GameTimer" type="Timer" parent="." unique_id=560415717]
 

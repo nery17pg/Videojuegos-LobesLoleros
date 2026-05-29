@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://7rdij4oqx4tw"]
+
+[ext_resource type="Script" uid="uid://inw2f6xeejb5" path="res://anomalies/anomalies_logic.gd" id="1_ublhp"]
+[ext_resource type="Texture2D" uid="uid://by3pg7irp3rt2" path="res://art/anomalies/AnomaliesLevel1/shadow_littlegirl.png" id="2_2kawj"]
+[ext_resource type="Script" uid="uid://cxvm6m2lnt4au" path="res://addons/random_timer/random_timer.gd" id="3_gb2gv"]
+
+[node name="anomalies" type="Node2D" unique_id=1053666747]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_ublhp")
+metadata/_custom_type_script = "uid://inw2f6xeejb5"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=69944676]
+texture = ExtResource("2_2kawj")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1962606116]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=347898354]
+polygon = PackedVector2Array(79, -26, 84, -5, 92, 24, 75, 48, 88, 83, 75, 114, 85, 149, 76, 167, 46, 182, 58, 225, 50, 266, 28, 287, 29, 329, -74, 340, -103, 304, -114, 242, -157, 222, -188, 156, -160, 84, -142, 46, -142, 11, -120, -44, -122, -83, -103, -107, -124, -134, -126, -184, -102, -241, -40, -259, 7, -232, 35, -186, 50, -149, 46, -134, 58, -133, 78, -106, 85, -56)
+
+[node name="RandomTimer" type="Timer" parent="." unique_id=151611887]
+script = ExtResource("3_gb2gv")
+min_wait_time = 90.0
+max_wait_time = 130.0
+metadata/_custom_type_script = "uid://cxvm6m2lnt4au"
