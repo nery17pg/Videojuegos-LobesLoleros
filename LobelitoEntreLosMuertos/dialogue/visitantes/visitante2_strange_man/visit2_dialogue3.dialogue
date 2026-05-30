@@ -1,62 +1,17 @@
-
 ~ start
-
 Hombre extraño: [wait=1]Este cementerio es famoso por sus historias.
-
 Lobelito:
 - ¿Cómo cuáles?
-	Hombre extraño: [wave]Se dice que un Oni merodea estas tierras desde hace siglos [/wave]
-
-	Lobelito:
-	- Eso es ridículo
-		Lobelito: ¿Qué haría un Oni
-		Lobelito: al otro lado del océano?
-
-		Lobelito: Deberías tener un poco más
-		Lobelito: de sentido común.
-
-		Lobelito: No te creas cualquier invento
-		Lobelito: de la gente.
-
-		Hombre extraño: [wait=1]
-
-		Hombre extraño: [shake][b]...[/b][/shake]
-
-		Hombre extraño: [wave]Los vivos siempre arruinan todo [/wave]
-
+    Hombre extraño: [wave]Se dice que un Oni merodea estas tierras desde hace siglos.[/wave]
+    Lobelito:
+    - Podría ser cierto
+        Hombre extraño: [shake]¡Eso intento demostrar![/shake] La leyenda dice que el Oni era repudiado incluso por los de su especie. Al ser inmortal, vagó durante siglos alrededor del mundo.. Hasta llegar a este lugar. [wait=1] Donde terminó atrapado por una fuerza superior. [wave]Quizá por eso los muertos de aquí actúan tan extraño.[/wave]
+    - Eso suena inventado
+        Hombre extraño: [wave]Los vivos siempre arruinan todo.[/wave]
 		do GameManager.perder_vida(anomalie_actual.damage)
-
-	- Podría ser cierto
-		Hombre extraño: [shake]¡Eso intento demostrar![/shake]
-
-		Hombre extraño: La leyenda dice
-		Hombre extraño: que el Oni era repudiado
-		Hombre extraño: incluso por los de su especie.
-
-		Hombre extraño: Al ser inmortal,
-		Hombre extraño: vagó durante siglos
-		Hombre extraño: alrededor del mundo...
-
-		Hombre extraño: Hasta llegar a este lugar.
-
-		Hombre extraño: [wait=1]
-
-		Hombre extraño: Donde terminó atrapado
-		Hombre extraño: por una fuerza superior.
-
-		Hombre extraño: [wave]Quizá por eso los muertos de aquí actúan tan extraño [/wave]
-
-- No tengo tiempo para esto
-	Lobelito: Lo siento.
-	Lobelito: Tengo que seguir patrullando.
-
-	Hombre extraño: [wave]Los vivos siempre tienen prisa...[/wave]
-
-- Ignorarlo
-	Hombre extraño: [shake][b]¿Vas a ignorarme igual que ellos?[/b][/shake]
-
-	Hombre extraño: [wave]Ni vivos ni muertos quieren escucharme [/wave]
-
+        
+- No me interesa. Tengo que seguir patrullando.
+    Hombre extraño: [shake][b]¿Vas a ignorarme igual que ellos?[/b][/shake] [wave]Ni vivos ni muertos quieren escucharme.[/wave]
 	do GameManager.perder_vida(anomalie_actual.damage)
 
 => END

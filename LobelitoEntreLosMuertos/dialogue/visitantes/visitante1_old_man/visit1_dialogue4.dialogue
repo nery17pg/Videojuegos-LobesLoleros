@@ -1,67 +1,17 @@
 ~ start
 
-Anciano: [wait=1]¿Ya hablaste con la niña del conejo?
+Anciano: ¿Ya hablaste con la niña del conejo? [wave]Pobrecita...[/wave] La conocí desde antes de que naciera. Su madre la golpeaba, la encerraba durante días y la niña creció creyendo que su padre la había abandonado. Todas las noches lloraba abrazando ese conejo viejo. 
 
-Lobelito: Sí..Da un poco de miedo.
+Lobelito:
 
-Anciano: [wave]Pobrecita...[/wave]
+- Qué horrible...
+    Anciano: Lo es. Lo peor es que su padre nunca la abandonó.
 
-Anciano: La conocí desde antes de que naciera.
+    - ¿Qué pasó con el padre?
+        Anciano: [shake]Yo lo maté.[/shake] Pensé que estaba haciendo lo correcto... pero ya no estoy tan seguro. Hace años creí que deshacerme de él arreglaría algo. Al final, la niña murió sin saber la verdad. [wave]Algunas personas merecen una segunda oportunidad. Otras merecen una explicación. Ella no recibió ninguna de las dos.[/wave]
 
-Anciano: Su madre era una basura de persona.
-
-Anciano: [wait=0.5]
-Anciano: La golpeaba.
-Anciano: La encerraba sola durante días.
-
-Anciano: Y cuando bebía...
-Anciano: [shake][b]se desquitaba con la niña [/b][/shake]
-
-Lobelito: ... ¿Y el padre?
-
-Anciano: [wait=1]
-Anciano: Eso es lo triste.
-
-Anciano: La niña creció creyendo
-Anciano: que su padre la había abandonado.
-
-Anciano: Todas las noches lloraba
-Anciano: abrazando ese conejo viejo.
-
-Anciano: [wave]“¿Por qué mi papá no me quiere?”[/wave]
-
-Lobelito: ...
-
-Anciano: Una noche...
-Anciano: simplemente no soportó más.
-
-Anciano: [wait=1]
-
-Anciano: [shake][b]La encontraron colgando cerca del árbol de muñecas [/b][/shake]
-
-Lobelito: Qué horrible...
-
-Anciano: Lo peor es que su padre
-Anciano: jamás la abandonó.
-
-Lobelito: ¿Entonces qué pasó?
-
-Anciano: [wait=1]
-
-Anciano: [shake][b]Yo lo maté [/b][/shake]
-
-Lobelito: ... ¿Qué?
-
-Anciano: Teníamos asuntos pendientes.
-
-Anciano: Y los hombres como él
-Anciano: siempre terminan bajo tierra.
-
-Anciano: [wave]Aunque supongo... que jamás imaginó que su hija terminaría acompañándolo [/wave]
-
-Lobelito: ...
-
-Anciano: Jeh...
-Anciano: [shake]Este cementerio guarda demasiadas historias, muchacho [/shake]
-
+    - Es demasiado débil
+        Anciano: [shake]Cuida tus palabras, muchacho.[/shake] Si hubieras vivido lo que ella vivió, no estarías diciendo eso.
+		do GameManager.perder_vida(anomalie_actual.damage)
+ 
 => END
