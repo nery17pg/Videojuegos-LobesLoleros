@@ -11,7 +11,8 @@ Lobelito:
     - Eso da miedo
         Hombre extraño: [wait=1] [wave]A mí me da miedo seguir vivo.[/wave]
     - No decir nada
-        Hombre extraño: [shake]...[/shake] El silencio también es una respuesta.
+        Hombre extraño: [shake]...El silencio también es una respuesta.
 		do GameManager.perder_vida(anomalie_actual.damage)
+		
 
 => END

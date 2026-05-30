@@ -1,63 +1,15 @@
 ~ start
-
-Mujer: [wait=1]Estoy segura de que mi abuelo
-Mujer: está encantado contigo
-Mujer: siendo el nuevo velador.
-
+Mujer: Estoy segura de que mi abuelo está encantado contigo siendo el nuevo velador.
 Lobelito:
 - ¿De verdad?
-	Mujer: Por supuesto.
-
-	Mujer: Eres tan extraño
-	Mujer: como esos fenómenos
-	Mujer: que rondan el cementerio.
-
-	Mujer: Pero no eres un salvaje.
-
-	Mujer: [[Incluso tu pelaje es esponjoso|Incluso estás completamente vestido|Incluso te recortas las garras]]
-
-	Lobelito:
-	- Ah... pues gracias
-		Mujer: [wave]Solo bromeo [/wave]
-
-		Mujer: No deberías dejarte
-		Mujer: pisotear tan fácilmente.
-
-		Mujer: Especialmente en este lugar.
-
-		Mujer: Mi abuelo siempre me contaba
-		Mujer: lo molesto que era lidiar
-		Mujer: con las entidades atrapadas aquí.
-
-		Mujer: [shake]Lo trataban como a un insecto más [/shake]
-
-		Lobelito: Tu abuelo no mentía...
-
-	- Dejarla hablando sola
-		Mujer: [shake]¡Jaja![/shake]
-
-		Mujer: Te tomé por sorpresa,
-		Mujer: ¿no es así?
-
-		Mujer: Tómalo como
-		Mujer: una pequeña novatada.
-
-		Mujer: [wave]Espero que estés disfrutando tu nuevo trabajo [/wave]
-
-		Lobelito: Definamos “disfrutar”...
-
-	- ... Tengo que irme
-		Mujer: [wait=1]
-
-		Mujer: Qué serio eres.
-
-		Mujer: [wave]Mi abuelo también huía cuando algo le incomodaba [/wave]
-
-- Ignorarla
-	Mujer: [shake]...[/shake]
-
-	Mujer: Supongo que hablar solo
-	Mujer: es una tradición
-	Mujer: de este cementerio.
+    Mujer: Por supuesto. Eres tan extraño como esos fenómenos que rondan el cementerio. Pero no eres un salvaje. [[Incluso tu pelaje es esponjoso|Incluso estás completamente vestido|Incluso te recortas las garras]]
+    Lobelito: Ah... pues gracias.
+    Mujer: [wave]Solo bromeo.[/wave] No deberías dejarte pisotear tan fácilmente. Mi abuelo siempre me contaba lo molesto que era lidiar con las entidades atrapadas aquí. [shake]Lo trataban como a un insecto más.[/shake]
+    Lobelito: Tu abuelo no mentía...
+- Dejarla hablando sola
+    Mujer: [shake]¡Jaja![/shake] Tómalo como una pequeña novatada. [wave]Espero que estés disfrutando tu nuevo trabajo.[/wave]
+    Lobelito: Definamos "disfrutar"...
+- ... Tengo que irme
+    Mujer: [wait=1] Qué serio eres. [wave]Mi abuelo también huía cuando algo le incomodaba.[/wave]
 
 => END

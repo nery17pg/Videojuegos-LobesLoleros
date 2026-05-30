@@ -1,61 +1,18 @@
 ~ start
-
-Mujer: [wait=1]Mi abuelo trabajó aquí hace muchos años.
-
-Mujer: Era el velador del cementerio.
-
-Lobelito: ... ¿El anterior velador?
-
-Mujer: Sí.
-
-Mujer: Desde pequeña me decía
-Mujer: que aquí aparecían fantasmas.
-
-Mujer: [wave]Que los muertos caminaban entre las tumbas por las noches [/wave]
-
+Mujer: Mi abuelo trabajó aquí hace muchos años. Era el velador del cementerio.
+Lobelito: 
+- ... ¿El anterior velador?
+Mujer: Sí. Desde pequeña me decía que aquí aparecían fantasmas. [wave]Que los muertos caminaban entre las tumbas por las noches.[/wave]
 Lobelito:
 - ¿Y por eso vienes aquí?
-	Mujer: [wait=0.5]Sí.
-
-	Mujer: Mi abuelo desapareció
-	Mujer: hace mucho tiempo.
-
-	Mujer: Pero sigo pensando
-	Mujer: que algún día volveré a verlo.
-
-	Mujer: [wave]Aunque sea una última vez [/wave]
-
-- Deberías rendirte
-	Lobelito: No creo que sea sano
-	Lobelito: seguir buscando a alguien muerto.
-
-	Mujer: [wait=1]
-
-	Mujer: [shake][b]¿Y tú qué sabes?[/b][/shake]
-
-	Mujer: ¡Él nunca me habría abandonado!
-
-	Mujer: [shake][b]¡No vuelvas a decir algo así![/b][/shake]
-
+    Mujer: [wait=0.5]Sí. Mi abuelo desapareció hace mucho tiempo. Pero sigo pensando que algún día volveré a verlo. [wave]Aunque sea una última vez.[/wave]
+- Deberías rendirte. No creo que sea sano seguir buscando a alguien muerto.
+    Mujer: [wait=1] [shake][b]¿Y tú qué sabes?[/b][/shake] ¡Él nunca me habría abandonado! [shake][b]¡No vuelvas a decir algo así![/b][/shake]
 	do GameManager.perder_vida(anomalie_actual.damage)
-
 - Tal vez él sigue aquí
-	Mujer: [wait=1]
-
-	Mujer: [wave]Eso quiero creer [/wave]
-
-	Mujer: A veces siento
-	Mujer: que alguien me observa
-	Mujer: desde la capilla.
-
-	Mujer: Y por un momento...
-	Mujer: siento que es él.
-
+    Mujer: [wait=1] [wave]Eso quiero creer.[/wave] A veces siento que alguien me observa desde la capilla. Y por un momento... siento que es él.
 - Ignorarla
-	Mujer: [shake]...[/shake]
-
-	Mujer: Supongo que los vivos
-	Mujer: siempre tienen miedo
-	Mujer: de escuchar historias de muertos.
+    Mujer: [shake]...Supongo que los vivos siempre tienen miedo de escuchar historias de muertos.
+	do GameManager.perder_vida(anomalie_actual.damage)
 
 => END
