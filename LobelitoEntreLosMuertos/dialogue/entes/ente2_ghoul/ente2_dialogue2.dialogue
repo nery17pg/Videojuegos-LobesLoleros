@@ -15,6 +15,7 @@ Lobelito:
 	Ghoul: Es que siempre los observo
 	Ghoul: Tomo notas
 	Ghoul: Porque quiero abrirlos para ver qué tienen dentro
+	do GameManager.perder_vida(anomalie_actual.damage)
 
     - Tú sí estás loco
 		Ghoul: [wave]Una niña con un conejo me dijo lo mismo

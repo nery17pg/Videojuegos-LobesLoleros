@@ -10,11 +10,13 @@ Lobelito:
 		Oni: [[Siempre he estado aquí|Yo siempre lo veo todo]]
 	- Eso no responde nada
 		Oni: [[Porque no hay una sola respuesta|Porque no entenderías aunque te lo dijera]]
+		do GameManager.perder_vida(anomalie_actual.damage)
 			
 - No quiero escuchar esto
 	Oni: Pero debes escucharme
 	
 - Tú hiciste algo, ¿verdad?
 	Oni: [shake]No fui yo quien los despedazó, pero tampoco la pequeña... 
+	do GameManager.perder_vida(anomalie_actual.damage)
 
 => END

@@ -1,6 +1,33 @@
 ~ start
-Luka: - Skip
-Luka: Cambié el diálogo de Ghoul a Hombre Extraño, por que es mucho
-más acorde a su personalidad, Ghoul no debería invocar nada
-Además de que técnicamente ya está muerto
+Ghoul: Hueles diferente a los demás.
+
+Lobelito:
+- ¿Diferente cómo?
+	Ghoul: [[ Más fresco | Más vivo ]]
+	- ¿Eso es bueno?
+		Ghoul: Para mí sí.
+    	Ghoul: Para ti todavía no lo sé.
+
+- ¿Piensas comerme?
+	Ghoul: Pensar es una palabra muy elegante.
+	Ghoul: Digamos que te estoy imaginando sin piel.
+
+ - Estás enfermo.
+	Ghoul: Estoy muerto.
+    Ghoul: Es diferente.
+
+  - Inténtalo.
+	Ghoul: [shake]No me provoques.
+    Ghoul: Llevo días sin comer.
+
+- Qué asco.
+	Ghoul: Tú también dirías eso si pudieras verte por dentro.
+	- ¿Qué significa eso?
+		Ghoul: Que todos son asquerosos por dentro.
+    	Ghoul: Algunos solo tardan más en descubrirlo.
+
+- Estás loco.
+	Ghoul: Los vivos siempre usan esa palabra.
+	Ghoul: Es más fácil que admitir que tienen miedo.
+
 => END

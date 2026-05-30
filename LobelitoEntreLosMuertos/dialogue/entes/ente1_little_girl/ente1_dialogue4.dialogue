@@ -25,7 +25,7 @@ Lobelito:
 	Niña: No puedo salir del cementerio
 	- Tu mamá no debió dejarte sola
 		Niña: [shake][color=red]No menciones a mi madre...
-		Niña: O podría decirle al GHOUL que venga por ti
+		Niña: O podría decirle al Ghoul que venga por ti
 		do GameManager.perder_vida(anomalie_actual.damage)
 
 => END
