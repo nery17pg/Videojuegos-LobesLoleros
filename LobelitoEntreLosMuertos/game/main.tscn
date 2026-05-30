@@ -253,6 +253,7 @@ script = ExtResource("9_lx3aj")
 color = Color(0.03250689, 0.09005656, 0.08164092, 1)
 
 [node name="NombresZonas" type="Label" parent="." unique_id=1874981034]
+visible = false
 offset_left = -2973.0
 offset_top = 83.0
 offset_right = -2933.0
