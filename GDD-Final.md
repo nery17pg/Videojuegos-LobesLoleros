@@ -95,7 +95,6 @@ La interfaz se planea que no esté saturada de elementos, ya que se busca reduci
 
 **Cuaderno:** El cuaderno contiene las reglas para evitar cometer errores, podrá ser consultado solamente en la caseta de vigilancia.
 
-**Error:** Cuando el jugador cometa un error, será notificado mediante un susto
 **Tiempo:** El tiempo es fundamental en el juego, pues sobrevivir 8 horas se traduce en ganar la partida. El jugador podrá consultar el tiempo desde un reloj de pared en la caseta de seguridad, al igual que después de superar cierta cantidad de tiempo sonará una campana antigua
 
 **Reportes:** Funciona como el principal medio de intervención del jugador para atender anomalías. Cuando se detecta una anomalía el jugador puede generar un reporte desde un punto específico del entorno, registrando lo observado sin interactuar físicamente con el fenómeno. Si el reporte es correcto la anomalía se dispersa, sino se activa una consecuencia negativa y reduce los puntos de vida del jugador
@@ -111,7 +110,7 @@ Genera tensión y aprendizaje sin desarrollar el juego completo.
 
 **Número de escenas o niveles iniciales:**
   - Un cementerio funcional como escenario, incluye: caseta de vigilancia, sendero principal, mausoleo y zonas oscuras periféricas.
-  - Un turno completo jugable de 8 horas dentro del juego.
+  - Un turno completo jugable de 8 horas dentro del juego que seria un total de 16 minutos de partida.
 
 **Mecánicas que sí estarán:**
   - Exploración del entorno  
@@ -145,46 +144,142 @@ Genera tensión y aprendizaje sin desarrollar el juego completo.
   - Finales múltiples
 
 **Sistema de reglas**
+# Guía de Anomalías y Entidades
 
-**Ignorar anomalías**
-Cuando ocurran las siguientes anomalías, simplemente **ignóralas**:
+## Parpadear la linterna cuando:
 
-- Si el visitante no deseado es un ente humanoide.
-- Si parece ser que una lápida está duplicada.
+- Las estatuas empiecen a murmurar.
+- Alguna estatua esté llorando.
 
-**Parpadear la linterna**
-Cuando ocurran las siguientes anomalías, **apaga y enciende (parpadea) tu linterna**:
 
-- Cuando las estatuas empiezan a murmurar.
-- Cuando alguna estatua esté llorando.
 
-**Visitantes no deseados**
-- Si el visitante no deseado es un **humano**, mándalo a casa.
+## Reportar como tipo "Otro"
 
-**Reportar como tipo “otro”**
-Reporta las siguientes anomalías como tipo **“otro”**:
-
-- Cuando un visitante diga ser tu reemplazo.
 - Cuando las muñecas del árbol de muñecas desaparezcan.
+- Si la puerta de la capilla cambia de estado (abierta o cerrada) después de las 3:00 AM.
+- Estatua sin alas.
+- Cuando los ojos de la muñeca cambien.
+
+
+
+## Reportar como anomalía de luz
+
+- Cualquier alteración relacionada con fuentes de luz.
+
+
+
+## Reportar como anomalía de sombra
+
+- Cualquier alteración relacionada con sombras.
+
+
+
+## Reportar como tipo "Lobelito"
+
 - Cuando veas una tumba con tu nombre.
-- Si la puerta de la capilla cambia de estado (abrir o cerrarse) después de las **3 AM**.
+- Cuando te veas a ti mismo.
 
-**Dirigirse a la caseta de seguridad**
-Cuando ocurran las siguientes anomalías, **mantén apagada tu linterna y dirígete a la caseta de seguridad**:
 
-- Cuando hay sombras extrañas en el fondo.
-- Cuando hay una luz extraña.
-- Cuando hay una neblina extraña.
-- Si el entorno se vuelve silencioso.
 
-**Encuentro con tu doble**
-Si te ves a ti mismo en el fondo:
-- Tienes **15 segundos** para reportar las anomalías que hayas visto.
-- Debes retirarte inmediatamente.
-- Si se sobrepasa el tiempo, **tu doble te atacará y se perderá una vida**.
+## Mantén apagada tu linterna y dirígete a la caseta de seguridad cuando:
 
-**Penalización**
-- Si una anomalía que debe reportarse (**anomalías de bajo nivel**) no se registra por el usuario, **se pierde una vida**.
+- Haya una neblina extraña.
+- El entorno se vuelva completamente silencioso.
+- Aparezca una sombra luminosa.
+- Aparezca un cuervo.
+- Aparezcan unos ojos en el mausoleo.
+
+
+
+# Visitantes
+
+> Interactuar incorrectamente con ellos reduce la vida del jugador.
+
+## Hombre extraño
+
+### Motivos por los que bajaría vidas
+
+- Juzgarlo de loco.
+- Ignorarlo.
+
+### Descripción
+
+El Hombre Extraño (también conocido como "Ayuwoki") está obsesionado con la actividad paranormal. Sin embargo, las anomalías deciden no manifestarse ante él.
+
+Se obsesionó con encontrarse con algún ente y dedica su tiempo a investigar las historias del cementerio.
+
+
+
+## Mujer
+
+### Motivos por los que bajaría vidas
+
+- Por hablar mal de su abuelo
+
+### Descripción
+
+Es la nieta del antiguo velador del cementerio. Era muy cercana a él durante su infancia y ahora deambula por el lugar con la esperanza de reencontrarse con su abuelo.
+
+No ha logrado superar su pérdida y busca consuelo después de su trágico asesinato.
+
+
+
+## Anciano
+
+### Motivos por los que bajaría vidas
+
+- Por tratar de hablar sobre su pasado
+
+### Descripción
+
+Es un anciano sereno y misterioso. Conoció a la niña cuando estaba viva, aunque se desconoce la naturaleza exacta de su relación.
+
+Guarda un profundo resentimiento hacia sí mismo y evita hablar sobre su pasado.
+
+
+
+# Entes
+
+> Interactuar incorrectamente con ellos reduce la vida del jugador.
+
+## Ghoul
+
+### Motivos por los que bajaría vidas
+
+- Intentar escapar de él.
+
+### Descripción
+
+Un ser que se alimenta de cadáveres.
+
+
+
+## Oni
+
+### Motivos por los que bajaría vidas
+
+- Ignorarlo.
+
+### Descripción
+
+Un demonio japonés repudiado por los de su especie. Vagó por el mundo hasta llegar al cementerio, del cual no puede escapar debido a una fuerza desconocida.
+
+
+
+## Niña
+
+### Motivos por los que bajaría vidas
+
+- Ignorarla.
+- Hablar negativamente de su madre.
+
+### Descripción
+
+Una niña víctima de un malentendido.
+
+Su madre fue abandonada durante el embarazo y, con el tiempo, comenzó a desquitarse con ella. Nunca supo que su esposo no la había abandonado, sino que había sido asesinado.
+
+La memoria de la niña es frágil debido a su condición de ente, por lo que no recuerda los abusos que sufrió por parte de su madre.
 
 **Sistema de anomalías**
 
