@@ -16,9 +16,20 @@
 [ext_resource type="Texture2D" uid="uid://c0beu41cglql6" path="res://art/anomalies/AnomaliesLevel3/anomalies_littleGirl_ente.png" id="11_22b0i"]
 [ext_resource type="Texture2D" uid="uid://4wk3acq63riy" path="res://art/background_elements/tache.png" id="12_354ll"]
 [ext_resource type="AudioStream" uid="uid://d26v5onmo10x4" path="res://sound/caseta/caseta.wav" id="15_m7k8n"]
+[ext_resource type="AudioStream" uid="uid://b0vd11mxrn8kb" path="res://sound/caseta/libreta1.mp3" id="16_ayw7i"]
+[ext_resource type="AudioStream" uid="uid://cysmv8wfcislm" path="res://sound/caseta/libreta2.mp3" id="17_k6a48"]
+[ext_resource type="AudioStream" uid="uid://bfkn2060daxy6" path="res://sound/caseta/libreta3.mp3" id="18_ugfr7"]
+[ext_resource type="AudioStream" uid="uid://bbta63x3rqbqp" path="res://sound/caseta/libreta4.mp3" id="19_d8ien"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0onei"]
 size = Vector2(249, 654)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_jsmdj"]
+streams_count = 4
+stream_0/stream = ExtResource("16_ayw7i")
+stream_1/stream = ExtResource("17_k6a48")
+stream_2/stream = ExtResource("18_ugfr7")
+stream_3/stream = ExtResource("19_d8ien")
 
 [node name="inside" type="Node2D" unique_id=465977253]
 process_mode = 3
@@ -593,7 +604,6 @@ scale = Vector2(0.52821183, 0.5146605)
 texture = ExtResource("10_354ll")
 
 [node name="Pagina11" type="Panel" parent="CanvasLayer/LibretaUI" unique_id=1393400296]
-visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -633,7 +643,7 @@ scale = Vector2(0.64634144, 0.5409407)
 texture = ExtResource("11_22b0i")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/LibretaUI/Pagina11" unique_id=324241403]
-position = Vector2(577, 335)
+position = Vector2(577, 299)
 texture = ExtResource("12_354ll")
 
 [node name="Atras" type="TextureButton" parent="CanvasLayer/LibretaUI" unique_id=129127579]
@@ -714,6 +724,9 @@ rotation = 0.09861264
 theme_override_font_sizes/font_size = 35
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CanvasLayer" unique_id=516632620]
+stream = SubResource("AudioStreamRandomizer_jsmdj")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1439822261]
 stream = ExtResource("15_m7k8n")

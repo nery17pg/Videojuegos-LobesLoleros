@@ -33,6 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://ckydxh7nldfgs" path="res://art/background_elements/mausoleoBackground2.png" id="23_5amgw"]
 [ext_resource type="Texture2D" uid="uid://cied457kgnde3" path="res://art/background_elements/mausoleo_backgrounud.png" id="23_gagp1"]
 [ext_resource type="Texture2D" uid="uid://sk6oy1pje25k" path="res://art/background_elements/mausoleo.png" id="24_5amgw"]
+[ext_resource type="Texture2D" uid="uid://fynac2ibbgju" path="res://art/background_elements/cruz madera.png" id="26_ktdwu"]
 [ext_resource type="PackedScene" uid="uid://chk5ekrc3hj37" path="res://anomalies/anomalies_level_2/dolls_eyes_anomaly.tscn" id="26_l78i6"]
 [ext_resource type="PackedScene" uid="uid://blo0kq14gwxv0" path="res://anomalies/anomalies_level_1/lapida_huellas.tscn" id="27_e00sq"]
 [ext_resource type="PackedScene" uid="uid://ild6l4h4o5ni" path="res://anomalies/anomalies_level_2/dolls_gone_anomaly.tscn" id="27_wubem"]
@@ -245,7 +246,6 @@ texture = ExtResource("8_xkbyp")
 script = ExtResource("9_lx3aj")
 
 [node name="Oscuridad" type="CanvasModulate" parent="." unique_id=930947093]
-visible = false
 color = Color(0.03250689, 0.09005656, 0.08164092, 1)
 
 [node name="NombresZonas" type="Label" parent="." unique_id=1874981034]
@@ -537,6 +537,10 @@ texture = ExtResource("23_gagp1")
 [node name="mausoleo" type="Sprite2D" parent="Objects" unique_id=1687415790]
 position = Vector2(-668, 359)
 texture = ExtResource("24_5amgw")
+
+[node name="Sprite2D" type="Sprite2D" parent="Objects" unique_id=367303968]
+position = Vector2(1574, 363)
+texture = ExtResource("26_ktdwu")
 
 [node name="Anomalies" type="Node2D" parent="." unique_id=1294360125]
 

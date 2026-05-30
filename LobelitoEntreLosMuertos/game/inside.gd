@@ -157,12 +157,13 @@ func actualizar_paginas():
 func _on_atras_pressed() -> void:
 	if pagina_actual > 1:
 		pagina_actual -= 1
-
+		
+	$CanvasLayer/AudioStreamPlayer2D.play()
 	actualizar_paginas()
 	
 
 func _on_siguiente_pressed() -> void:
 	if pagina_actual < 11:
 		pagina_actual += 1
-
+	$CanvasLayer/AudioStreamPlayer2D.play()
 	actualizar_paginas()
