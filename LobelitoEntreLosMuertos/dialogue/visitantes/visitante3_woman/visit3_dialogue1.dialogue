@@ -6,11 +6,14 @@ Mujer: Sí. Desde pequeña me decía que aquí aparecían fantasmas. [wave]Que l
 Lobelito:
 - ¿Y por eso vienes aquí?
     Mujer: [wait=0.5]Sí. Mi abuelo desapareció hace mucho tiempo. Pero sigo pensando que algún día volveré a verlo. [wave]Aunque sea una última vez.[/wave]
-- Deberías rendirte. No creo que sea sano seguir buscando a alguien muerto.
-    Mujer: [wait=1] [shake][b]¿Y tú qué sabes?[/b][/shake] ¡Él nunca me habría abandonado! [shake][b]¡No vuelvas a decir algo así![/b][/shake]
+- Deberías rendirte. 
+	Lobelito: No creo que sea sano seguir buscando a alguien muerto.
+    Mujer: [wait=1] [shake][b]¿Y tú qué sabes?[/b][/shake] ¡Él nunca me habría abandonado! 
+	Mujer: [shake][b]¡No vuelvas a decir algo así![/b][/shake]
 	do GameManager.perder_vida(anomalie_actual.damage)
 - Tal vez él sigue aquí
-    Mujer: [wait=1] [wave]Eso quiero creer.[/wave] A veces siento que alguien me observa desde la capilla. Y por un momento... siento que es él.
+    Mujer: [wait=1] [wave]Eso quiero creer.[/wave] A veces siento que alguien me observa desde la capilla. 
+	Mujer: Y por un momento... siento que es él.
 - Ignorarla
     Mujer: [shake]...Supongo que los vivos siempre tienen miedo de escuchar historias de muertos.
 	do GameManager.perder_vida(anomalie_actual.damage)

@@ -1,10 +1,13 @@
 
 ~ start
-Anciano: Lobelito...¿Ya viste el reloj que está junto a la capilla?[wave]Nunca marca la misma hora [/wave] Hace años un velador intentó arreglarlo. Decía que cada madrugada el reloj se detenía exactamente a las [b]3:33 [/b]
+Anciano: Lobelito... ¿Ya viste el reloj que está junto a la entrada del cementerio?
+Anciano: [wave]Nunca marca la misma hora [/wave] 
+Anciano: Hace años un velador intentó arreglarlo. Decía que cada madrugada el reloj se detenía exactamente a las [b]3:33 [/b]
 
 Lobelito:
 - ¿Y qué pasó?
-	Anciano: [wait=1] Una noche escuchó que alguien lloraba dentro de la capilla. El muy idiota entró a mirar. [shake][b]A la mañana siguiente encontraron el reloj funcionando otra vez [/b][/shake]
+	Anciano: [wait=1] Una noche escuchó que alguien lloraba . El muy idiota se acercó a mirar. 
+	Anciano: [shake][b]A la mañana siguiente encontraron el reloj funcionando otra vez [/b][/shake]
 
 	- ... ¿Y el velador?
 		Anciano: [wave]El reloj necesitaba algo para volver a moverse [/wave]

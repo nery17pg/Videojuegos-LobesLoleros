@@ -1,11 +1,14 @@
 ~ start
 
-Hombre Extraño: [wait=1]Tú puedes verlos, ¿verdad? [wave]A los muertos.[/wave] Lo noto en tus ojos. Ellos te observan.
+Hombre Extraño: [wait=1]Tú puedes verlos, ¿verdad? [wave]A los muertos.[/wave] 
+Hombre Extraño: Lo noto en tus ojos. Ellos te observan.
 
 Lobelito:
 
 - No sé de qué hablas
-  Hombre Extraño: [shake]Mentira.[/shake] Llevo años buscándolos. Abrí tumbas, dormí con cadáveres e incluso intenté morir una vez... pero ni así quisieron hablarme. [shake][b]Los muertos me odian.[/b][/shake]
+  Hombre Extraño: [shake]Mentira.[/shake] Llevo años buscándolos. 
+	Hombre Extraño: Abrí tumbas, dormí con cadáveres e incluso intenté morir una vez... pero ni así quisieron hablarme. 
+	Hombre Extraño: [shake][b]Los muertos me odian.[/b][/shake]
 
 - Tal vez estás loco
   Hombre Extraño: [shake][b][[Todos dicen eso|Los vivos siempre son iguales|Por eso prefiero a los muertos]][/b][/shake] Aunque ellos tampoco me soporten.

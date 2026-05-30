@@ -2,12 +2,17 @@
 Hombre extraño: [wait=1]Pasé tres noches invocando espíritus aquí.
 Lobelito:
 - ¿Y apareció algo?
-    Hombre extraño: [wait=1]No. [wave]Ni siquiera los demonios quieren hablar conmigo.[/wave] [shake][b]Hasta los muertos me ignoran.[/b][/shake]
+    Hombre extraño: [wait=1]No. 
+	Hombre extraño: [wave]Ni siquiera los demonios quieren hablar conmigo.[/wave] 
+	Hombre extraño: [shake][b]Hasta los muertos me ignoran.[/b][/shake]
 - Tal vez estás loco
-    Hombre extraño: [shake][b]NO estoy loco.[/b][/shake] Solo estoy rodeado de gente demasiado viva. [wave]Y los vivos nunca entienden.[/wave]
+    Hombre extraño: [shake][b]NO estoy loco.[/b][/shake] 
+	Hombre extraño: Solo estoy rodeado de gente demasiado viva. 
+	Hombre extraño: [wave]Y los vivos nunca entienden.[/wave]
 	do GameManager.perder_vida(anomalie_actual.damage)
 - ¿Entonces por qué sigues intentando?
-    Hombre extraño: Porque una noche algo va a responder. Y cuando ocurra... [shake][b]voy a preguntarle qué se siente morir.[/b][/shake]
+    Hombre extraño: Porque una noche algo va a responder. Y cuando ocurra... 
+	Hombre extraño: [shake][b]voy a preguntarle qué se siente morir.[/b][/shake]
     - Eso da miedo
         Hombre extraño: [wait=1] [wave]A mí me da miedo seguir vivo.[/wave]
     - No decir nada

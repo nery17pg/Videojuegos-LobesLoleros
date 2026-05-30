@@ -5,7 +5,11 @@ Lobelito:
     Hombre extraño: [wave]Se dice que un Oni merodea estas tierras desde hace siglos.[/wave]
     Lobelito:
     - Podría ser cierto
-        Hombre extraño: [shake]¡Eso intento demostrar![/shake] La leyenda dice que el Oni era repudiado incluso por los de su especie. Al ser inmortal, vagó durante siglos alrededor del mundo.. Hasta llegar a este lugar. [wait=1] Donde terminó atrapado por una fuerza superior. [wave]Quizá por eso los muertos de aquí actúan tan extraño.[/wave]
+        Hombre extraño: [shake]¡Eso intento demostrar![/shake] 
+		Hombre extraño: La leyenda dice que el Oni era repudiado incluso por los de su especie. 
+		Hombre extraño: Al ser inmortal, vagó durante siglos alrededor del mundo.. Hasta llegar a este lugar.
+		Hombre extraño: Donde terminó atrapado por una fuerza superior. 
+		Hombre extraño: [wave]Quizá por eso los muertos de aquí actúan tan extraño.[/wave]
     - Eso suena inventado
         Hombre extraño: [wave]Los vivos siempre arruinan todo.[/wave]
 		do GameManager.perder_vida(anomalie_actual.damage)

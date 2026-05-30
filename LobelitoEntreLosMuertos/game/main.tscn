@@ -42,6 +42,8 @@
 [ext_resource type="PackedScene" uid="uid://d2nj06bjqecdl" path="res://anomalies/anomalies_level_1/fire_anomaly.tscn" id="28_k5wni"]
 [ext_resource type="PackedScene" uid="uid://coawea8diwifv" path="res://game/spawner.tscn" id="28_px363"]
 [ext_resource type="PackedScene" uid="uid://utbahf860an0" path="res://anomalies/anomalies_level_3/lobelito_tree_anomaly.tscn" id="29_l78i6"]
+[ext_resource type="Texture2D" uid="uid://dxkf3p12ca4ls" path="res://art/background_elements/lapida2Background.png" id="29_x8s27"]
+[ext_resource type="Texture2D" uid="uid://byfgewv5mqynp" path="res://art/background_elements/lapida2.png" id="30_oobh7"]
 [ext_resource type="PackedScene" uid="uid://miiwlhlfgfsf" path="res://anomalies/anomalies_level_1/woman_visit.tscn" id="30_s2dp4"]
 [ext_resource type="PackedScene" uid="uid://dvswbttwobodg" path="res://anomalies/anomalies_level_1/luz_capilla_anomaly.tscn" id="31_84ymw"]
 [ext_resource type="Texture2D" uid="uid://pdlckc6n2bw7" path="res://art/background_elements/estatua_fondo.png" id="31_uvurp"]
@@ -583,6 +585,41 @@ position = Vector2(2386, 412.99997)
 rotation = 0.07198236
 scale = Vector2(0.9, 0.9)
 texture = ExtResource("27_t2wq1")
+
+[node name="lapida_cruzBackground3" type="Sprite2D" parent="Objects" unique_id=573774020]
+position = Vector2(3006, 451)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("20_4gc7v")
+
+[node name="lapida2Background" type="Sprite2D" parent="Objects" unique_id=1872474384]
+position = Vector2(2929, 490)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("29_x8s27")
+
+[node name="lapida2Background2" type="Sprite2D" parent="Objects" unique_id=2085173580]
+position = Vector2(3149, 433)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("29_x8s27")
+
+[node name="lapida2" type="Sprite2D" parent="Objects" unique_id=996443793]
+position = Vector2(3047, 378)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("30_oobh7")
+
+[node name="lapida3" type="Sprite2D" parent="Objects" unique_id=1871617991]
+position = Vector2(3484.0002, 344.00003)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("30_oobh7")
+
+[node name="lapida2Background3" type="Sprite2D" parent="Objects" unique_id=48237705]
+position = Vector2(3355, 427)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("29_x8s27")
+
+[node name="lapida_cruz" type="Sprite2D" parent="." unique_id=1620160876]
+position = Vector2(3267, 478)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("21_f1cjg")
 
 [node name="Anomalies" type="Node2D" parent="." unique_id=1294360125]
 

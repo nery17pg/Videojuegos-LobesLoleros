@@ -4,7 +4,11 @@ Anciano: [[Así que tú eres Lobelito...|El nuevo velador|Oye... todavía tienes
 
 Lobelito:
 - No
-	Anciano: Hace muchos años enterraron aquí a una mujer. Nadie sabía quién era. Y cuando abrieron el ataúd...[wait=1][shake][b]no tenía cara.[/b][/shake] Desde entonces algunos veladores escuchan a una mujer llorando entre las tumbas. El último idiota decidió seguirla. [wait=1] A la mañana siguiente...[shake][b]solo encontraron sus ojos en el lodo.[/b][/shake] Así que si escuchas llorar a alguien esta noche...[shake][b]NO LA SIGAS.[/b][/shake]
+	Anciano: Hace muchos años enterraron aquí a una mujer. Nadie sabía quién era. 
+	Anciano: Y cuando abrieron el ataúd...[wait=1][shake][b]no tenía cara.
+	Anciano: Desde entonces algunos veladores escuchan a una mujer llorando entre las tumbas. El último idiota decidió seguirla. [wait=1] 
+	Anciano: A la mañana siguiente...[shake][b]solo encontraron sus ojos en el lodo.[/b][/shake] 
+	Anciano: Así que si escuchas llorar a alguien esta noche...[shake][b]NO LA SIGAS.[/b][/shake]
 	- Seguro es mentira
 		Anciano: [shake][b][[Eso mismo dijo el último velador|Todos se ríen hasta escucharla|El cementerio ama a los incrédulos]][/b][/shake]
 		do GameManager.perder_vida(anomalie_actual.damage)

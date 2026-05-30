@@ -2,14 +2,21 @@
 Mujer: Estoy segura de que mi abuelo está encantado contigo siendo el nuevo velador.
 Lobelito:
 - ¿De verdad?
-    Mujer: Por supuesto. Eres tan extraño como esos fenómenos que rondan el cementerio. Pero no eres un salvaje. [[Incluso tu pelaje es esponjoso|Incluso estás completamente vestido|Incluso te recortas las garras]]
+    Mujer: Por supuesto. Eres tan extraño como esos fenómenos que rondan el cementerio. 
+	Mujer: Pero no eres un salvaje. [[Incluso tu pelaje es esponjoso|Incluso estás completamente vestido|Incluso te recortas las garras]]
     Lobelito: Ah... pues gracias.
-    Mujer: [wave]Solo bromeo.[/wave] No deberías dejarte pisotear tan fácilmente. Mi abuelo siempre me contaba lo molesto que era lidiar con las entidades atrapadas aquí. [shake]Lo trataban como a un insecto más.[/shake]
+    Mujer: [wave]Solo bromeo. 
+	Mujer: No deberías dejarte pisotear tan fácilmente. 
+	Mujer: Mi abuelo siempre me contaba lo molesto que era lidiar con las entidades atrapadas aquí. 
+	Mujer: [shake]Lo trataban como a un insecto más.
     Lobelito: Tu abuelo no mentía...
 - Dejarla hablando sola
-    Mujer: [shake]¡Jaja![/shake] Tómalo como una pequeña novatada. [wave]Espero que estés disfrutando tu nuevo trabajo.[/wave]
+    Mujer: [shake]¡Jaja![/shake] 
+	Mujer: Tómalo como una pequeña novatada. 
+	Mujer: [wave]Espero que estés disfrutando tu nuevo trabajo.[/wave]
     Lobelito: Definamos "disfrutar"...
 - ... Tengo que irme
-    Mujer: [wait=1] Qué serio eres. [wave]Mi abuelo también huía cuando algo le incomodaba.[/wave]
+    Mujer: [wait=1] Qué serio eres. 
+	Mujer: [wave]Mi abuelo también huía cuando algo le incomodaba.
 
 => END

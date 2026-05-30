@@ -1,6 +1,9 @@
 ~ start
 
-Anciano: ¿Ya hablaste con la niña del conejo? [wave]Pobrecita...[/wave] La conocí desde antes de que naciera. Su madre la golpeaba, la encerraba durante días y la niña creció creyendo que su padre la había abandonado. Todas las noches lloraba abrazando ese conejo viejo. 
+Anciano: ¿Ya hablaste con la niña del conejo? [wave]Pobrecita...[/wave]
+Anciano: La conocí desde antes de que naciera. 
+Anciano: Su madre la golpeaba, la encerraba durante días y la niña creció creyendo que su padre la había abandonado. 
+Anciano: Todas las noches lloraba abrazando ese conejo viejo. 
 
 Lobelito:
 
@@ -8,7 +11,11 @@ Lobelito:
     Anciano: Lo es. Lo peor es que su padre nunca la abandonó.
 
     - ¿Qué pasó con el padre?
-        Anciano: [shake]Yo lo maté.[/shake] Pensé que estaba haciendo lo correcto... pero ya no estoy tan seguro. Hace años creí que deshacerme de él arreglaría algo. Al final, la niña murió sin saber la verdad. [wave]Algunas personas merecen una segunda oportunidad. Otras merecen una explicación. Ella no recibió ninguna de las dos.[/wave]
+        Anciano: [b][shake]Yo lo maté.
+		Anciano: Pensé que estaba haciendo lo correcto... pero ya no estoy tan seguro. 
+		Anciano: Hace años creí que deshacerme de él arreglaría algo. Al final, la niña murió sin saber la verdad. 
+		Anciano: Algunas personas merecen una segunda oportunidad. Otras merecen una explicación. 
+		Anciano: Ella no recibió ninguna de las dos.
 
     - Es demasiado débil
         Anciano: [shake]Cuida tus palabras, muchacho.[/shake] Si hubieras vivido lo que ella vivió, no estarías diciendo eso.
