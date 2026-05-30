@@ -27,5 +27,5 @@ shape = SubResource("CapsuleShape2D_83pre")
 [node name="RandomTimer" type="Timer" parent="." unique_id=343301290]
 script = ExtResource("3_g8v1f")
 min_wait_time = 45.0
-max_wait_time = 190.0
+max_wait_time = 170.0
 metadata/_custom_type_script = "uid://cxvm6m2lnt4au"
