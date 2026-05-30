@@ -23,6 +23,10 @@ func _process(delta):
 
 func perder_vida(damage):
 	vidas -= damage
+	var camara = get_tree().get_first_node_in_group("camera")
+	camara.mostrar_sprite_temporal(1.5)
+	camara.shake_camera(15,0.5)
+	
 	print("Vidas: ", vidas)
 	
 	if vidas <= 0:

@@ -17,7 +17,7 @@ texture = ExtResource("2_jbu3l")
 [node name="RandomTimer" type="Timer" parent="." unique_id=915998842]
 script = ExtResource("3_yecub")
 min_wait_time = 45.0
-max_wait_time = 200.0
+max_wait_time = 120.0
 metadata/_custom_type_script = "uid://cxvm6m2lnt4au"
 
 [node name="Area2D" type="Area2D" parent="." unique_id=888590182]

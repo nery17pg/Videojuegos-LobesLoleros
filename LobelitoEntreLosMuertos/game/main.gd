@@ -280,10 +280,13 @@ func validar_reporte(tipo_reportado):
 		$lobelito.inmovilizado = false
 		
 		# Muestra mensaje de acierto
-		mostrar_mensaje("Correcto", Color.GREEN)
+		#mostrar_mensaje("Correcto", Color.GREEN)
 	else:
 		# Muestra mensaje de error
-		mostrar_mensaje("Incorrecto", Color.RED)
+		#mostrar_mensaje("Incorrecto", Color.RED)
+		
+		
+		
 		#Se da como argumento el daño que ocasiona la anomalía específica
 		GameManager.perder_vida(anomalie_actual.damage) # Nery agregó esto
 
@@ -357,7 +360,7 @@ func remover_anomalia_parpadeo():
 	# Limpia referencia
 	anomalia_parpadeo_activa = null
 
-	mostrar_mensaje("Parpadeo resuelto", Color.GREEN)
+	# mostrar_mensaje("Parpadeo resuelto", Color.GREEN)
 	
 #apagado
 func resolver_anomalia_apagado():
@@ -383,7 +386,7 @@ func resolver_anomalia_apagado():
 	if spawn and spawn.is_inside_tree():
 		spawn.get_node("RandomTimer").start_random()
 
-	anomalia_apagado_activa = null
+	# anomalia_apagado_activa = null
 
 
 #@onready var game_timer = $GameTimer

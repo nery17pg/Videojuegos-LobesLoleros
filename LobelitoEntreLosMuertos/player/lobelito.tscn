@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://c7dfyyb1eh0k" path="res://player/lobelito.gd" id="1_q552c"]
 [ext_resource type="Texture2D" uid="uid://rakxbm01n7hh" path="res://art/Lobelito_derecha.png" id="2_cnaus"]
 [ext_resource type="Texture2D" uid="uid://hqpxx34bjp85" path="res://art/Lobelito.png" id="2_wru57"]
+[ext_resource type="Script" uid="uid://bwqirx1rwm2fu" path="res://player/camera_2d.gd" id="4_cnaus"]
+[ext_resource type="Texture2D" uid="uid://w8oc43h7glqm" path="res://art/background/damage.png" id="5_km2y4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wru57"]
 radius = 42.0
@@ -46,3 +48,10 @@ process_callback = 0
 limit_left = -3455
 limit_right = 4608
 position_smoothing_enabled = true
+script = ExtResource("4_cnaus")
+
+[node name="Sprite2D" type="Sprite2D" parent="Camera2D" unique_id=986286107]
+visible = false
+texture = ExtResource("5_km2y4")
+
+[node name="Timer" type="Timer" parent="Camera2D" unique_id=158276172]

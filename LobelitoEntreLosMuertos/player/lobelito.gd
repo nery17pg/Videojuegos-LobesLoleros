@@ -1,6 +1,7 @@
 extends CharacterBody2D
 @export var speed = 400
 @onready var animated_sprite = $AnimatedSprite2D
+
 var inmovilizado = false # Lobelito (el jugador) puede moverse libremente por default
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -21,6 +22,7 @@ func _physics_process(delta):
 		move_and_collide(velocity * delta)
 	else:
 		return
+		
 		#La propiedad cambiará a true al iniciar un diálogo con una anomalía de tipo ente o visitante
 		#El jugador recobrará el movimiento al terminar el diálogo 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

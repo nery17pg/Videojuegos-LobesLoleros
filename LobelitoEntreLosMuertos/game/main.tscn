@@ -33,9 +33,11 @@
 [ext_resource type="Texture2D" uid="uid://ckydxh7nldfgs" path="res://art/background_elements/mausoleoBackground2.png" id="23_5amgw"]
 [ext_resource type="Texture2D" uid="uid://cied457kgnde3" path="res://art/background_elements/mausoleo_backgrounud.png" id="23_gagp1"]
 [ext_resource type="Texture2D" uid="uid://sk6oy1pje25k" path="res://art/background_elements/mausoleo.png" id="24_5amgw"]
+[ext_resource type="Texture2D" uid="uid://qthavpdcly45" path="res://art/background_elements/cruz_maderaBackground.png" id="26_hprsj"]
 [ext_resource type="Texture2D" uid="uid://fynac2ibbgju" path="res://art/background_elements/cruz madera.png" id="26_ktdwu"]
 [ext_resource type="PackedScene" uid="uid://chk5ekrc3hj37" path="res://anomalies/anomalies_level_2/dolls_eyes_anomaly.tscn" id="26_l78i6"]
 [ext_resource type="PackedScene" uid="uid://blo0kq14gwxv0" path="res://anomalies/anomalies_level_1/lapida_huellas.tscn" id="27_e00sq"]
+[ext_resource type="Texture2D" uid="uid://dvmrtsk7dop4v" path="res://art/background_elements/cruz_madera2.png" id="27_t2wq1"]
 [ext_resource type="PackedScene" uid="uid://ild6l4h4o5ni" path="res://anomalies/anomalies_level_2/dolls_gone_anomaly.tscn" id="27_wubem"]
 [ext_resource type="PackedScene" uid="uid://d2nj06bjqecdl" path="res://anomalies/anomalies_level_1/fire_anomaly.tscn" id="28_k5wni"]
 [ext_resource type="PackedScene" uid="uid://coawea8diwifv" path="res://game/spawner.tscn" id="28_px363"]
@@ -538,9 +540,49 @@ texture = ExtResource("23_gagp1")
 position = Vector2(-668, 359)
 texture = ExtResource("24_5amgw")
 
-[node name="Sprite2D" type="Sprite2D" parent="Objects" unique_id=367303968]
+[node name="cruz_maderaBackground1" type="Sprite2D" parent="Objects" unique_id=1017656776]
+position = Vector2(1929, 485.00003)
+rotation = 0.063860945
+scale = Vector2(0.5, 0.527)
+texture = ExtResource("26_hprsj")
+
+[node name="cruz_maderaBackground3" type="Sprite2D" parent="Objects" unique_id=439250944]
+position = Vector2(2154, 497.00006)
+rotation = -0.26677597
+scale = Vector2(0.5, 0.5269999)
+texture = ExtResource("26_hprsj")
+
+[node name="cruz_maderaBackground2" type="Sprite2D" parent="Objects" unique_id=483670749]
+position = Vector2(2299, 484)
+rotation = 0.063860945
+scale = Vector2(0.5, 0.52699995)
+texture = ExtResource("26_hprsj")
+
+[node name="cruz_madera1" type="Sprite2D" parent="Objects" unique_id=367303968]
 position = Vector2(1574, 363)
 texture = ExtResource("26_ktdwu")
+
+[node name="cruz_madera2" type="Sprite2D" parent="Objects" unique_id=1154336809]
+position = Vector2(1855, 406)
+rotation = 0.16835769
+texture = ExtResource("27_t2wq1")
+
+[node name="cruz_madera3" type="Sprite2D" parent="Objects" unique_id=1934563442]
+position = Vector2(2100, 450.00003)
+rotation = -0.14633563
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("27_t2wq1")
+
+[node name="cruz_madera4" type="Sprite2D" parent="Objects" unique_id=310387892]
+position = Vector2(2252, 349.00003)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("26_ktdwu")
+
+[node name="cruz_madera5" type="Sprite2D" parent="Objects" unique_id=447661427]
+position = Vector2(2386, 412.99997)
+rotation = 0.07198236
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("27_t2wq1")
 
 [node name="Anomalies" type="Node2D" parent="." unique_id=1294360125]
 

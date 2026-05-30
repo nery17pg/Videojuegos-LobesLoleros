@@ -7,6 +7,9 @@
 [node name="anomalies" type="Node2D" unique_id=1053666747]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_ublhp")
+level = 1
+type = "sombras"
+damage = 1
 metadata/_custom_type_script = "uid://inw2f6xeejb5"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=69944676]
