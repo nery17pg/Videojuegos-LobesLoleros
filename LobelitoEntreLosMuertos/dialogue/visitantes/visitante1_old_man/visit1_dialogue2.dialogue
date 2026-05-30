@@ -1,77 +1,25 @@
 
 ~ start
 
-Anciano: [wait=0.5]¿Ya la conociste?
-
-Lobelito: ¿A quién?
-
-Anciano: [wave]A la niña pelinegra [/wave]
-
-Anciano: La que siempre carga
-Anciano: ese conejo de felpa viejo.
+Anciano: [wave] ¿Ya conociste a la niña pelinegra. La que siempre carga ese conejo de felpa viejo?
 
 Lobelito:
+
 - No sé de quién hablas
-	Anciano: [wait=1]Ya veo...
-	Anciano: Supongo que esa historia
-	Anciano: será para después.
+  Anciano: Ya veo... Supongo que esa historia será para después.
 
 - Sí, la conozco
-	Anciano: [wave]Es energética, ¿no crees?[/wave]
+  Anciano: [shake]Jeh...[/shake] ¿Y sabes cómo terminó así?
 
-	Lobelito: Para estar muerta,
-	Lobelito: sí que lo es.
-
-	Anciano: [shake]Jeh...[/shake]
-
-	Anciano: ¿Y sabes cómo terminó así?
-
-	Lobelito:
-	- No tengo tiempo para esto
-		Anciano: No te preocupes.
-		Anciano: [wave]La noche es joven [/wave]
-
-	- ...
-		Anciano: A juzgar por tu cara,
-		Anciano: parece que no.
-
-		Anciano: La conozco desde que estaba
-		Anciano: en el vientre de su madre.
-
-		Anciano: [wait=1]
-		Anciano: Hace unos [b]60 años [/b]
-
-		Lobelito: ... ¿Qué edad tienes?
-
-		Anciano: [shake]Lo que se ve no se pregunta [/shake]
-
-		Anciano: En fin...
-		Anciano: ¿has visto ese peluche
-		Anciano: en el árbol de las muñecas?
-
-		Lobelito: Sí.
-		Lobelito: Es igual al que lleva la niña.
-
-		Anciano: Porque es el mismo.
-
-		Anciano: [wait=1]
-
-		Anciano: Nunca conoció a su padre.
-
-		Anciano: Y su madre...
-		Anciano: [shake][b]la orilló a tomar una decisión
-		Anciano: demasiado drástica
-		Anciano: para una niña tan pequeña [/b][/shake]
-
-		Anciano: [wave]Dicen que el conejo
-		Anciano: fue lo único que abrazó
-		Anciano: antes de morir [/wave]
-
-		Anciano: Y ahora...
-		Anciano: sigue con ella incluso después de la muerte.
+  	- No tengo tiempo para esto
+    	Anciano: No te preocupes. [wave]La noche es joven.[/wave] La conozco desde que estaba en el vientre de su madre, hace unos [b]60 años.[/b] Y no, no voy a decir mi edad. ¿Has visto el conejo de felpa del árbol de las muñecas?
+	- Sí. Es igual al que lleva la niña.
+		Anciano: Porque es el mismo. Nunca conoció a su padre, y su madre [shake][b]la llevó a tomar una decisión demasiado drástica para una niña tan pequeña.[/b][/shake] [wave]Fue lo último que abrazó antes de morir. Ahora lo lleva con ella incluso después de la muerte.[
+		do GameManager.perder_vida(anomalie_actual.damage)
 
 - Ignorarlo
-	Anciano: Entiendo...
-	Anciano: [wave]Hablaremos en otro momento, Lobelito [/wave]
+  Anciano: Entiendo... [wave]Hablaremos en otro momento, Lobelito.[/wave]
+	do GameManager.perder_vida(anomalie_actual.damage)
+
 
 => END

@@ -1,29 +1,16 @@
 ~ start
-
-Ghoul: [shake]Los fantasmas me odian porque descubrí cómo nacen
+Ghoul: Me recuerdas a alguien.
 
 Lobelito:
-
-- ¿Cómo nacen?
-	Ghoul: Del miedo que se pudre
-	Ghoul: Igual que la carne
-	- Eso no tiene sentido
-		do GameManager.perder_vida(anomalie_actual.damage)
-		Ghoul: Tampoco tiene sentido que sigas aquí después del anochecer
-
- - ¿Por qué te odiarian por eso?
-	Ghoul: Es que siempre los observo
-	Ghoul: Tomo notas
-	Ghoul: Porque quiero abrirlos para ver qué tienen dentro
+- ¿A quién?
+	Ghoul: A alguien que conocí hace años. Tenía la misma mirada nerviosa.
 	do GameManager.perder_vida(anomalie_actual.damage)
 
-    - Tú sí estás loco
-		Ghoul: [wave]Una niña con un conejo me dijo lo mismo
+- ¿Qué le pasó?
+	Ghoul: Ya no está por aquí. Digamos que ahora es parte de mí.
+	do GameManager.perder_vida(anomalie_actual.damage)
 
-  - ¿Ya viste un fantasma?
-	Ghoul: Una vez
-	Ghoul: Pero cuando intenté tocarlo...
-	Ghoul: Descubrí que era yo reflejado en una ventana
-	
+- Espero que no me estés comparando con un cadáver.
+	Ghoul: No, los cadaveres no saben tan bien como los vivos.
 
 => END

@@ -3,7 +3,6 @@ Niña: [[Pero miren a quién tenemos aquí|Eres toda una celebridad por aquí|Es
 Lobelito:
 - La verdad que no
 	Niña: Está bien, ¡si la ves [wait=0.5] [wave]no dudes en buscarme![/wave]
-
 - Dudo que siga viva...
 	Niña: [shake][b][[No sabía que también eras comediante|Te arrepentirás|...]][/b][/shake]
 	do GameManager.perder_vida(anomalie_actual.damage)

@@ -5,29 +5,21 @@ Lobelito:
 - ¿Diferente cómo?
 	Ghoul: [[ Más fresco | Más vivo ]]
 	- ¿Eso es bueno?
-		Ghoul: Para mí sí.
-    	Ghoul: Para ti todavía no lo sé.
+		Ghoul: Para mí sí. Para ti todavía no lo sé.
 
 - ¿Piensas comerme?
-	Ghoul: Pensar es una palabra muy elegante.
-	Ghoul: Digamos que te estoy imaginando sin piel.
+	Ghoul: Pensar es una palabra muy elegante. Digamos que te estoy imaginando sin piel.
+	do GameManager.perder_vida(anomalie_actual.damage)
 
  - Estás enfermo.
-	Ghoul: Estoy muerto.
-    Ghoul: Es diferente.
+	Ghoul: Estoy muerto, es diferente.
+	do GameManager.perder_vida(anomalie_actual.damage)
 
   - Inténtalo.
-	Ghoul: [shake]No me provoques.
-    Ghoul: Llevo días sin comer.
-
-- Qué asco.
-	Ghoul: Tú también dirías eso si pudieras verte por dentro.
-	- ¿Qué significa eso?
-		Ghoul: Que todos son asquerosos por dentro.
-    	Ghoul: Algunos solo tardan más en descubrirlo.
+    Ghoul: [shake][color=red]No me provoques, llevo días sin comer.
+	do GameManager.perder_vida(anomalie_actual.damage)
 
 - Estás loco.
-	Ghoul: Los vivos siempre usan esa palabra.
-	Ghoul: Es más fácil que admitir que tienen miedo.
+	Ghoul: Los vivos siempre usan esa palabra. Es más fácil que admitir que tienen miedo.
 
 => END

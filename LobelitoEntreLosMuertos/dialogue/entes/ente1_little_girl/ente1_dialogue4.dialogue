@@ -8,24 +8,20 @@ Lobelito:
 	do GameManager.perder_vida(anomalie_actual.damage)
 
 - Aléjate, niña
-	Niña: Debes aprender a comportarte ante entidades mayores que tú
-	Niña: Mi madre me regañaría si hablara como tú
+	Niña: Debes aprender a comportarte ante entidades mayores que tú. Mi madre me regañaría si hablara como tú
 
     - Pues qué madre tan horrible
 		Niña: [shake]Haré que desaparezcas para siempre
 		do GameManager.perder_vida(anomalie_actual.damage)
 		
 	- No te tengo miedo
-		Niña: Deberías
-		Niña: No soy la única aquí
-		Niña: Y si me desagradas...
-		Niña: Puedo pedirle un favor al ONI
+		Niña: Deberías, no soy la única aquí. Y si me desagradas...
+		Niña: Puedo pedirle un favor al Oni
 
 - Ve a jugar a otro lado
 	Niña: No puedo salir del cementerio
 	- Tu mamá no debió dejarte sola
-		Niña: [shake][color=red]No menciones a mi madre...
-		Niña: O podría decirle al Ghoul que venga por ti
+		Niña: [shake][color=red]No menciones a mi madre... O podría decirle al Ghoul que venga por tii
 		do GameManager.perder_vida(anomalie_actual.damage)
 
 => END

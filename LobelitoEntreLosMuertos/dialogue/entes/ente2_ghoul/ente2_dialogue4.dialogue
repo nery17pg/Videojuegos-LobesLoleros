@@ -14,7 +14,6 @@ Lobelito:
 	Ghoul: Algunas cosas siguen comiendo después de morir.
 	do GameManager.perder_vida(anomalie_actual.damage)
 	
-	
 - ¿Qué partes faltan?
 	Ghoul: [shake][color=red]La misma cada vez, el corazón.
 	do GameManager.perder_vida(anomalie_actual.damage)
